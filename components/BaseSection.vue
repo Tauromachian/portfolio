@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-5 mb-5">
+  <div class="mt-14 mb-14">
     <h1 class="mb-3 text-2xl md:text-4xl">
       {{ title }}
     </h1>
