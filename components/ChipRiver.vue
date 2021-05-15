@@ -1,6 +1,6 @@
 <template>
   <div class="flex-wrapp">
-    <Chip v-for="(value, index) in values" :key="technology + index" :text="value" />
+    <Chip v-for="(value, index) in values" :key="technology + index" :text="value" class="chip hover:bg-gray-300" />
   </div>
 </template>
 
@@ -22,5 +22,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.chip {
+  cursor: pointer;
+  transition: all 0.2s;
+}
 </style>
