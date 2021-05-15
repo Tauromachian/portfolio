@@ -4,7 +4,7 @@
       <h1 class="mb-3 text-2xl md:text-4xl">
         Portafolios
       </h1>
-      <ChipRiver :values="technologies" />
+      <ButtonRiver :values="technologies" />
     </div>
     <div class="flex justify-center ">
       <h1 class="mb-3 text-2xl md:text-4xl">
@@ -18,12 +18,12 @@
 </template>
 
 <script>
-import ChipRiver from '~/components/ChipRiver'
+import ButtonRiver from '~/components/ButtonRiver'
 
 export default {
   name: 'Index',
   components: {
-    ChipRiver
+    ButtonRiver
   },
   data () {
     return {
