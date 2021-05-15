@@ -1,6 +1,6 @@
 <template>
   <button
-    class="rounded-lg p-2 bg-gray-200"
+    class="rounded-lg p-2 bg-gray-200 outline:none"
     :class="buttonClasses"
     @click="isActive = !isActive"
   >
@@ -44,9 +44,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-span {
-  height: min-content;
-}
-</style>
