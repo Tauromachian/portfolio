@@ -1,30 +1,26 @@
 <template>
   <div class="container">
-    <div class="flex-column">
-      <h1 class="mb-3 text-2xl md:text-4xl">
-        Portafolios
-      </h1>
-      <ButtonRiver :values="technologies" />
-    </div>
-    <div class="flex-column justify-center ">
-      <h1 class="mb-3 text-2xl md:text-4xl">
-        Repositorios
-      </h1>
+    <base-section class="flex-column" title="Portafolios">
+      <button-river :values="technologies" />
+    </base-section>
+    <base-section class="flex-column" title="Repositorios">
       <p v-for="(repository, index) in repositories" :key="repository.name + index">
         {{ repository.name }}
       </p>
-    </div>
+    </base-section>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
 import ButtonRiver from '~/components/ButtonRiver'
+import BaseSection from '~/components/BaseSection'
 
 export default {
   name: 'Index',
   components: {
-    ButtonRiver
+    ButtonRiver,
+    BaseSection
   },
   data () {
     return {
