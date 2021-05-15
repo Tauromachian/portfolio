@@ -5,7 +5,7 @@
       :key="value + index"
       v-model="activeChips[index]"
       :text="value"
-      class="chip hover:bg-gray-300"
+      class="chip hover:bg-gray-300 mr-1"
     />
   </div>
 </template>
