@@ -22,6 +22,8 @@
     "eslint": "^7.22.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.7.0",
-    "postcss": "^8.2.8"
+    "fibers": "^5.0.0",
+    "sass": "^1.32.13",
+    "sass-loader": "^10.2.0"
   }
 }
