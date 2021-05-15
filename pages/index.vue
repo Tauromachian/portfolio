@@ -1,9 +1,11 @@
 <template>
-  <div class="flex justify-center">
-    <h1>Repositorios</h1>
-    <p v-for="(repository, index) in repositories" :key="respository + index">
-      {{ repository }}
-    </p>
+  <div>
+    <div class="flex justify-center">
+      <h1>Repositorios</h1>
+      <p v-for="(repository, index) in repositories" :key="respository + index">
+        {{ repository }}
+      </p>
+    </div>
   </div>
 </template>
 
