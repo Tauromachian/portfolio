@@ -14,7 +14,7 @@
 import BaseButton from './BaseButton.vue'
 
 export default {
-  name: 'ChipRiver',
+  name: 'ButtonRiver',
   components: {
     BaseButton
   },

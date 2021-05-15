@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'Chip',
+  name: 'BaseButton',
   props: {
     text: {
       type: String,
