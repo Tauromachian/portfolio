@@ -1,21 +1,33 @@
 <template>
   <div class="flex-wrapp">
-    <Chip v-for="(value, index) in values" :key="technology + index" :text="value" class="chip hover:bg-gray-300" />
+    <base-button
+      v-for="(value, index) in values"
+      :key="value + index"
+      v-model="activeChips[index]"
+      :text="value"
+      class="chip hover:bg-gray-300"
+    />
   </div>
 </template>
 
 <script>
-import Chip from '~/components/Chip'
+import BaseButton from './BaseButton.vue'
 
 export default {
   name: 'ChipRiver',
   components: {
-    Chip
+    BaseButton
   },
   props: {
+
     values: {
       type: [Array, Object],
       default: () => []
+    }
+  },
+  data () {
+    return {
+      activeChips: []
     }
   }
 }
