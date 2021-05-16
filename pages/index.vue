@@ -1,9 +1,9 @@
 <template>
-  <div class="container">
-    <base-section class="flex-column" title="Portafolios">
+  <div class="container mx-auto">
+    <base-section class="flex flex-col items-center justify-center" title="Portafolio">
       <button-river :values="technologies" />
     </base-section>
-    <base-section class="flex-column" title="Repositorios">
+    <base-section class="flex flex-col items-center justify-center" title="Repositorios">
       <p v-for="(repository, index) in repositories" :key="repository.name + index">
         {{ repository.name }}
       </p>
@@ -24,7 +24,7 @@ export default {
   },
   data () {
     return {
-      technologies: ['Javascript'],
+      technologies: ['Javascript', 'Vue.js', 'Laravel', 'Express.js', 'Bootstrap'],
       repositories: []
     }
   },
