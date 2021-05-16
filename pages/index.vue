@@ -8,6 +8,16 @@
     </base-section>
     <base-section
       class="flex flex-col items-center justify-center"
+      title="Redes sociales"
+    >
+      <div class="flex">
+        <span class="mdi mdi-stack-overflow text-green-400 text-8xl" />
+        <span class="mdi mdi-linkedin text-green-400 text-8xl" />
+        <span class="mdi mdi-github text-green-400 text-8xl" />
+      </div>
+    </base-section>
+    <base-section
+      class="flex flex-col items-center justify-center"
       title="Repositorios"
     >
       <a
