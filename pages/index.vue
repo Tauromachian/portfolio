@@ -14,7 +14,7 @@
         v-for="(repository, index) in repositories"
         :key="repository.name + index"
         :href="repository.html_url"
-        class="bg-green-400 mt-1 px-2 rounded"
+        class="repo-link bg-green-400 mt-1 px-2 rounded hover:bg-green-300"
       >
         {{ repository.name }}
       </a>
@@ -64,3 +64,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.repo-link {
+  transition: all 0.2s;
+}
+</style>
