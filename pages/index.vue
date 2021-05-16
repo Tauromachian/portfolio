@@ -1,10 +1,21 @@
 <template>
   <div class="container mx-auto">
-    <base-section class="flex flex-col items-center justify-center" title="Portafolio">
+    <base-section
+      class="flex flex-col items-center justify-center"
+      title="Portafolio"
+    >
       <button-river :values="technologies" />
     </base-section>
-    <base-section class="flex flex-col items-center justify-center" title="Repositorios">
-      <a v-for="(repository, index) in repositories" :key="repository.name + index" :href="repository.html_url">
+    <base-section
+      class="flex flex-col items-center justify-center"
+      title="Repositorios"
+    >
+      <a
+        v-for="(repository, index) in repositories"
+        :key="repository.name + index"
+        :href="repository.html_url"
+        class="bg-green-400 mt-1 px-2 rounded"
+      >
         {{ repository.name }}
       </a>
     </base-section>
@@ -24,7 +35,13 @@ export default {
   },
   data () {
     return {
-      technologies: ['Javascript', 'Vue.js', 'Laravel', 'Express.js', 'Bootstrap'],
+      technologies: [
+        'Javascript',
+        'Vue.js',
+        'Laravel',
+        'Express.js',
+        'Bootstrap'
+      ],
       repositories: []
     }
   },
@@ -35,7 +52,8 @@ export default {
     async loadData () {
       const token = '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'
       const { data } = await axios.get(
-        'https://api.github.com/users/tauromachian/repos', {
+        'https://api.github.com/users/tauromachian/repos',
+        {
           headers: {
             authorization: `token ${token}`
           }
