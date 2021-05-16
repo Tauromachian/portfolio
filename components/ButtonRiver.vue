@@ -6,6 +6,7 @@
       v-model="activeChips[index]"
       :text="value"
       class="chip hover:bg-gray-300 mr-1"
+      :is-activable="false"
     />
   </div>
 </template>
