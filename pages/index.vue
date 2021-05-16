@@ -4,9 +4,9 @@
       <button-river :values="technologies" />
     </base-section>
     <base-section class="flex flex-col items-center justify-center" title="Repositorios">
-      <p v-for="(repository, index) in repositories" :key="repository.name + index">
+      <a v-for="(repository, index) in repositories" :key="repository.name + index" :href="repository.html_url">
         {{ repository.name }}
-      </p>
+      </a>
     </base-section>
   </div>
 </template>
