@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-wrapp">
+  <div class="flex flex-wrap justify-center">
     <base-button
       v-for="(value, index) in values"
       :key="value + index"
