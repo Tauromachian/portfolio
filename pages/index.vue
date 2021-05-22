@@ -51,13 +51,13 @@
     >
       <div class="flex">
         <a href="https://www.linkedin.com/in/jose-garcia-888941180/">
-          <span class="mdi mdi-linkedin text-green-400 text-8xl" />
+          <span class="mdi mdi-linkedin color-primary text-8xl" />
         </a>
         <a href="https://github.com/Tauromachian">
-          <span class="mdi mdi-github text-green-400 text-8xl" />
+          <span class="mdi mdi-github color-primary text-8xl" />
         </a>
         <a href="https://stackoverflow.com/users/10824037/jogarcia">
-          <span class="mdi mdi-stack-overflow text-green-400 text-8xl" />
+          <span class="mdi mdi-stack-overflow color-primary text-8xl" />
         </a>
       </div>
     </base-section>
@@ -69,7 +69,7 @@
         v-for="(repository, index) in repositories"
         :key="repository.name + index"
         :href="repository.html_url"
-        class="repo-link bg-green-400 mt-1 px-2 rounded hover:bg-green-300"
+        class="repo-link bg-primary mt-1 px-2 rounded hover:bg-green-300"
       >
         {{ repository.name }}
       </a>
