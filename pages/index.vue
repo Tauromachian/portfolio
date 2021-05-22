@@ -4,38 +4,46 @@
       class="flex flex-col items-center justify-center"
       title="Sobre mi"
     >
-      <div class="flex flex-col">
-        <p class="md:mr-20 md:ml-20">
-          Soy un desarrollador web de fullstack. Disfruto crear sitios web
-          responsivos usando tecnologías de desarrollo actuales.
-        </p>
+      <p class="md:mr-20 md:ml-20">
+        Soy un desarrollador web de fullstack. Disfruto crear sitios web
+        responsivos usando tecnologías de desarrollo actuales.
+      </p>
+      <div class="flex flex-col md:flex-row">
         <feature-card
           title="Intuitivo"
           icon="mdi-lightbulb-on-outline"
           class="mt-7"
         >
-          <p>Sitios web enfocados an la experiencia de usuario.</p>
+          <p class="md:text-center md:mx-3">
+            Sitios web enfocados an la experiencia de usuario.
+          </p>
         </feature-card>
         <feature-card
           title="Rápido"
           icon="mdi-rocket-launch"
           class="mt-7"
         >
-          <p>La eficiancia del sitio es una prioridad.</p>
+          <p class="md:text-center md:mx-3">
+            La eficiancia del sitio es una prioridad.
+          </p>
         </feature-card>
         <feature-card
           title="Responsivo"
           icon="mdi-responsive"
           class="mt-7"
         >
-          <p>Sitios web que funcionan y se ven bien en diferentes pantallas.</p>
+          <p class="md:text-center md:mx-3">
+            Sitios web que funcionan y se ven bien en diferentes pantallas.
+          </p>
         </feature-card>
         <feature-card
           title="Reactivos"
           icon="mdi-alpha-r-circle"
           class="mt-7"
         >
-          <p>Reacciones instantáneas a las interacciones del usuario.</p>
+          <p class="md:text-center md:mx-3">
+            Reacciones instantáneas a las interacciones del usuario.
+          </p>
         </feature-card>
       </div>
     </base-section>
