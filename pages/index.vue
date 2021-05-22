@@ -49,15 +49,15 @@
       class="flex flex-col items-center justify-center"
       title="Redes sociales"
     >
-      <div class="flex">
+      <div class="flex text-7xl md:text-8xl">
         <a href="https://www.linkedin.com/in/jose-garcia-888941180/">
-          <span class="mdi mdi-linkedin color-primary text-8xl" />
+          <span class="mdi mdi-linkedin color-primary" />
         </a>
         <a href="https://github.com/Tauromachian">
-          <span class="mdi mdi-github color-primary text-8xl" />
+          <span class="mdi mdi-github color-primary " />
         </a>
         <a href="https://stackoverflow.com/users/10824037/jogarcia">
-          <span class="mdi mdi-stack-overflow color-primary text-8xl" />
+          <span class="mdi mdi-stack-overflow color-primary" />
         </a>
       </div>
     </base-section>
