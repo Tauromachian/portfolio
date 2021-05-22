@@ -2,7 +2,7 @@
   <div class="container mx-auto">
     <base-section
       class="flex flex-col items-center justify-center"
-      title="Quien soy"
+      title="Sobre mi"
     >
       <div class="flex flex-col">
         <p class="md:mr-20 md:ml-20">
