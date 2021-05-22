@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <span class="mdi text-7xl mr-1.5 color-primary" :class="icon" />
+    <span class="mdi text-7xl mr-1.5 color-primary md:text-8xl" :class="icon" />
     <div class="flex flex-col">
       <h2 class="font-bold">
         {{ title }}
