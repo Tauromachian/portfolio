@@ -1,7 +1,7 @@
 <template>
-  <div class="flex">
-    <span class="mdi text-7xl mr-1.5 color-primary md:text-8xl" :class="icon" />
-    <div class="flex flex-col">
+  <div class="flex md:flex-col items-center">
+    <span class="mdi text-7xl mr-1.5 color-primary md:text-8xl md:mr-0" :class="icon" />
+    <div class="flex flex-col md:items-center">
       <h2 class="font-bold">
         {{ title }}
       </h2>
