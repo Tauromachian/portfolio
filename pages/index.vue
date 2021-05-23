@@ -24,7 +24,7 @@
           class="mt-7"
         >
           <p class="md:text-center md:mx-3">
-            La eficiancia del sitio es una prioridad.
+            La eficencia del sitio es una prioridad.
           </p>
         </feature-card>
         <feature-card
