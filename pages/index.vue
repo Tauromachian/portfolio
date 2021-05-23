@@ -105,7 +105,9 @@ export default {
         'Vue.js',
         'Laravel',
         'Express.js',
-        'Bootstrap'
+        'Bootstrap',
+        'CSS',
+        'SCSS'
       ],
       repositories: []
     }
