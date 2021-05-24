@@ -1,3 +1,5 @@
+import i18n from './config/i18n'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -51,6 +53,8 @@ export default {
       { /* module options */ }
     ]
   ],
+
+  i18n,
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}
