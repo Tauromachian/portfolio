@@ -4,7 +4,9 @@
     :class="buttonClasses"
     @click="isActive = !isActive"
   >
-    {{ text }}
+    <slot>
+      {{ text }}
+    </slot>
   </button>
 </template>
 
