@@ -1,6 +1,6 @@
 <template>
   <button
-    class="rounded-lg p-2 bg-gray-200 outline:none"
+    class="rounded-lg p-2 bg-gray-200 no-outline"
     :class="buttonClasses"
     @click="isActive = !isActive"
   >
@@ -46,3 +46,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.no-outline {
+  outline: none;
+}
+</style>
