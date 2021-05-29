@@ -3,7 +3,7 @@
     <base-button icon @click="changeLocal">
       <span class="mdi mdi-translate" />
     </base-button>
-    <base-button icon>
+    <base-button icon @click="changeTheme">
       <span class="mdi mdi-invert-colors" />
     </base-button>
     <base-button icon>
@@ -27,6 +27,13 @@ export default {
       this.$i18n.locale === 'en'
         ? this.$i18n.setLocale('es')
         : this.$i18n.setLocale('en')
+    },
+    changeTheme () {
+      if (document.documentElement.hasAttribute('theme')) {
+        document.documentElement.removeAttribute('theme')
+      } else {
+        document.documentElement.setAttribute('theme', 'dark')
+      }
     }
   }
 }
