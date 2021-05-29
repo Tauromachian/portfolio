@@ -42,10 +42,15 @@ export default {
     },
     buttonClasses () {
       if (!this.isActivable) { return {} }
-      return {
+      const classes = {
         'bg-green-400': this.isActive,
         'hover:bg-green-400': this.isActive
       }
+      if (this.icon) {
+        classes.padding = 0
+        classes.transparent = true
+      }
+      return classes
     }
   }
 }
