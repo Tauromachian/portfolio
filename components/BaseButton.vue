@@ -2,7 +2,7 @@
   <button
     class="rounded-lg p-2 bg-gray-200 no-outline"
     :class="buttonClasses"
-    @click="isActive = !isActive"
+    @click="$emit('click')"
   >
     <slot>
       {{ text }}
