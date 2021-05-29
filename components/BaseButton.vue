@@ -25,6 +25,10 @@ export default {
     isActivable: {
       type: Boolean,
       default: true
+    },
+    icon: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
