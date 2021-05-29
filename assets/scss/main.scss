@@ -9,15 +9,28 @@
   }
 }
 
+:root {
+  --text-color-primary: #111827;
+  --color-primary: #33bebc;
+  --bg-color-primary: #f9fafb;
+}
+
+:root[theme='dark'] {
+  --text-color-primary:#f9fafb;
+  --bg-color-primary: #483d8b;
+}
+
 body {
   font-family: "Lato", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color-primary);
+  color: var(--text-color-primary);
 }
 
 .color-primary {
-  color: #33bebc;
+  color: var(--color-primary);
 }
 
 .bg-primary {
-  background-color: #33bebc;
+  background-color: var(--color-primary);
 }
