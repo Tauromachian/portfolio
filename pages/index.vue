@@ -81,7 +81,7 @@
         {{ repository.name }}
       </a>
     </base-section>
-    <bottom-nav class="sm:invisible" />
+    <bottom-nav class="sm:invisible fixed bottom-0 left-0 right-0" />
   </div>
 </template>
 
