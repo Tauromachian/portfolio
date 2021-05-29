@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center bg-primary px-3">
-    <base-button icon>
+    <base-button icon @click="changeLocal">
       <span class="mdi mdi-translate text-xl" />
     </base-button>
     <base-button icon>
@@ -21,6 +21,13 @@ export default {
   components: {
     BaseButton
     // AppLinks
+  },
+  methods: {
+    changeLocal () {
+      this.$i18n.locale === 'en'
+        ? this.$i18n.setLocale('es')
+        : this.$i18n.setLocale('en')
+    }
   }
 }
 </script>
