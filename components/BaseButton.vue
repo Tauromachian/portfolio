@@ -51,4 +51,7 @@ export default {
 .no-outline {
   outline: none;
 }
+.transparent {
+  background-color: transparent !important;
+}
 </style>
