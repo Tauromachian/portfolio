@@ -1,13 +1,13 @@
 <template>
-  <div class="flex justify-center bg-primary px-3">
+  <div class="flex justify-center bg-primary px-3 text-2xl">
     <base-button icon @click="changeLocal">
-      <span class="mdi mdi-translate text-xl" />
+      <span class="mdi mdi-translate" />
     </base-button>
     <base-button icon>
-      <span class="mdi mdi-invert-colors text-xl" />
+      <span class="mdi mdi-invert-colors" />
     </base-button>
     <base-button icon>
-      <span class="mdi mdi-menu text-xl" />
+      <span class="mdi mdi-menu" />
     </base-button>
   </div>
 </template>
