@@ -2,60 +2,59 @@
   <div class="container mx-auto">
     <base-section
       class="flex flex-col items-center justify-center"
-      title="Sobre mi"
+      :title="$t('about')"
     >
       <p class="md:mr-20 md:ml-20">
-        Soy un desarrollador web de fullstack. Disfruto crear sitios web
-        responsivos usando tecnologías de desarrollo actuales.
+        {{ $t('aboutText') }}
       </p>
       <div class="flex flex-col md:flex-row">
         <feature-card
-          title="Intuitivo"
+          :title="$t('intuitive')"
           icon="mdi-lightbulb-on-outline"
           class="mt-7"
         >
           <p class="md:text-center md:mx-3">
-            Sitios web enfocados an la experiencia de usuario.
+            {{ $t('intuitiveText') }}
           </p>
         </feature-card>
         <feature-card
-          title="Rápido"
+          :title="$t('fast')"
           icon="mdi-rocket-launch"
           class="mt-7"
         >
           <p class="md:text-center md:mx-3">
-            La eficencia del sitio es una prioridad.
+            {{ $t('fastText') }}
           </p>
         </feature-card>
         <feature-card
-          title="Responsivo"
+          :title="$t('responsive')"
           icon="mdi-responsive"
           class="mt-7"
         >
           <p class="md:text-center md:mx-3">
-            Sitios web que funcionan y se ven bien en diferentes pantallas.
+            {{ $t('responsiveText') }}
           </p>
         </feature-card>
         <feature-card
-          title="Reactivos"
+          :title="$t('reactive')"
           icon="mdi-alpha-r-circle"
           class="mt-7"
         >
           <p class="md:text-center md:mx-3">
-            Reacciones instantáneas a las interacciones del usuario.
+            {{ $t('reactiveText') }}
           </p>
         </feature-card>
       </div>
     </base-section>
     <base-section
       class="flex flex-col items-center justify-center"
-      title="Portafolio"
+      :title="$t('portfolio')"
     >
       <button-river :values="technologies" />
     </base-section>
     <base-section
       class="flex flex-col items-center justify-center"
-      title="Redes sociales"
+      :title="$t('socialNetworks')"
     >
       <div class="flex text-7xl md:text-8xl">
         <a href="https://www.linkedin.com/in/jose-garcia-888941180/">
@@ -71,7 +70,7 @@
     </base-section>
     <base-section
       class="flex flex-col items-center justify-center"
-      title="Repositorios"
+      :title="$t('repositories')"
     >
       <a
         v-for="(repository, index) in repositories"

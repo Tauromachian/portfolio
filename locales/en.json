@@ -1,3 +1,16 @@
 {
-  "welcome": "Welcome"
+  "about": "About",
+  "aboutText": "I am a fullstack web developer. I enjoy creating web sites using actual development techonologies.",
+  "intuitive": "Intuitive",
+  "intuitiveText": "User experience focused web sites",
+  "fast": "Fast",
+  "fastText": "The site's efficienfy is a priority",
+  "responsive": "Responsive",
+  "responsiveText": "Web sites that work and look good in different screens",
+  "reactive": "Reactives",
+  "reactiveText": "Instant reactions to the user's interactions",
+  "portfolio": "Portfolio",
+  "socialNetworks": "Social networks",
+  "repositories": "Repositories"
+
 }

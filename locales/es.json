@@ -1,3 +1,15 @@
 {
-  "welcome": "Bienvenido"
+  "about": "Sobre mi",
+  "aboutText": "Soy un desarrollador web de fullstack. Disfruto crear sitios web responsivos usando tecnologías de desarrollo actuales.",
+  "intuitive": "Intuitivo",
+  "intuitiveText": "Sitios web enfocados an la experiencia de usuario.",
+  "fast": "Rápido",
+  "fastText": "La eficencia del sitio es una prioridad.",
+  "responsive": "Responsivo",
+  "responsiveText": "Sitios web que funcionan y se ven bien en diferentes pantallas.",
+  "reactive": "Reactivos",
+  "reactiveText": "Reacciones instantáneas a las interacciones del usuario.",
+  "portfolio": "Portafolio",
+  "socialNetworks": "Redes sociales",
+  "repositories": "Repositorios"
 }
