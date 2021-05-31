@@ -75,7 +75,7 @@ app-links li {
 }
 
 .links {
-  transition: all 0.4s linear;
+  transition: all 0.3s linear;
   z-index: 10;
 }
 
