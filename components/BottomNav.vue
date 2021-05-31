@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col">
     <div
-      class="flex flex-col items-center justify-center text-center bg-primary"
-      :class="{ hidden: isHidden }"
+      class="links flex flex-col items-center justify-center text-center bg-primary"
+      :class="{ 'links--active': isHidden }"
     >
       <ul>
         <li>
@@ -19,7 +19,7 @@
         </li>
       </ul>
     </div>
-    <div class="flex justify-center bg-primary px-3 text-2xl">
+    <div class="buttons flex justify-center bg-primary px-3 text-2xl">
       <base-button icon @click="changeLocal">
         <span class="mdi mdi-translate" />
       </base-button>
@@ -68,5 +68,18 @@ export default {
 <style lang="scss" scoped>
 app-links li {
   display: inline;
+}
+
+.buttons {
+  z-index: 20;
+}
+
+.links {
+  transition: all 0.4s linear;
+  z-index: 10;
+}
+
+.links--active {
+  transform: translate(0, 100px);
 }
 </style>
