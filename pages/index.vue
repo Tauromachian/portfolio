@@ -1,6 +1,7 @@
 <template>
   <div class="container mx-auto">
     <base-section
+      id="about"
       class="flex flex-col items-center justify-center"
       :title="$t('about')"
     >
@@ -47,12 +48,14 @@
       </div>
     </base-section>
     <base-section
+      id="portfolio"
       class="flex flex-col items-center justify-center"
       :title="$t('portfolio')"
     >
       <button-river :values="technologies" />
     </base-section>
     <base-section
+      id="social-networks"
       class="flex flex-col items-center justify-center"
       :title="$t('socialNetworks')"
     >
@@ -69,6 +72,7 @@
       </div>
     </base-section>
     <base-section
+      id="repositories"
       class="flex flex-col items-center justify-center"
       :title="$t('repositories')"
     >
