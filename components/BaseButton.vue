@@ -48,7 +48,7 @@ export default {
       }
       if (this.icon) {
         classes.padding = 0
-        classes.transparent = true
+        classes['icon-button'] = true
       }
       return classes
     }
@@ -60,7 +60,13 @@ export default {
 .no-outline {
   outline: none;
 }
-.transparent {
+
+.icon-button {
   background-color: transparent !important;
+  border-radius: 50%;
+  height: 2.3em;
+  width: 2.3em;
+  padding: 0.5em;
+  margin: 0.2em;
 }
 </style>
