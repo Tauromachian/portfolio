@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col bg-primary">
-    <div class="buttons flex px-3 text-2xl ml-auto mr-10">
+  <div class="flex bg-primary">
+    <div class="flex px-3 text-2xl ml-auto mr-14">
       <base-button icon @click="changeLocal">
         <span class="mdi mdi-translate" />
       </base-button>
