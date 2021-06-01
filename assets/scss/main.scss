@@ -1,16 +1,5 @@
 @import './variables';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  body {
-    @apply text-gray-900;
-    @apply bg-gray-50;
-  }
-}
-
 body {
   font-family: "Lato", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
