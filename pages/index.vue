@@ -65,13 +65,13 @@
       :title="$t('socialNetworks')"
     >
       <div class="flex text-7xl md:text-8xl">
-        <a href="https://www.linkedin.com/in/jose-garcia-888941180/">
+        <a class="social-link" href="https://www.linkedin.com/in/jose-garcia-888941180/">
           <span class="mdi mdi-linkedin color-primary" />
         </a>
-        <a href="https://github.com/Tauromachian">
+        <a class="social-link" href="https://github.com/Tauromachian">
           <span class="mdi mdi-github color-primary " />
         </a>
-        <a href="https://stackoverflow.com/users/10824037/jogarcia">
+        <a class="social-link" href="https://stackoverflow.com/users/10824037/jogarcia">
           <span class="mdi mdi-stack-overflow color-primary" />
         </a>
       </div>
