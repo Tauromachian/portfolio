@@ -1,3 +1,5 @@
+@import './variables';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,17 +9,6 @@
     @apply text-gray-900;
     @apply bg-gray-50;
   }
-}
-
-:root {
-  --text-color-primary: #111827;
-  --color-primary: #33bebc;
-  --bg-color-primary: #f9fafb;
-}
-
-:root[theme='dark'] {
-  --text-color-primary:#f9fafb;
-  --bg-color-primary: #483d8b;
 }
 
 body {
