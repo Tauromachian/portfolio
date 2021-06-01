@@ -1,5 +1,6 @@
 <template>
   <div class="container mx-auto">
+    <!-- About -->
     <base-section
       id="about"
       class="flex flex-col items-center justify-center"
@@ -47,6 +48,8 @@
         </feature-card>
       </div>
     </base-section>
+
+    <!-- Portfolio -->
     <base-section
       id="portfolio"
       class="flex flex-col items-center justify-center"
@@ -54,6 +57,8 @@
     >
       <button-river :values="technologies" />
     </base-section>
+
+    <!-- Social networks -->
     <base-section
       id="social-networks"
       class="flex flex-col items-center justify-center"
@@ -71,6 +76,8 @@
         </a>
       </div>
     </base-section>
+
+    <!-- Repositories -->
     <base-section
       id="repositories"
       class="flex flex-col items-center justify-center"
