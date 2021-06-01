@@ -1,11 +1,5 @@
 @import './variables';
-
-body {
-  font-family: "Lato", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: var(--bg-color-primary);
-  color: var(--text-color-primary);
-}
+@import './general-styles';
 
 .color-primary {
   color: var(--color-primary);
