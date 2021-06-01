@@ -8,16 +8,16 @@
         <span class="mdi mdi-invert-colors" />
       </base-button>
       <ul class="flex items-center text-xl">
-        <li class="mx-2">
+        <li class="px-3">
           <a href="#about">About</a>
         </li>
-        <li class="mx-2">
+        <li class="px-3">
           <a href="#portfolio">Portfolio</a>
         </li>
-        <li class="mx-2">
+        <li class="px-3">
           <a href="#social-networks">Social Networks</a>
         </li>
-        <li class="mx-2">
+        <li class="px-3">
           <a href="#repositories">Repositories</a>
         </li>
       </ul>
