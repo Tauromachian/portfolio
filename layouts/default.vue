@@ -1,6 +1,6 @@
 <template>
   <div>
-    <top-nav class="top-0 left-0 right-0 mb-5" />
+    <top-nav class="invisible sm:visible top-0 left-0 right-0" />
     <Nuxt />
     <bottom-nav class="sm:invisible fixed bottom-0 left-0 right-0" />
   </div>
