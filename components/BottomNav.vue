@@ -34,14 +34,12 @@
 </template>
 
 <script>
-// import AppLinks from './AppLinks'
 import BaseButton from './BaseButton'
 
 export default {
   name: 'BottomNav',
   components: {
     BaseButton
-    // AppLinks
   },
   data () {
     return {
