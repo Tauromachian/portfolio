@@ -127,7 +127,7 @@ export default {
   },
   methods: {
     async loadData () {
-      const token = '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'
+      const token = process.env.NUXT_ENV_GITHUB_TOKEN
       const { data } = await axios.get(
         'https://api.github.com/users/tauromachian/repos',
         {
