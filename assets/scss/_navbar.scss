@@ -1,0 +1,8 @@
+.navbar__link {
+  color: var(--text-color-primary);
+  transition: all 0.2s;
+}
+
+.navbar__link:hover {
+  color: var(--text-color-secondary);
+}
