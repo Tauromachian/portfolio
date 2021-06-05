@@ -1,23 +1,23 @@
 <template>
   <div class="flex bg-primary">
     <div class="flex px-3 text-2xl ml-auto mr-14">
-      <base-button icon @click="changeLocal">
+      <base-button class="navbar__link" icon @click="changeLocal">
         <span class="mdi mdi-translate" />
       </base-button>
-      <base-button icon @click="changeTheme">
+      <base-button class="navbar__link" icon @click="changeTheme">
         <span class="mdi mdi-invert-colors" />
       </base-button>
-      <ul class="flex items-center text-xl">
-        <li class="px-3">
+      <ul class="flex items-center text-xl ">
+        <li class="px-3 navbar__link">
           <a href="#about">About</a>
         </li>
-        <li class="px-3">
+        <li class="px-3 navbar__link">
           <a href="#portfolio">Portfolio</a>
         </li>
-        <li class="px-3">
+        <li class="px-3 navbar__link">
           <a href="#social-networks">Social Networks</a>
         </li>
-        <li class="px-3">
+        <li class="px-3 navbar__link">
           <a href="#repositories">Repositories</a>
         </li>
       </ul>

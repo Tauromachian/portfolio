@@ -5,28 +5,28 @@
       :class="{ 'links--active': isHidden }"
     >
       <ul>
-        <li>
+        <li class="navbar__link">
           <a href="#about">About</a>
         </li>
-        <li>
+        <li class="navbar__link">
           <a href="#portfolio">Portfolio</a>
         </li>
-        <li>
+        <li class="navbar__link">
           <a href="#social-networks">Social Networks</a>
         </li>
-        <li>
+        <li class="navbar__link">
           <a href="#repositories">Repositories</a>
         </li>
       </ul>
     </div>
     <div class="buttons flex justify-center bg-primary px-3 text-2xl">
-      <base-button icon @click="changeLocal">
+      <base-button class="navbar__link" icon @click="changeLocal">
         <span class="mdi mdi-translate" />
       </base-button>
-      <base-button icon @click="changeTheme">
+      <base-button class="navbar__link" icon @click="changeTheme">
         <span class="mdi mdi-invert-colors" />
       </base-button>
-      <base-button icon @click="isHidden = !isHidden">
+      <base-button class="navbar__link" icon @click="isHidden = !isHidden">
         <span class="mdi mdi-menu" />
       </base-button>
     </div>
