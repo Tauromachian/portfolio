@@ -117,7 +117,11 @@ export default {
         'Express.js',
         'Bootstrap',
         'CSS',
-        'SCSS'
+        'SCSS',
+        'MariaDB',
+        'MySQL',
+        'PostgreSQL',
+        'MongoDB'
       ],
       repositories: []
     }
