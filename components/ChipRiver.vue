@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-wrap justify-center">
-    <base-button
+    <base-chip
       v-for="(value, index) in values"
       :key="value + index"
       v-model="activeChips[index]"
@@ -12,13 +12,8 @@
 </template>
 
 <script>
-import BaseButton from './BaseButton.vue'
-
 export default {
-  name: 'ButtonRiver',
-  components: {
-    BaseButton
-  },
+  name: 'ChipRiver',
   props: {
 
     values: {
@@ -36,7 +31,6 @@ export default {
 
 <style lang="scss" scoped>
 .chip {
-  cursor: pointer;
   transition: all 0.2s;
 }
 </style>
