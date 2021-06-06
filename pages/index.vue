@@ -68,11 +68,14 @@
         <a class="social-link" href="https://www.linkedin.com/in/jose-garcia-888941180/">
           <span class="mdi mdi-linkedin color-primary" />
         </a>
+        <a class="social-link" href="https://stackoverflow.com/users/10824037/jogarcia">
+          <span class="mdi mdi-stack-overflow color-primary" />
+        </a>
         <a class="social-link" href="https://github.com/Tauromachian">
           <span class="mdi mdi-github color-primary " />
         </a>
-        <a class="social-link" href="https://stackoverflow.com/users/10824037/jogarcia">
-          <span class="mdi mdi-stack-overflow color-primary" />
+        <a class="social-link" href="https://t.me/BetanKore">
+          <span class="mdi mdi-telegram color-primary" />
         </a>
         <a class="social-link" href="https://www.facebook.com/josecarlos.garciaalvarez.9083">
           <span class="mdi mdi-facebook color-primary" />
