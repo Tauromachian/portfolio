@@ -7,9 +7,12 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 
 export default {
+  computed: {
+    ...mapState(['theme'])
+  },
   mounted () {
     this.setTheme(localStorage.getItem('theme') ?? 'default')
     this.loadTheme()
