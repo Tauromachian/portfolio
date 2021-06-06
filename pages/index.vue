@@ -55,7 +55,7 @@
       class="flex flex-col items-center justify-center"
       :title="$t('portfolio')"
     >
-      <button-river :values="technologies" />
+      <chip-river :values="technologies" />
     </base-section>
 
     <!-- Social networks -->
@@ -97,14 +97,12 @@
 
 <script>
 import axios from 'axios'
-import ButtonRiver from '~/components/ButtonRiver'
 import BaseSection from '~/components/BaseSection'
 import FeatureCard from '~/components/FeatureCard'
 
 export default {
   name: 'Index',
   components: {
-    ButtonRiver,
     BaseSection,
     FeatureCard
   },
