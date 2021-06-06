@@ -62,7 +62,7 @@
     <base-section
       id="social-networks"
       class="flex flex-col items-center justify-center"
-      :title="$t('socialNetworks')"
+      :title="$t('contacts')"
     >
       <div class="flex text-7xl md:text-8xl">
         <a class="social-link" href="https://www.linkedin.com/in/jose-garcia-888941180/">
