@@ -74,6 +74,9 @@
         <a class="social-link" href="https://stackoverflow.com/users/10824037/jogarcia">
           <span class="mdi mdi-stack-overflow color-primary" />
         </a>
+        <a class="social-link" href="https://www.facebook.com/josecarlos.garciaalvarez.9083">
+          <span class="mdi mdi-facebook color-primary" />
+        </a>
       </div>
     </base-section>
 
