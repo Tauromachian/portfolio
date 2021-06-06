@@ -27,6 +27,7 @@
 
 <script>
 // import AppLinks from './AppLinks'
+import { mapMutations } from 'vuex'
 import BaseButton from './BaseButton'
 
 export default {
@@ -41,6 +42,7 @@ export default {
     }
   },
   methods: {
+    ...mapMutations(['setTheme']),
     changeLocal () {
       this.$i18n.locale === 'en'
         ? this.$i18n.setLocale('es')
@@ -48,9 +50,11 @@ export default {
     },
     changeTheme () {
       if (document.documentElement.hasAttribute('theme')) {
+        this.setTheme('default')
         document.documentElement.removeAttribute('theme')
       } else {
-        document.documentElement.setAttribute('theme', 'dark')
+        this.setTheme('crazy')
+        document.documentElement.setAttribute('theme', 'crazy')
       }
     }
   }
