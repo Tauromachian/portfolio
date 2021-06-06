@@ -1,6 +1,6 @@
 <template>
   <div>
-    <top-nav class="invisible sm:visible top-0 left-0 right-0" />
+    <top-nav v-if="!isSmallScreen" class="invisible sm:visible top-0 left-0 right-0" />
     <Nuxt />
     <bottom-nav class="sm:invisible fixed bottom-0 left-0 right-0" />
   </div>
@@ -10,12 +10,25 @@
 import { mapState, mapMutations } from 'vuex'
 
 export default {
+  data () {
+    return {
+      width: ''
+    }
+  },
   computed: {
-    ...mapState(['theme'])
+    ...mapState(['theme']),
+    isSmallScreen () {
+      return this.width < 640
+    }
   },
   mounted () {
     this.setTheme(localStorage.getItem('theme') ?? 'default')
     this.loadTheme()
+    window.addEventListener('resize', this.setWidth)
+    this.setWidth()
+  },
+  destroyed () {
+    window.removeEventListener('resize', this.setWidth)
   },
   methods: {
     ...mapMutations(['setTheme']),
@@ -25,6 +38,9 @@ export default {
       } else {
         document.documentElement.setAttribute('theme', 'crazy')
       }
+    },
+    setWidth () {
+      this.width = window.innerWidth
     }
   }
 }
