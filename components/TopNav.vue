@@ -8,17 +8,8 @@
         <span class="mdi mdi-invert-colors" />
       </base-button>
       <ul class="flex items-center text-xl ">
-        <li class="px-3 navbar__link">
-          <a href="#about">About</a>
-        </li>
-        <li class="px-3 navbar__link">
-          <a href="#portfolio">Portfolio</a>
-        </li>
-        <li class="px-3 navbar__link">
-          <a href="#social-networks">Social Networks</a>
-        </li>
-        <li class="px-3 navbar__link">
-          <a href="#repositories">Repositories</a>
+        <li v-for="link in links" :key="link.link + link.text" class="px-3 navbar__link">
+          {{ link.text }}
         </li>
       </ul>
     </div>
@@ -27,11 +18,11 @@
 
 <script>
 // import AppLinks from './AppLinks'
-import { mapMutations } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 import BaseButton from './BaseButton'
 
 export default {
-  name: 'BottomNav',
+  name: 'TopNav',
   components: {
     BaseButton
     // AppLinks
@@ -40,6 +31,9 @@ export default {
     return {
       isHidden: false
     }
+  },
+  computed: {
+    ...mapState(['theme', 'links'])
   },
   methods: {
     ...mapMutations(['setTheme']),

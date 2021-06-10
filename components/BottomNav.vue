@@ -5,17 +5,8 @@
       :class="{ 'links--active': isHidden }"
     >
       <ul>
-        <li class="navbar__link">
-          <a href="#about">About</a>
-        </li>
-        <li class="navbar__link">
-          <a href="#portfolio">Portfolio</a>
-        </li>
-        <li class="navbar__link">
-          <a href="#social-networks">Social Networks</a>
-        </li>
-        <li class="navbar__link">
-          <a href="#repositories">Repositories</a>
+        <li v-for="link in links" :key="link.link + link.text" class="navbar__link">
+          {{ link.text }}
         </li>
       </ul>
     </div>
@@ -34,7 +25,7 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 import BaseButton from './BaseButton'
 
 export default {
@@ -46,6 +37,9 @@ export default {
     return {
       isHidden: true
     }
+  },
+  computed: {
+    ...mapState(['links'])
   },
   methods: {
     ...mapMutations(['setTheme']),
