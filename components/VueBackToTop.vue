@@ -61,7 +61,7 @@ export default {
   border-width: 2px;
   width: 2em;
   height: 2em;
-  font-size: 2rem; /* Increase font size */
+  font-size: 1.5rem; /* Increase font size */
   transition: all 0.5s;
 }
 
