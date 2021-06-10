@@ -98,8 +98,6 @@
         {{ repository.name }}
       </a>
     </base-section>
-
-    <vue-back-to-top />
   </div>
 </template>
 
