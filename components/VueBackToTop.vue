@@ -52,9 +52,9 @@ export default {
   border-color: var(--color-primary);
   color: var(--color-primary);
   border-width: 2px;
-  width: 60px;
-  height: 60px;
-  font-size: 2em; /* Increase font size */
+  width: 2em;
+  height: 2em;
+  font-size: 2rem; /* Increase font size */
   transition: all 0.5s;
 }
 </style>
