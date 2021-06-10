@@ -10,7 +10,7 @@
       <ul class="flex items-center text-xl ">
         <li v-for="link in links" :key="link.link + link.text" class="px-3 navbar__link">
           <a :href="link.link" @click.prevent="scrollToPosition(link.link)">
-            {{ link.text }}
+            {{ $t(link.text) }}
           </a>
         </li>
       </ul>

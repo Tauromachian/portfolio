@@ -7,7 +7,7 @@
       <ul>
         <li v-for="link in links" :key="link.link + link.text" class="navbar__link">
           <a :href="link.link">
-            {{ link.text }}
+            {{ $t(link.text) }}
           </a>
         </li>
       </ul>
