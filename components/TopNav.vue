@@ -9,7 +9,9 @@
       </base-button>
       <ul class="flex items-center text-xl ">
         <li v-for="link in links" :key="link.link + link.text" class="px-3 navbar__link">
-          {{ link.text }}
+          <a :href="link.link">
+            {{ link.text }}
+          </a>
         </li>
       </ul>
     </div>

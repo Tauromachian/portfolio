@@ -6,7 +6,9 @@
     >
       <ul>
         <li v-for="link in links" :key="link.link + link.text" class="navbar__link">
-          {{ link.text }}
+          <a :href="link.link">
+            {{ link.text }}
+          </a>
         </li>
       </ul>
     </div>
