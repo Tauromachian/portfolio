@@ -2,10 +2,10 @@ export const state = () => ({
   theme: 'default',
   themes: ['default', 'crazy'],
   links: [
-    { link: '#about', text: 'About' },
-    { link: '#portfolio', text: 'Portfolio' },
-    { link: '#social-networks', text: 'Repositories' },
-    { link: '#repositories', text: 'Repositories' }
+    { link: '#about', text: 'about' },
+    { link: '#portfolio', text: 'portfolio' },
+    { link: '#social-networks', text: 'contacts' },
+    { link: '#repositories', text: 'repositories' }
   ]
 })
 
