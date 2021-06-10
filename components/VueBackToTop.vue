@@ -1,5 +1,5 @@
 <template>
-  <button title="Go to top" class="rounded-lg floating-button" @click="topFunction">
+  <button title="Go to top" class="rounded-lg lol floating-button" :class="isShowingClasses" @click="topFunction">
     <span class="mdi mdi-arrow-up" />
   </button>
 </template>
@@ -9,7 +9,18 @@ export default {
   name: 'VueBackToTop',
   data () {
     return {
-      floatingButton: null
+      floatingButton: null,
+      isShowing: false
+    }
+  },
+  computed: {
+    isShowingClasses () {
+      if (this.isShowing) {
+        return {
+          'floating-button--show': true
+        }
+      }
+      return {}
     }
   },
   mounted () {
@@ -19,15 +30,11 @@ export default {
     }
   },
   methods: {
-    scrollFunction (mybutton) {
-      if (
-        document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20
-      ) {
-        mybutton.style.display = 'block'
-      } else {
-        mybutton.style.display = 'none'
-      }
+    scrollFunction () {
+      (document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20)
+        ? this.isShowing = true
+        : this.isShowing = false
     },
     topFunction () {
       window.scrollTo({
@@ -56,5 +63,19 @@ export default {
   height: 2em;
   font-size: 2rem; /* Increase font size */
   transition: all 0.5s;
+}
+
+.floating-button--show {
+  display: block;
+  animation: roll 1s;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 </style>
