@@ -1,5 +1,5 @@
 <template>
-  <button id="floating-button" title="Go to top" class="rounded-lg" @click="topFunction">
+  <button title="Go to top" class="rounded-lg floating-button" @click="topFunction">
     <span class="mdi mdi-arrow-up" />
   </button>
 </template>
@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style scoped>
-#floating-button {
+.floating-button {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
