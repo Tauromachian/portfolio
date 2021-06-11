@@ -95,6 +95,20 @@
       :title="$t('repositories')"
     >
       <div class="relative">
+        <base-ball
+          class="bg-primary"
+          right="-30px"
+          top="-20px"
+          :z-index="-10"
+          medium
+        />
+        <base-ball
+          class="bg-primary"
+          right="30px"
+          top="20px"
+          :z-index="-10"
+          small
+        />
         <base-card class="pb-8" glass>
           <div class="flex flex-col justify-center">
             <a
@@ -108,6 +122,13 @@
             </a>
           </div>
         </base-card>
+        <base-ball
+          class="bg-primary"
+          left="30px"
+          bottom="-20px"
+          :z-index="-10"
+          small
+        />
       </div>
     </base-section>
   </div>
