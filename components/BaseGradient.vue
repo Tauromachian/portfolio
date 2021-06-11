@@ -1,5 +1,5 @@
 <template>
-  <div class="gradient" :style="{ background: `linear-gradient(${degrees}, rgba(51,190,188,1) 0%, rgba(51,230,227,1) 37%, rgba(249,250,251,1) 100%)` }" />
+  <div class="gradient" :style="{ height: `${height}em`, background: `linear-gradient(${degrees}, rgba(51,190,188,1) 0%, rgba(51,230,227,1) 37%, rgba(249,250,251,1) 100%)` }" />
 </template>
 
 <script>
@@ -9,6 +9,10 @@ export default {
     degrees: {
       type: String,
       default: '180deg'
+    },
+    height: {
+      type: Number,
+      default: 9
     }
   }
 }
