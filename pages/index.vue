@@ -7,7 +7,7 @@
       :title="$t('about')"
     >
       <p class="md:mr-20 md:ml-20">
-        {{ $t('aboutText') }}
+        {{ $t("aboutText") }}
       </p>
       <div class="flex flex-col md:flex-row">
         <feature-card
@@ -16,16 +16,12 @@
           class="mt-7"
         >
           <p class="md:text-center md:mx-3">
-            {{ $t('intuitiveText') }}
+            {{ $t("intuitiveText") }}
           </p>
         </feature-card>
-        <feature-card
-          :title="$t('fast')"
-          icon="mdi-rocket-launch"
-          class="mt-7"
-        >
+        <feature-card :title="$t('fast')" icon="mdi-rocket-launch" class="mt-7">
           <p class="md:text-center md:mx-3">
-            {{ $t('fastText') }}
+            {{ $t("fastText") }}
           </p>
         </feature-card>
         <feature-card
@@ -34,7 +30,7 @@
           class="mt-7"
         >
           <p class="md:text-center md:mx-3">
-            {{ $t('responsiveText') }}
+            {{ $t("responsiveText") }}
           </p>
         </feature-card>
         <feature-card
@@ -43,7 +39,7 @@
           class="mt-7"
         >
           <p class="md:text-center md:mx-3">
-            {{ $t('reactiveText') }}
+            {{ $t("reactiveText") }}
           </p>
         </feature-card>
       </div>
@@ -65,10 +61,16 @@
       :title="$t('contacts')"
     >
       <div class="flex text-7xl md:text-8xl">
-        <a class="social-link" href="https://www.linkedin.com/in/jose-garcia-888941180/">
+        <a
+          class="social-link"
+          href="https://www.linkedin.com/in/jose-garcia-888941180/"
+        >
           <span class="mdi mdi-linkedin color-primary" />
         </a>
-        <a class="social-link" href="https://stackoverflow.com/users/10824037/jogarcia">
+        <a
+          class="social-link"
+          href="https://stackoverflow.com/users/10824037/jogarcia"
+        >
           <span class="mdi mdi-stack-overflow color-primary" />
         </a>
         <a class="social-link" href="https://github.com/Tauromachian">
@@ -77,7 +79,10 @@
         <a class="social-link" href="https://t.me/BetanKore">
           <span class="mdi mdi-telegram color-primary" />
         </a>
-        <a class="social-link" href="https://www.facebook.com/josecarlos.garciaalvarez.9083">
+        <a
+          class="social-link"
+          href="https://www.facebook.com/josecarlos.garciaalvarez.9083"
+        >
           <span class="mdi mdi-facebook color-primary" />
         </a>
       </div>
@@ -89,14 +94,21 @@
       class="flex flex-col items-center justify-center"
       :title="$t('repositories')"
     >
-      <a
-        v-for="(repository, index) in repositories"
-        :key="repository.name + index"
-        :href="repository.html_url"
-        class="repo-link bg-primary mt-1 px-2 rounded hover:bg-green-300"
-      >
-        {{ repository.name }}
-      </a>
+      <div class="relative">
+        <base-card class="pb-8" glass>
+          <div class="flex flex-col justify-center">
+            <a
+              v-for="(repository, index) in repositories"
+              :key="repository.name + index"
+              :href="repository.html_url"
+              class="mt-1 px-2 rounded"
+            >
+              <span class="mdi mdi-link" />
+              {{ repository.name }}
+            </a>
+          </div>
+        </base-card>
+      </div>
     </base-section>
   </div>
 </template>
@@ -149,9 +161,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.repo-link {
-  transition: all 0.2s;
-}
-</style>
