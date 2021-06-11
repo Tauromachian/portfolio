@@ -111,15 +111,14 @@
         />
         <base-card class="pb-8" glass>
           <div class="flex flex-col justify-center">
-            <a
+            <base-link
               v-for="(repository, index) in repositories"
               :key="repository.name + index"
               :href="repository.html_url"
               class="mt-1 px-2 rounded"
-            >
-              <span class="mdi mdi-link" />
-              {{ repository.name }}
-            </a>
+              :text="repository.name"
+              icon
+            />
           </div>
         </base-card>
         <base-ball
