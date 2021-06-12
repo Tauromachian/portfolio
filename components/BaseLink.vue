@@ -31,15 +31,13 @@ export default {
 }
 
 div {
-  transition: width linear 0.2s;
+  transition: all linear 0.2s;
   border-color: var(--text-color-primary);
-  width: 0%;
-  padding-top: 1px;
+  border-top: 1px solid;
+  transform: scale(0);
 }
 
 .link:hover div {
-  padding-top: 0px;
-  border-top: 1px solid;
-  width: 100%;
+  transform: scale(1);
 }
 </style>
