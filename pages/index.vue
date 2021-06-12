@@ -90,6 +90,7 @@
 
     <!-- Repositories -->
     <base-section
+      v-if="repositories"
       id="repositories"
       class="flex flex-col items-center justify-center"
       :title="$t('repositories')"
@@ -144,6 +145,21 @@ export default {
     BaseSection,
     FeatureCard
   },
+  async asyncData () {
+    const token = process.env.NUXT_ENV_GITHUB_TOKEN
+    const { data } = await axios.get(
+      'https://api.github.com/users/tauromachian/repos',
+      {
+        headers: {
+          authorization: `token ${token}`
+        }
+      }
+    )
+    const repositories = data
+    return {
+      repositories
+    }
+  },
   data () {
     return {
       technologies: [
@@ -158,25 +174,7 @@ export default {
         'MySQL',
         'PostgreSQL',
         'MongoDB'
-      ],
-      repositories: []
-    }
-  },
-  mounted () {
-    this.loadData()
-  },
-  methods: {
-    async loadData () {
-      const token = process.env.NUXT_ENV_GITHUB_TOKEN
-      const { data } = await axios.get(
-        'https://api.github.com/users/tauromachian/repos',
-        {
-          headers: {
-            authorization: `token ${token}`
-          }
-        }
-      )
-      this.repositories = data
+      ]
     }
   }
 }
