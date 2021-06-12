@@ -3,7 +3,7 @@
     <span class="link">
       <span v-if="icon" class="mdi mdi-link" />
       {{ text }}
-      <hr>
+      <div />
     </span>
   </a>
 </template>
@@ -26,18 +26,20 @@ export default {
 
 <style lang="scss" scoped>
 .link {
-  transition: all linear 1s;
   width: auto;
   display: inline-block;
 }
 
-hr {
+div {
   transition: width linear 0.2s;
   border-color: var(--text-color-primary);
   width: 0%;
+  padding-top: 1px;
 }
 
-.link:hover > hr {
+.link:hover div {
+  padding-top: 0px;
+  border-top: 1px solid;
   width: 100%;
 }
 </style>
