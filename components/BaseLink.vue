@@ -31,7 +31,7 @@ export default {
 }
 
 div {
-  transition: all linear 0.2s;
+  transition: all ease 0.2s;
   border-color: var(--text-color-primary);
   border-top: 1px solid;
   transform: scale(0);
