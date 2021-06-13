@@ -17,6 +17,9 @@
     "name": "Nombre",
     "email": "Correo",
     "message": "Mensaje"
+  },
+  "button": {
+    "send": "Enviar"
   }
 
 }

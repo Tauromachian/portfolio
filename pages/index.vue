@@ -98,7 +98,7 @@
               placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."
             />
             <base-button class="mt-3 self-start">
-              Send
+              {{ $t('button.send') }}
             </base-button>
           </div>
         </form>

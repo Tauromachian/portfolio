@@ -17,6 +17,9 @@
     "name": "Name",
     "email": "Email",
     "message": "Message"
+  },
+  "button": {
+    "send": "Send"
   }
 
 }
