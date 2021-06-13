@@ -183,6 +183,7 @@ export default {
         'Laravel',
         'Express.js',
         'Bootstrap',
+        'HTML5',
         'CSS',
         'SCSS',
         'MariaDB',
