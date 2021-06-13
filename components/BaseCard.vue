@@ -1,8 +1,6 @@
 <template>
   <div class="py-3 px-2 flex flex-col card--glass">
-    <div :class="{ card__text: glass }">
-      <slot />
-    </div>
+    <slot />
   </div>
 </template>
 
