@@ -54,7 +54,7 @@
       <chip-river :values="technologies" />
     </base-section>
 
-    <!-- Social networks -->
+    <!-- Contacts -->
     <base-section
       id="social-networks"
       class="flex flex-col items-center justify-center"
@@ -70,7 +70,7 @@
           <span :class="`mdi ${link.icon} color-primary`" />
         </a>
       </div>
-      <div class="mt-8">
+      <div class="mt-8 shadow-lg p-4 rounded">
         <h2 class="text-base sm:text-2xl font-bold">
           {{ $t("formTitle") }}
         </h2>
