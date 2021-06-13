@@ -3,7 +3,7 @@
     <!-- About -->
     <base-section
       id="about"
-      class="flex flex-col items-center justify-center"
+      class="items-center justify-center"
       :title="$t('about')"
     >
       <p class="md:mr-20 md:ml-20">
@@ -48,7 +48,7 @@
     <!-- Portfolio -->
     <base-section
       id="portfolio"
-      class="flex flex-col items-center justify-center"
+      class="items-center justify-center"
       :title="$t('portfolio')"
     >
       <chip-river :values="technologies" />
@@ -57,7 +57,7 @@
     <!-- Contacts -->
     <base-section
       id="social-networks"
-      class="flex flex-col items-center justify-center"
+      class="items-center justify-center"
       :title="$t('contacts')"
     >
       <div class="flex text-7xl md:text-8xl">
@@ -109,7 +109,7 @@
     <base-section
       v-if="repositories"
       id="repositories"
-      class="flex flex-col items-center justify-center"
+      class="items-center justify-center"
       :title="$t('repositories')"
     >
       <div class="relative">
