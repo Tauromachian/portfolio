@@ -13,6 +13,7 @@
   "contacts": "Contacts",
   "repositories": "Repositories",
   "formTitle": "Have a question or want to work together?",
+  "projects": "Projects",
   "form": {
     "name": "Name",
     "email": "Email",
