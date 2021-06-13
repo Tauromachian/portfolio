@@ -11,6 +11,12 @@
   "reactiveText": "Instant reactions to the user's interactions",
   "portfolio": "Portfolio",
   "contacts": "Contacts",
-  "repositories": "Repositories"
+  "repositories": "Repositories",
+  "formTitle": "Have a question or want to work together?",
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message"
+  }
 
 }

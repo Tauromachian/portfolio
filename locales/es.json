@@ -11,5 +11,12 @@
   "reactiveText": "Reacciones instantáneas a las interacciones del usuario.",
   "portfolio": "Portafolio",
   "contacts": "Contactos",
-  "repositories": "Repositorios"
+  "repositories": "Repositorios",
+  "formTitle": "Tiene una pregunta o quiere trabajar en equipo?",
+  "form": {
+    "name": "Nombre",
+    "email": "Correo",
+    "message": "Mensaje"
+  }
+
 }

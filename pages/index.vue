@@ -71,23 +71,23 @@
         </a>
       </div>
       <div class="mt-8">
-        <h3 class="font-bold">
-          Tiene una pregunta o quiere contratarme?
-        </h3>
+        <h2 class="text-base sm:text-2xl font-bold">
+          {{ $t("formTitle") }}
+        </h2>
         <form>
           <div class="flex flex-col">
             <base-input-text
-              label="Nombre"
+              :label="$t('form.name')"
               required
               placeholder="Jhon Doe"
             />
             <base-input-text
-              label="Email"
+              :label="$t('form.email')"
               type="email"
               required
               placeholder="jhon@mail.com"
             />
-            <label class="mt-3" for="message">Mensaje</label>
+            <label class="mt-3" for="message">{{ $t("form.name") }}</label>
             <textarea
               class="p-1"
               name="message"
