@@ -78,11 +78,13 @@
           <div class="flex flex-col">
             <base-input-text
               :label="$t('form.name')"
+              class="mt-3"
               required
               placeholder="Jhon Doe"
             />
             <base-input-text
               :label="$t('form.email')"
+              class="mt-3"
               type="email"
               required
               placeholder="jhon@mail.com"
