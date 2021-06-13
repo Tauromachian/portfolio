@@ -10,7 +10,7 @@
         {{ $t("aboutText") }}
       </p>
       <div class="flex flex-col md:flex-row">
-        <feature-card
+        <card-feature
           :title="$t('intuitive')"
           icon="mdi-lightbulb-on-outline"
           class="mt-7"
@@ -18,13 +18,13 @@
           <p class="md:text-center md:mx-3">
             {{ $t("intuitiveText") }}
           </p>
-        </feature-card>
-        <feature-card :title="$t('fast')" icon="mdi-rocket-launch" class="mt-7">
+        </card-feature>
+        <card-feature :title="$t('fast')" icon="mdi-rocket-launch" class="mt-7">
           <p class="md:text-center md:mx-3">
             {{ $t("fastText") }}
           </p>
-        </feature-card>
-        <feature-card
+        </card-feature>
+        <card-feature
           :title="$t('responsive')"
           icon="mdi-responsive"
           class="mt-7"
@@ -32,8 +32,8 @@
           <p class="md:text-center md:mx-3">
             {{ $t("responsiveText") }}
           </p>
-        </feature-card>
-        <feature-card
+        </card-feature>
+        <card-feature
           :title="$t('reactive')"
           icon="mdi-alpha-r-circle"
           class="mt-7"
@@ -41,7 +41,7 @@
           <p class="md:text-center md:mx-3">
             {{ $t("reactiveText") }}
           </p>
-        </feature-card>
+        </card-feature>
       </div>
     </base-section>
 
@@ -151,15 +151,9 @@
 
 <script>
 import axios from 'axios'
-import BaseSection from '~/components/BaseSection'
-import FeatureCard from '~/components/FeatureCard'
 
 export default {
   name: 'Index',
-  components: {
-    BaseSection,
-    FeatureCard
-  },
   async asyncData () {
     const token = process.env.NUXT_ENV_GITHUB_TOKEN
     const { data } = await axios.get(
