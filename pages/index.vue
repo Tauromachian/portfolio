@@ -67,10 +67,26 @@
           :href="link.link"
           class="social-link"
         >
-          <span
-            :class="`mdi ${link.icon} color-primary`"
-          />
+          <span :class="`mdi ${link.icon} color-primary`" />
         </a>
+      </div>
+      <div class="mt-8">
+        <h3 class="font-bold">
+          Tiene una pregunta o quiere contratarme?
+        </h3>
+        <form>
+          <div class="flex flex-col">
+            <label for="name">Nombre</label>
+            <input class="p-1" type="text" name="name" required placeholder="Jhon Doe">
+            <label class="mt-3" for="email">Email</label>
+            <input class="p-1" type="email" name="email" required placeholder="jhon@mail.com">
+            <label class="mt-3" for="message">Mensaje</label>
+            <textarea class="p-1" name="message" cols="10" rows="4" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
+            <base-button class="mt-3 self-start">
+              Send
+            </base-button>
+          </div>
+        </form>
       </div>
     </base-section>
 
