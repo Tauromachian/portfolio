@@ -62,28 +62,14 @@
     >
       <div class="flex text-7xl md:text-8xl">
         <a
+          v-for="(link, index) in socialLinks"
+          :key="link + index"
+          :href="link.link"
           class="social-link"
-          href="https://www.linkedin.com/in/jose-garcia-888941180/"
         >
-          <span class="mdi mdi-linkedin color-primary" />
-        </a>
-        <a
-          class="social-link"
-          href="https://stackoverflow.com/users/10824037/jogarcia"
-        >
-          <span class="mdi mdi-stack-overflow color-primary" />
-        </a>
-        <a class="social-link" href="https://github.com/Tauromachian">
-          <span class="mdi mdi-github color-primary " />
-        </a>
-        <a class="social-link" href="https://t.me/BetanKore">
-          <span class="mdi mdi-telegram color-primary" />
-        </a>
-        <a
-          class="social-link"
-          href="https://www.facebook.com/josecarlos.garciaalvarez.9083"
-        >
-          <span class="mdi mdi-facebook color-primary" />
+          <span
+            :class="`mdi ${link.icon} color-primary`"
+          />
         </a>
       </div>
     </base-section>
@@ -174,6 +160,28 @@ export default {
         'MySQL',
         'PostgreSQL',
         'MongoDB'
+      ],
+      socialLinks: [
+        {
+          link: 'https://www.linkedin.com/in/jose-garcia-888941180/',
+          icon: 'mdi-linkedin'
+        },
+        {
+          link: 'https://stackoverflow.com/users/10824037/jogarcia',
+          icon: 'mdi-stack-overflow'
+        },
+        {
+          link: 'https://github.com/Tauromachian',
+          icon: 'mdi-github'
+        },
+        {
+          link: 'https://t.me/BetanKore',
+          icon: 'mdi-telegram'
+        },
+        {
+          link: 'https://www.facebook.com/josecarlos.garciaalvarez.9083',
+          icon: 'mdi-facebook'
+        }
       ]
     }
   }
