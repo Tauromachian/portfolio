@@ -76,12 +76,25 @@
         </h3>
         <form>
           <div class="flex flex-col">
-            <label for="name">Nombre</label>
-            <input class="p-1" type="text" name="name" required placeholder="Jhon Doe">
-            <label class="mt-3" for="email">Email</label>
-            <input class="p-1" type="email" name="email" required placeholder="jhon@mail.com">
+            <base-input-text
+              label="Nombre"
+              required
+              placeholder="Jhon Doe"
+            />
+            <base-input-text
+              label="Email"
+              type="email"
+              required
+              placeholder="jhon@mail.com"
+            />
             <label class="mt-3" for="message">Mensaje</label>
-            <textarea class="p-1" name="message" cols="10" rows="4" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
+            <textarea
+              class="p-1"
+              name="message"
+              cols="10"
+              rows="4"
+              placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            />
             <base-button class="mt-3 self-start">
               Send
             </base-button>
