@@ -1,6 +1,6 @@
 <template>
   <button
-    class="rounded-lg bg-primary no-outline py-2 px-5"
+    class="button rounded-lg bg-primary no-outline py-2 px-5 hover:bg-green-300"
     :class="buttonClasses"
     @click="$emit('click')"
   >
@@ -68,5 +68,9 @@ export default {
   width: 2.3em;
   padding: 0.5em;
   margin: 0.2em;
+}
+
+.button {
+  transition: all 0.2s;
 }
 </style>
