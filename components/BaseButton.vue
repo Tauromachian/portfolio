@@ -1,6 +1,6 @@
 <template>
   <button
-    class="rounded-lg p-2 bg-primary no-outline"
+    class="rounded-lg bg-primary no-outline py-2 px-5"
     :class="buttonClasses"
     @click="$emit('click')"
   >
