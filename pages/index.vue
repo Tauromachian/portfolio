@@ -91,7 +91,7 @@
             />
             <label class="mt-3" for="message">{{ $t("form.name") }}</label>
             <textarea
-              class="p-1"
+              class="p-1 rounded"
               name="message"
               cols="10"
               rows="4"
