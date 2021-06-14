@@ -2,7 +2,7 @@
   <div class="flex" :class="{ 'flex-col': col }">
     <label>{{ label }}</label>
     <input
-      class="p-1 rounded"
+      class="p-1 rounded shadow-lg no-outline"
       :type="type"
       :placeholder="placeholder"
       v-bind="$attrs"

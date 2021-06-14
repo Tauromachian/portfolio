@@ -2,7 +2,7 @@
   <div class="flex" :class="{ 'flex-col': col }">
     <label>{{ label }}</label>
     <textarea
-      class="p-1 rounded"
+      class="p-1 rounded shadow-lg no-outline"
       cols="10"
       rows="4"
       placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."
