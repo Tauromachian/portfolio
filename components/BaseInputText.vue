@@ -34,4 +34,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+input {
+  color: var(--text-color-secondary)
+}
+</style>
