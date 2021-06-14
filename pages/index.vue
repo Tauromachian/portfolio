@@ -89,16 +89,14 @@
               required
               placeholder="jhon@mail.com"
             />
-            <label class="mt-3" for="message">{{ $t("form.name") }}</label>
-            <textarea
-              class="p-1 rounded"
-              name="message"
-              cols="10"
-              rows="4"
+            <base-area-text
+              :label="$t('form.name')"
+              required
               placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+              class="mt-3"
             />
             <base-button class="mt-3 self-start">
-              {{ $t('button.send') }}
+              {{ $t("button.send") }}
             </base-button>
           </div>
         </form>
