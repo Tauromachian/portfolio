@@ -5,7 +5,7 @@
       :key="value + index"
       v-model="activeChips[index]"
       :text="value"
-      class="chip bg-primary hover:bg-green-300 mr-1 mb-1"
+      class="chip bg-primary mr-1 mb-1"
       :is-activable="false"
     />
   </div>
@@ -32,5 +32,8 @@ export default {
 <style lang="scss" scoped>
 .chip {
   transition: all 0.2s;
+}
+.chip:hover {
+  background-color: var(--color-secondary);
 }
 </style>

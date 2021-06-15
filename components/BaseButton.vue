@@ -73,4 +73,8 @@ export default {
 .button {
   transition: all 0.2s;
 }
+
+.button:hover {
+  background-color: var(--color-secondary);
+}
 </style>
