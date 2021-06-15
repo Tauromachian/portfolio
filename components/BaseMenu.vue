@@ -1,11 +1,11 @@
 <template>
-  <div class="relative inline-block text-left">
+  <div class="relative inline-block text-left bg--primary">
     <div>
       <slot name="activator" v-bind="{ showDropdown }" />
     </div>
 
     <div
-      class="absolute right-0 bottom-14 mt-2 w-56 rounded-md shadow-lg bg-white focus:outline-none hidden"
+      class="menu absolute right-0 bottom-14 mt-2 w-56 rounded-md shadow-lg bg-white focus:outline-none"
       role="menu"
       aria-orientation="vertical"
       aria-labelledby="menu-button"
@@ -40,7 +40,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.menu {
+  transition: opacity 0.3s linear;
+  visibility: hidden;
+  transition: visibility 0s 0.1s, opacity 0.1s linear;
+  opacity: 0;
+}
 .show {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.1s linear;
 }
 </style>
