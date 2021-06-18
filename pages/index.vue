@@ -144,7 +144,7 @@
           small
         />
         <base-card class="pb-8" glass>
-          <div class="flex flex-col justify-center">
+          <card-text class="flex flex-col justify-center">
             <base-link
               v-for="(repository, index) in repositories"
               :key="repository.name + index"
@@ -153,7 +153,7 @@
               :text="repository.name"
               icon
             />
-          </div>
+          </card-text>
         </base-card>
         <base-ball
           class="bg-primary"
