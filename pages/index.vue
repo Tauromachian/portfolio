@@ -63,6 +63,7 @@
         <card-project
           v-for="(project, index) in projects"
           :key="project.src + index"
+          class="flex-1"
           :title="project.title"
           :description="project.description"
           :site-url="project.link"
