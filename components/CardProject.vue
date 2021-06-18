@@ -1,15 +1,17 @@
 <template>
-  <base-card class="shadow">
-    <img :src="src" class="shadow max-w-full h-auto align-middle border-none">
-    <div class="flex flex-col">
-      <h2 class="font-bold mt-6">
+  <base-card class="shadow rounded">
+    <img :src="src" class="shadow max-w-full h-auto align-middle border-none rounded-t">
+    <card-text class="flex flex-col">
+      <h2 class="font-bold">
         {{ title }}
       </h2>
       <p>
         {{ description }}
       </p>
-    </div>
-    <base-button class="mt-6 self-start">Visit site</base-button>
+      <base-button class="mt-6 self-start">
+        Visit site
+      </base-button>
+    </card-text>
   </base-card>
 </template>
 
