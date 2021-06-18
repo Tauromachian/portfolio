@@ -8,9 +8,11 @@
       <p>
         {{ description }}
       </p>
-      <base-button class="mt-6 self-start">
-        Visit site
-      </base-button>
+      <a :href="siteUrl">
+        <base-button class="mt-6 self-start">
+          Visit site
+        </base-button>
+      </a>
     </card-text>
   </base-card>
 </template>
