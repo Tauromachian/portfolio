@@ -5,7 +5,7 @@
       <h2 class="font-bold">
         {{ title }}
       </h2>
-      <p>
+      <p class="h-100px overflow-hidden">
         {{ description }}
       </p>
       <a :href="siteUrl">
@@ -42,5 +42,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.h-100px {
+  height: 100px;
+}
 </style>
