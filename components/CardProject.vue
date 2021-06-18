@@ -5,7 +5,7 @@
       <h2 class="font-bold">
         {{ title }}
       </h2>
-      <p class="h-100px overflow-hidden">
+      <p class="lg:h-24 overflow-hidden">
         {{ description }}
       </p>
       <a :href="siteUrl">
