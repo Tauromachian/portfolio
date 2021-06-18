@@ -1,7 +1,7 @@
 <template>
-  <base-card class="shadow rounded">
+  <base-card class="shadow-lg rounded">
     <img :src="src" class="shadow max-w-full h-auto align-middle border-none rounded-t">
-    <card-text class="flex flex-col">
+    <card-text class="flex flex-col px-5 mt-3">
       <h2 class="font-bold">
         {{ title }}
       </h2>
@@ -9,7 +9,7 @@
         {{ description }}
       </p>
       <a :href="siteUrl">
-        <base-button class="mt-6 self-start">
+        <base-button class="mt-8 mb-6 self-start">
           Visit site
         </base-button>
       </a>
