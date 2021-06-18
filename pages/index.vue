@@ -65,7 +65,7 @@
           :key="project.src + index"
           :title="project.title"
           :description="project.description"
-          :link="project.link"
+          :site-url="project.link"
           :src="project.src"
           :class="{ 'mb-5': index !== projects.length - 1 }"
         />
@@ -232,19 +232,19 @@ export default {
           title: 'Sancho Restaurant',
           description:
             'Sancho Restaurant, especialidades de la deliciosa cocina creada con el ingenio y la pasión, inspirados en los fantásticos sabores de España. ',
-          link: ''
+          link: 'https://sancho-restaurant.herokuapp.com/'
         },
         {
           src: 'zaru.png',
           title: 'Zaru Arquitectura',
           description: 'Diseño de diferentes viviendas y decoraciones exteriores e interiores a la medida.',
-          link: ''
+          link: 'https://zaru-arquitectura.herokuapp.com/'
         },
         {
           src: 'kanpeki.png',
           title: 'Kanpeki',
           description: 'Proyecto Santiaguero que abarca la cultura pop asiática y occidental (se incluyen la cultura pop y tradicional japonesa, coreana, china,etc; además de  los videojuegos, comics, literatura en general, la cinefilia y la música de corte mundial)',
-          link: ''
+          link: 'https://kanpeki-sa.herokuapp.com/'
         }
       ]
     }
