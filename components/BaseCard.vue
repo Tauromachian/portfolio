@@ -1,5 +1,5 @@
 <template>
-  <div class="py-3 px-2 flex flex-col" :class="{ 'card--glass': glass }">
+  <div class="flex flex-col" :class="{ 'card--glass': glass }">
     <slot />
   </div>
 </template>
