@@ -8,11 +8,13 @@
       <p class="lg:h-24 overflow-hidden">
         {{ description }}
       </p>
-      <a :href="siteUrl">
-        <base-button class="mt-8 mb-6 self-start">
-          Visit site
-        </base-button>
-      </a>
+      <div>
+        <a :href="siteUrl">
+          <base-button class="mt-8 mb-6">
+            Visit site
+          </base-button>
+        </a>
+      </div>
     </card-text>
   </base-card>
 </template>
