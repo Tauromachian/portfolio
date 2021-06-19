@@ -175,15 +175,21 @@ export default {
   name: 'Index',
   async asyncData () {
     const token = process.env.NUXT_ENV_GITHUB_TOKEN
-    const { data } = await axios.get(
-      'https://api.github.com/users/tauromachian/repos',
-      {
-        headers: {
-          authorization: `token ${token}`
+    let repositories
+    try {
+      const { data } = await axios.get(
+        'https://api.github.com/users/tauromachian/repos',
+        {
+          headers: {
+            authorization: `token ${token}`
+          }
         }
-      }
-    )
-    const repositories = data
+      )
+      repositories = data
+    } catch (error) {
+      console.error(error)
+      repositories = null
+    }
     return {
       repositories
     }
