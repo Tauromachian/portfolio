@@ -189,7 +189,6 @@ export default {
       )
       repositories = data
     } catch (error) {
-      console.error(error)
       repositories = null
     }
     return {
