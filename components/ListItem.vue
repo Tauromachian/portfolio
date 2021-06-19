@@ -1,5 +1,9 @@
 <template>
-  <div class="list-item self-start align-left" @click="click">
+  <div
+    class="list-item self-start align-left"
+    :class="{ 'bg-gray-100': active }"
+    @click="click"
+  >
     <slot class="text-base" />
   </div>
 </template>
@@ -11,6 +15,10 @@ export default {
     click () {
       this.$emit('click')
     }
+  },
+  active: {
+    type: Boolean,
+    default: false
   }
 }
 </script>
@@ -18,6 +26,6 @@ export default {
 <style scoped>
 .list-item {
   cursor: pointer;
-  color: var(--text-color-gray-900)
+  color: var(--text-color-gray-900);
 }
 </style>
