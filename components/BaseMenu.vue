@@ -5,7 +5,7 @@
     </div>
 
     <div
-      class="menu absolute right-0 bottom-14 mt-2 w-56 rounded-md shadow-lg bg-white focus:outline-none"
+      class="menu absolute right-0 bottom-14 mt-2 rounded-md shadow-lg bg-white focus:outline-none"
       role="menu"
       aria-orientation="vertical"
       aria-labelledby="menu-button"
