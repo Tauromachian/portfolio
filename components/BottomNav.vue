@@ -16,9 +16,13 @@
       <base-button class="navbar__link" icon @click="changeLocal">
         <span class="mdi mdi-translate" />
       </base-button>
-      <base-button class="navbar__link" icon @click="changeTheme">
-        <span class="mdi mdi-invert-colors" />
-      </base-button>
+      <base-menu>
+        <template #activator="{ showDropdown }">
+          <base-button class="navbar__link" icon @click="showDropdown">
+            <span class="mdi mdi-invert-colors" />
+          </base-button>
+        </template>
+      </base-menu>
       <base-button class="navbar__link" icon @click="isHidden = !isHidden">
         <span class="mdi mdi-menu" />
       </base-button>
