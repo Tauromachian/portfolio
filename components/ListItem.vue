@@ -1,5 +1,5 @@
 <template>
-  <div class="list-item self-center align-left" @click="click">
+  <div class="list-item self-start align-left" @click="click">
     <slot class="text-base" />
   </div>
 </template>
@@ -18,5 +18,6 @@ export default {
 <style scoped>
 .list-item {
   cursor: pointer;
+  color: var(--text-color-gray-900)
 }
 </style>
