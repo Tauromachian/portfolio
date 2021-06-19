@@ -59,7 +59,7 @@
       class="flex flex-col items-center justify-center"
       :title="$t('projects')"
     >
-      <div class="flex flex-col md:flex-row md:flex-wrap">
+      <div class="flex flex-col md:flex-row md:flex-wrap gap-x-4">
         <card-project
           v-for="(project, index) in projects"
           :key="project.src + index"
