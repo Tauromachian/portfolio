@@ -41,7 +41,8 @@ export default {
   },
   data () {
     return {
-      isHidden: true
+      isHidden: true,
+      theme: 'default'
     }
   },
   computed: {
