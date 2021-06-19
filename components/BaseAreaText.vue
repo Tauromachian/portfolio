@@ -36,6 +36,6 @@ export default {
 
 <style lang="scss" scoped>
 textarea {
-  color: var(--text-color-secondary)
+  color: var(--text-color-gray-900)
 }
 </style>
