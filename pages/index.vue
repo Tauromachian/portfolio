@@ -65,7 +65,7 @@
         <card-project
           v-for="(project, index) in projects"
           :key="project.src + index"
-          class="flex-1 col-md-6 col-lg-4 lg:mb-0"
+          class="flex-1 col-md-6 col-lg-4"
           :title="project.title"
           :description="project.description"
           :site-url="project.link"
@@ -246,13 +246,15 @@ export default {
         {
           src: 'zaru.png',
           title: 'Zaru Arquitectura',
-          description: 'Diseño de diferentes viviendas y decoraciones exteriores e interiores a la medida.',
+          description:
+            'Diseño de diferentes viviendas y decoraciones exteriores e interiores a la medida.',
           link: 'https://zaru-arquitectura.herokuapp.com/'
         },
         {
           src: 'kanpeki.png',
           title: 'Kanpeki',
-          description: 'Proyecto Santiaguero que abarca la cultura pop asiática y occidental (se incluyen la cultura pop y tradicional japonesa, coreana, china,etc; además de  los videojuegos, comics, literatura en general, la cinefilia y la música de corte mundial)',
+          description:
+            'Proyecto Santiaguero que abarca la cultura pop asiática y occidental (se incluyen la cultura pop y tradicional japonesa, coreana, china,etc; además de  los videojuegos, comics, literatura en general, la cinefilia y la música de corte mundial)',
           link: 'https://kanpeki-sa.herokuapp.com/'
         }
       ]
