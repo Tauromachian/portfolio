@@ -22,6 +22,7 @@
             <span class="mdi mdi-invert-colors" />
           </base-button>
         </template>
+        <theme-selector v-model="theme" :themes="themes" />
       </base-menu>
       <base-button class="navbar__link" icon @click="isHidden = !isHidden">
         <span class="mdi mdi-menu" />
