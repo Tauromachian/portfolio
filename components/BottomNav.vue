@@ -47,7 +47,12 @@ export default {
     }
   },
   computed: {
-    ...mapState(['links'])
+    ...mapState(['links', 'themes'])
+  },
+  watch: {
+    theme (val) {
+      this.changeTheme(val)
+    }
   },
   methods: {
     ...mapMutations(['setTheme']),
@@ -56,14 +61,12 @@ export default {
         ? this.$i18n.setLocale('es')
         : this.$i18n.setLocale('en')
     },
-    changeTheme () {
+    changeTheme (theme) {
+      this.setTheme(theme)
       if (document.documentElement.hasAttribute('theme')) {
-        this.setTheme('default')
         document.documentElement.removeAttribute('theme')
-      } else {
-        this.setTheme('crazy')
-        document.documentElement.setAttribute('theme', 'crazy')
       }
+      document.documentElement.setAttribute('theme', theme)
     }
   }
 }
