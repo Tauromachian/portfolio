@@ -1,7 +1,7 @@
 <template>
   <div
     class="py-2 px-4 app-list-item"
-    :class="{ 'bg-gray-100': active }"
+    :class="{ 'bg-gray-200': active }"
     @click="click"
   >
     <slot class="text-base" />
