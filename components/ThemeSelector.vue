@@ -3,6 +3,7 @@
     <list-item
       v-for="(theme, index) in activeThemes"
       :key="theme.value + index"
+      class="text-xl"
       :active="theme.active"
       @click="setTheme(theme.value)"
     >
