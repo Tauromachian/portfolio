@@ -26,8 +26,13 @@ export default {
 </script>
 
 <style scoped>
-.list-item {
+.app-list-item {
   cursor: pointer;
+  transition: all 0.2s;
   color: var(--text-color-gray-900);
+}
+
+.app-list-item:hover {
+  background-color: var(--color-gray-100);
 }
 </style>
