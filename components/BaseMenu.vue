@@ -6,9 +6,10 @@
 
     <div
       id="menu-content"
-      class="menu absolute right-0 bottom-14 mt-2 rounded-md shadow-lg bg-white"
+      class="menu absolute mt-2 rounded-md shadow-lg bg-white"
       tabindex="-1"
       role="menu"
+      :style="{ top, bottom, left, right }"
       :class="{ show: isDropdownActive }"
     >
       <slot />
@@ -22,7 +23,24 @@ export default {
     text: {
       type: String,
       default: 'Options'
+    },
+    top: {
+      type: [String, Number],
+      default: 'initial'
+    },
+    bottom: {
+      type: [String, Number],
+      default: '3rem'
+    },
+    left: {
+      type: [String, Number],
+      default: 'initial'
+    },
+    right: {
+      type: [String, Number],
+      default: 0
     }
+
   },
   data () {
     return {
