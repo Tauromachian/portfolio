@@ -51,7 +51,7 @@ export default {
   },
   watch: {
     theme (val) {
-      this.changeTheme(val)
+      this.setTheme(val)
     }
   },
   methods: {
@@ -60,13 +60,6 @@ export default {
       this.$i18n.locale === 'en'
         ? this.$i18n.setLocale('es')
         : this.$i18n.setLocale('en')
-    },
-    changeTheme (theme) {
-      this.setTheme(theme)
-      if (document.documentElement.hasAttribute('theme')) {
-        document.documentElement.removeAttribute('theme')
-      }
-      document.documentElement.setAttribute('theme', theme)
     }
   }
 }
