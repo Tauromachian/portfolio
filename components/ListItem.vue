@@ -1,6 +1,6 @@
 <template>
   <div
-    class="list-item self-start align-left"
+    class="list-item"
     :class="{ 'bg-gray-100': active }"
     @click="click"
   >
