@@ -1,15 +1,14 @@
 <template>
   <div class="relative inline-block text-left bg--primary">
     <div>
-      <slot name="activator" v-bind="{ showDropdown }" />
+      <slot name="activator" v-bind="{ on }" />
     </div>
 
     <div
-      class="menu absolute right-0 bottom-14 mt-2 rounded-md shadow-lg bg-white focus:outline-none"
-      role="menu"
-      aria-orientation="vertical"
-      aria-labelledby="menu-button"
+      id="menu-content"
+      class="menu absolute right-0 bottom-14 mt-2 rounded-md shadow-lg bg-white"
       tabindex="-1"
+      role="menu"
       :class="{ show: isDropdownActive }"
     >
       <slot />
@@ -28,12 +27,31 @@ export default {
   data () {
     return {
       isDropdownActive: false,
-      display: 'none'
+      display: 'none',
+      on: this.$listeners
     }
   },
+  mounted () {
+    this.on = {
+      click: this.showDropdown
+    }
+    window.addEventListener('click', this.checkTarget)
+  },
+  destroyed () {
+    window.removeEventListener('click', this.checkTarget)
+  },
   methods: {
-    showDropdown () {
+    showDropdown (event) {
+      event.stopPropagation()
       this.isDropdownActive = !this.isDropdownActive
+    },
+    checkTarget (event) {
+      if (!event.target.matches('.menu')) {
+        this.hideDropdown()
+      }
+    },
+    hideDropdown () {
+      this.isDropdownActive = false
     }
   }
 }
