@@ -7,7 +7,6 @@
     <div
       id="menu-content"
       class="menu absolute mt-2 rounded-md shadow-lg bg-white"
-      tabindex="-1"
       role="menu"
       :style="{ top, bottom, left, right }"
       :class="{ show: isDropdownActive }"
