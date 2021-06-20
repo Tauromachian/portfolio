@@ -30,7 +30,7 @@ export default {
     },
     bottom: {
       type: [String, Number],
-      default: '3rem'
+      default: 'initial'
     },
     left: {
       type: [String, Number],
@@ -38,7 +38,7 @@ export default {
     },
     right: {
       type: [String, Number],
-      default: 0
+      default: 'initial'
     }
 
   },
