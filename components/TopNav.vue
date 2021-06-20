@@ -19,7 +19,6 @@
 </template>
 
 <script>
-// import AppLinks from './AppLinks'
 import { mapState, mapMutations } from 'vuex'
 import BaseButton from './BaseButton'
 
@@ -27,7 +26,6 @@ export default {
   name: 'TopNav',
   components: {
     BaseButton
-    // AppLinks
   },
   data () {
     return {
