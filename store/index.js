@@ -15,6 +15,9 @@ export const state = () => ({
 
 export const mutations = {
   setTheme: (state, theme) => {
+    if (state.theme === theme) {
+      return
+    }
     state.theme = theme
     if (document.documentElement.hasAttribute('theme')) {
       document.documentElement.removeAttribute('theme')
