@@ -16,6 +16,10 @@ export const state = () => ({
 export const mutations = {
   setTheme: (state, theme) => {
     state.theme = theme
+    if (document.documentElement.hasAttribute('theme')) {
+      document.documentElement.removeAttribute('theme')
+    }
+    document.documentElement.setAttribute('theme', theme)
     localStorage.setItem('theme', theme)
   }
 }
