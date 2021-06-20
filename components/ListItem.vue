@@ -1,6 +1,6 @@
 <template>
   <div
-    class="list-item"
+    class="py-2 px-4 app-list-item"
     :class="{ 'bg-gray-100': active }"
     @click="click"
   >
