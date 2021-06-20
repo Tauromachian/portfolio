@@ -16,7 +16,7 @@
       <base-button class="navbar__link" icon @click="changeLocal">
         <span class="mdi mdi-translate" />
       </base-button>
-      <base-menu tabindex="0">
+      <base-menu tabindex="0" bottom="3rem">
         <template #activator="{ on }">
           <base-button class="navbar__link" icon v-on="on">
             <span class="mdi mdi-invert-colors" />
