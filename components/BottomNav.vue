@@ -16,9 +16,9 @@
       <base-button class="navbar__link" icon @click="changeLocal">
         <span class="mdi mdi-translate" />
       </base-button>
-      <base-menu>
-        <template #activator="{ showDropdown }">
-          <base-button class="navbar__link" icon @click="showDropdown">
+      <base-menu tabindex="0">
+        <template #activator="{ on }">
+          <base-button class="navbar__link" icon v-on="on">
             <span class="mdi mdi-invert-colors" />
           </base-button>
         </template>
