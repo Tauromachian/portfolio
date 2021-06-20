@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     showDropdown () {
-      this.isDropdownActive ? this.isDropdownActive = false : this.isDropdownActive = true
+      this.isDropdownActive = !this.isDropdownActive
     }
   }
 }
