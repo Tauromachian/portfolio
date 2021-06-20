@@ -2,7 +2,8 @@
   <button
     class="button rounded-lg bg-primary no-outline py-2 px-5 hover:bg-green-300"
     :class="buttonClasses"
-    @click="$emit('click')"
+    v-bind="$attrs"
+    v-on="$listeners"
   >
     <slot>
       {{ text }}
