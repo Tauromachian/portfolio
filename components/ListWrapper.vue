@@ -1,5 +1,5 @@
 <template>
-  <div class="py-2 px-4 flex flex-col">
+  <div class="my-3 flex flex-col">
     <slot />
   </div>
 </template>
