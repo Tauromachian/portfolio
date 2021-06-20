@@ -11,14 +11,16 @@
 <script>
 export default {
   name: 'ListItem',
+  props: {
+    active: {
+      type: Boolean,
+      default: false
+    }
+  },
   methods: {
     click () {
       this.$emit('click')
     }
-  },
-  active: {
-    type: Boolean,
-    default: false
   }
 }
 </script>
