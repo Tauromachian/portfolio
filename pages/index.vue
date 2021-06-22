@@ -91,7 +91,7 @@
           <span :class="`mdi ${link.icon} color-primary`" />
         </a>
       </div>
-      <div class="mt-8 shadow-lg p-4 rounded">
+      <base-card class="mt-8 p-4">
         <h2 class="text-base sm:text-2xl font-bold">
           {{ $t("formTitle") }}
         </h2>
@@ -121,7 +121,7 @@
             </base-button>
           </div>
         </form>
-      </div>
+      </base-card>
     </base-section>
 
     <!-- Repositories -->
