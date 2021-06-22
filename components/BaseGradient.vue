@@ -3,7 +3,7 @@
     class="gradient"
     :style="{
       height: `${height}em`,
-      background: `linear-gradient(${degrees}, rgba(51,190,188,1) 0%, var(--color-primary) 37%, var(--bg-color-primary) 100%)`
+      background: `linear-gradient(${degrees}, var(--color-primary) 0%, var(--color-primary) 37%, var(--bg-color-primary) 100%)`
     }"
   />
 </template>
