@@ -28,6 +28,6 @@ export default {
 .gradient {
   content: '';
   height: 9em;
-  margin: -4em;
+  margin-bottom: -4em;
 }
 </style>
