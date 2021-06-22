@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col" :class="{ 'card--glass': glass }">
+  <div class="card flex flex-col" :class="{ 'card--glass': glass }">
     <slot />
   </div>
 </template>
@@ -17,7 +17,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.card {
+  background-color:  var(--bg-card) ;
+  border-radius: 10px;
+}
+
 .card--glass {
+  background-color: initial;
   border: 1px solid #fff;
   border-radius: 15px;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
