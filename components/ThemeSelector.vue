@@ -27,8 +27,9 @@ export default {
   computed: {
     activeThemes () {
       return this.themes.map((theme) => {
-        theme.active = (theme.value === this.selectedTheme)
-        return theme
+        const internalTheme = Object.assign({}, theme)
+        internalTheme.active = (theme.value === this.selectedTheme)
+        return internalTheme
       })
     },
     selectedTheme: {
