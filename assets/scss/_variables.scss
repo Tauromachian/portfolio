@@ -6,12 +6,14 @@
   --color-primary: #33bebc;
   --color-secondary: #6ee7b7;
   --bg-color-primary: #f9fafb;
+  --bg-card:  #e5e7eb ;
 }
 
 :root[theme='crazy'] {
   --text-color-primary:#f9fafb;
   --text-color-secondary:#f9fafb;
   --bg-color-primary: #483d8b;
+  --bg-card: #483d8b;
 }
 
 :root[theme='dark'] {
