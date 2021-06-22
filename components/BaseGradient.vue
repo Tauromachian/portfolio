@@ -29,5 +29,6 @@ export default {
   content: '';
   height: 9em;
   margin-bottom: -4em;
+  margin-top: -2em;
 }
 </style>
