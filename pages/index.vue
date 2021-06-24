@@ -59,20 +59,11 @@
       class="flex flex-col items-center justify-center"
       :title="$t('projects')"
     >
-      <div
-        class="flex flex-col md:flex-row md:flex-wrap gap-x-4 justify-center"
-      >
-        <card-project
-          v-for="(project, index) in projects"
-          :key="project.src + index"
-          class="flex-1 col-md-6 col-lg-4"
-          :title="project.title"
-          :description="project.description"
-          :site-url="project.link"
-          :src="project.src"
-          :class="{ 'mb-5': index !== projects.length - 1 }"
-        />
-      </div>
+      <base-card class="w-full">
+        <card-text>
+          <project-carousel />
+        </card-text>
+      </base-card>
     </base-section>
 
     <!-- Contacts -->
@@ -232,31 +223,8 @@ export default {
           link: 'https://www.facebook.com/josecarlos.garciaalvarez.9083',
           icon: 'mdi-facebook'
         }
-      ],
-
-      projects: [
-        {
-          src: 'sancho.png',
-          title: 'Sancho Restaurant',
-          description:
-            'Sancho Restaurant, especialidades de la deliciosa cocina creada con el ingenio y la pasión, inspirados en los fantásticos sabores de España. ',
-          link: 'https://sancho-restaurant.herokuapp.com/'
-        },
-        {
-          src: 'zaru.png',
-          title: 'Zaru Arquitectura',
-          description:
-            'Diseño de diferentes viviendas y decoraciones exteriores e interiores a la medida.',
-          link: 'https://zaru-arquitectura.herokuapp.com/'
-        },
-        {
-          src: 'kanpeki.png',
-          title: 'Kanpeki',
-          description:
-            'Proyecto Santiaguero que abarca la cultura pop asiática y occidental (se incluyen la cultura pop y tradicional japonesa, coreana, china,etc; además de  los videojuegos, comics, literatura en general, la cinefilia y la música de corte mundial)',
-          link: 'https://kanpeki-sa.herokuapp.com/'
-        }
       ]
+
     }
   }
 }
