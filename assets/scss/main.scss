@@ -1,10 +1,10 @@
-@import 'vueperslides/dist/vueperslides.css';
+@import "vueperslides/dist/vueperslides.css";
 
-@import './variables';
-@import './general-styles';
-@import './social-links';
-@import './navbar';
-@import './grids';
+@import "./variables";
+@import "./general-styles";
+@import "./social-links";
+@import "./navbar";
+@import "./grids";
 
 .color-primary {
   color: var(--color-primary);
@@ -20,4 +20,12 @@
 
 .no-outline {
   outline: none !important;
+}
+
+.vueperslides__bullet .default {
+  border-color: var(--color-primary);
+  box-shadow: none;
+  transition: 0.3s;
+  width: 16px;
+  height: 16px;
 }
