@@ -1,6 +1,6 @@
 <template>
   <vueper-slides
-    class="w-full"
+    class="w-full no-shadow"
     arrows-outside
     transition-speed="250"
     fixed-height="28em"
