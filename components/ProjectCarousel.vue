@@ -13,7 +13,7 @@
     >
       <template #content>
         <card-project
-          class="flex-1 col-md-6 col-lg-4 h-full bg-secondary"
+          class="flex-1 h-full bg-secondary w-full"
           :title="project.title"
           :description="project.description"
           :site-url="project.link"
