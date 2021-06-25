@@ -6,6 +6,7 @@
     fixed-height="28em"
     bullets-outside
     :breakpoints="breakpoints"
+    :gap="2"
   >
     <vueper-slide
       v-for="(project, index) in projects"
