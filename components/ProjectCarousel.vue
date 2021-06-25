@@ -33,16 +33,18 @@ export default {
   data: () => ({
     breakpoints: {
       1200: {
-        slideRatio: 1 / 5
+        visibleSlides: 3,
+        slideMultiple: 3
       },
       1100: {
-        slideRatio: 1 / 4
+        visibleSlides: 2,
+        slideMultiple: 2
       },
       900: {
-        slideRatio: 3 / 1
+        visibleSlides: 2,
+        slideMultiple: 2
       },
       600: {
-        slideRatio: 2 / 2,
         arrows: false,
         bulletsOutside: true
       }
