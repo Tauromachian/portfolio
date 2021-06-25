@@ -1,6 +1,13 @@
 <template>
   <div class="flex bg-primary">
-    <div class="flex px-3 text-2xl ml-auto mr-14">
+    <div class="flex px-3 text-2xl ml-14">
+      <ul class="flex items-center text-xl ">
+        <li v-for="link in links" :key="link.link + link.text" class="px-3 navbar__link">
+          <a :href="link.link" @click.prevent="scrollToPosition(link.link)">
+            {{ $t(link.text) }}
+          </a>
+        </li>
+      </ul>
       <base-button class="navbar__link" icon @click="changeLocal">
         <span class="mdi mdi-translate" />
       </base-button>
@@ -12,13 +19,6 @@
         </template>
         <theme-selector v-model="theme" :themes="themes" />
       </base-menu>
-      <ul class="flex items-center text-xl ">
-        <li v-for="link in links" :key="link.link + link.text" class="px-3 navbar__link">
-          <a :href="link.link" @click.prevent="scrollToPosition(link.link)">
-            {{ $t(link.text) }}
-          </a>
-        </li>
-      </ul>
     </div>
   </div>
 </template>
