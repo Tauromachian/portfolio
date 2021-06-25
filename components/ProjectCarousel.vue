@@ -19,7 +19,6 @@
           :description="project.description"
           :site-url="project.link"
           :src="project.src"
-          :class="{ 'mb-5': index !== projects.length - 1 }"
         />
       </template>
     </vueper-slide>
