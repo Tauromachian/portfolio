@@ -8,5 +8,6 @@ export default {
     messages: {
       en, es
     }
-  }
+  },
+  strategy: 'no_prefix'
 }
