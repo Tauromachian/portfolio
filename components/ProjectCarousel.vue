@@ -31,7 +31,11 @@ export default {
   components: { VueperSlides, VueperSlide },
   data: () => ({
     breakpoints: {
-      1200: {
+      1500: {
+        visibleSlides: 3,
+        slideMultiple: 3
+      },
+      1300: {
         visibleSlides: 3,
         slideMultiple: 3
       },
