@@ -1,6 +1,6 @@
 <template>
   <div>
-    <base-gradient v-if="isSmallScreen" degrees="180deg" />
+    <base-gradient v-if="isSmallScreen" degrees="180deg" :height="6" />
     <div v-if="isSmallScreen" class="top-gradient" />
     <top-nav v-if="!isSmallScreen" class="invisible sm:visible top-0 left-0 right-0" />
     <Nuxt />
