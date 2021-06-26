@@ -86,7 +86,7 @@
         <h2 class="text-base sm:text-2xl font-bold">
           {{ $t("formTitle") }}
         </h2>
-        <form name="contact" netlify>
+        <form id="form" name="contact" netlify @submit.prevent="submitForm">
           <div class="flex flex-col">
             <base-input-text
               v-model="form.name"
@@ -113,7 +113,7 @@
               class="mt-3"
               name="message"
             />
-            <base-button class="mt-3 self-start" @click="submitForm">
+            <base-button class="mt-3 self-start">
               {{ $t("button.send") }}
             </base-button>
           </div>
@@ -239,8 +239,11 @@ export default {
     }
   },
   methods: {
-    submitForm () {
-
+    async submitForm () {
+      const data = new URLSearchParams(this.form).toString()
+      await axios.post('/', data, {
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+      })
     }
   }
 }
