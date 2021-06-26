@@ -2,10 +2,14 @@
   <div class="flex flex-col">
     <div
       class="links flex flex-col items-center justify-center text-center bg-primary"
-      :class="{ 'links--active': isHidden }"
+      :class="{ 'links--hidden': isHidden }"
     >
       <ul>
-        <li v-for="link in links" :key="link.link + link.text" class="navbar__link">
+        <li
+          v-for="link in links"
+          :key="link.link + link.text"
+          class="navbar__link"
+        >
           <a :href="link.link">
             {{ $t(link.text) }}
           </a>
@@ -79,7 +83,7 @@ app-links li {
   z-index: 10;
 }
 
-.links--active {
+.links--hidden {
   transform: translate(0, 100px);
 }
 </style>
