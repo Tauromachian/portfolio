@@ -86,7 +86,7 @@
         <h2 class="text-base sm:text-2xl font-bold">
           {{ $t("formTitle") }}
         </h2>
-        <form id="form" name="contact" netlify @submit.prevent="submitForm">
+        <form name="contact" netlify @submit.prevent="submitForm">
           <div class="flex flex-col">
             <base-input-text
               v-model="form.name"
