@@ -86,9 +86,10 @@
         <h2 class="text-base sm:text-2xl font-bold">
           {{ $t("formTitle") }}
         </h2>
-        <form name="contact" netlify method="POST">
+        <form name="contact" netlify>
           <div class="flex flex-col">
             <base-input-text
+              v-model="form.name"
               :label="$t('form.name')"
               class="mt-3"
               required
@@ -96,6 +97,7 @@
               name="name"
             />
             <base-input-text
+              v-model="form.email"
               :label="$t('form.email')"
               class="mt-3"
               type="email"
@@ -104,13 +106,14 @@
               name="email"
             />
             <base-area-text
+              v-model="form.message"
               :label="$t('form.name')"
               required
               placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."
               class="mt-3"
               name="message"
             />
-            <base-button class="mt-3 self-start">
+            <base-button class="mt-3 self-start" @click="submitForm">
               {{ $t("button.send") }}
             </base-button>
           </div>
@@ -191,6 +194,11 @@ export default {
   },
   data () {
     return {
+      form: {
+        name: '',
+        email: '',
+        message: ''
+      },
       technologies: [
         'Javascript',
         'Vue.js',
@@ -227,6 +235,11 @@ export default {
           icon: 'mdi-facebook'
         }
       ]
+
+    }
+  },
+  methods: {
+    submitForm () {
 
     }
   }
