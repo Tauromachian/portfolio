@@ -86,7 +86,7 @@
         <h2 class="text-base sm:text-2xl font-bold">
           {{ $t("formTitle") }}
         </h2>
-        <form name="contact" netlify>
+        <form name="contact" netlify method="POST">
           <div class="flex flex-col">
             <base-input-text
               :label="$t('form.name')"
