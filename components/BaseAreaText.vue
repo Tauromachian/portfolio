@@ -2,6 +2,7 @@
   <div class="flex" :class="{ 'flex-col': col }">
     <label>{{ label }}</label>
     <textarea
+      v-model="text"
       class="p-1 rounded no-outline textarea"
       cols="10"
       rows="4"
@@ -29,6 +30,20 @@ export default {
     col: {
       type: Boolean,
       default: true
+    },
+    value: {
+      type: String,
+      default: ''
+    }
+  },
+  computed: {
+    text: {
+      get () {
+        return this.value
+      },
+      set (val) {
+        this.$emit('input', val)
+      }
     }
   }
 }

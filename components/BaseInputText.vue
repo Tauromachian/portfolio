@@ -2,6 +2,7 @@
   <div class="flex" :class="{ 'flex-col': col }">
     <label>{{ label }}</label>
     <input
+      v-model="text"
       class="p-1 rounded no-outline input"
       :type="type"
       :placeholder="placeholder"
@@ -29,8 +30,23 @@ export default {
     col: {
       type: Boolean,
       default: true
+    },
+    value: {
+      type: String,
+      default: ''
+    }
+  },
+  computed: {
+    text: {
+      get () {
+        return this.value
+      },
+      set (val) {
+        this.$emit('input', val)
+      }
     }
   }
+
 }
 </script>
 
