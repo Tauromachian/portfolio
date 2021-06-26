@@ -39,10 +39,6 @@ export default {
         visibleSlides: 2,
         slideMultiple: 2
       },
-      900: {
-        visibleSlides: 2,
-        slideMultiple: 2
-      },
       600: {
         arrows: false,
         bulletsOutside: true
