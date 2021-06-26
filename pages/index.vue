@@ -93,6 +93,7 @@
               class="mt-3"
               required
               placeholder="Jhon Doe"
+              name="name"
             />
             <base-input-text
               :label="$t('form.email')"
@@ -100,12 +101,14 @@
               type="email"
               required
               placeholder="jhon@mail.com"
+              name="email"
             />
             <base-area-text
               :label="$t('form.name')"
               required
               placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."
               class="mt-3"
+              name="message"
             />
             <base-button class="mt-3 self-start">
               {{ $t("button.send") }}
