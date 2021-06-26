@@ -86,7 +86,12 @@
         <h2 class="text-base sm:text-2xl font-bold">
           {{ $t("formTitle") }}
         </h2>
-        <form name="contact" @submit.prevent="submitForm">
+        <form
+          id="form"
+          name="contact"
+          data-netlify="true"
+          @submit.prevent="submitForm"
+        >
           <div class="flex flex-col">
             <base-input-text
               v-model="form.name"
@@ -235,13 +240,12 @@ export default {
           icon: 'mdi-facebook'
         }
       ]
-
     }
   },
   methods: {
     async submitForm () {
       const data = new URLSearchParams(this.form).toString()
-      await axios.post('/', data, {
+      await axios.post('/', { 'form-name': 'contact', data }, {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
       })
     }
