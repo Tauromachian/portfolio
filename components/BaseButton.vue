@@ -76,6 +76,6 @@ export default {
 }
 
 .button:hover {
-  background-color: var(--color-secondary);
+  background-color: var(--color-secondary) !important;
 }
 </style>
