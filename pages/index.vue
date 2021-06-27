@@ -211,6 +211,7 @@ export default {
         'Laravel',
         'Express.js',
         'Bootstrap',
+        'Tailwindcss',
         'HTML5',
         'CSS',
         'SCSS',
