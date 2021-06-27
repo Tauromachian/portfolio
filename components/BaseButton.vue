@@ -33,20 +33,8 @@ export default {
     }
   },
   computed: {
-    isActive: {
-      get () {
-        return this.value
-      },
-      set (val) {
-        this.$emit('input', val)
-      }
-    },
     buttonClasses () {
-      if (!this.isActivable) { return {} }
-      const classes = {
-        'bg-green-400': this.isActive,
-        'hover:bg-green-400': this.isActive
-      }
+      const classes = {}
       if (this.icon) {
         classes.padding = 0
         classes['icon-button'] = true
