@@ -207,6 +207,7 @@ export default {
       technologies: [
         'Javascript',
         'Vue.js',
+        'Nuxt.js',
         'Laravel',
         'Express.js',
         'Bootstrap',
