@@ -1,20 +1,22 @@
 <template>
   <div class="flex flex-col">
-    <div
-      class="links flex flex-col items-center justify-center text-center bg-primary"
-      :class="{ 'links--hidden': isHidden }"
-    >
-      <ul>
-        <li
-          v-for="link in links"
-          :key="link.link + link.text"
-          class="navbar__link"
-        >
-          <a :href="link.link">
-            {{ $t(link.text) }}
-          </a>
-        </li>
-      </ul>
+    <div class="relative flex flex-col items-center">
+      <div
+        class="links flex flex-col items-center justify-center text-center bg-primary px-10 pt-2 rounded-t-md"
+        :class="{ 'links--hidden': isHidden }"
+      >
+        <ul>
+          <li
+            v-for="link in links"
+            :key="link.link + link.text"
+            class="navbar__link py-3"
+          >
+            <a :href="link.link" class="text-xl">
+              {{ $t(link.text) }}
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="buttons flex justify-center bg-primary px-3 text-2xl">
       <base-button class="navbar__link" icon @click="changeLocal">
@@ -79,11 +81,13 @@ app-links li {
 }
 
 .links {
+  position: absolute;
   transition: all 0.3s linear;
   z-index: 10;
+  bottom: 0;
 }
 
 .links--hidden {
-  transform: translate(0, 100px);
+  bottom: -250px;
 }
 </style>
