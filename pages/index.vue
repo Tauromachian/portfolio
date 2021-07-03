@@ -112,7 +112,7 @@
             />
             <base-area-text
               v-model="form.message"
-              :label="$t('form.name')"
+              :label="$t('form.message')"
               required
               placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."
               class="mt-3"
