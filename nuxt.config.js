@@ -28,7 +28,7 @@ export default {
       { property: 'og:author', content: 'jogarcia' },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: 'https://nuxt-portfolio-jogarcia.netlify.app/' },
-      { property: 'og:image', content: process.env.BASE_URL + '/portfolio.png' },
+      { hid: 'og:image', property: 'og:image', content: '/portfolio.png' },
       { property: 'og:image:size', content: '300' },
       { property: 'og:locale', content: 'en_US' },
       { property: 'og:locale:alternate', content: 'es_ES' },
