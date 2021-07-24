@@ -52,7 +52,7 @@
       :title="$t('portfolio')"
     >
       <div class="flex md:flex-col">
-        <base-card class="bg-secondary mx-4 mt-4">
+        <base-card class="bg-secondary mx-4">
           <card-text class="flex">
             <span class="mdi mdi-code-tags text-8xl color-primary" />
             <div class="flex flex-col">
