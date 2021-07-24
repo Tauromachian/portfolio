@@ -54,7 +54,7 @@
       <div class="flex md:flex-col">
         <base-card class="bg-secondary mx-4">
           <card-text class="flex">
-            <span class="mdi mdi-code-tags text-8xl color-primary" />
+            <span class="mdi mdi-code-tags text-8xl color-primary mr-2" />
             <div class="flex flex-col">
               <h2>Frontend</h2>
               <p>Part of the app the user doesn't see.</p>
@@ -64,7 +64,7 @@
         </base-card>
         <base-card class="bg-secondary mx-4 mt-4">
           <card-text class="flex">
-            <span class="mdi mdi-server text-8xl color-primary" />
+            <span class="mdi mdi-server text-8xl color-primary mr-2" />
             <div class="flex flex-col">
               <h2>Backend</h2>
               <p>The visuals the beauty of the project.</p>
@@ -74,7 +74,7 @@
         </base-card>
         <base-card class="bg-secondary mx-4 mt-4">
           <card-text class="flex">
-            <span class="mdi mdi-database text-8xl color-primary" />
+            <span class="mdi mdi-database text-8xl color-primary mr-2" />
             <div class="flex flex-col">
               <h2>Database</h2>
               <p>They way you save data.</p>
