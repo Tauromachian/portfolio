@@ -51,7 +51,38 @@
       class="items-center justify-center"
       :title="$t('portfolio')"
     >
-      <chip-river :values="technologies" />
+      <div class="flex md:flex-col">
+        <base-card class="bg-secondary mx-4">
+          <card-text class="flex">
+            <span class="mdi mdi-code-tags text-8xl color-primary" />
+            <div class="flex flex-col">
+              <h2>Backend</h2>
+              <p>Part of the app the user doesn't see.</p>
+              <chip-river :values="frontendTechnologies" />
+            </div>
+          </card-text>
+        </base-card>
+        <base-card class="bg-secondary mx-4">
+          <card-text class="flex">
+            <span class="mdi mdi-server text-8xl color-primary" />
+            <div class="flex flex-col">
+              <h2>Frontend</h2>
+              <p>The visuals the beauty of the project.</p>
+              <chip-river :values="backendTechnologies" />
+            </div>
+          </card-text>
+        </base-card>
+        <base-card class="bg-secondary mx-4">
+          <card-text class="flex">
+            <span class="mdi mdi-database text-8xl color-primary" />
+            <div class="flex flex-col">
+              <h2>Database</h2>
+              <p>They way you save data.</p>
+              <chip-river :values="databaseTechnologies" />
+            </div>
+          </card-text>
+        </base-card>
+      </div>
     </base-section>
 
     <!-- Projects -->
@@ -204,7 +235,7 @@ export default {
         email: '',
         message: ''
       },
-      technologies: [
+      frontendTechnologies: [
         'HTML5',
         'CSS',
         'SCSS',
@@ -212,9 +243,14 @@ export default {
         'Bootstrap',
         'Javascript',
         'Vue.js',
-        'Nuxt.js',
+        'Nuxt.js'
+      ],
+      backendTechnologies: [
+        'Javascript',
         'Express.js',
-        'Laravel',
+        'Laravel'
+      ],
+      databaseTechnologies: [
         'MariaDB',
         'MySQL',
         'PostgreSQL',
