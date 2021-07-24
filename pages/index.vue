@@ -56,7 +56,7 @@
           <card-text class="flex">
             <span class="mdi mdi-code-tags text-8xl color-primary" />
             <div class="flex flex-col">
-              <h2>Backend</h2>
+              <h2>Frontend</h2>
               <p>Part of the app the user doesn't see.</p>
               <chip-river :values="frontendTechnologies" />
             </div>
@@ -66,7 +66,7 @@
           <card-text class="flex">
             <span class="mdi mdi-server text-8xl color-primary" />
             <div class="flex flex-col">
-              <h2>Frontend</h2>
+              <h2>Backend</h2>
               <p>The visuals the beauty of the project.</p>
               <chip-river :values="backendTechnologies" />
             </div>
