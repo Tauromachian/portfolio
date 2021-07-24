@@ -51,7 +51,7 @@
       class="items-center justify-center"
       :title="$t('portfolio')"
     >
-      <div class="flex md:flex-col">
+      <div class="flex flex-col">
         <base-card class="bg-secondary mx-4">
           <card-text class="flex">
             <span class="mdi mdi-code-tags text-8xl color-primary mr-2" />
