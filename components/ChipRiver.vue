@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap justify-center">
+  <div class="flex flex-wrap">
     <base-chip
       v-for="(value, index) in values"
       :key="value + index"
