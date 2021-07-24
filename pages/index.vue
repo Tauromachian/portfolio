@@ -62,7 +62,7 @@
             </div>
           </card-text>
         </base-card>
-        <base-card class="bg-secondary mx-4 mt-4">
+        <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
           <card-text class="flex" no-padding>
             <span class="mdi mdi-server text-8xl color-primary mr-2" />
             <div class="flex flex-col">
@@ -72,7 +72,7 @@
             </div>
           </card-text>
         </base-card>
-        <base-card class="bg-secondary mx-4 mt-4">
+        <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
           <card-text class="flex" no-padding>
             <span class="mdi mdi-database text-8xl color-primary mr-2" />
             <div class="flex flex-col">
