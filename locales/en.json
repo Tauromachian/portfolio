@@ -21,6 +21,9 @@
   },
   "button": {
     "send": "Send"
-  }
+  },
+  "frontendDescription": "The visuals the beauty of the project.",
+  "backendDescription": "Part of the app the user doesn't see. The brains of the project.",
+  "databaseDescription": "They way you save data."
 
 }

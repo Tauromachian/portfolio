@@ -21,6 +21,10 @@
   },
   "button": {
     "send": "Enviar"
-  }
+  },
+  "frontendDescription": "Lo visual y lo hermoso y artístico del proyecto.",
+  "backendDescription": "Lo que el usuario no ve. El cerebro del proyecto.",
+  "databaseDescription": "La forma en la que los datos se guardan."
+
 
 }
