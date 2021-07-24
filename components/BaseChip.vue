@@ -1,6 +1,6 @@
 <template>
   <div
-    class="chip rounded-3xl py-2 px-4 text-xs"
+    class="chip rounded-3xl py-1 px-3 text-xs"
     @click="$emit('click')"
   >
     <slot>
