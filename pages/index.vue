@@ -57,7 +57,7 @@
             <span class="mdi mdi-code-tags text-8xl color-primary mr-2" />
             <div class="flex flex-col">
               <h2>Frontend</h2>
-              <p>Part of the app the user doesn't see.</p>
+              <p>{{ $t("frontendDescription") }}</p>
               <chip-river :values="frontendTechnologies" class="mt-2" />
             </div>
           </card-text>
@@ -67,7 +67,7 @@
             <span class="mdi mdi-server text-8xl color-primary mr-2" />
             <div class="flex flex-col">
               <h2>Backend</h2>
-              <p>The visuals the beauty of the project.</p>
+              <p>{{ $t("backendDescription") }}</p>
               <chip-river :values="backendTechnologies" class="mt-2" />
             </div>
           </card-text>
@@ -77,7 +77,7 @@
             <span class="mdi mdi-database text-8xl color-primary mr-2" />
             <div class="flex flex-col">
               <h2>Database</h2>
-              <p>They way you save data.</p>
+              <p>{{ $t("databaseDescription") }}</p>
               <chip-river :values="databaseTechnologies" class="mt-2" />
             </div>
           </card-text>
