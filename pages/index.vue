@@ -88,7 +88,7 @@
     <!-- Projects -->
     <base-section
       class="flex flex-col items-center justify-center"
-      :title="$t('projects')"
+      :title="$t('projects.title')"
     >
       <base-card class="w-full">
         <card-text>
