@@ -13,7 +13,15 @@
   "contacts": "Contactos",
   "repositories": "Repositorios",
   "formTitle": "Tiene una pregunta o quiere trabajar en equipo?",
-  "projects": "Proyectos",
+  "projects": {
+    "title": "Projects",
+    "description": {
+      "kanpeki": "Proyecto Santiaguero que abarca la cultura pop asiática y occidental (se incluyen la cultura pop y tradicional japonesa, coreana, china,etc; además de  los videojuegos, comics, literatura en general, la cinefilia y la música de corte mundial)",
+      "sanchoRestaurant": "Sancho Restaurant, especialidades de la deliciosa cocina creada con el ingenio y la pasión, inspirados en los fantásticos sabores de España. ",
+      "zaruArquitectura": "Diseño de diferentes viviendas y decoraciones exteriores e interiores a la medida.",
+      "flowers": "Vende flores en sus macetas para que los clientes puedan cuidarlas. Haz del mundo un lugar hermoso."
+    }
+  },
   "form": {
     "name": "Nombre",
     "email": "Correo",
@@ -25,6 +33,4 @@
   "frontendDescription": "Lo visual y lo hermoso y artístico del proyecto.",
   "backendDescription": "Lo que el usuario no ve. El cerebro del proyecto.",
   "databaseDescription": "La forma en la que los datos se guardan."
-
-
 }
