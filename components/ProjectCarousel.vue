@@ -71,6 +71,13 @@ export default {
         description:
             'Proyecto Santiaguero que abarca la cultura pop asiática y occidental (se incluyen la cultura pop y tradicional japonesa, coreana, china,etc; además de  los videojuegos, comics, literatura en general, la cinefilia y la música de corte mundial)',
         link: 'https://kanpeki-sa.herokuapp.com/'
+      },
+      {
+        src: 'flowers-site.png',
+        title: 'Flowers',
+        description:
+            'Sell flowers in their flowerpots so the clients can take care of them. Make the world a beautiful place',
+        link: 'https://kanpeki-sa.herokuapp.com/'
       }
     ]
   })
