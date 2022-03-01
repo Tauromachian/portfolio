@@ -1,5 +1,5 @@
 <template>
-  <div class="flex bg-primary">
+  <nav class="flex bg-primary">
     <div class="container flex text-2xl ml-14">
       <ul class="flex items-center text-xl ">
         <li v-for="link in links" :key="link.link + link.text" class="px-3 navbar__link">
@@ -20,7 +20,7 @@
         <theme-selector v-model="theme" :themes="themes" />
       </base-menu>
     </div>
-  </div>
+  </nav>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col">
+  <nav class="flex flex-col">
     <div class="relative flex flex-col items-center">
       <div
         class="links flex flex-col items-center justify-center text-center bg-primary px-10 pt-2 rounded-t-md"
@@ -35,7 +35,7 @@
         <span class="mdi mdi-menu" />
       </base-button>
     </div>
-  </div>
+  </nav>
 </template>
 
 <script>
