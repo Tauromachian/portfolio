@@ -42,12 +42,10 @@ export default {
       690: {
         visibleSlides: 2,
         slideMultiple: 2,
-        arrows: false,
-        bulletsOutside: true
+        arrows: false
       },
       600: {
-        arrows: false,
-        bulletsOutside: true
+        arrows: false
       }
     }
   }),
