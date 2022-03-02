@@ -53,6 +53,12 @@ export default {
     projects () {
       return [
         {
+          src: 'queues.png',
+          title: 'Waiting room',
+          description: this.$t('projects.description.queues'),
+          link: 'https://sancho-restaurant.herokuapp.com/'
+        },
+        {
           src: 'sancho.png',
           title: 'Sancho Restaurant',
           description: this.$t('projects.description.sanchoRestaurant'),
