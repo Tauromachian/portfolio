@@ -1,5 +1,7 @@
 <template>
   <div class="container mx-auto">
+    <img class="mt-12 rounded-full mx-auto" src="picture-man.jpg" alt="" width="384" height="512">
+
     <!-- About -->
     <base-section
       id="about"
