@@ -104,6 +104,7 @@
       id="social-networks"
       class="items-center justify-center"
       :title="$t('contacts')"
+      title-alignment="self-center"
     >
       <div class="flex text-7xl md:text-8xl">
         <a
