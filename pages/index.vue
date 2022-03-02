@@ -5,7 +5,7 @@
     <!-- About -->
     <base-section
       id="about"
-      class="items-center justify-center"
+      class="items-center justify-center mt-8"
       :title="$t('about')"
     >
       <p class="md:mr-20 md:ml-20">
