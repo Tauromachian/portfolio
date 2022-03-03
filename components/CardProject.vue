@@ -5,7 +5,7 @@
       <h2 class="font-bold">
         {{ title }}
       </h2>
-      <p class="md:h-24 max-h-28 overflow-hidden">
+      <p class="h-28 overflow-hidden">
         {{ description }}
       </p>
       <div>
