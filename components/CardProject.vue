@@ -10,7 +10,7 @@
       </p>
       <div>
         <a :href="siteUrl">
-          <base-button class="mt-8 mb-6">
+          <base-button class="mt-1">
             Visit site
           </base-button>
         </a>
