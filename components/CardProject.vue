@@ -21,7 +21,7 @@
 
 <script>
 export default {
-  name: 'CardPortfolio',
+  name: 'CardProject',
   props: {
     src: {
       type: String,
