@@ -166,6 +166,7 @@
       id="repositories"
       class="items-center justify-center"
       :title="$t('repositories')"
+      title-alignment="self-center"
     >
       <div class="relative">
         <base-ball
