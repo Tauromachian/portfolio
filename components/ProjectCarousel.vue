@@ -33,11 +33,13 @@ export default {
     breakpoints: {
       4000: {
         visibleSlides: 3,
-        slideMultiple: 3
+        slideMultiple: 3,
+        touchable: false
       },
       1100: {
         visibleSlides: 2,
-        slideMultiple: 2
+        slideMultiple: 2,
+        touchable: false
       },
       690: {
         visibleSlides: 2,
