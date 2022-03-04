@@ -2,7 +2,7 @@
   <section class="flex flex-col md:flex-row mb-32 p-3">
     <div class="basis-1/3 h-full">
       <img
-        class="rounded-full h-full"
+        class="rounded-full w-100% h-auto"
         src="picture-man.jpg"
         alt="A picture of the honor of this portfolio"
       >
