@@ -1,5 +1,8 @@
 <template>
-  <div class="card flex flex-col" :class="{ 'card--glass': glass }">
+  <div
+    class="flex flex-col"
+    :class="{ 'card': !transparent, 'card--glass': glass }"
+  >
     <slot />
   </div>
 </template>
@@ -11,6 +14,10 @@ export default {
     glass: {
       type: Boolean,
       default: false
+    },
+    transparent: {
+      type: Boolean,
+      default: false
     }
   }
 }
@@ -18,7 +25,7 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-  background-color:  var(--bg-card) ;
+  background-color: var(--bg-card);
   border-radius: 10px;
 }
 
