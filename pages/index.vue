@@ -80,7 +80,7 @@
           id="form"
           name="contact"
           data-netlify="true"
-          @submit.prevent="submitForm"
+          method="POST"
         >
           <div class="flex flex-col">
             <base-input-text
