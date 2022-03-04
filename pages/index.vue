@@ -139,7 +139,7 @@
           :z-index="-10"
           small
         />
-        <base-card class="pb-8" glass>
+        <base-card class="pb-8">
           <card-text class="flex flex-col justify-center">
             <base-link
               v-for="(repository, index) in repositories"
