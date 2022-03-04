@@ -8,7 +8,7 @@
       >
     </div>
 
-    <div class="flex flex-col justify-center">
+    <div class="flex flex-col justify-center lg:ml-10">
       <h1 class="my-3 md:mt-0 text-3xl text-5xl self-start">
         {{ $t("about") }}
       </h1>
