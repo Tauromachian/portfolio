@@ -3,7 +3,7 @@
     <div class="basis-2/5 h-full">
       <img
         class="rounded-full w-100% h-auto"
-        src="picture-man.jpg"
+        src="picture-man-min.jpg"
         alt="A picture of the owner of this portfolio"
       >
     </div>
