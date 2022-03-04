@@ -10,7 +10,7 @@
 
     <div class="flex flex-col justify-center">
       <h1 class="my-3 md:mt-0 text-3xl text-5xl self-start">
-        About
+        {{ $t("about") }}
       </h1>
       <p>
         {{ $t("aboutText") }}
