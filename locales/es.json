@@ -14,7 +14,7 @@
   "repositories": "Repositorios",
   "formTitle": "Tiene una pregunta o quiere trabajar en equipo?",
   "projects": {
-    "title": "Projects",
+    "title": "Proyectos",
     "description": {
       "queues": "Este proyecto permite tomar tickets para participar en una sala de espera. El objetivo es eliminar colas físicas",
       "kanpeki": "Proyecto Santiaguero que abarca la cultura pop asiática y occidental (se incluyen la cultura pop y tradicional japonesa, coreana, china,etc; además de  los videojuegos, comics, literatura en general, la cinefilia y la música de corte mundial)",
