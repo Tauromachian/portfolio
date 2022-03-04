@@ -1,51 +1,7 @@
 <template>
   <div class="container mx-auto">
-    <img class="mt-12 rounded-full mx-auto" src="picture-man.jpg" alt="" width="384" height="512">
-
-    <!-- About -->
-    <base-section
-      id="about"
-      class="items-center justify-center mt-8"
-      :title="$t('about')"
-    >
-      <p class="md:mr-20 md:ml-20">
-        {{ $t("aboutText") }}
-      </p>
-      <div class="flex flex-col md:flex-row">
-        <card-feature
-          :title="$t('intuitive')"
-          icon="mdi-lightbulb-on-outline"
-          class="mt-7"
-        >
-          <p class="md:text-center md:mx-3">
-            {{ $t("intuitiveText") }}
-          </p>
-        </card-feature>
-        <card-feature :title="$t('fast')" icon="mdi-rocket-launch" class="mt-7">
-          <p class="md:text-center md:mx-3">
-            {{ $t("fastText") }}
-          </p>
-        </card-feature>
-        <card-feature
-          :title="$t('responsive')"
-          icon="mdi-responsive"
-          class="mt-7"
-        >
-          <p class="md:text-center md:mx-3">
-            {{ $t("responsiveText") }}
-          </p>
-        </card-feature>
-        <card-feature
-          :title="$t('reactive')"
-          icon="mdi-alpha-r-circle"
-          class="mt-7"
-        >
-          <p class="md:text-center md:mx-3">
-            {{ $t("reactiveText") }}
-          </p>
-        </card-feature>
-      </div>
-    </base-section>
+    <!-- Hero -->
+    <section-hero />
 
     <!-- Portfolio -->
     <base-section
