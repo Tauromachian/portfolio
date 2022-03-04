@@ -242,9 +242,13 @@ export default {
   },
   methods: {
     async submitForm () {
-      const data = new URLSearchParams(this.form).toString()
-      await axios.post('/', { 'form-name': 'contact', body: data }, {
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+      const myForm = document.getElementById('form')
+      const formData = new FormData(myForm)
+
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
       })
     }
   }
