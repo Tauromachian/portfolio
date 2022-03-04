@@ -4,7 +4,7 @@
       <img
         class="rounded-full w-100% h-auto"
         src="picture-man.jpg"
-        alt="A picture of the honor of this portfolio"
+        alt="A picture of the owner of this portfolio"
       >
     </div>
 
