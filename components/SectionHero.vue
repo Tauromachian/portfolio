@@ -1,8 +1,8 @@
 <template>
   <section class="flex flex-col md:flex-row mb-32 p-3">
-    <div class="basis-2/5 h-full">
+    <div class="flex flex-col basis-2/5 h-full justify-center align-center">
       <img
-        class="rounded-full w-100% h-auto"
+        class="rounded-full w-100% h-auto sm:h-96 md:h-auto mx-auto"
         src="picture-man-min.jpg"
         alt="A picture of the owner of this portfolio"
       >
@@ -67,9 +67,8 @@ export default {
   section {
     height: calc(100vh - 64px);
   }
-}
-
-.basis-2\/5 {
-  flex-basis: 40%;
+  .basis-2\/5 {
+    flex-basis: 40%;
+  }
 }
 </style>
