@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col md:flex-row mb-32 p-3">
-    <div class="basis-1/3 h-full">
+    <div class="basis-2/5 h-full">
       <img
         class="rounded-full w-100% h-auto"
         src="picture-man.jpg"
@@ -69,7 +69,7 @@ export default {
   }
 }
 
-.basis-1\/3 {
+.basis-2\/5 {
   flex-basis: 40%;
 }
 </style>
