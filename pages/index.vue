@@ -80,7 +80,7 @@
           id="form"
           name="contact"
           data-netlify="true"
-          method="POST"
+          @submit.prevent="submitForm"
         >
           <div class="flex flex-col">
             <base-input-text
@@ -243,7 +243,7 @@ export default {
   methods: {
     async submitForm () {
       const data = new URLSearchParams(this.form).toString()
-      await axios.post('/', { 'form-name': 'contact', data }, {
+      await axios.post('/', { 'form-name': 'contact', body: data }, {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
       })
     }
