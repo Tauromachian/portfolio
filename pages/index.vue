@@ -242,14 +242,20 @@ export default {
   },
   methods: {
     async submitForm () {
+      const googleToken = process.env.NUXT_ENV_GOOGLE_TOKEN
+
       const myForm = document.getElementById('form')
       const formData = new FormData(myForm)
 
-      await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString()
-      })
+      try {
+        await fetch('https://www.googleapis.com/gmail/v1/users/me/messages/send', {
+          method: 'POST',
+          headers: { Autorization: `Bearer ${googleToken}`, 'Content-Type': 'application/json' },
+          body: new URLSearchParams(formData).toString()
+        })
+      } catch (error) {
+        console.log(error)
+      }
     }
   }
 }
