@@ -7,6 +7,17 @@
         alt="A picture of the owner of this portfolio"
       >
     </div>
+    <div class="h-full w-full flex flex-col justify-center basis-1/2">
+      <h1 class="text-8xl">
+        José
+      </h1>
+      <h1 class="text-8xl">
+        García
+      </h1>
+      <div class="mt-3" />
+      <p>Web developer/</p>
+      <p>Fullstacker</p>
+    </div>
   </section>
 </template>
 
