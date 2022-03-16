@@ -17,6 +17,10 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 768px) {
   section {
     height: calc(100vh - 64px);
