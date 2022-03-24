@@ -1,17 +1,17 @@
 <template>
   <section class="flex flex-col md:flex-row mb-32 p-3">
-    <div class="flex flex-col basis-2/5 h-full justify-center align-center hero--img-container">
+    <div class="flex h-full justify-center items-center hero--img-container">
       <img
-        class="rounded-full w-auto h-auto mx-auto hero--img"
+        class="rounded-full w-full h-auto md:w-auto md:h-full hero--img"
         src="picture-man-min.jpg"
         alt="A picture of the owner of this portfolio"
       >
     </div>
-    <div class="h-full w-full flex flex-col justify-center basis-1/2">
-      <h1 class="text-8xl">
+    <div class="h-full w-full flex flex-col justify-center hero--information-container">
+      <h1 class="text-8xl hero-content-name">
         José
       </h1>
-      <h1 class="text-8xl">
+      <h1 class="text-8xl hero-content-name">
         García
       </h1>
       <div class="mt-3" />
@@ -42,6 +42,10 @@ h1 {
 }
 
 .hero--img-container {
-  width: 50%;
+  flex-basis: 50%;
+}
+
+.hero--information-container {
+  flex-basis: 50%;
 }
 </style>
