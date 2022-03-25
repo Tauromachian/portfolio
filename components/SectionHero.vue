@@ -7,16 +7,20 @@
         alt="A picture of the owner of this portfolio"
       >
     </div>
-    <div class="h-full w-full flex flex-col justify-center hero--information-container">
+    <div
+      class="h-full w-full flex flex-col justify-center hero--information-container"
+    >
       <h1 class="text-8xl hero-content-name">
         José
       </h1>
-      <h1 class="text-8xl hero-content-name">
+      <h1 class="text-8xl hero-content-last-name">
         García
       </h1>
       <div class="mt-3" />
       <p>Web developer/</p>
-      <p>Fullstacker</p>
+      <p class="ml-5">
+        Fullstacker
+      </p>
     </div>
   </section>
 </template>
@@ -29,7 +33,6 @@ export default {
 
 <style scoped>
 h1 {
-  text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
@@ -47,5 +50,10 @@ h1 {
 
 .hero--information-container {
   flex-basis: 50%;
+}
+
+.hero-content-last-name {
+  margin-top: -0.25em;
+  margin-left: 0.6em;
 }
 </style>
