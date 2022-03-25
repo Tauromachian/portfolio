@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col md:flex-row mb-32 p-3">
+  <section class="flex flex-col md:flex-row mb-32 p-3 relative">
     <div class="flex h-full justify-center items-center hero--img-container">
       <img
         class="rounded-full w-full h-auto md:w-auto md:h-full hero--img"
@@ -21,6 +21,11 @@
       <p class="ml-5">
         Fullstacker
       </p>
+    </div>
+    <div
+      class="absolute left-0 right-0 bottom-0 text-center scroll-icon"
+    >
+      <span class="mdi mdi-chevron-triple-down text-2xl" />
     </div>
   </section>
 </template>
@@ -55,5 +60,21 @@ h1 {
 .hero-content-last-name {
   margin-top: -0.25em;
   margin-left: 0.6em;
+}
+
+.scroll-icon {
+  animation: up-and-down 1s infinite ease-out;
+}
+
+@keyframes up-and-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 </style>
