@@ -17,12 +17,7 @@
         García
       </h1>
       <div class="mt-3" />
-      <div class="flex">
-        <p>Web developer/</p>
-        <p class="md:ml-5">
-          Fullstacker
-        </p>
-      </div>
+      <p>Web developer/ Fullstacker</p>
     </div>
     <div class="absolute left-0 right-0 bottom-0 text-center scroll-icon">
       <span class="mdi mdi-chevron-triple-down text-2xl" />
