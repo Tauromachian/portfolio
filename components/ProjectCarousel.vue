@@ -58,7 +58,7 @@ export default {
           src: 'queues.png',
           title: 'Waiting room',
           description: this.$t('projects.description.queues'),
-          link: 'https://sancho-restaurant.herokuapp.com/'
+          link: 'https://myqueues.herokuapp.com/'
         },
         {
           src: 'sancho.png',
