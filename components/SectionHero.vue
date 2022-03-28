@@ -8,12 +8,12 @@
       >
     </div>
     <div
-      class="h-full w-full flex flex-col justify-center items-center hero--information-container"
+      class="h-full w-full flex flex-col justify-center items-center md:items-start hero--information-container"
     >
       <h1 class="text-8xl hero-content-name mr-32">
         José
       </h1>
-      <h1 class="text-8xl hero-content-last-name ml-32">
+      <h1 class="text-8xl hero-content-last-name ml-32 md:ml-14">
         García
       </h1>
       <div class="mt-3" />
@@ -51,7 +51,6 @@ export default {
 
 .hero-content-last-name {
   margin-top: -0.25em;
-  margin-left: 0.6em;
 }
 
 .scroll-icon {
