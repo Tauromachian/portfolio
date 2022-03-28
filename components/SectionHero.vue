@@ -10,16 +10,16 @@
     <div
       class="h-full w-full flex flex-col justify-center items-center md:items-start hero--information-container"
     >
-      <h1 class="text-8xl hero-content-name mr-32">
+      <h1 class="text-7xl md:text-8xl hero-content-name mr-24">
         José
       </h1>
-      <h1 class="text-8xl hero-content-last-name ml-32 md:ml-14">
+      <h1 class="text-7xl md:text-8xl hero-content-last-name ml-16 md:ml-14">
         García
       </h1>
       <div class="mt-3" />
       <p>Web developer/ Fullstacker</p>
     </div>
-    <div class="absolute hidden md:block left-0 right-0 bottom-0 text-center scroll-icon">
+    <div class="md:block left-0 right-0 bottom-0 text-center scroll-icon">
       <span class="mdi mdi-chevron-triple-down text-2xl" />
     </div>
   </section>
