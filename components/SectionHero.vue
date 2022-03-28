@@ -19,7 +19,7 @@
       <div class="mt-3" />
       <p>Web developer/ Fullstacker</p>
     </div>
-    <div class="md:block left-0 right-0 bottom-0 text-center scroll-icon">
+    <div class="absolute left-0 right-0 bottom-0 text-center scroll-icon">
       <span class="mdi mdi-chevron-triple-down text-2xl" />
     </div>
   </section>
