@@ -8,23 +8,23 @@
       >
     </div>
     <div
-      class="h-full w-full flex flex-col justify-center hero--information-container"
+      class="h-full w-full flex flex-col justify-center items-center hero--information-container"
     >
-      <h1 class="text-8xl hero-content-name">
+      <h1 class="text-8xl hero-content-name mr-32">
         José
       </h1>
-      <h1 class="text-8xl hero-content-last-name">
+      <h1 class="text-8xl hero-content-last-name ml-32">
         García
       </h1>
       <div class="mt-3" />
-      <p>Web developer/</p>
-      <p class="ml-5">
-        Fullstacker
-      </p>
+      <div class="flex">
+        <p>Web developer/</p>
+        <p class="md:ml-5">
+          Fullstacker
+        </p>
+      </div>
     </div>
-    <div
-      class="absolute left-0 right-0 bottom-0 text-center scroll-icon"
-    >
+    <div class="absolute left-0 right-0 bottom-0 text-center scroll-icon">
       <span class="mdi mdi-chevron-triple-down text-2xl" />
     </div>
   </section>
