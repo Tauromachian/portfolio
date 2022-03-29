@@ -61,6 +61,12 @@ export default {
           link: 'https://myqueues.herokuapp.com/'
         },
         {
+          src: 'johnson-turbine-support-website.png',
+          title: 'Johnson Turbine Support',
+          description: this.$t('projects.description.johnson-turbine'),
+          link: 'https://www.johnsonturbine.com/'
+        },
+        {
           src: 'sancho.png',
           title: 'Sancho Restaurant',
           description: this.$t('projects.description.sanchoRestaurant'),
