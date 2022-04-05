@@ -289,8 +289,8 @@ export default {
           icon: 'mdi-telegram'
         },
         {
-          link: 'https://www.facebook.com/josecarlos.garciaalvarez.9083',
-          icon: 'mdi-facebook'
+          link: 'https://www.reddit.com/user/BetanKore',
+          icon: 'mdi-reddit'
         }
       ]
     }
