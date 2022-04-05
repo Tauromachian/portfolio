@@ -317,8 +317,9 @@ export default {
         recipient: recipientEmail
       }
 
+      let response
       try {
-        await fetch(
+        response = await fetch(
           'https://jts-email-service.herokuapp.com/api/email-service',
           {
             method: 'POST',
@@ -328,21 +329,28 @@ export default {
             }
           }
         )
-        this.displaySuccessMessage()
       } catch (error) {
         this.displayErrorMessage()
+        return
       }
+      if (response.error) {
+        this.displayErrorMessage()
+        return
+      }
+      this.displaySuccessMessage()
       this.loading = false
     },
     displaySuccessMessage () {
       this.message.success = true
       this.message.text = 'Success! email sent correctly'
       this.message.active = true
+      this.loading = false
     },
     displayErrorMessage () {
       this.message.success = false
       this.message.text = 'Error there was a problem sending the email'
       this.message.active = true
+      this.loading = false
     }
   }
 }
