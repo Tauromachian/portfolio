@@ -242,9 +242,9 @@ export default {
           }
         }
       )
-      repositories = data
+      repositories = data ?? []
     } catch (error) {
-      repositories = null
+      repositories = []
     }
     return {
       repositories
