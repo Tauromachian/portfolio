@@ -1,57 +1,26 @@
 <template>
-  <section class="flex flex-col md:flex-row mb-32 p-3">
-    <div class="flex flex-col basis-2/5 h-full justify-center align-center">
+  <section class="flex flex-col md:flex-row mb-32 p-3 relative">
+    <div class="flex h-full justify-center items-center hero--img-container">
       <img
-        class="rounded-full w-100% h-auto sm:h-96 md:h-auto mx-auto"
+        class="rounded-full w-full h-auto md:w-auto md:h-full hero--img"
         src="picture-man-min.jpg"
         alt="A picture of the owner of this portfolio"
       >
     </div>
-
-    <div class="flex flex-col justify-center lg:ml-10">
-      <h1 class="my-3 md:mt-0 text-3xl text-5xl self-start">
-        {{ $t("about") }}
+    <div
+      class="h-full w-full flex flex-col justify-center items-center md:items-start hero--information-container"
+    >
+      <h1 class="text-7xl md:text-8xl hero-content-name mr-24">
+        José
       </h1>
-      <p>
-        {{ $t("aboutText") }}
-      </p>
-      <div class="flex flex-col mt-2">
-        <div class="flex flex-col md:flex-row">
-          <base-card transparent class="w-full md:mr-1 py-4">
-            <card-feature
-              :title="$t('intuitive')"
-              icon="mdi-lightbulb-on-outline"
-            >
-              <p class="md:text-center md:mx-3">
-                {{ $t("intuitiveText") }}
-              </p>
-            </card-feature>
-          </base-card>
-          <base-card transparent class="w-full md:mx-1 py-4">
-            <card-feature :title="$t('fast')" icon="mdi-rocket-launch">
-              <p class="md:text-center md:mx-3">
-                {{ $t("fastText") }}
-              </p>
-            </card-feature>
-          </base-card>
-        </div>
-        <div class="flex flex-col md:flex-row md:mt-2">
-          <base-card transparent class="w-full md:mr-1 py-4">
-            <card-feature :title="$t('responsive')" icon="mdi-responsive">
-              <p class="md:text-center md:mx-3">
-                {{ $t("responsiveText") }}
-              </p>
-            </card-feature>
-          </base-card>
-          <base-card transparent class="w-full md:mx-1 py-4">
-            <card-feature :title="$t('reactive')" icon="mdi-alpha-r-circle">
-              <p class="md:text-center md:mx-3">
-                {{ $t("reactiveText") }}
-              </p>
-            </card-feature>
-          </base-card>
-        </div>
-      </div>
+      <h1 class="text-7xl md:text-8xl hero-content-last-name ml-16 md:ml-14">
+        García
+      </h1>
+      <div class="mt-3" />
+      <p>Web developer/ Fullstacker</p>
+    </div>
+    <div class="absolute left-0 right-0 bottom-0 text-center scroll-icon">
+      <span class="mdi mdi-chevron-triple-down text-2xl" />
     </div>
   </section>
 </template>
@@ -69,6 +38,34 @@ export default {
   }
   .basis-2\/5 {
     flex-basis: 40%;
+  }
+}
+
+.hero--img-container {
+  flex-basis: 50%;
+}
+
+.hero--information-container {
+  flex-basis: 50%;
+}
+
+.hero-content-last-name {
+  margin-top: -0.25em;
+}
+
+.scroll-icon {
+  animation: up-and-down 1s infinite ease-out;
+}
+
+@keyframes up-and-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 </style>

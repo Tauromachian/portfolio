@@ -1,6 +1,6 @@
 <template>
   <nav class="flex bg-primary">
-    <div class="container flex text-2xl ml-14">
+    <div class="container flex text-2xl ml-14 z-50">
       <ul class="flex items-center text-xl ">
         <li v-for="link in links" :key="link.link + link.text" class="px-3 navbar__link">
           <a :href="link.link" @click.prevent="scrollToPosition(link.link)">
