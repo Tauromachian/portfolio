@@ -83,7 +83,7 @@
               class="mdi self-center md:self-auto mdi-database text-8xl color-primary mr-2"
             />
             <div class="flex flex-col">
-              <h2>Database</h2>
+              <h2>{{ $t("database") }}</h2>
               <p>{{ $t("databaseDescription") }}</p>
               <chip-river :values="databaseTechnologies" class="mt-2" />
             </div>
