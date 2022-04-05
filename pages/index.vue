@@ -12,7 +12,9 @@
       <div class="flex flex-col">
         <base-card class="bg-secondary mx-4">
           <card-text class="flex" no-padding>
-            <span class="mdi self-center md:self-auto mdi-code-tags text-8xl color-primary mr-2" />
+            <span
+              class="mdi self-center md:self-auto mdi-code-tags text-8xl color-primary mr-2"
+            />
             <div class="flex flex-col">
               <h2>Frontend</h2>
               <p>{{ $t("frontendDescription") }}</p>
@@ -22,7 +24,9 @@
         </base-card>
         <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
           <card-text class="flex" no-padding>
-            <span class="mdi self-center md:self-auto mdi-server text-8xl color-primary mr-2" />
+            <span
+              class="mdi self-center md:self-auto mdi-server text-8xl color-primary mr-2"
+            />
             <div class="flex flex-col">
               <h2>Backend</h2>
               <p>{{ $t("backendDescription") }}</p>
@@ -32,7 +36,9 @@
         </base-card>
         <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
           <card-text class="flex" no-padding>
-            <span class="mdi self-center md:self-auto mdi-database text-8xl color-primary mr-2" />
+            <span
+              class="mdi self-center md:self-auto mdi-database text-8xl color-primary mr-2"
+            />
             <div class="flex flex-col">
               <h2>Database</h2>
               <p>{{ $t("databaseDescription") }}</p>
@@ -197,25 +203,18 @@ export default {
       },
       frontendTechnologies: [
         'HTML5',
-        'CSS',
+        'CSS3',
         'SCSS',
-        'Tailwindcss',
+        'Tailwind CSS',
         'Bootstrap',
+        'Vuetify',
         'Javascript',
         'Vue.js',
+        'Angular',
         'Nuxt.js'
       ],
-      backendTechnologies: [
-        'Javascript',
-        'Express.js',
-        'Laravel'
-      ],
-      databaseTechnologies: [
-        'MariaDB',
-        'MySQL',
-        'PostgreSQL',
-        'MongoDB'
-      ],
+      backendTechnologies: ['Javascript', 'PHP', 'Node.js', 'Express.js', 'Laravel'],
+      databaseTechnologies: ['MariaDB', 'MySQL', 'PostgreSQL', 'MongoDB'],
       socialLinks: [
         {
           link: 'https://www.linkedin.com/in/jose-garcia-888941180/',
@@ -248,11 +247,17 @@ export default {
       const formData = new FormData(myForm)
 
       try {
-        await fetch('https://www.googleapis.com/gmail/v1/users/me/messages/send', {
-          method: 'POST',
-          headers: { Autorization: `Bearer ${googleToken}`, 'Content-Type': 'application/json' },
-          body: new URLSearchParams(formData).toString()
-        })
+        await fetch(
+          'https://www.googleapis.com/gmail/v1/users/me/messages/send',
+          {
+            method: 'POST',
+            headers: {
+              Autorization: `Bearer ${googleToken}`,
+              'Content-Type': 'application/json'
+            },
+            body: new URLSearchParams(formData).toString()
+          }
+        )
       } catch (error) {
         console.log(error)
       }
