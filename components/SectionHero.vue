@@ -1,33 +1,34 @@
 <template>
   <section class="flex flex-col md:flex-row mb-32 p-3 relative">
-    <div class="flex h-full justify-center items-center hero--img-container">
-      <img
-        class="rounded-full w-full h-auto md:w-auto md:h-full hero--img"
-        src="picture-man-min.jpg"
-        alt="A picture of the owner of this portfolio"
-      >
-    </div>
-    <div
-      class="h-full w-full flex flex-col justify-center items-center md:items-start hero--information-container"
-    >
-      <h1 class="text-7xl md:text-8xl hero-content-name mr-24">
-        José
+    <div class="flex flex-col h-full justify-center">
+      <h1 class="text-7xl md:text-8xl">
+        Making ideas happen
       </h1>
-      <h1 class="text-7xl md:text-8xl hero-content-last-name ml-16 md:ml-14">
-        García
-      </h1>
-      <div class="mt-3" />
       <p>Web developer/ Fullstacker</p>
+      <base-button>I want to check your skills</base-button>
     </div>
-    <div class="absolute left-0 right-0 bottom-0 text-center scroll-icon">
-      <span class="mdi mdi-chevron-triple-down text-2xl" />
+    <div class="flex flex-col h-full justify-center">
+      <pre>
+        <pre><code class="language-html" v-text="content" /></pre>
+      </pre>
     </div>
   </section>
 </template>
 
 <script>
+import Prism from '~/plugins/prism'
+
 export default {
-  name: 'SectionHero'
+  name: 'SectionHero',
+  computed: {
+    content () {
+      return '<div>\n\t<h1>Making ideas happen</h1>\n\t<p>Web developer/ Fullstacker</p>\n\t<button>I want to check your skills</button>\n</div>'
+    }
+  },
+  mounted () {
+    Prism.highlightAll()
+  }
+
 }
 </script>
 
