@@ -153,7 +153,7 @@
               name="name"
             />
             <base-input-text
-              v-model="form.email"
+              v-model="form.address"
               :label="$t('form.email')"
               class="mt-3"
               type="email"
@@ -162,7 +162,7 @@
               name="email"
             />
             <base-area-text
-              v-model="form.message"
+              v-model="form.body"
               :label="$t('form.message')"
               required
               placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."
@@ -253,8 +253,9 @@ export default {
     return {
       form: {
         name: '',
-        email: '',
-        message: ''
+        address: '',
+        subject: 'Work for me',
+        body: ''
       },
       frontendTechnologies: [
         'HTML5',
@@ -268,7 +269,13 @@ export default {
         'Angular',
         'Nuxt.js'
       ],
-      backendTechnologies: ['Javascript', 'PHP', 'Node.js', 'Express.js', 'Laravel'],
+      backendTechnologies: [
+        'Javascript',
+        'PHP',
+        'Node.js',
+        'Express.js',
+        'Laravel'
+      ],
       databaseTechnologies: ['MariaDB', 'MySQL', 'PostgreSQL', 'MongoDB'],
       languages: ['English', 'Español'],
       socialLinks: [
@@ -297,21 +304,24 @@ export default {
   },
   methods: {
     async submitForm () {
-      const googleToken = process.env.NUXT_ENV_GOOGLE_TOKEN
+      const emailServiceToken = process.env.NUXT_ENV_EMAIL_SERVICE_TOKEN
+      const recipientEmail = process.env.NUXT_ENV_RECIPIENT
 
-      const myForm = document.getElementById('form')
-      const formData = new FormData(myForm)
+      const body = {
+        ...this.form,
+        token: emailServiceToken,
+        recipient: recipientEmail
+      }
 
       try {
         await fetch(
-          'https://www.googleapis.com/gmail/v1/users/me/messages/send',
+          'https://jts-email-service.herokuapp.com/api/email-service',
           {
             method: 'POST',
+            body: JSON.stringify(body),
             headers: {
-              Autorization: `Bearer ${googleToken}`,
               'Content-Type': 'application/json'
-            },
-            body: new URLSearchParams(formData).toString()
+            }
           }
         )
       } catch (error) {
