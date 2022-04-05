@@ -1,6 +1,6 @@
 <template>
   <base-section
-    v-if="repositories"
+    v-if="repositories && repositories.length"
     id="repositories"
     class="items-center justify-center"
     :title="$t('repositories')"
@@ -49,24 +49,32 @@ import axios from 'axios'
 
 export default {
   name: 'SectionRepositories',
-  async asyncData () {
-    const token = process.env.NUXT_ENV_GITHUB_TOKEN
-    let repositories
-    try {
-      const { data } = await axios.get(
-        'https://api.github.com/users/tauromachian/repos',
-        {
-          headers: {
-            authorization: `token ${token}`
-          }
-        }
-      )
-      repositories = data ?? []
-    } catch (error) {
-      repositories = []
-    }
+  data () {
     return {
-      repositories
+      repositories: []
+    }
+  },
+  created () {
+    this.loadRepositories()
+  },
+  methods: {
+    async loadRepositories () {
+      const token = process.env.NUXT_ENV_GITHUB_TOKEN
+      let repositories
+      try {
+        const { data } = await axios.get(
+          'https://api.github.com/users/tauromachian/repos',
+          {
+            headers: {
+              authorization: `token ${token}`
+            }
+          }
+        )
+        repositories = data
+      } catch (error) {
+        repositories = []
+      }
+      this.repositories = repositories
     }
   }
 }
