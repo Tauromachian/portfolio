@@ -137,6 +137,7 @@
         <h2 class="text-base sm:text-2xl font-bold">
           {{ $t("formTitle") }}
         </h2>
+        <app-alert v-if="message.active" :text="message.text" class="mt-3" :type="message.type" />
         <form
           id="form"
           name="contact"
@@ -257,6 +258,7 @@ export default {
         subject: 'Work for me',
         body: ''
       },
+      message: { success: true, text: '', active: false },
       loading: false,
       frontendTechnologies: [
         'HTML5',
@@ -326,10 +328,21 @@ export default {
             }
           }
         )
+        this.displaySuccessMessage()
       } catch (error) {
-        console.log(error)
+        this.displayErrorMessage()
       }
       this.loading = false
+    },
+    displaySuccessMessage () {
+      this.message.success = true
+      this.message.text = 'Success! email sent correctly'
+      this.message.active = true
+    },
+    displayErrorMessage () {
+      this.message.success = false
+      this.message.text = 'Error there was a problem sending the email'
+      this.message.active = true
     }
   }
 }
