@@ -5,7 +5,12 @@
     v-bind="$attrs"
     v-on="$listeners"
   >
-    <slot>
+    <div v-if="loading" class="flex justify-center items-center">
+      <div class="spinner-border animate-spin inline-block w-6 h-6 border-4 border-top-primary rounded-full" role="status" />
+      <span v-if="loadingText" class="ml-2">{{ loadingText }}</span>
+      <span v-else class="ml-2">Loading...</span>
+    </div>
+    <slot v-else>
       {{ text }}
     </slot>
   </button>
@@ -30,6 +35,14 @@ export default {
     icon: {
       type: Boolean,
       default: false
+    },
+    loading: {
+      type: Boolean,
+      default: false
+    },
+    loadingText: {
+      type: String,
+      default: ''
     }
   },
   computed: {
@@ -65,5 +78,9 @@ export default {
 
 .button:hover {
   background-color: var(--color-secondary) !important;
+}
+
+.border-top-primary {
+  border-top-color: var(--color-primary) !important;
 }
 </style>
