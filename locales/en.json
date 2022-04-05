@@ -34,5 +34,8 @@
   },
   "frontendDescription": "The visuals the beauty of the project.",
   "backendDescription": "Part of the app the user doesn't see. The brains of the project.",
-  "databaseDescription": "They way you save data."
+  "database": "Database",
+  "databaseDescription": "They way you save data.",
+  "language": "Languages",
+  "languagesDescription": "The languages in which you can communicate with me"
 }
