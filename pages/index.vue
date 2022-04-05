@@ -169,7 +169,7 @@
               class="mt-3"
               name="message"
             />
-            <base-button class="mt-3 self-start">
+            <base-button class="mt-3 self-start" :loading="loading">
               {{ $t("button.send") }}
             </base-button>
           </div>
@@ -257,6 +257,7 @@ export default {
         subject: 'Work for me',
         body: ''
       },
+      loading: false,
       frontendTechnologies: [
         'HTML5',
         'CSS3',
@@ -304,6 +305,7 @@ export default {
   },
   methods: {
     async submitForm () {
+      this.loading = true
       const emailServiceToken = process.env.NUXT_ENV_EMAIL_SERVICE_TOKEN
       const recipientEmail = process.env.NUXT_ENV_RECIPIENT
 
@@ -327,6 +329,7 @@ export default {
       } catch (error) {
         console.log(error)
       }
+      this.loading = false
     }
   }
 }
