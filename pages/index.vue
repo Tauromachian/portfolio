@@ -89,6 +89,18 @@
             </div>
           </card-text>
         </base-card>
+        <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
+          <card-text class="flex" no-padding>
+            <span
+              class="mdi self-center md:self-auto mdi-database text-8xl color-primary mr-2"
+            />
+            <div class="flex flex-col">
+              <h2>{{ $t("language") }}</h2>
+              <p>{{ $t("languagesDescription") }}</p>
+              <chip-river :values="languages" class="mt-2" />
+            </div>
+          </card-text>
+        </base-card>
       </div>
     </base-section>
 
@@ -258,6 +270,7 @@ export default {
       ],
       backendTechnologies: ['Javascript', 'PHP', 'Node.js', 'Express.js', 'Laravel'],
       databaseTechnologies: ['MariaDB', 'MySQL', 'PostgreSQL', 'MongoDB'],
+      languages: ['English', 'Español'],
       socialLinks: [
         {
           link: 'https://www.linkedin.com/in/jose-garcia-888941180/',
