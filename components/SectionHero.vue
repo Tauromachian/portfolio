@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col lg:flex-row mb-32 p-3 relative">
-    <div class="flex flex-col h-full justify-center hero__text md:mr-5 lg:mr-0">
+    <div class="flex flex-col h-full justify-center hero__text md:mr-5 xl:mr-0">
       <h1 class="text-6xl xl:text-7xl 2xl:text-8xl">
         {{ $t('hero.title') }}
       </h1>
@@ -33,7 +33,7 @@
         </a>
       </div>
     </div>
-    <div class="flex flex-col h-full justify-center hero__code md:max-w-lg lg:max-w-max">
+    <div class="flex flex-col h-full justify-center hero__code md:max-w-lg xl:max-w-max">
       <pre class="line-numbers code-handler-styles" data-src="/markup.html" />
     </div>
     <span class="mdi mdi-arrow-down scroll-icon invisible xl:visible" />
