@@ -85,5 +85,17 @@ export default {
   i18n,
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {
+    babel: {
+
+      plugins: [
+        ['prismjs', {
+          languages: ['markup'],
+          plugins: ['line-numbers'],
+          theme: 'tomorrow',
+          css: true
+        }]
+      ]
+    }
+  }
 }
