@@ -1,4 +1,11 @@
 {
+  "hero": {
+    "title": "Making ideas happen",
+    "description1": "I am a a web developer/fullstacker",
+    "description2": " I will build your site and make it look awesome",
+    "button1": "Check skills",
+    "button2": "Contact me"
+  },
   "about": "About",
   "aboutText": "I am a fullstack web developer. I enjoy creating web sites using current development technologies.",
   "intuitive": "Intuitive",

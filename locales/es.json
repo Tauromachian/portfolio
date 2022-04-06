@@ -1,4 +1,11 @@
 {
+  "hero": {
+    "title": "Creando ideas",
+    "description1": "Soy un desarrollador web/fullstacker",
+    "description2": "Te construiré un sitio web y lucirá genial",
+    "button1": "Ver habilidades",
+    "button2": "Contáctame"
+  },
   "about": "Sobre mí",
   "aboutText": "Soy un desarrollador web de fullstack. Disfruto crear sitios web responsivos usando tecnologías de desarrollo actuales.",
   "intuitive": "Intuitivo",
