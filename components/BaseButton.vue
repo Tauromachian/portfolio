@@ -43,6 +43,10 @@ export default {
     loadingText: {
       type: String,
       default: ''
+    },
+    isCallToAction: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
@@ -51,6 +55,9 @@ export default {
       if (this.icon) {
         classes.padding = 0
         classes['icon-button'] = true
+      }
+      if (this.isCallToAction) {
+        classes['call-to-action'] = true
       }
       return classes
     }
@@ -82,5 +89,11 @@ export default {
 
 .border-top-primary {
   border-top-color: var(--color-primary) !important;
+}
+
+.call-to-action {
+  font-size: 1.6rem;
+  padding: 0.6em 1.6em;
+  font-weight: bold;
 }
 </style>
