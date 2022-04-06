@@ -6,12 +6,12 @@
       </h1>
       <p class="mt-5 text-xl">
         <strong>
-          Am a software engineer, a web developer fullstacker.
+          I am a a web developer/fullstacker
         </strong>
       </p>
       <p class=" text-xl">
         <strong>
-          I can build your site and make it look good
+          I will build your site and make it look awesome
         </strong>
       </p>
       <div>
