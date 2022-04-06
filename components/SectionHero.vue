@@ -67,10 +67,7 @@ export default {
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 @keyframes up-and-down {
