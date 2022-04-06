@@ -15,9 +15,14 @@
         </strong>
       </p>
       <div>
-        <base-button class="mt-5">
-          I want to check your skills
-        </base-button>
+        <a href="#portfolio">
+          <base-button class="mt-12 relative" is-call-to-action>
+            <div class="w-full h-full" />
+            <span class="mdi mdi-eye absolute left-5" />
+            <span class="mx-2" />
+            Check skills
+          </base-button>
+        </a>
       </div>
     </div>
     <div class="flex flex-col h-full justify-center hero__code">
