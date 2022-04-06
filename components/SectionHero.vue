@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class="flex flex-col h-full justify-center hero__code">
-      <pre class="line-numbers"><code class="language-html" v-text="content" /></pre>
+      <pre class="line-numbers code-handler-styles" data-src="/markup.html" />
     </div>
     <span class="mdi mdi-arrow-down scroll-icon" />
   </section>
@@ -32,11 +32,6 @@ import Prism from '~/plugins/prism'
 
 export default {
   name: 'SectionHero',
-  computed: {
-    content () {
-      return '<section>\n\t<h1>Making ideas happen</h1>\n\t<p class="margin-top-5">\n\t\t<strong>Web developer/ Fullstacker</strong>\n\t</p>\n\t<button>I want to check your skills</button>\n</section>'
-    }
-  },
   mounted () {
     Prism.highlightAll()
   }
@@ -49,6 +44,10 @@ export default {
   section {
     height: calc(100vh - 64px);
   }
+}
+
+.code-handler-styles {
+  border-radius: 10px;
 }
 
 .hero__text {
