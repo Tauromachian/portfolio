@@ -2,16 +2,16 @@
   <section class="flex flex-col lg:flex-row mb-32 p-3 relative">
     <div class="flex flex-col h-full justify-center hero__text md:mr-5 lg:mr-0">
       <h1 class="text-6xl xl:text-7xl 2xl:text-8xl">
-        Making ideas happen
+        {{ $t('hero.title') }}
       </h1>
       <p class="mt-10 text-xl">
         <strong>
-          I am a a web developer/fullstacker
+          {{ $t('hero.description1') }}
         </strong>
       </p>
       <p class=" text-xl">
         <strong>
-          I will build your site and make it look awesome
+          {{ $t('hero.description2') }}
         </strong>
       </p>
       <div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row">
@@ -20,7 +20,7 @@
             <div class="w-full h-full" />
             <span class="mdi mdi-eye absolute left-5" />
             <span class="mx-2" />
-            Check skills
+            {{ $t('hero.button1') }}
           </base-button>
         </a>
         <a href="#social-networks">
@@ -28,7 +28,7 @@
             <div class="w-full h-full" />
             <span class="mdi mdi-email absolute left-5" />
             <span class="mx-2" />
-            Contact me
+            {{ $t('hero.button2') }}
           </base-button>
         </a>
       </div>
