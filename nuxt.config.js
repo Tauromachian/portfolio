@@ -91,7 +91,7 @@ export default {
       plugins: [
         ['prismjs', {
           languages: ['markup'],
-          plugins: ['line-numbers'],
+          plugins: ['line-numbers', 'file-highlight', 'show-language'],
           theme: 'tomorrow',
           css: true
         }]
