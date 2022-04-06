@@ -29,7 +29,7 @@ export default {
   name: 'SectionHero',
   computed: {
     content () {
-      return '<section>\n\t<h1 class="font-size-large">Making ideas happen</h1>\n\t<p class="margin-top-5">\n\t\t<strong>Web developer/ Fullstacker</strong>\n\t</p>\n\t<button>I want to check your skills</button>\n</section>'
+      return '<section>\n\t<h1>Making ideas happen</h1>\n\t<p class="margin-top-5">\n\t\t<strong>Web developer/ Fullstacker</strong>\n\t</p>\n\t<button>I want to check your skills</button>\n</section>'
     }
   },
   mounted () {
