@@ -14,9 +14,9 @@
           I will build your site and make it look awesome
         </strong>
       </p>
-      <div>
+      <div class="flex flex-col md:flex-row">
         <a href="#portfolio">
-          <base-button class="mt-12 relative" is-call-to-action>
+          <base-button class="mt-12 relative w-full md:w-unset" is-call-to-action>
             <div class="w-full h-full" />
             <span class="mdi mdi-eye absolute left-5" />
             <span class="mx-2" />
@@ -24,7 +24,7 @@
           </base-button>
         </a>
         <a href="#social-networks">
-          <base-button class="mt-12 relative" is-call-to-action outline>
+          <base-button class="mt-2 md:mt-12 md:ml-2 relative w-full md:w-unset" is-call-to-action outline>
             <div class="w-full h-full" />
             <span class="mdi mdi-email absolute left-5" />
             <span class="mx-2" />
@@ -36,7 +36,7 @@
     <div class="flex flex-col h-full justify-center hero__code">
       <pre class="line-numbers code-handler-styles" data-src="/markup.html" />
     </div>
-    <span class="mdi mdi-arrow-down scroll-icon" />
+    <span class="mdi mdi-arrow-down scroll-icon hidden md:visible" />
   </section>
 </template>
 
