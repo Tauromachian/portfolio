@@ -4,9 +4,14 @@
       <h1 class="text-7xl md:text-8xl">
         Making ideas happen
       </h1>
-      <p class="mt-5">
+      <p class="mt-5 text-xl">
         <strong>
-          Web developer/ Fullstacker
+          Am a software engineer, a web developer fullstacker.
+        </strong>
+      </p>
+      <p class=" text-xl">
+        <strong>
+          I can build your site and make it look good
         </strong>
       </p>
       <div>
