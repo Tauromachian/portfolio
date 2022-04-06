@@ -4,7 +4,7 @@
       <h1 class="text-7xl md:text-8xl">
         Making ideas happen
       </h1>
-      <p class="mt-5 text-xl">
+      <p class="mt-10 text-xl">
         <strong>
           I am a a web developer/fullstacker
         </strong>
