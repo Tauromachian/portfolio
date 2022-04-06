@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   section {
     height: calc(100vh - 64px);
   }
