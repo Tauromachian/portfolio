@@ -33,7 +33,7 @@
         </a>
       </div>
     </div>
-    <div class="flex flex-col h-full justify-center hero__code md:max-w-lg lg:max-w-unset">
+    <div class="flex flex-col h-full justify-center hero__code md:max-w-lg lg:max-w-max">
       <pre class="line-numbers code-handler-styles" data-src="/markup.html" />
     </div>
     <span class="mdi mdi-arrow-down scroll-icon hidden md:visible" />
