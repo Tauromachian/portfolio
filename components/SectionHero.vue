@@ -23,6 +23,14 @@
             Check skills
           </base-button>
         </a>
+        <a href="#social-networks">
+          <base-button class="mt-12 relative" is-call-to-action outline>
+            <div class="w-full h-full" />
+            <span class="mdi mdi-email absolute left-5" />
+            <span class="mx-2" />
+            Contact me
+          </base-button>
+        </a>
       </div>
     </div>
     <div class="flex flex-col h-full justify-center hero__code">
