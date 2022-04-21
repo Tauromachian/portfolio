@@ -5,26 +5,31 @@
         Making ideas happen
       </h1>
       <p class="mt-10 text-xl">
-        <strong>
-          I am a a web developer/fullstacker
-        </strong>
+        <strong> I am a a web developer/fullstacker </strong>
       </p>
-      <p class=" text-xl">
-        <strong>
-          I will build your site and make it look awesome
-        </strong>
+      <p class="text-xl">
+        <strong> I will build your site and make it look awesome </strong>
       </p>
       <div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row">
-        <a href="#portfolio">
-          <base-button class="mt-12 relative w-full md:w-unset" is-call-to-action>
+        <a>
+          <base-button
+            class="mt-12 relative w-full md:w-unset"
+            is-call-to-action
+            @click="scrollToPosition('portfolio')"
+          >
             <div class="w-full h-full" />
             <span class="mdi mdi-eye absolute left-5" />
             <span class="mx-2" />
             Check skills
           </base-button>
         </a>
-        <a href="#social-networks">
-          <base-button class="mt-2 sm:mt-12 lg:mt-2 xl:mt-12 sm:ml-2 lg:ml-0 xl:ml-2 relative w-full md:w-unset" is-call-to-action outline>
+        <a>
+          <base-button
+            class="mt-2 sm:mt-12 lg:mt-2 xl:mt-12 sm:ml-2 lg:ml-0 xl:ml-2 relative w-full md:w-unset"
+            is-call-to-action
+            outline
+            @click="scrollToPosition('social-networks')"
+          >
             <div class="w-full h-full" />
             <span class="mdi mdi-email absolute left-5" />
             <span class="mx-2" />
@@ -33,7 +38,9 @@
         </a>
       </div>
     </div>
-    <div class="flex flex-col h-full justify-center hero__code md:max-w-lg lg:max-w-max">
+    <div
+      class="flex flex-col h-full justify-center hero__code md:max-w-lg lg:max-w-max"
+    >
       <pre class="line-numbers code-handler-styles" data-src="/markup.html" />
     </div>
     <span class="mdi mdi-arrow-down scroll-icon hidden md:visible" />
@@ -47,8 +54,13 @@ export default {
   name: 'SectionHero',
   mounted () {
     Prism.highlightAll()
+  },
+  methods: {
+    scrollToPosition (postitionId) {
+      const elmnt = document.getElementById(postitionId.split('#').pop())
+      elmnt.scrollIntoView({ behavior: 'smooth' })
+    }
   }
-
 }
 </script>
 
