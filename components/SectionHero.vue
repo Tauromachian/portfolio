@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col lg:flex-row mb-32 p-3 relative">
     <div class="flex flex-col h-full justify-center hero__text md:mr-5 lg:mr-0">
-      <h1 class="text-7xl xl:text-8xl">
+      <h1 class="text-6xl xl:text-7xl 2xl:text-8xl">
         Making ideas happen
       </h1>
       <p class="mt-10 text-xl">
@@ -65,7 +65,7 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   section {
     height: calc(100vh - 64px);
   }
