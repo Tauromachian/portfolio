@@ -11,7 +11,7 @@
       <div>
         <a :href="siteUrl">
           <base-button class="mt-1">
-            Visit site
+            {{ $t('visit') }}
           </base-button>
         </a>
       </div>
