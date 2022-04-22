@@ -6,6 +6,7 @@ export const state = () => ({
     { value: 'dark', text: 'Dark' }
   ],
   links: [
+    { link: '#home', text: 'home' },
     { link: '#about', text: 'about' },
     { link: '#portfolio', text: 'portfolio' },
     { link: '#social-networks', text: 'contacts' },
