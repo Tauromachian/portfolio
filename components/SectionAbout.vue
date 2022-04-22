@@ -1,5 +1,5 @@
 <template>
-  <base-section :title="$t('about')" class="items-center justify-center">
+  <base-section id="about" :title="$t('about')" class="items-center justify-center">
     <p>
       {{ $t("aboutText") }}
     </p>
