@@ -5,7 +5,12 @@
     v-bind="$attrs"
     v-on="$listeners"
   >
-    <slot>
+    <div v-if="loading" class="flex justify-center items-center">
+      <div class="spinner-border animate-spin inline-block w-6 h-6 border-4 border-top-primary rounded-full" role="status" />
+      <span v-if="loadingText" class="ml-2">{{ loadingText }}</span>
+      <span v-else class="ml-2">Loading...</span>
+    </div>
+    <slot v-else>
       {{ text }}
     </slot>
   </button>
@@ -30,6 +35,22 @@ export default {
     icon: {
       type: Boolean,
       default: false
+    },
+    loading: {
+      type: Boolean,
+      default: false
+    },
+    loadingText: {
+      type: String,
+      default: ''
+    },
+    isCallToAction: {
+      type: Boolean,
+      default: false
+    },
+    outline: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
@@ -38,6 +59,12 @@ export default {
       if (this.icon) {
         classes.padding = 0
         classes['icon-button'] = true
+      }
+      if (this.isCallToAction) {
+        classes['call-to-action'] = true
+      }
+      if (this.outline) {
+        classes.outline = true
       }
       return classes
     }
@@ -65,5 +92,20 @@ export default {
 
 .button:hover {
   background-color: var(--color-secondary) !important;
+}
+
+.border-top-primary {
+  border-top-color: var(--color-primary) !important;
+}
+
+.call-to-action {
+  font-size: 1.6rem;
+  padding: 0.6em 1.6em;
+  font-weight: bold;
+}
+
+.outline {
+  border: 1px solid;
+  background-color: transparent !important;
 }
 </style>

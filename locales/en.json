@@ -1,4 +1,13 @@
 {
+  "hero": {
+    "title": "Making ideas happen",
+    "description1": "I am a a web developer/fullstacker",
+    "description2": " I will build your site and make it look awesome",
+    "button1": "Check skills",
+    "button2": "Contact me"
+  },
+  "home": "Home",
+  "visit": "Visit",
   "about": "About",
   "aboutText": "I am a fullstack web developer. I enjoy creating web sites using current development technologies.",
   "intuitive": "Intuitive",
@@ -17,6 +26,7 @@
     "title": "Projects",
     "description": {
       "queues": "This project is about taking tickets to for virtual queues. It aims to eliminate physical queues.",
+      "johnson-turbine": "For over 25 years, Johnson Turbines Support have supported the GG4/FT4 market with an extensive inventory, knowledgeable customer service, and fast and reliable shipping.",
       "kanpeki": "Santiaguero project that covers Asian and Western pop culture (includes Japanese, Korean, Chinese pop and traditional culture, etc.; in addition to video games, comics, literature in general, cinephilia and world-class music).",
       "sanchoRestaurant": "Sancho Restaurant, delicious cuisine specialties created with ingenuity and passion, inspired by the fantastic flavors of Spain.",
       "zaruArquitectura": "Design of different homes and custom exterior and interior decorations.",
@@ -33,5 +43,8 @@
   },
   "frontendDescription": "The visuals the beauty of the project.",
   "backendDescription": "Part of the app the user doesn't see. The brains of the project.",
-  "databaseDescription": "They way you save data."
+  "database": "Database",
+  "databaseDescription": "They way you save data.",
+  "language": "Languages",
+  "languagesDescription": "The languages in which you can communicate with me"
 }

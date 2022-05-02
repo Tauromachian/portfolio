@@ -59,7 +59,7 @@ export default {
   css: ['~/assets/scss/main.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: '~/plugins/prism' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -85,5 +85,17 @@ export default {
   i18n,
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {
+    babel: {
+
+      plugins: [
+        ['prismjs', {
+          languages: ['markup'],
+          plugins: ['line-numbers', 'file-highlight', 'show-language'],
+          theme: 'tomorrow',
+          css: true
+        }]
+      ]
+    }
+  }
 }

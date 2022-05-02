@@ -55,31 +55,37 @@ export default {
     projects () {
       return [
         {
-          src: 'queues.png',
+          src: 'queues.jpg',
           title: 'Waiting room',
           description: this.$t('projects.description.queues'),
           link: 'https://myqueues.herokuapp.com/'
         },
         {
-          src: 'sancho.png',
+          src: 'johnson-turbine-support-website.jpg',
+          title: 'Johnson Turbine Support',
+          description: this.$t('projects.description.johnson-turbine'),
+          link: 'https://www.johnsonturbine.com/'
+        },
+        {
+          src: 'sancho.jpg',
           title: 'Sancho Restaurant',
           description: this.$t('projects.description.sanchoRestaurant'),
           link: 'https://sancho-restaurant.herokuapp.com/'
         },
         {
-          src: 'zaru.png',
+          src: 'zaru.jpg',
           title: 'Zaru Arquitectura',
           description: this.$t('projects.description.zaruArquitectura'),
           link: 'https://zaruarquitectura.onrender.com/'
         },
         {
-          src: 'kanpeki.png',
+          src: 'kanpeki.jpg',
           title: 'Kanpeki',
           description: this.$t('projects.description.kanpeki'),
           link: 'https://kanpeki-sa.herokuapp.com/'
         },
         {
-          src: 'flowers-site.png',
+          src: 'flowers-site.jpg',
           title: 'Flowers',
           description: this.$t('projects.description.flowers'),
           link: 'https://kanpeki-sa.herokuapp.com/'

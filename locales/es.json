@@ -1,4 +1,13 @@
 {
+  "hero": {
+    "title": "Creando ideas",
+    "description1": "Soy un desarrollador web/fullstacker",
+    "description2": "Te construiré un sitio web y lucirá genial",
+    "button1": "Ver habilidades",
+    "button2": "Contáctame"
+  },
+  "home": "Inicio",
+  "visit": "Visitar",
   "about": "Sobre mí",
   "aboutText": "Soy un desarrollador web de fullstack. Disfruto crear sitios web responsivos usando tecnologías de desarrollo actuales.",
   "intuitive": "Intuitivo",
@@ -17,6 +26,7 @@
     "title": "Proyectos",
     "description": {
       "queues": "Este proyecto permite tomar tickets para participar en una sala de espera. El objetivo es eliminar colas físicas",
+      "johnson-turbine": "Por más de 25 años, Johnson Turbines Support ha dado soporte al mercado de GG4/FT4 con un mercado extensivo, servicio al consumidor eficiente y envíos rapidos y seguros.",
       "kanpeki": "Proyecto Santiaguero que abarca la cultura pop asiática y occidental (se incluyen la cultura pop y tradicional japonesa, coreana, china,etc; además de  los videojuegos, comics, literatura en general, la cinefilia y la música de corte mundial)",
       "sanchoRestaurant": "Sancho Restaurant, especialidades de la deliciosa cocina creada con el ingenio y la pasión, inspirados en los fantásticos sabores de España. ",
       "zaruArquitectura": "Diseño de diferentes viviendas y decoraciones exteriores e interiores a la medida.",
@@ -33,5 +43,9 @@
   },
   "frontendDescription": "Lo visual y lo hermoso y artístico del proyecto.",
   "backendDescription": "Lo que el usuario no ve. El cerebro del proyecto.",
-  "databaseDescription": "La forma en la que los datos se guardan."
+  "database": "Bases de datos",
+  "databaseDescription": "La forma en la que los datos se guardan.",
+  "language": "Lenguajes",
+  "languagesDescription": "Los idiomas en los que te puedes comunicar conmigo"
+
 }
