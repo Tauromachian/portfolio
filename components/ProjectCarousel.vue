@@ -70,7 +70,7 @@ export default {
           src: 'zaru.png',
           title: 'Zaru Arquitectura',
           description: this.$t('projects.description.zaruArquitectura'),
-          link: 'https://zaru-arquitectura.herokuapp.com/'
+          link: 'https://zaruarquitectura.onrender.com/'
         },
         {
           src: 'kanpeki.png',
