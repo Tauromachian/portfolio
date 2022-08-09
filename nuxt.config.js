@@ -46,11 +46,8 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Lato&display=swap'
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Patua+One&display=swap'
+        href:
+          'https://fonts.googleapis.com/css2?family=Lato&family=Patua+One&display=swap'
       }
     ]
   },
