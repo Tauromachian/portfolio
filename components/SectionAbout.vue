@@ -1,9 +1,9 @@
 <template>
   <base-section id="about" :title="$t('about')" class="items-center justify-center">
-    <p>
+    <p class="max-width-400px">
       {{ $t("aboutText") }}
     </p>
-    <div class="flex flex-col sm:flex-row mt-2">
+    <div class="flex flex-col sm:flex-row mt-4">
       <div class="flex flex-col md:flex-row">
         <base-card transparent class="w-full md:mr-1 py-4">
           <card-feature
@@ -49,6 +49,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.max-width-400px {
+  max-width: 400px;
+}
 </style>
