@@ -42,8 +42,8 @@
         </a>
       </div>
     </div>
-    <div class="flex flex-col h-full justify-center hero__code lg:max-w-lg xl:max-w-max">
-      <pre class="line-numbers code-handler-styles" data-src="/markup.html" />
+    <div class="flex flex-col mt-10 h-full justify-center hero__code lg:max-w-lg xl:max-w-max">
+      <img src="code.png" alt="" srcset="">
     </div>
     <span class="mdi mdi-arrow-down scroll-icon invisible xl:visible" />
   </section>
@@ -83,6 +83,10 @@ export default {
 
 .hero__code {
   flex-basis: 50%;
+}
+
+.hero__code .code-toolbar {
+  height: 100% !important;
 }
 
 .hero-content-last-name {
