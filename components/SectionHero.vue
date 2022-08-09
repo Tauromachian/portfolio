@@ -42,7 +42,7 @@
         </a>
       </div>
     </div>
-    <div class="flex flex-col mt-10 h-full justify-center hero__code lg:max-w-lg xl:max-w-max">
+    <div class="flex flex-col mt-10 md:mt-0 h-full justify-center hero__code lg:max-w-lg xl:max-w-max">
       <img src="code.png" alt="Code for the sake of showing some of my skills." srcset="">
     </div>
     <span class="mdi mdi-arrow-down scroll-icon invisible xl:visible" />
