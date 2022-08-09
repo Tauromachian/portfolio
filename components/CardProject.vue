@@ -1,6 +1,6 @@
 <template>
   <base-card class="rounded-lg">
-    <img :src="src" class="max-w-full h-auto align-middle border-none rounded-t-lg">
+    <img :src="src" :alt="alt" class="max-w-full h-auto align-middle border-none rounded-t-lg">
     <card-text class="flex flex-col px-5 mt-3">
       <h2 class="font-bold">
         {{ title }}
@@ -32,6 +32,10 @@ export default {
       default: ''
     },
     siteUrl: {
+      type: String,
+      default: ''
+    },
+    alt: {
       type: String,
       default: ''
     }

@@ -19,6 +19,7 @@
           :description="project.description"
           :site-url="project.link"
           :src="project.src"
+          :alt="project.alt"
         />
       </template>
     </vueper-slide>
@@ -58,37 +59,43 @@ export default {
           src: 'queues.jpg',
           title: 'Waiting room',
           description: this.$t('projects.description.queues'),
-          link: 'https://myqueues.herokuapp.com/'
+          link: 'https://myqueues.herokuapp.com/',
+          alt: 'Queues app picture'
         },
         {
           src: 'johnson-turbine-support-website.jpg',
           title: 'Johnson Turbine Support',
           description: this.$t('projects.description.johnson-turbine'),
-          link: 'https://www.johnsonturbine.com/'
+          link: 'https://www.johnsonturbine.com/',
+          alt: 'Jhonson Turbine company\'s portfolio site.'
         },
         {
           src: 'sancho.jpg',
           title: 'Sancho Restaurant',
           description: this.$t('projects.description.sanchoRestaurant'),
-          link: 'https://sancho-restaurant.herokuapp.com/'
+          link: 'https://sancho-restaurant.herokuapp.com/',
+          alt: 'Site of hispanic food restaurant. Shancho Restaurant.'
         },
         {
           src: 'zaru.jpg',
           title: 'Zaru Arquitectura',
           description: this.$t('projects.description.zaruArquitectura'),
-          link: 'https://zaruarquitectura.onrender.com/'
+          link: 'https://zaruarquitectura.onrender.com/',
+          alt: 'Site of architectural displays.'
         },
         {
           src: 'kanpeki.jpg',
           title: 'Kanpeki',
           description: this.$t('projects.description.kanpeki'),
-          link: 'https://kanpeki-sa.herokuapp.com/'
+          link: 'https://kanpeki-sa.herokuapp.com/',
+          alt: 'Site of all asian culture fanatics'
         },
         {
           src: 'flowers-site.jpg',
           title: 'Flowers',
           description: this.$t('projects.description.flowers'),
-          link: 'https://kanpeki-sa.herokuapp.com/'
+          link: 'https://kanpeki-sa.herokuapp.com/',
+          alt: 'Simple template of a possible flower store.'
         }
       ]
     }
