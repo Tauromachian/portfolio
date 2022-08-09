@@ -1,6 +1,6 @@
 <template>
   <base-card class="rounded-lg">
-    <img :src="src" :alt="alt" class="max-w-full h-auto align-middle border-none rounded-t-lg">
+    <img loading="lazy" decoding="async" :src="src" :alt="alt" class="max-w-full h-auto align-middle border-none rounded-t-lg">
     <card-text class="flex flex-col px-5 mt-3">
       <h2 class="font-bold">
         {{ title }}
