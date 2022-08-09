@@ -47,6 +47,7 @@
     >
       <img
         src="code.png"
+        class="w-full h-auto"
         width="336"
         height="268.583"
         alt="Code for the sake of showing some of my skills."
