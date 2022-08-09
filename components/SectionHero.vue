@@ -22,7 +22,7 @@
             @click="scrollToPosition('portfolio')"
           >
             <div class="w-full h-full" />
-            <span class="mdi mdi-eye absolute left-5" />
+            <svg-icon type="mdi" :path="icons.mdiEye" class="absolute left-5 top-5" />
             <span class="mx-2" />
             {{ $t("hero.button1") }}
           </base-button>
@@ -35,7 +35,7 @@
             @click="scrollToPosition('social-networks')"
           >
             <div class="w-full h-full" />
-            <span class="mdi mdi-email absolute left-5" />
+            <svg-icon type="mdi" :path="icons.mdiEmail" class="absolute left-5 top-5" />
             <span class="mx-2" />
             {{ $t("hero.button2") }}
           </base-button>
@@ -57,13 +57,26 @@
         >
       </picture>
     </div>
-    <span class="mdi mdi-arrow-down scroll-icon invisible xl:visible" />
+    <svg-icon type="mdi" :size="40" :path="icons.mdiArrowDown" class="scroll-icon invisible xl:visible" />
   </section>
 </template>
 
 <script>
+import SvgIcon from '@jamescoyle/vue-icon'
+import { mdiEye, mdiEmail, mdiArrowDown } from '@mdi/js'
+
 export default {
   name: 'SectionHero',
+  components: {
+    SvgIcon
+  },
+  data () {
+    return {
+      isHidden: true,
+      theme: 'default',
+      icons: { mdiEye, mdiEmail, mdiArrowDown }
+    }
+  },
   methods: {
     scrollToPosition (postitionId) {
       const elmnt = document.getElementById(postitionId.split('#').pop())

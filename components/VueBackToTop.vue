@@ -1,16 +1,23 @@
 <template>
   <button title="Go to top" class="rounded-lg lol floating-button" :class="isShowingClasses" @click="topFunction">
-    <span class="mdi mdi-arrow-up" />
+    <svg-icon type="mdi" :path="mdiArrowUp" />
   </button>
 </template>
 
 <script>
+import SvgIcon from '@jamescoyle/vue-icon'
+import { mdiArrowUp } from '@mdi/js'
+
 export default {
   name: 'VueBackToTop',
+  components: {
+    SvgIcon
+  },
   data () {
     return {
       floatingButton: null,
-      isShowing: false
+      isShowing: false,
+      mdiArrowUp
     }
   },
   computed: {
