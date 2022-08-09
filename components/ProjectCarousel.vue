@@ -56,42 +56,42 @@ export default {
     projects () {
       return [
         {
-          src: 'queues.jpg',
+          src: 'queues',
           title: 'Waiting room',
           description: this.$t('projects.description.queues'),
           link: 'https://myqueues.herokuapp.com/',
           alt: 'Queues app picture'
         },
         {
-          src: 'johnson-turbine-support-website.jpg',
+          src: 'johnson-turbine-support-website',
           title: 'Johnson Turbine Support',
           description: this.$t('projects.description.johnson-turbine'),
           link: 'https://www.johnsonturbine.com/',
           alt: 'Jhonson Turbine company\'s portfolio site.'
         },
         {
-          src: 'sancho.jpg',
+          src: 'sancho',
           title: 'Sancho Restaurant',
           description: this.$t('projects.description.sanchoRestaurant'),
           link: 'https://sancho-restaurant.herokuapp.com/',
           alt: 'Site of hispanic food restaurant. Shancho Restaurant.'
         },
         {
-          src: 'zaru.jpg',
+          src: 'zaru',
           title: 'Zaru Arquitectura',
           description: this.$t('projects.description.zaruArquitectura'),
           link: 'https://zaruarquitectura.onrender.com/',
           alt: 'Site of architectural displays.'
         },
         {
-          src: 'kanpeki.jpg',
+          src: 'kanpeki',
           title: 'Kanpeki',
           description: this.$t('projects.description.kanpeki'),
           link: 'https://kanpeki-sa.herokuapp.com/',
           alt: 'Site of all asian culture fanatics'
         },
         {
-          src: 'flowers-site.jpg',
+          src: 'flowers-site',
           title: 'Flowers',
           description: this.$t('projects.description.flowers'),
           link: 'https://kanpeki-sa.herokuapp.com/',

@@ -3,7 +3,7 @@
     <img
       loading="lazy"
       decoding="async"
-      :src="src"
+      :src="`${src}.jpg`"
       width="320"
       height="155.967"
       :alt="alt"
