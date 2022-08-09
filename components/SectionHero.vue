@@ -48,8 +48,8 @@
       <img
         src="code.png"
         class="w-full h-auto"
-        width="336"
-        height="268.583"
+        width="1256"
+        height="1004"
         alt="Code for the sake of showing some of my skills."
         srcset=""
       >
