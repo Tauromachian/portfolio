@@ -45,14 +45,17 @@
     <div
       class="flex flex-col mt-10 md:mt-0 h-full justify-center hero__code lg:max-w-lg xl:max-w-max"
     >
-      <img
-        src="code.png"
-        class="w-full h-auto"
-        width="1256"
-        height="1004"
-        alt="Code for the sake of showing some of my skills."
-        srcset=""
-      >
+      <picture>
+        <source type="image/avif" srcset="code.avif">
+        <img
+          src="code.png"
+          class="w-full h-auto"
+          width="1256"
+          height="1004"
+          alt="Code for the sake of showing some of my skills."
+          srcset=""
+        >
+      </picture>
     </div>
     <span class="mdi mdi-arrow-down scroll-icon invisible xl:visible" />
   </section>
