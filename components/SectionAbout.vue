@@ -1,7 +1,13 @@
 <template>
   <base-section id="about" :title="$t('about')" class="items-center justify-center">
-    <p class="max-width-400px">
-      {{ $t("aboutText") }}
+    <p class="p-width">
+      {{ $t("aboutText1") }}
+    </p>
+    <p class="p-width mt-4">
+      {{ $t("aboutText2") }}
+    </p>
+    <p class="p-width mt-4">
+      {{ $t("aboutText3") }}
     </p>
     <div class="flex flex-col sm:flex-row mt-4">
       <div class="flex flex-col md:flex-row">
@@ -50,7 +56,7 @@ export default {
 </script>
 
 <style scoped>
-.max-width-400px {
-  max-width: 400px;
+.p-width {
+  max-width: 700px;
 }
 </style>
