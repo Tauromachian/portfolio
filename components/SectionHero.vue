@@ -50,13 +50,8 @@
 </template>
 
 <script>
-import Prism from '~/plugins/prism'
-
 export default {
   name: 'SectionHero',
-  mounted () {
-    Prism.highlightAll()
-  },
   methods: {
     scrollToPosition (postitionId) {
       const elmnt = document.getElementById(postitionId.split('#').pop())
