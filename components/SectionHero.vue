@@ -2,16 +2,16 @@
   <section id="home" class="flex flex-col lg:flex-row mb-32 p-3 relative">
     <div class="flex flex-col h-full justify-center hero__text md:mr-5 xl:mr-0">
       <h1 class="text-6xl xl:text-7xl 2xl:text-8xl">
-        {{ $t('hero.title') }}
+        {{ $t("hero.title") }}
       </h1>
       <p class="mt-10 text-xl">
         <strong>
-          {{ $t('hero.description1') }}
+          {{ $t("hero.description1") }}
         </strong>
       </p>
-      <p class=" text-xl">
+      <p class="text-xl">
         <strong>
-          {{ $t('hero.description2') }}
+          {{ $t("hero.description2") }}
         </strong>
       </p>
       <div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row">
@@ -24,7 +24,7 @@
             <div class="w-full h-full" />
             <span class="mdi mdi-eye absolute left-5" />
             <span class="mx-2" />
-            {{ $t('hero.button1') }}
+            {{ $t("hero.button1") }}
           </base-button>
         </a>
         <a>
@@ -37,13 +37,21 @@
             <div class="w-full h-full" />
             <span class="mdi mdi-email absolute left-5" />
             <span class="mx-2" />
-            {{ $t('hero.button2') }}
+            {{ $t("hero.button2") }}
           </base-button>
         </a>
       </div>
     </div>
-    <div class="flex flex-col mt-10 md:mt-0 h-full justify-center hero__code lg:max-w-lg xl:max-w-max">
-      <img src="code.png" alt="Code for the sake of showing some of my skills." srcset="">
+    <div
+      class="flex flex-col mt-10 md:mt-0 h-full justify-center hero__code lg:max-w-lg xl:max-w-max"
+    >
+      <img
+        src="code.png"
+        width="336"
+        height="268.583"
+        alt="Code for the sake of showing some of my skills."
+        srcset=""
+      >
     </div>
     <span class="mdi mdi-arrow-down scroll-icon invisible xl:visible" />
   </section>
