@@ -4,8 +4,8 @@
       loading="lazy"
       decoding="async"
       :src="`${src}.jpg`"
-      width="320"
-      height="155.967"
+      width="1908"
+      height="930"
       :alt="alt"
       class="max-w-full h-auto align-middle border-none rounded-t-lg"
     >
