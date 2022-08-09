@@ -15,7 +15,6 @@
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
     "nuxt-i18n": "^6.27.0",
-    "prismjs": "^1.27.0",
     "vueperslides": "^2.15.2"
   },
   "devDependencies": {
