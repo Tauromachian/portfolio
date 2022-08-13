@@ -1,15 +1,21 @@
 <template>
   <base-card class="rounded-lg">
     <picture>
-      <source type="image/avif" :srcset="`${src}.avif`">
+      <source
+        sizes="(min-width: 347px)"
+        type="image/avif"
+        :srcset="`avif/original/${src}.avif 1900w, avif/1280/${src}.avif 1280w, avif/640/${src}.avif 640w`"
+      >
+      <source
+        type="image/webp"
+        :srcset="`webp/original/${src}.webp 1900w, webp/1280/${src}.webp 1280w, webp/640/${src}.webp 640w`"
+      >
       <img
-        loading="lazy"
-        decoding="async"
-        :src="`${src}.jpg`"
-        width="1908"
-        height="930"
-        :alt="alt"
-        class="max-w-full h-auto align-middle border-none rounded-t-lg"
+        class="w-full h-auto"
+        width="1256"
+        height="1004"
+        alt="Code for the sake of showing some of my skills."
+        :srcset="`images/original/${src}.jpg 1900w, images/1280/${src}.jpg 1280w, images/640/${src}.jpg 640w`"
       >
     </picture>
     <card-text class="flex flex-col px-5 mt-3">

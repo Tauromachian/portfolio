@@ -46,14 +46,21 @@
       class="flex flex-col mt-10 md:mt-0 h-full justify-center hero__code lg:max-w-lg xl:max-w-max"
     >
       <picture>
-        <source type="image/avif" srcset="code.avif">
+        <source
+          sizes="(min-width: 347px)"
+          type="image/avif"
+          srcset="avif/1280/code.avif 1280w, avif/640/code.avif 640w"
+        >
+        <source
+          type="image/webp"
+          srcset="webp/1280/code.webp 1280w, webp/640/code.webp 640w"
+        >
         <img
-          src="code.png"
           class="w-full h-auto"
           width="1256"
           height="1004"
           alt="Code for the sake of showing some of my skills."
-          srcset=""
+          srcset="images/1280/code.png 1280w, images/640/code.png 640w"
         >
       </picture>
     </div>
@@ -66,9 +73,7 @@ import { mdiEye, mdiEmail, mdiArrowDown } from '@mdi/js'
 
 export default {
   name: 'SectionHero',
-  components: {
-
-  },
+  components: {},
   data () {
     return {
       isHidden: true,
