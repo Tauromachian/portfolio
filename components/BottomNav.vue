@@ -21,18 +21,18 @@
     </div>
     <div class="buttons flex justify-center bg-primary px-3 text-2xl">
       <base-button class="navbar__link" icon @click="changeLocal">
-        <svg-icon type="mdi" :path="icons.mdiTranslate" />
+        <span class="mdi mdi-translate" />
       </base-button>
       <base-menu bottom="3rem">
         <template #activator="{ on }">
           <base-button class="navbar__link" icon v-on="on">
-            <svg-icon type="mdi" :path="icons.mdiInvertColors" />
+            <span class="mdi mdi-invert-colors" />
           </base-button>
         </template>
         <theme-selector v-model="theme" :themes="themes" />
       </base-menu>
       <base-button class="navbar__link" icon @click="isHidden = !isHidden">
-        <svg-icon type="mdi" :path="icons.mdiMenu" />
+        <span class="mdi mdi-menu" />
       </base-button>
     </div>
   </nav>
@@ -41,21 +41,17 @@
 <script>
 import { mapState, mapMutations } from 'vuex'
 
-import SvgIcon from '@jamescoyle/vue-icon'
-import { mdiTranslate, mdiInvertColors, mdiMenu } from '@mdi/js'
 import BaseButton from './BaseButton'
 
 export default {
   name: 'BottomNav',
   components: {
-    BaseButton,
-    SvgIcon
+    BaseButton
   },
   data () {
     return {
       isHidden: true,
-      theme: 'default',
-      icons: { mdiTranslate, mdiInvertColors, mdiMenu }
+      theme: 'default'
     }
   },
   computed: {

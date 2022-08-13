@@ -20,12 +20,12 @@
       </ul>
       <div>
         <base-button class="navbar__link" icon @click="changeLocal">
-          <svg-icon type="mdi" :path="icons.mdiTranslate" />
+          <span type="mdi-translate" />
         </base-button>
         <base-menu bottom="initial" top="3rem">
           <template #activator="{ on }">
             <base-button class="navbar__link" icon v-on="on">
-              <svg-icon type="mdi" :path="icons.mdiInvertColors" />
+              <span type="mdi-invert-colors" />
             </base-button>
           </template>
           <theme-selector v-model="theme" :themes="themes" />
@@ -38,15 +38,13 @@
 <script>
 import { mapState, mapMutations } from 'vuex'
 
-import SvgIcon from '@jamescoyle/vue-icon'
 import { mdiTranslate, mdiInvertColors, mdiMenu } from '@mdi/js'
 import BaseButton from './BaseButton'
 
 export default {
   name: 'TopNav',
   components: {
-    BaseButton,
-    SvgIcon
+    BaseButton
   },
   data () {
     return {

@@ -1,7 +1,7 @@
 <template>
   <a class="mt-1 px-2">
     <span class="link">
-      <svg-icon v-if="icon" type="mdi" :path="path" />
+      <span class="mdi mdi-link" />
       <span>
         {{ text }}
       </span>
@@ -10,13 +10,11 @@
 </template>
 
 <script>
-import SvgIcon from '@jamescoyle/vue-icon'
-import { mdiLink } from '@mdi/js'
 
 export default {
   name: 'BaseLink',
   components: {
-    SvgIcon
+
   },
   props: {
     icon: {
@@ -26,11 +24,6 @@ export default {
     text: {
       type: String,
       default: 'lorem ipsum'
-    }
-  },
-  data () {
-    return {
-      path: mdiLink
     }
   }
 }
