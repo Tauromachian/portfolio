@@ -18,7 +18,7 @@
           :src="`/icons/${link.icon}.svg`"
           width="80px"
           height="80px"
-          alt=""
+          :alt="link.alt"
         >
       </a>
     </div>
@@ -76,23 +76,28 @@ export default {
       socialLinks: [
         {
           link: 'https://www.linkedin.com/in/jose-garcia-888941180/',
-          icon: 'linkedin'
+          icon: 'linkedin',
+          alt: 'Linkedin icon'
         },
         {
           link: 'https://stackoverflow.com/users/10824037/jogarcia',
-          icon: 'stack-overflow'
+          icon: 'stack-overflow',
+          alt: 'Stack Overflow icon'
         },
         {
           link: 'https://github.com/Tauromachian',
-          icon: 'github'
+          icon: 'github',
+          alt: 'Github icon'
         },
         {
           link: 'https://t.me/BetanKore',
-          icon: 'telegram'
+          icon: 'telegram',
+          alt: 'Telegram icon'
         },
         {
           link: 'https://www.reddit.com/user/BetanKore',
-          icon: 'reddit'
+          icon: 'reddit',
+          alt: 'Reddit icon'
         }
       ],
       form: {

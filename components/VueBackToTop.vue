@@ -2,7 +2,7 @@
   <button title="Go to top" class="rounded-lg lol floating-button" :class="isShowingClasses" @click="topFunction">
     <img
       src="/icons/arrow-up.svg"
-      alt=""
+      alt="Arrow up icon"
       class="absolute"
       width="30px"
       height="30px"

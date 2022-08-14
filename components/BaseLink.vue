@@ -2,7 +2,7 @@
   <a class="mt-1 px-2">
     <span class="link">
       <span class="link-content">
-        <img src="icons/link.svg" width="25px" height="25px" alt="">
+        <img src="icons/link.svg" width="25px" height="25px" alt="Link icon">
         <span>
           {{ text }}
         </span>

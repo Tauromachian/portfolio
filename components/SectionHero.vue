@@ -25,7 +25,7 @@
             <img
               src="/icons/eye.svg"
               class="absolute left-5 top-5"
-              alt=""
+              alt="Eye icon"
               width="30px"
               height="30px"
             >
@@ -44,7 +44,7 @@
             <img
               src="/icons/email.svg"
               class="absolute left-5 top-5"
-              alt=""
+              alt="Email icon"
               width="30px"
               height="30px"
             >
@@ -79,7 +79,7 @@
     <img
       src="/icons/arrow-down.svg"
       class="scroll-icon invisible xl:visible ml-2"
-      alt=""
+      alt="Arrow down icon"
       width="60px"
       height="60px"
     >

@@ -7,7 +7,13 @@
     <div class="flex flex-col">
       <base-card class="bg-secondary mx-4">
         <card-text class="flex" no-padding>
-          <img src="/icons/code-tags.svg" width="100px" height="100px" class="self-center md:self-auto text-8xl color-primary mr-2" alt="">
+          <img
+            src="/icons/code-tags.svg"
+            width="100px"
+            height="100px"
+            class="self-center md:self-auto text-8xl color-primary mr-2"
+            alt="Icon that depicts an html tag"
+          >
           <div class="flex flex-col">
             <h2>Frontend</h2>
             <p>{{ $t("frontendDescription") }}</p>
@@ -17,7 +23,13 @@
       </base-card>
       <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
         <card-text class="flex" no-padding>
-          <img src="/icons/server.svg" width="100px" height="100px" class="self-center md:self-auto text-8xl color-primary mr-2" alt="">
+          <img
+            src="/icons/server.svg"
+            width="100px"
+            height="100px"
+            class="self-center md:self-auto text-8xl color-primary mr-2"
+            alt="Server icon"
+          >
           <div class="flex flex-col">
             <h2>Backend</h2>
             <p>{{ $t("backendDescription") }}</p>
@@ -27,7 +39,13 @@
       </base-card>
       <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
         <card-text class="flex" no-padding>
-          <img src="/icons/database.svg" width="100px" height="100px" class="self-center md:self-auto text-8xl color-primary mr-2" alt="">
+          <img
+            src="/icons/database.svg"
+            width="100px"
+            height="100px"
+            class="self-center md:self-auto text-8xl color-primary mr-2"
+            alt="Database icon"
+          >
           <div class="flex flex-col">
             <h2>{{ $t("database") }}</h2>
             <p>{{ $t("databaseDescription") }}</p>
@@ -37,7 +55,13 @@
       </base-card>
       <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
         <card-text class="flex" no-padding>
-          <img src="/icons/translate-blue.svg" width="100px" height="100px" class="self-center md:self-auto text-8xl color-primary mr-2" alt="">
+          <img
+            src="/icons/translate-blue.svg"
+            width="100px"
+            height="100px"
+            class="self-center md:self-auto text-8xl color-primary mr-2"
+            alt="Translate icon"
+          >
           <div class="flex flex-col">
             <h2>{{ $t("language") }}</h2>
             <p>{{ $t("languagesDescription") }}</p>
@@ -80,6 +104,4 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

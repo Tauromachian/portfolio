@@ -15,6 +15,7 @@
           <card-feature
             :title="$t('intuitive')"
             icon="lightbulb-on-outline"
+            alt="Intuitive icon"
           >
             <p class="md:text-center md:mx-3">
               {{ $t("intuitiveText") }}
@@ -22,7 +23,11 @@
           </card-feature>
         </base-card>
         <base-card transparent class="w-full md:mx-1 py-4">
-          <card-feature :title="$t('fast')" icon="rocket-launch">
+          <card-feature
+            :title="$t('fast')"
+            icon="rocket-launch"
+            alt="Fast icon"
+          >
             <p class="md:text-center md:mx-3">
               {{ $t("fastText") }}
             </p>
@@ -31,14 +36,22 @@
       </div>
       <div class="flex flex-col md:flex-row md:mt-2">
         <base-card transparent class="w-full md:mr-1 py-4">
-          <card-feature :title="$t('responsive')" icon="responsive">
+          <card-feature
+            :title="$t('responsive')"
+            icon="responsive"
+            alt="Responsive icon"
+          >
             <p class="md:text-center md:mx-3">
               {{ $t("responsiveText") }}
             </p>
           </card-feature>
         </base-card>
         <base-card transparent class="w-full md:mx-1 py-4">
-          <card-feature :title="$t('reactive')" icon="alpha-r-circle">
+          <card-feature
+            :title="$t('reactive')"
+            icon="alpha-r-circle"
+            alt="Reactive icon"
+          >
             <p class="md:text-center md:mx-3">
               {{ $t("reactiveText") }}
             </p>
