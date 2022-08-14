@@ -1,11 +1,16 @@
 <template>
   <button title="Go to top" class="rounded-lg lol floating-button" :class="isShowingClasses" @click="topFunction">
-    <span class="mdi mdi-arrow-up" />
+    <img
+      src="/icons/arrow-up.svg"
+      alt=""
+      class="absolute"
+      width="30px"
+      height="30px"
+    >
   </button>
 </template>
 
 <script>
-import { mdiArrowUp } from '@mdi/js'
 
 export default {
   name: 'VueBackToTop',
@@ -15,8 +20,7 @@ export default {
   data () {
     return {
       floatingButton: null,
-      isShowing: false,
-      mdiArrowUp
+      isShowing: false
     }
   },
   computed: {
@@ -74,6 +78,12 @@ export default {
 .floating-button--show {
   display: block;
   animation: roll 1s;
+}
+
+.floating-button > img {
+  left: 7px;
+  top: 6px;
+  z-index: 100;
 }
 
 @keyframes roll {
