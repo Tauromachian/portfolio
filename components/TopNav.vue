@@ -73,3 +73,21 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.navbar__link {
+  color: var(--text-color-primary);
+  transition: all 0.2s;
+  position: relative;
+}
+
+.navbar__link > img {
+  position: absolute;
+  top: 15px;
+  left: 14.5px;
+}
+
+.navbar__link:hover {
+  color: var(--text-color-secondary);
+}
+</style>
