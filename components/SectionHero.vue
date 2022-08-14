@@ -22,7 +22,13 @@
             @click="scrollToPosition('portfolio')"
           >
             <div class="w-full h-full" />
-            <span class="mdi mdi-mdi-eye absolute left-5 top-5" />
+            <img
+              src="/icons/eye.svg"
+              class="absolute left-5 top-5"
+              alt=""
+              width="30px"
+              height="30px"
+            >
             <span class="mx-2" />
             {{ $t("hero.button1") }}
           </base-button>
@@ -35,7 +41,13 @@
             @click="scrollToPosition('social-networks')"
           >
             <div class="w-full h-full" />
-            <span class="mdi mdi-mdi-email absolute left-5 top-5" />
+            <img
+              src="/icons/email.svg"
+              class="absolute left-5 top-5"
+              alt=""
+              width="30px"
+              height="30px"
+            >
             <span class="mx-2" />
             {{ $t("hero.button2") }}
           </base-button>
@@ -64,7 +76,13 @@
         >
       </picture>
     </div>
-    <span class="mdi mdi-arrow-down scroll-icon invisible xl:visible" />
+    <img
+      src="/icons/arrow-down.svg"
+      class="scroll-icon invisible xl:visible ml-2"
+      alt=""
+      width="60px"
+      height="60px"
+    >
   </section>
 </template>
 
