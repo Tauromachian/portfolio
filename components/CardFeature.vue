@@ -1,6 +1,6 @@
 <template>
   <div class="flex md:flex-col items-center">
-    <img :src="`/icons/${icon}.svg`" alt="" width="95px" height="95px">
+    <img :src="`/icons/${icon}.svg`" :alt="alt" width="95px" height="95px">
     <div class="flex flex-col md:items-center">
       <h2 class="font-bold">
         {{ title }}
@@ -21,6 +21,10 @@ export default {
     icon: {
       type: String,
       required: true
+    },
+    alt: {
+      type: String,
+      default: ''
     }
   }
 
