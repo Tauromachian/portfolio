@@ -79,6 +79,8 @@ export default {
   color: var(--text-color-primary);
   transition: all 0.2s;
   position: relative;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .navbar__link > img {
