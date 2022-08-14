@@ -9,6 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     name: Build and Push
+    env:
+      NUXT_ENV_GITHUB_TOKEN: ${{ secrets.NUXT_ENV_GITHUB_TOKEN }}
     steps:
       - name: git-checkout
         uses: actions/checkout@v2
