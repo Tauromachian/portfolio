@@ -1,6 +1,6 @@
 <template>
   <div class="flex md:flex-col items-center">
-    <span class="mdi text-7xl mr-1.5 color-primary md:text-8xl md:mr-0" :class="icon" />
+    <img :src="`/icons/${icon}.svg`" alt="" width="95px" height="95px">
     <div class="flex flex-col md:items-center">
       <h2 class="font-bold">
         {{ title }}
