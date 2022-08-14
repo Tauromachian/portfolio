@@ -1,7 +1,7 @@
 <template>
   <a class="mt-1 px-2">
     <span class="link">
-      <span class="mdi mdi-link" />
+      <img src="icons/link.svg" width="30px" height="30px" alt="">
       <span>
         {{ text }}
       </span>
