@@ -1,10 +1,13 @@
 <template>
   <a class="mt-1 px-2">
     <span class="link">
-      <img src="icons/link.svg" width="25px" height="25px" alt="">
-      <span>
-        {{ text }}
+      <span class="link-content">
+        <img src="icons/link.svg" width="25px" height="25px" alt="">
+        <span>
+          {{ text }}
+        </span>
       </span>
+      <div />
     </span>
   </a>
 </template>
@@ -31,7 +34,10 @@ export default {
 
 <style lang="scss" scoped>
 .link {
-  width: auto;
+  display: inline-block;
+}
+
+.link-content {
   display: flex;
 }
 
