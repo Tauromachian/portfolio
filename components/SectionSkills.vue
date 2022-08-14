@@ -7,9 +7,7 @@
     <div class="flex flex-col">
       <base-card class="bg-secondary mx-4">
         <card-text class="flex" no-padding>
-          <span
-            class="mdi self-center md:self-auto mdi-code-tags text-8xl color-primary mr-2"
-          />
+          <img src="/icons/code-tags.svg" width="100px" height="100px" class="self-center md:self-auto text-8xl color-primary mr-2" alt="">
           <div class="flex flex-col">
             <h2>Frontend</h2>
             <p>{{ $t("frontendDescription") }}</p>
@@ -19,9 +17,7 @@
       </base-card>
       <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
         <card-text class="flex" no-padding>
-          <span
-            class="mdi self-center md:self-auto mdi-server text-8xl color-primary mr-2"
-          />
+          <img src="/icons/server.svg" width="100px" height="100px" class="self-center md:self-auto text-8xl color-primary mr-2" alt="">
           <div class="flex flex-col">
             <h2>Backend</h2>
             <p>{{ $t("backendDescription") }}</p>
@@ -31,9 +27,7 @@
       </base-card>
       <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
         <card-text class="flex" no-padding>
-          <span
-            class="mdi self-center md:self-auto mdi-database text-8xl color-primary mr-2"
-          />
+          <img src="/icons/database.svg" width="100px" height="100px" class="self-center md:self-auto text-8xl color-primary mr-2" alt="">
           <div class="flex flex-col">
             <h2>{{ $t("database") }}</h2>
             <p>{{ $t("databaseDescription") }}</p>
@@ -43,9 +37,7 @@
       </base-card>
       <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
         <card-text class="flex" no-padding>
-          <span
-            class="mdi self-center md:self-auto mdi-translate text-8xl color-primary mr-2"
-          />
+          <img src="/icons/translate.svg" width="100px" height="100px" class="self-center md:self-auto text-8xl color-primary mr-2" alt="">
           <div class="flex flex-col">
             <h2>{{ $t("language") }}</h2>
             <p>{{ $t("languagesDescription") }}</p>

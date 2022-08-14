@@ -87,7 +87,6 @@
 </template>
 
 <script>
-import { mdiEye, mdiEmail, mdiArrowDown } from '@mdi/js'
 
 export default {
   name: 'SectionHero',
@@ -95,8 +94,7 @@ export default {
   data () {
     return {
       isHidden: true,
-      theme: 'default',
-      icons: { mdiEye, mdiEmail, mdiArrowDown }
+      theme: 'default'
     }
   },
   methods: {

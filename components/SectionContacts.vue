@@ -12,7 +12,7 @@
         :href="link.link"
         class="social-link"
       >
-        <span :class="`mdi ${link.icon} color-primary`" />
+        <img :src="`/icons/${link.icon}.svg`" width="80px" height="80px" alt="">
       </a>
     </div>
     <base-card class="mt-8 p-4">
@@ -69,23 +69,23 @@ export default {
       socialLinks: [
         {
           link: 'https://www.linkedin.com/in/jose-garcia-888941180/',
-          icon: 'mdi-linkedin'
+          icon: 'linkedin'
         },
         {
           link: 'https://stackoverflow.com/users/10824037/jogarcia',
-          icon: 'mdi-stack-overflow'
+          icon: 'stack-overflow'
         },
         {
           link: 'https://github.com/Tauromachian',
-          icon: 'mdi-github'
+          icon: 'github'
         },
         {
           link: 'https://t.me/BetanKore',
-          icon: 'mdi-telegram'
+          icon: 'telegram'
         },
         {
           link: 'https://www.reddit.com/user/BetanKore',
-          icon: 'mdi-reddit'
+          icon: 'reddit'
         }
       ],
       form: {
