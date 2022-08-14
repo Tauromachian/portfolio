@@ -21,18 +21,18 @@
     </div>
     <div class="buttons flex justify-center bg-primary px-3 text-2xl">
       <base-button class="navbar__link" icon @click="changeLocal">
-        <span class="mdi mdi-translate" />
+        <img src="icons/translate.svg" width="30px" height="30px" alt="">
       </base-button>
       <base-menu bottom="3rem">
         <template #activator="{ on }">
           <base-button class="navbar__link" icon v-on="on">
-            <span class="mdi mdi-invert-colors" />
+            <img src="icons/invert-colors.svg" width="30px" height="30px" alt="">
           </base-button>
         </template>
         <theme-selector v-model="theme" :themes="themes" />
       </base-menu>
       <base-button class="navbar__link" icon @click="isHidden = !isHidden">
-        <span class="mdi mdi-menu" />
+        <img src="icons/menu.svg" width="30px" height="30px" alt="">
       </base-button>
     </div>
   </nav>
