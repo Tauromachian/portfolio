@@ -1,7 +1,7 @@
 <template>
   <a class="mt-1 px-2">
     <span class="link">
-      <img src="icons/link.svg" width="30px" height="30px" alt="">
+      <img src="icons/link.svg" width="25px" height="25px" alt="">
       <span>
         {{ text }}
       </span>
