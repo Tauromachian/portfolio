@@ -60,6 +60,8 @@ export default {
   methods: {
     async loadRepositories () {
       const token = process.env.NUXT_ENV_GITHUB_TOKEN
+      if (!token) { return }
+
       let repositories
       try {
         const { data } = await axios.get(
