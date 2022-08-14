@@ -11,10 +11,6 @@ jobs:
     name: Build and Push
 
     steps:
-      - name: set-environment-variables
-        env:
-          NUXT_ENV_GITHUB_TOKEN: ${{ secrets.NUXT_ENV_GITHUB_TOKEN }}
-
       - name: git-checkout
         uses: actions/checkout@v2
 
@@ -31,4 +27,5 @@ jobs:
           BRANCH: build # The branch name where you want to push the assets
           FOLDER: dist # The directory where your assets are generated
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+          NUXT_ENV_GITHUB_TOKEN: ${{ secrets.NUXT_ENV_GITHUB_TOKEN }}
           MESSAGE: "Build: ({sha}) {msg}" # The commit message
