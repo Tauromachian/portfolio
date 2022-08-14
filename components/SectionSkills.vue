@@ -37,7 +37,7 @@
       </base-card>
       <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
         <card-text class="flex" no-padding>
-          <img src="/icons/translate.svg" width="100px" height="100px" class="self-center md:self-auto text-8xl color-primary mr-2" alt="">
+          <img src="/icons/translate-blue.svg" width="100px" height="100px" class="self-center md:self-auto text-8xl color-primary mr-2" alt="">
           <div class="flex flex-col">
             <h2>{{ $t("language") }}</h2>
             <p>{{ $t("languagesDescription") }}</p>
