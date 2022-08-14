@@ -7,11 +7,14 @@
         :srcset="`avif/original/${src}.avif 1900w, avif/1280/${src}.avif 1280w, avif/640/${src}.avif 640w`"
       >
       <source
+        sizes="(min-width: 347px)"
         type="image/webp"
         :srcset="`webp/original/${src}.webp 1900w, webp/1280/${src}.webp 1280w, webp/640/${src}.webp 640w`"
       >
       <img
         class="w-full h-auto"
+        decoding="async"
+        loading="lazy"
         width="1256"
         height="1004"
         alt="Code for the sake of showing some of my skills."

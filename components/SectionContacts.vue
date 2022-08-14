@@ -12,7 +12,14 @@
         :href="link.link"
         class="social-link"
       >
-        <img :src="`/icons/${link.icon}.svg`" width="80px" height="80px" alt="">
+        <img
+          loading="lazy"
+          decoding="async"
+          :src="`/icons/${link.icon}.svg`"
+          width="80px"
+          height="80px"
+          alt=""
+        >
       </a>
     </div>
     <base-card class="mt-8 p-4">
