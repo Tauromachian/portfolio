@@ -1,9 +1,9 @@
 <template>
   <div class="w-full bg-primary text-left py-4 lg:px-4 rounded flex items-center" role="alert">
     <span class="mr-3">
-      <img src="" alt="">
+      <img v-if="type === 'success'" src="icons/check.svg" alt="">
+      <img v-else src="icons/alert.svg" alt="">
     </span>
-    <span class="mdi text-3xl mr-3" :class="{ 'mdi-check': type === 'success', 'mdi-alert': type === 'error' }" />
 
     <span>
       {{ text }}
