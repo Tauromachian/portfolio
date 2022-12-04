@@ -12,21 +12,21 @@
         :href="link.link"
         class="social-link"
       >
-        <img
-          loading="lazy"
-          decoding="async"
-          :src="`/icons/${link.icon}.svg`"
-          width="80px"
-          height="80px"
-          :alt="link.alt"
-        >
+        <div style="height: 80px; width: 80px">
+          <SocialIconsBase :icon="link.icon" :color="colorIcons" />
+        </div>
       </a>
     </div>
     <base-card class="mt-8 p-4">
       <h2 class="text-base sm:text-2xl font-bold">
-        {{ $t("formTitle") }}
+        {{ $t('formTitle') }}
       </h2>
-      <app-alert v-if="message.active" :text="message.text" class="mt-3" :type="message.type" />
+      <app-alert
+        v-if="message.active"
+        :text="message.text"
+        class="mt-3"
+        :type="message.type"
+      />
       <form
         id="form"
         name="contact"
@@ -60,7 +60,7 @@
             name="message"
           />
           <base-button class="mt-3 self-start" :loading="loading">
-            {{ $t("button.send") }}
+            {{ $t('button.send') }}
           </base-button>
         </div>
       </form>
@@ -69,10 +69,14 @@
 </template>
 
 <script>
+import SocialIconsBase from '../static/icons/SocialIconsBase.vue'
+
 export default {
   name: 'SectionContacts',
+  components: { SocialIconsBase },
   data () {
     return {
+      colorIcons: '',
       socialLinks: [
         {
           link: 'https://www.linkedin.com/in/jose-garcia-888941180/',
@@ -110,18 +114,33 @@ export default {
       loading: false
     }
   },
+  mounted () {
+    this.getIconColors()
+
+    setInterval(() => {
+      this.getIconColors()
+    }, 400)
+  },
   methods: {
+    getIconColors () {
+      const theme = this.$store.state.theme
+      const themes = this.$store.state.themes
+      themes.map((e) => {
+        if (e.value === theme) {
+          this.colorIcons = e.iconColor
+        }
+        return 0
+      })
+    },
     async submitForm () {
       this.loading = true
       const emailServiceToken = process.env.NUXT_ENV_EMAIL_SERVICE_TOKEN
       const recipientEmail = process.env.NUXT_ENV_RECIPIENT
-
       const body = {
         ...this.form,
         token: emailServiceToken,
         recipient: recipientEmail
       }
-
       let response
       try {
         response = await fetch(
@@ -161,6 +180,4 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

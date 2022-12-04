@@ -1,9 +1,9 @@
 export const state = () => ({
   theme: 'default',
   themes: [
-    { value: 'default', text: 'Default' },
-    { value: 'crazy', text: 'Crazy' },
-    { value: 'dark', text: 'Dark' }
+    { value: 'default', text: 'Default', iconColor: '#33bebc' },
+    { value: 'crazy', text: 'Crazy', iconColor: '#33bebc' },
+    { value: 'dark', text: 'Dark', iconColor: '#cc925c' }
   ],
   links: [
     { link: '#home', text: 'home' },
@@ -20,10 +20,11 @@ export const mutations = {
       return
     }
     state.theme = theme
+
     if (document.documentElement.hasAttribute('theme')) {
       document.documentElement.removeAttribute('theme')
     }
     document.documentElement.setAttribute('theme', theme)
-    localStorage.setItem('theme', theme)
+    // localStorage.setItem('theme', theme)
   }
 }

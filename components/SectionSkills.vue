@@ -5,66 +5,71 @@
     :title="$t('portfolio')"
   >
     <div class="flex flex-col">
-      <base-card class="bg-secondary mx-4">
+      <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
         <card-text class="flex" no-padding>
-          <img
-            src="/icons/code-tags.svg"
-            width="100px"
-            height="100px"
-            class="self-center md:self-auto text-8xl color-primary mr-2"
-            alt="Icon that depicts an html tag"
-          >
+          <div style="display: flex">
+            <SocialIconsBase
+              height="100px"
+              width="100px"
+              icon="frontend"
+              :color="colorIcons"
+            />
+          </div>
+
           <div class="flex flex-col">
             <h2>Frontend</h2>
-            <p>{{ $t("frontendDescription") }}</p>
+            <p>{{ $t('frontendDescription') }}</p>
             <chip-river :values="frontendTechnologies" class="mt-2" />
           </div>
         </card-text>
       </base-card>
       <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
         <card-text class="flex" no-padding>
-          <img
-            src="/icons/server.svg"
-            width="100px"
-            height="100px"
-            class="self-center md:self-auto text-8xl color-primary mr-2"
-            alt="Server icon"
-          >
+          <div style="display: flex">
+            <SocialIconsBase
+              height="100px"
+              width="100px"
+              icon="backend"
+              :color="colorIcons"
+            />
+          </div>
           <div class="flex flex-col">
             <h2>Backend</h2>
-            <p>{{ $t("backendDescription") }}</p>
+            <p>{{ $t('backendDescription') }}</p>
             <chip-river :values="backendTechnologies" class="mt-2" />
           </div>
         </card-text>
       </base-card>
       <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
         <card-text class="flex" no-padding>
-          <img
-            src="/icons/database.svg"
-            width="100px"
-            height="100px"
-            class="self-center md:self-auto text-8xl color-primary mr-2"
-            alt="Database icon"
-          >
+          <div style="display: flex">
+            <SocialIconsBase
+              height="100px"
+              width="100px"
+              icon="database"
+              :color="colorIcons"
+            />
+          </div>
           <div class="flex flex-col">
-            <h2>{{ $t("database") }}</h2>
-            <p>{{ $t("databaseDescription") }}</p>
+            <h2>{{ $t('database') }}</h2>
+            <p>{{ $t('databaseDescription') }}</p>
             <chip-river :values="databaseTechnologies" class="mt-2" />
           </div>
         </card-text>
       </base-card>
       <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
         <card-text class="flex" no-padding>
-          <img
-            src="/icons/translate-blue.svg"
-            width="100px"
-            height="100px"
-            class="self-center md:self-auto text-8xl color-primary mr-2"
-            alt="Translate icon"
-          >
+          <div style="display: flex">
+            <SocialIconsBase
+              height="100px"
+              width="100px"
+              icon="translate"
+              :color="colorIcons"
+            />
+          </div>
           <div class="flex flex-col">
-            <h2>{{ $t("language") }}</h2>
-            <p>{{ $t("languagesDescription") }}</p>
+            <h2>{{ $t('language') }}</h2>
+            <p>{{ $t('languagesDescription') }}</p>
             <chip-river :values="languages" class="mt-2" />
           </div>
         </card-text>
@@ -74,10 +79,14 @@
 </template>
 
 <script>
+import SocialIconsBase from '../static/icons/SocialIconsBase.vue'
+
 export default {
   name: 'SectionSkills',
+  components: { SocialIconsBase },
   data () {
     return {
+      colorIcons: '',
       frontendTechnologies: [
         'HTML5',
         'CSS3',
@@ -99,6 +108,25 @@ export default {
       ],
       databaseTechnologies: ['MariaDB', 'MySQL', 'PostgreSQL', 'MongoDB'],
       languages: ['English', 'Español']
+    }
+  },
+  mounted () {
+    this.getIconColors()
+
+    setInterval(() => {
+      this.getIconColors()
+    }, 400)
+  },
+  methods: {
+    getIconColors () {
+      const theme = this.$store.state.theme
+      const themes = this.$store.state.themes
+      themes.map((e) => {
+        if (e.value === theme) {
+          this.colorIcons = e.iconColor
+        }
+        return 0
+      })
     }
   }
 }

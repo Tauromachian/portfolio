@@ -1,6 +1,6 @@
 <template>
   <div class="flex md:flex-col items-center">
-    <img :src="`/icons/${icon}.svg`" :alt="alt" width="95px" height="95px">
+    <SocialIconsBase :icon="icon" width="95px" height="95px" :color="color" />
     <div class="flex flex-col md:items-center">
       <h2 class="font-bold">
         {{ title }}
@@ -11,23 +11,22 @@
 </template>
 
 <script>
+import SocialIconsBase from '../static/icons/SocialIconsBase.vue'
+
 export default {
   name: 'FeatureCard',
+  components: { SocialIconsBase },
   props: {
-    title: {
-      type: String,
-      default: 'Lorem'
-    },
     icon: {
       type: String,
       required: true
     },
-    alt: {
+    title: {
       type: String,
-      default: ''
-    }
+      required: true
+    },
+    color: String
   }
-
 }
 </script>
 

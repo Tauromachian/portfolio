@@ -1,24 +1,29 @@
 <template>
-  <base-section id="about" :title="$t('about')" class="items-center justify-center">
+  <base-section
+    id="about"
+    :title="$t('about')"
+    class="items-center justify-center"
+  >
     <p class="p-width">
-      {{ $t("aboutText1") }}
+      {{ $t('aboutText1') }}
     </p>
     <p class="p-width mt-4">
-      {{ $t("aboutText2") }}
+      {{ $t('aboutText2') }}
     </p>
     <p class="p-width mt-4">
-      {{ $t("aboutText3") }}
+      {{ $t('aboutText3') }}
     </p>
     <div class="flex flex-col sm:flex-row mt-4">
       <div class="flex flex-col md:flex-row">
         <base-card transparent class="w-full md:mr-1 py-4">
           <card-feature
             :title="$t('intuitive')"
-            icon="lightbulb-on-outline"
+            icon="lightbulb"
             alt="Intuitive icon"
+            :color="colorIcons"
           >
             <p class="md:text-center md:mx-3">
-              {{ $t("intuitiveText") }}
+              {{ $t('intuitiveText') }}
             </p>
           </card-feature>
         </base-card>
@@ -27,9 +32,10 @@
             :title="$t('fast')"
             icon="rocket-launch"
             alt="Fast icon"
+            :color="colorIcons"
           >
             <p class="md:text-center md:mx-3">
-              {{ $t("fastText") }}
+              {{ $t('fastText') }}
             </p>
           </card-feature>
         </base-card>
@@ -40,9 +46,10 @@
             :title="$t('responsive')"
             icon="responsive"
             alt="Responsive icon"
+            :color="colorIcons"
           >
             <p class="md:text-center md:mx-3">
-              {{ $t("responsiveText") }}
+              {{ $t('responsiveText') }}
             </p>
           </card-feature>
         </base-card>
@@ -51,9 +58,10 @@
             :title="$t('reactive')"
             icon="alpha-r-circle"
             alt="Reactive icon"
+            :color="colorIcons"
           >
             <p class="md:text-center md:mx-3">
-              {{ $t("reactiveText") }}
+              {{ $t('reactiveText') }}
             </p>
           </card-feature>
         </base-card>
@@ -64,7 +72,31 @@
 
 <script>
 export default {
-  name: 'SectionAbout'
+  name: 'SectionAbout',
+  data () {
+    return {
+      colorIcons: ''
+    }
+  },
+  mounted () {
+    this.getIconColors()
+
+    setInterval(() => {
+      this.getIconColors()
+    }, 400)
+  },
+  methods: {
+    getIconColors () {
+      const theme = this.$store.state.theme
+      const themes = this.$store.state.themes
+      themes.map((e) => {
+        if (e.value === theme) {
+          this.colorIcons = e.iconColor
+        }
+        return 0
+      })
+    }
+  }
 }
 </script>
 
