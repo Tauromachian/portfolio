@@ -2,16 +2,16 @@
   <section id="home" class="flex flex-col lg:flex-row mb-32 p-3 relative">
     <div class="flex flex-col h-full justify-center hero__text md:mr-5 xl:mr-0">
       <h1 class="text-6xl xl:text-7xl 2xl:text-8xl">
-        {{ $t("hero.title") }}
+        {{ $t('hero.title') }}
       </h1>
       <p class="mt-10 text-xl">
         <strong>
-          {{ $t("hero.description1") }}
+          {{ $t('hero.description1') }}
         </strong>
       </p>
       <p class="text-xl">
         <strong>
-          {{ $t("hero.description2") }}
+          {{ $t('hero.description2') }}
         </strong>
       </p>
       <div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row">
@@ -30,7 +30,7 @@
               height="30px"
             >
             <span class="mx-2" />
-            {{ $t("hero.button1") }}
+            {{ $t('hero.button1') }}
           </base-button>
         </a>
         <a>
@@ -49,7 +49,7 @@
               height="30px"
             >
             <span class="mx-2" />
-            {{ $t("hero.button2") }}
+            {{ $t('hero.button2') }}
           </base-button>
         </a>
       </div>
@@ -57,24 +57,26 @@
     <div
       class="flex flex-col mt-10 md:mt-0 h-full justify-center hero__code lg:max-w-lg xl:max-w-max"
     >
-      <picture>
-        <source
-          sizes="(min-width: 347px)"
-          type="image/avif"
-          srcset="avif/1280/code.avif 1280w, avif/640/code.avif 640w"
-        >
-        <source
-          type="image/webp"
-          srcset="webp/1280/code.webp 1280w, webp/640/code.webp 640w"
-        >
-        <img
-          class="w-full h-auto"
-          width="1256"
-          height="1004"
-          alt="Code for the sake of showing some of my skills."
-          srcset="images/1280/code.png 1280w, images/640/code.png 640w"
-        >
-      </picture>
+      <div>
+        <picture>
+          <source
+            sizes="(min-width: 347px)"
+            type="image/avif"
+            srcset="avif/1280/code.avif 1280w, avif/640/code.avif 640w"
+          >
+          <source
+            type="image/webp"
+            srcset="webp/1280/code.webp 1280w, webp/640/code.webp 640w"
+          >
+          <img
+            class="w-full h-auto rotation-effect"
+            width="1256"
+            height="1004"
+            alt="Code for the sake of showing some of my skills."
+            srcset="images/1280/code.png 1280w, images/640/code.png 640w"
+          >
+        </picture>
+      </div>
     </div>
     <img
       src="/icons/arrow-down.svg"
@@ -87,7 +89,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'SectionHero',
   components: {},
@@ -141,6 +142,11 @@ export default {
   font-size: 4rem;
 }
 
+.rotation-effect {
+  margin-top: 20px;
+  transform: rotateY(12deg) rotateX(6deg) rotateZ(2deg) skew(-1deg);
+  box-shadow: 20px 20px 30px black;
+}
 @keyframes up-and-down {
   0% {
     transform: translateY(0);
