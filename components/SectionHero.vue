@@ -58,7 +58,7 @@
       class="flex flex-col mt-10 md:mt-0 h-full justify-center hero__code lg:max-w-lg xl:max-w-max"
     >
       <div>
-        <picture>
+        <picture class="perspective">
           <source
             sizes="(min-width: 347px)"
             type="image/avif"
@@ -141,11 +141,14 @@ export default {
   left: 0;
   font-size: 4rem;
 }
-
+.perspective {
+  perspective: 1000px;
+}
 .rotation-effect {
+  transform-style: preserve-3d;
   margin-top: 20px;
-  transform: rotateY(12deg) rotateX(6deg) rotateZ(2deg) skew(-1deg);
   box-shadow: 20px 20px 30px black;
+  transform: rotateY(-30deg);
 }
 @keyframes up-and-down {
   0% {
