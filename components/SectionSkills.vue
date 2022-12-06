@@ -110,7 +110,7 @@ export default {
       languages: ['English', 'Español']
     }
   },
-  mounted () {
+  created () {
     this.getIconColors()
 
     setInterval(() => {

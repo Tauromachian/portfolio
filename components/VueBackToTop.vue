@@ -1,24 +1,31 @@
 <template>
-  <button title="Go to top" class="rounded-lg lol floating-button" :class="isShowingClasses" @click="topFunction">
-    <img
-      src="/icons/arrow-up.svg"
-      alt="Arrow up icon"
-      class="absolute"
-      width="30px"
+  <button
+    title="Go to top"
+    class="rounded-lg lol floating-button"
+    :class="isShowingClasses"
+    @click="topFunction"
+  >
+    <SocialIconsBase
+      class="ml-2"
+      icon="arrow-up"
+      width="28px"
       height="30px"
-    >
+      :color="colorIcons"
+    />
   </button>
 </template>
 
 <script>
+import SocialIconsBase from '../static/icons/SocialIconsBase.vue'
 
 export default {
   name: 'VueBackToTop',
   components: {
-
+    SocialIconsBase
   },
   data () {
     return {
+      colorIcons: '',
       floatingButton: null,
       isShowing: false
     }
@@ -33,6 +40,13 @@ export default {
       return {}
     }
   },
+  created () {
+    this.getIconColors()
+
+    setInterval(() => {
+      this.getIconColors()
+    }, 130)
+  },
   mounted () {
     this.floatingButton = document.getElementById('floating-button')
     window.onscroll = () => {
@@ -40,11 +54,20 @@ export default {
     }
   },
   methods: {
+    getIconColors () {
+      const theme = this.$store.state.theme
+      const themes = this.$store.state.themes
+      themes.map((e) => {
+        if (e.value === theme) {
+          this.colorIcons = e.iconColor
+        }
+        return 0
+      })
+    },
     scrollFunction () {
-      (document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20)
-        ? this.isShowing = true
-        : this.isShowing = false
+      document.body.scrollTop > 20 || document.documentElement.scrollTop > 20
+        ? (this.isShowing = true)
+        : (this.isShowing = false)
     },
     topFunction () {
       window.scrollTo({

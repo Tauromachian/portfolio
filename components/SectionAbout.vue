@@ -78,7 +78,7 @@ export default {
       colorIcons: ''
     }
   },
-  mounted () {
+  created () {
     this.getIconColors()
 
     setInterval(() => {
