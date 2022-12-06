@@ -11,7 +11,7 @@
             <SocialIconsBase
               height="100px"
               width="100px"
-              icon="frontend"
+              icon="mdiCodeTags"
               :color="colorIcons"
             />
           </div>
@@ -29,7 +29,7 @@
             <SocialIconsBase
               height="100px"
               width="100px"
-              icon="backend"
+              icon="mdiServer"
               :color="colorIcons"
             />
           </div>
@@ -46,7 +46,7 @@
             <SocialIconsBase
               height="100px"
               width="100px"
-              icon="database"
+              icon="mdiDatabase"
               :color="colorIcons"
             />
           </div>
@@ -63,7 +63,7 @@
             <SocialIconsBase
               height="100px"
               width="100px"
-              icon="translate"
+              icon="mdiTranslate"
               :color="colorIcons"
             />
           </div>

@@ -18,7 +18,7 @@
         <base-card transparent class="w-full md:mr-1 py-4">
           <card-feature
             :title="$t('intuitive')"
-            icon="lightbulb"
+            icon="mdiLightbulb"
             alt="Intuitive icon"
             :color="colorIcons"
           >
@@ -30,7 +30,7 @@
         <base-card transparent class="w-full md:mx-1 py-4">
           <card-feature
             :title="$t('fast')"
-            icon="rocket-launch"
+            icon="mdiRocketLaunch"
             alt="Fast icon"
             :color="colorIcons"
           >
@@ -44,7 +44,7 @@
         <base-card transparent class="w-full md:mr-1 py-4">
           <card-feature
             :title="$t('responsive')"
-            icon="responsive"
+            icon="mdiResponsive"
             alt="Responsive icon"
             :color="colorIcons"
           >
@@ -56,7 +56,7 @@
         <base-card transparent class="w-full md:mx-1 py-4">
           <card-feature
             :title="$t('reactive')"
-            icon="alpha-r-circle"
+            icon="mdiAlphaRCircle"
             alt="Reactive icon"
             :color="colorIcons"
           >

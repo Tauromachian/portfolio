@@ -80,17 +80,17 @@ export default {
       socialLinks: [
         {
           link: 'https://www.linkedin.com/in/jose-garcia-888941180/',
-          icon: 'linkedin',
+          icon: 'mdiLinkedin',
           alt: 'Linkedin icon'
         },
         {
           link: 'https://stackoverflow.com/users/10824037/jogarcia',
-          icon: 'stack-overflow',
+          icon: 'mdiStackOverflow',
           alt: 'Stack Overflow icon'
         },
         {
           link: 'https://github.com/Tauromachian',
-          icon: 'github',
+          icon: 'mdiGithub',
           alt: 'Github icon'
         },
         {
@@ -100,7 +100,7 @@ export default {
         },
         {
           link: 'https://www.reddit.com/user/BetanKore',
-          icon: 'reddit',
+          icon: 'mdiReddit',
           alt: 'Reddit icon'
         }
       ],
