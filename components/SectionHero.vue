@@ -58,7 +58,7 @@
       class="flex flex-col mt-10 md:mt-0 h-full justify-center hero__code lg:max-w-lg xl:max-w-max"
     >
       <div>
-        <picture class="perspective">
+        <picture>
           <source
             sizes="(min-width: 347px)"
             type="image/avif"
@@ -68,13 +68,15 @@
             type="image/webp"
             srcset="webp/1280/code.webp 1280w, webp/640/code.webp 640w"
           >
-          <img
-            class="w-full h-auto rotation-effect"
-            width="1256"
-            height="1004"
-            alt="Code for the sake of showing some of my skills."
-            srcset="images/1280/code.png 1280w, images/640/code.png 640w"
-          >
+          <div class="perspective">
+            <img
+              class="w-full h-auto rotation-effect"
+              width="1256"
+              height="1004"
+              alt="Code for the sake of showing some of my skills."
+              srcset="images/1280/code.png 1280w, images/640/code.png 640w"
+            >
+          </div>
         </picture>
       </div>
     </div>
@@ -165,12 +167,16 @@ export default {
 }
 .perspective {
   perspective: 1000px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
 }
 .rotation-effect {
   transform-style: preserve-3d;
   margin-top: 20px;
   box-shadow: 20px 20px 30px black;
   transform: rotateY(-30deg);
+  -webkit-transform: rotateY(-30deg);
+  -moz-transform: rotateY(-30deg);
 }
 @keyframes up-and-down {
   0% {
