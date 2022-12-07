@@ -1,6 +1,9 @@
 <template>
   <section class="flex flex-col my-32 p-3">
-    <h2 class="mb-3 text-3xl text-5xl self-start sm:self-center" :class="titleAlignment">
+    <h2
+      class="mb-3 text-3xl text-5xl self-start sm:self-center"
+      :class="titleAlignment"
+    >
       {{ title }}
     </h2>
     <slot />
@@ -13,7 +16,7 @@ export default {
   props: {
     title: {
       type: String,
-      required: true
+      default: ''
     },
     titleAlignment: {
       type: [String],

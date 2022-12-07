@@ -1,19 +1,30 @@
 <template>
-  <base-section
-    id="about"
-    :title="$t('about')"
-    class="items-center justify-center"
-  >
-    <p class="p-width">
-      {{ $t('aboutText1') }}
-    </p>
-    <p class="p-width mt-4">
-      {{ $t('aboutText2') }}
-    </p>
-    <p class="p-width mt-4">
-      {{ $t('aboutText3') }}
-    </p>
-    <div class="flex flex-col sm:flex-row mt-4">
+  <base-section id="about">
+    <div class="justify-center flex-wrap mt-4">
+      <div>
+        <h2 class="mb-5 text-3xl text-5xl self-start text-left">
+          {{ $t('about') }}
+        </h2>
+        <p class="p-width">
+          {{ $t('aboutText1') }}
+        </p>
+        <p class="p-width mt-4">
+          {{ $t('aboutText2') }}
+        </p>
+        <p class="p-width mt-4">
+          {{ $t('aboutText3') }}
+        </p>
+      </div>
+      <div class="flex jose-img" style="">
+        <img
+          class="w-80 h-80 rounded-full mt-5"
+          src="/images/640/picture-man-min 1x1.jpg"
+          :alt="$t('myPictureAlt')"
+          style="box-shadow: 3px 3px 12px black"
+        >
+      </div>
+    </div>
+    <div class="flex flex-col sm:flex-row mt-32">
       <div class="flex flex-col md:flex-row">
         <base-card transparent class="w-full md:mr-1 py-4">
           <card-feature
@@ -103,5 +114,16 @@ export default {
 <style scoped>
 .p-width {
   max-width: 700px;
+}
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+.jose-img {
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  max-width: 700px;
+  width: 50%;
 }
 </style>
