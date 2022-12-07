@@ -25,19 +25,31 @@
       <h2 class="font-bold">
         {{ title }}
       </h2>
-      <p class="h-28 overflow-hidden">
+      <p class="h-32 overflow-hidden">
         {{ description }}
       </p>
       <div>
-        <base-link class="mt-1" :href="siteUrl" :text="$t('visit')" icon />
+        <a :href="siteUrl" class="flex">
+          <SocialIconsBase
+            class="mr-1"
+            icon="mdiLink"
+            :color="colorIcons"
+            heigth="25px"
+            width="25px"
+          />
+          <p>{{ $t('visit') }}</p>
+        </a>
       </div>
     </card-text>
   </base-card>
 </template>
 
 <script>
+import SocialIconsBase from '../static/icons/SocialIconsBase.vue'
+
 export default {
   name: 'CardProject',
+  components: { SocialIconsBase },
   props: {
     src: {
       type: String,
@@ -58,6 +70,32 @@ export default {
     alt: {
       type: String,
       default: ''
+    }
+  },
+  data () {
+    return {
+      colorIcons: ''
+    }
+  },
+
+  mounted () {
+    this.getIconColors()
+
+    setInterval(() => {
+      this.getIconColors()
+    }, 130)
+  },
+
+  methods: {
+    getIconColors () {
+      const theme = this.$store.state.theme
+      const themes = this.$store.state.themes
+      themes.map((e) => {
+        if (e.value === theme) {
+          this.colorIcons = e.iconColor
+        }
+        return 0
+      })
     }
   }
 }

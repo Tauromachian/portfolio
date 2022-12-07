@@ -41,13 +41,13 @@
             @click="scrollToPosition('social-networks')"
           >
             <div class="w-full h-full" />
-            <img
-              src="/icons/email.svg"
+            <SocialIconsBase
               class="absolute left-5 top-5"
-              alt="Email icon"
-              width="30px"
               height="30px"
-            >
+              width="30px"
+              icon="mdiEmail"
+              :color="colorIcons"
+            />
             <span class="mx-2" />
             {{ $t('hero.button2') }}
           </base-button>
@@ -78,30 +78,52 @@
         </picture>
       </div>
     </div>
-    <img
-      src="/icons/arrow-down.svg"
+
+    <SocialIconsBase
       class="scroll-icon invisible xl:visible ml-2"
-      alt="Arrow down icon"
       width="60px"
       height="60px"
-    >
+      icon="arrow-down"
+      :color="colorIcons"
+    />
   </section>
 </template>
 
 <script>
+import SocialIconsBase from '../static/icons/SocialIconsBase.vue'
+
 export default {
   name: 'SectionHero',
-  components: {},
+  components: { SocialIconsBase },
   data () {
     return {
+      colorIcons: '',
       isHidden: true,
       theme: 'default'
     }
+  },
+  created () {
+    this.getIconColors()
+
+    setInterval(() => {
+      this.getIconColors()
+    }, 130)
   },
   methods: {
     scrollToPosition (postitionId) {
       const elmnt = document.getElementById(postitionId.split('#').pop())
       elmnt.scrollIntoView({ behavior: 'smooth' })
+    },
+
+    getIconColors () {
+      const theme = this.$store.state.theme
+      const themes = this.$store.state.themes
+      themes.map((e) => {
+        if (e.value === theme) {
+          this.colorIcons = e.iconColor
+        }
+        return 0
+      })
     }
   }
 }
