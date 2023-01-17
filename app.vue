@@ -8,6 +8,7 @@
         :links="links"
         :themes="themes"
         class="invisible sm:visible top-0 left-0 right-0"
+        :theme="theme"
         @change:theme="setTheme"
       />
     </header>
@@ -28,6 +29,7 @@
       :links="links"
       :themes="themes"
       class="sm:invisible fixed bottom-0 left-0 right-0 z-50"
+      :theme="theme"
       @change:theme="setTheme"
     />
     <div class="mt-20 pt-10 sm:mt-0 content" />
