@@ -20,7 +20,6 @@
           class="w-80 h-80 rounded-full mt-5"
           src="/images/640/picture-man-min 1x1.jpg"
           :alt="$t('myPictureAlt')"
-          style="box-shadow: 3px 3px 12px black"
         />
       </div>
     </div>
