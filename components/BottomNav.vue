@@ -29,7 +29,7 @@
             <SocialIconsBase icon="mdiInvertColors"></SocialIconsBase>
           </base-button>
         </template>
-        <theme-selector v-model="theme" :themes="themes" />
+        <theme-selector :value="theme" :themes="themes" @input="setTheme" />
       </base-menu>
       <base-button class="navbar__link" icon @click="isHidden = !isHidden">
         <SocialIconsBase icon="mdiMenu"></SocialIconsBase>
@@ -39,7 +39,7 @@
 </template>
 
 <script setup>
-import { reactive, watch } from "vue";
+import { ref } from "vue";
 
 defineProps({
   links: {
@@ -52,16 +52,12 @@ defineProps({
   },
 });
 
-const state = reactive({
-  theme: "default",
-});
-
-watch(state.theme, (theme) => {
-  setTheme(theme);
-});
+const emit = defineEmits(["change:theme"]);
+const isHidden = ref(true);
+const theme = ref("default");
 
 const setTheme = (val) => {
-  this.$emit("input", val);
+  emit("change:theme", val);
 };
 </script>
 
