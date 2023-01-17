@@ -67,8 +67,8 @@ export default {
   methods: {
     changeLocal() {
       this.$i18n.locale === "en"
-        ? this.$i18n.setLocale("es")
-        : this.$i18n.setLocale("en");
+        ? (this.$i18n.locale = "es")
+        : (this.$i18n.locale = "en");
     },
     scrollToPosition(postitionId) {
       const elmnt = document.getElementById(postitionId.split("#").pop());
