@@ -51,6 +51,7 @@ export default {
       default: () => [],
     },
   },
+  emits: ["change:theme"],
   data() {
     return {
       isHidden: false,

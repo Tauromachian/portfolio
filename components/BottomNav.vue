@@ -61,6 +61,7 @@ export default {
   components: {
     BaseButton,
   },
+
   props: {
     links: {
       type: Array,
@@ -71,6 +72,7 @@ export default {
       default: () => [],
     },
   },
+  emits: ["change:theme"],
   data() {
     return {
       isHidden: true,
