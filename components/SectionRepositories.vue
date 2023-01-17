@@ -45,43 +45,43 @@
 </template>
 
 <script>
-import axios from 'axios'
+import axios from "axios";
 
 export default {
-  name: 'SectionRepositories',
-  data () {
+  name: "SectionRepositories",
+  data() {
     return {
-      repositories: []
-    }
+      repositories: [],
+    };
   },
-  created () {
-    this.loadRepositories()
+  created() {
+    this.loadRepositories();
   },
   methods: {
-    async loadRepositories () {
-      const token = process.env.NUXT_ENV_GITHUB_TOKEN
-      if (!token) { return }
+    async loadRepositories() {
+      const token = this.$config.NUXT_ENV_GITHUB_TOKEN;
+      if (!token) {
+        return;
+      }
 
-      let repositories
+      let repositories;
       try {
         const { data } = await axios.get(
-          'https://api.github.com/users/tauromachian/repos',
+          "https://api.github.com/users/tauromachian/repos",
           {
             headers: {
-              authorization: `token ${token}`
-            }
+              authorization: `token ${token}`,
+            },
           }
-        )
-        repositories = data
+        );
+        repositories = data;
       } catch (error) {
-        repositories = []
+        repositories = [];
       }
-      this.repositories = repositories
-    }
-  }
-}
+      this.repositories = repositories;
+    },
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

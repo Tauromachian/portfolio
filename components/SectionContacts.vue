@@ -138,8 +138,8 @@ export default {
     },
     async submitForm() {
       this.loading = true;
-      const emailServiceToken = process.env.NUXT_ENV_EMAIL_SERVICE_TOKEN;
-      const recipientEmail = process.env.NUXT_ENV_RECIPIENT;
+      const emailServiceToken = this.$config.NUXT_ENV_EMAIL_SERVICE_TOKEN;
+      const recipientEmail = this.$config.NUXT_ENV_RECIPIENT;
       const body = {
         ...this.form,
         token: emailServiceToken,
