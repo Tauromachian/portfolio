@@ -50,11 +50,14 @@ defineProps({
     type: Array,
     default: () => [],
   },
+  theme: {
+    type: String,
+    default: "default",
+  },
 });
 
 const emit = defineEmits(["change:theme"]);
 const isHidden = ref(true);
-const theme = ref("default");
 
 const setTheme = (val) => {
   emit("change:theme", val);

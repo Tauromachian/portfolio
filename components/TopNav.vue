@@ -34,8 +34,6 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-
 defineProps({
   links: {
     type: Array,
@@ -45,10 +43,13 @@ defineProps({
     type: Array,
     default: () => [],
   },
+  theme: {
+    type: String,
+    default: "default",
+  },
 });
 
 const emit = defineEmits(["change:theme"]);
-const theme = ref("default");
 
 const setTheme = (val) => {
   emit("change:theme", val);
