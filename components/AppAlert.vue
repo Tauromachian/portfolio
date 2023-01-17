@@ -4,8 +4,11 @@
     role="alert"
   >
     <span class="mr-3">
-      <img v-if="type === 'success'" src="icons/check.svg" alt="Check icon" />
-      <img v-else src="icons/alert.svg" alt="Alert icon" />
+      <SocialIconsBase
+        v-if="type === 'success'"
+        icon="mdiCheck"
+      ></SocialIconsBase>
+      <SocialIconsBase v-else icon="mdiAlert"></SocialIconsBase>
     </span>
 
     <span>
