@@ -8,7 +8,7 @@
         :links="links"
         :themes="themes"
         class="invisible sm:visible top-0 left-0 right-0"
-        @change:theme="theme = val"
+        @change:theme="setTheme"
       />
     </header>
     <div class="container mx-auto">
@@ -28,7 +28,7 @@
       :links="links"
       :themes="themes"
       class="sm:invisible fixed bottom-0 left-0 right-0 z-50"
-      @change:theme="theme = val"
+      @change:theme="setTheme"
     />
     <div class="mt-20 pt-10 sm:mt-0 content" />
     <vue-back-to-top v-if="!isSmallScreen" />
