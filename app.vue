@@ -5,6 +5,8 @@
       <div v-if="isSmallScreen" class="top-gradient" />
       <top-nav
         v-if="!isSmallScreen"
+        :links="links"
+        :themes="themes"
         class="invisible sm:visible top-0 left-0 right-0"
         @change:theme="theme = val"
       />
