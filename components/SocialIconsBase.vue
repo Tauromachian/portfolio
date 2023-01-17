@@ -29,6 +29,7 @@ import {
   mdiEye,
   mdiLink,
   mdiInvertColors,
+  mdiMenu,
 } from "@mdi/js";
 export default {
   props: {
@@ -67,6 +68,7 @@ export default {
         mdiEye,
         mdiLink,
         mdiInvertColors,
+        mdiMenu,
       },
     };
   },
