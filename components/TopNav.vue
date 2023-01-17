@@ -34,13 +34,8 @@
 </template>
 
 <script>
-import BaseButton from "./BaseButton";
-
 export default {
   name: "TopNav",
-  components: {
-    BaseButton,
-  },
   props: {
     links: {
       type: Array,
