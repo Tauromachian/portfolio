@@ -53,52 +53,30 @@
   </nav>
 </template>
 
-<script>
-import BaseButton from "./BaseButton";
+<script setup>
+import { reactive, watch } from "vue";
 
-export default {
-  name: "BottomNav",
-  components: {
-    BaseButton,
+defineProps({
+  links: {
+    type: Array,
+    default: () => [],
   },
+  themes: {
+    type: Array,
+    default: () => [],
+  },
+});
 
-  props: {
-    links: {
-      type: Array,
-      default: () => [],
-    },
-    themes: {
-      type: Array,
-      default: () => [],
-    },
-  },
-  emits: ["change:theme"],
-  data() {
-    return {
-      isHidden: true,
-      theme: "default",
-    };
-  },
+const state = reactive({
+  theme: "default",
+});
 
-  watch: {
-    theme(val) {
-      this.setTheme(val);
-    },
-  },
-  methods: {
-    changeLocal() {
-      this.$i18n.locale === "en"
-        ? (this.$i18n.locale = "es")
-        : (this.$i18n.locale = "en");
-    },
-    scrollToPosition(postitionId) {
-      const elmnt = document.getElementById(postitionId.split("#").pop());
-      elmnt.scrollIntoView({ behavior: "smooth" });
-    },
-    setTheme(val) {
-      this.$emit("change:theme", val);
-    },
-  },
+watch(state.theme, (theme) => {
+  setTheme(theme);
+});
+
+const setTheme = (val) => {
+  this.$emit("input", val);
 };
 </script>
 
