@@ -18,22 +18,12 @@
       </ul>
       <div>
         <base-button class="navbar__link" icon @click="changeLocal">
-          <img
-            src="icons/translate.svg"
-            width="25px"
-            height="25px"
-            alt="Translate icon"
-          />
+          <SocialIconsBase icon="mdiTranslate" />
         </base-button>
         <base-menu bottom="initial" top="3rem">
           <template #activator="{ on }">
             <base-button class="navbar__link" icon v-on="on">
-              <img
-                src="icons/invert-colors.svg"
-                width="25px"
-                height="25px"
-                alt="Color themes selector icon"
-              />
+              <SocialIconsBase icon="mdiInvertColors" />
             </base-button>
           </template>
           <theme-selector v-model="theme" :themes="themes" />
