@@ -16,11 +16,35 @@
         </p>
       </div>
       <div class="flex jose-img" style="">
-        <img
-          class="w-80 h-80 rounded-full mt-5"
-          src="/images/640/picture-man-min 1x1.jpg"
-          :alt="$t('myPictureAlt')"
-        />
+        <picture>
+          <source
+            sizes="(min-width: 347px)"
+            type="image/avif"
+            srcset="
+              /avif/1280/picture-man-min.avif 1280w,
+              /avif/640/picture-man-min.avif   640w
+            "
+          />
+          <source
+            type="image/webp"
+            srcset="
+              /webp/1280/picture-man-min.webp 1280w,
+              /webp/640/picture-man-min.webp   640w
+            "
+          />
+          <div class="perspective">
+            <img
+              class="w-full h-auto rotation-effect"
+              width="1256"
+              height="1004"
+              alt="Code for the sake of showing some of my skills."
+              srcset="
+                /images/1280/picture-man-min.jpg 1280w,
+                /images/640/picture-man-min.jpg   640w
+              "
+            />
+          </div>
+        </picture>
       </div>
     </div>
     <div class="flex flex-col justify-center sm:flex-row mt-32">
