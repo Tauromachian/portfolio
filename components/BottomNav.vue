@@ -20,34 +20,19 @@
       </div>
     </div>
     <div class="buttons flex justify-center bg-primary px-3 text-2xl">
-      <base-button class="navbar__link" icon @click="changeLocal">
-        <img
-          src="icons/translate.svg"
-          width="30px"
-          height="30px"
-          alt="Translate icon"
-        />
+      <base-button class="navbar__link" icon @click="changeLocal($i18n)">
+        <SocialIconsBase icon="mdiTranslate"></SocialIconsBase>
       </base-button>
       <base-menu bottom="3rem">
         <template #activator="{ on }">
           <base-button class="navbar__link" icon v-on="on">
-            <img
-              src="icons/invert-colors.svg"
-              width="30px"
-              height="30px"
-              alt="Color themes selector icon"
-            />
+            <SocialIconsBase icon="mdiInvertColors"></SocialIconsBase>
           </base-button>
         </template>
         <theme-selector v-model="theme" :themes="themes" />
       </base-menu>
       <base-button class="navbar__link" icon @click="isHidden = !isHidden">
-        <img
-          src="icons/menu.svg"
-          width="30px"
-          height="30px"
-          alt="Hamburger menu icon"
-        />
+        <SocialIconsBase icon="mdiMenu"></SocialIconsBase>
       </base-button>
     </div>
   </nav>
