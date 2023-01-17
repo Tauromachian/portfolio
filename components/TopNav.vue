@@ -17,7 +17,7 @@
         </li>
       </ul>
       <div>
-        <base-button class="navbar__link" icon @click="changeLocal">
+        <base-button class="navbar__link" icon @click="changeLocale($i18n)">
           <SocialIconsBase icon="mdiTranslate" />
         </base-button>
         <base-menu bottom="initial" top="3rem">
@@ -26,53 +26,37 @@
               <SocialIconsBase icon="mdiInvertColors" />
             </base-button>
           </template>
-          <theme-selector v-model="theme" :themes="themes" />
+          <theme-selector v-model="state.theme" :themes="themes" />
         </base-menu>
       </div>
     </div>
   </nav>
 </template>
 
-<script>
-export default {
-  name: "TopNav",
-  props: {
-    links: {
-      type: Array,
-      default: () => [],
-    },
-    themes: {
-      type: Array,
-      default: () => [],
-    },
-  },
-  emits: ["change:theme"],
-  data() {
-    return {
-      isHidden: false,
-      theme: "default",
-    };
-  },
+<script setup>
+import { reactive, watch } from "vue";
 
-  watch: {
-    theme(val) {
-      this.setTheme(val);
-    },
+defineProps({
+  links: {
+    type: Array,
+    default: () => [],
   },
-  methods: {
-    changeLocal() {
-      this.$i18n.locale === "en"
-        ? (this.$i18n.locale = "es")
-        : (this.$i18n.locale = "en");
-    },
-    scrollToPosition(postitionId) {
-      const elmnt = document.getElementById(postitionId.split("#").pop());
-      elmnt.scrollIntoView({ behavior: "smooth" });
-    },
-    setTheme(val) {
-      this.$emit("change:theme", val);
-    },
+  themes: {
+    type: Array,
+    default: () => [],
   },
+});
+
+const state = reactive({
+  theme: "default",
+});
+
+watch(state.theme, (theme) => {
+  setTheme(theme);
+});
+
+const setTheme = (val) => {
+  this.$emit("input", val);
 };
 </script>
 
