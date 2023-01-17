@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="buttons flex justify-center bg-primary px-3 text-2xl">
-      <base-button class="navbar__link" icon @click="changeLocal($i18n)">
+      <base-button class="navbar__link" icon @click="changeLocale($i18n)">
         <SocialIconsBase icon="mdiTranslate"></SocialIconsBase>
       </base-button>
       <base-menu bottom="3rem">
