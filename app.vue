@@ -78,7 +78,7 @@ export default {
     setWidth() {
       this.width = window.innerWidth;
     },
-    setTheme: (theme) => {
+    setTheme(theme) {
       if (this.theme === theme) {
         return;
       }
