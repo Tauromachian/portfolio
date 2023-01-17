@@ -18,9 +18,6 @@
 <script>
 export default {
   name: "VueBackToTop",
-  components: {
-    SocialIconsBase,
-  },
   data() {
     return {
       colorIcons: "",

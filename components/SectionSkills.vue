@@ -81,7 +81,6 @@
 <script>
 export default {
   name: "SectionSkills",
-  components: { SocialIconsBase },
   data() {
     return {
       colorIcons: "",

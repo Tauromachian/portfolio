@@ -93,7 +93,6 @@
 <script>
 export default {
   name: "SectionHero",
-  components: { SocialIconsBase },
   data() {
     return {
       colorIcons: "",

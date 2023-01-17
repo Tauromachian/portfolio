@@ -11,23 +11,23 @@
 </template>
 
 <script>
-import SocialIconsBase from '../static/icons/SocialIconsBase.vue'
-
 export default {
-  name: 'FeatureCard',
-  components: { SocialIconsBase },
+  name: "FeatureCard",
   props: {
     icon: {
       type: String,
-      required: true
+      required: true,
     },
     title: {
       type: String,
-      required: true
+      required: true,
     },
-    color: String
-  }
-}
+    color: {
+      type: String,
+      default: "",
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

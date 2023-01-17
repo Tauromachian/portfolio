@@ -47,7 +47,6 @@
 <script>
 export default {
   name: "CardProject",
-  components: { SocialIconsBase },
   props: {
     src: {
       type: String,

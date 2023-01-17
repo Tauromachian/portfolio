@@ -71,7 +71,6 @@
 <script>
 export default {
   name: "SectionContacts",
-  components: { SocialIconsBase },
   data() {
     return {
       colorIcons: "",
