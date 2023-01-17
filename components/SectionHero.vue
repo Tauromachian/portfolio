@@ -22,12 +22,11 @@
             @click="scrollToPosition('portfolio')"
           >
             <div class="w-full h-full" />
-            <img
-              src="/icons/eye.svg"
+            <SocialIconsBase
               class="absolute left-5 top-5"
-              alt="Eye icon"
-              width="30px"
               height="30px"
+              width="30px"
+              icon="mdiEye"
             />
             <span class="mx-2" />
             {{ $t("hero.button1") }}
