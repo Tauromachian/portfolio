@@ -30,6 +30,8 @@ import {
   mdiLink,
   mdiInvertColors,
   mdiMenu,
+  mdiCheck,
+  mdiAlert,
 } from "@mdi/js";
 export default {
   props: {
@@ -69,6 +71,8 @@ export default {
         mdiLink,
         mdiInvertColors,
         mdiMenu,
+        mdiCheck,
+        mdiAlert,
       },
     };
   },
