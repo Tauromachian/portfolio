@@ -16,68 +16,72 @@
 </template>
 
 <script>
-import SocialIconsBase from '../static/icons/SocialIconsBase.vue'
+import SocialIconsBase from "../static/icons/SocialIconsBase.vue";
 
 export default {
-  name: 'VueBackToTop',
+  name: "VueBackToTop",
   components: {
-    SocialIconsBase
+    SocialIconsBase,
   },
-  data () {
+  data() {
     return {
-      colorIcons: '',
+      colorIcons: "",
       floatingButton: null,
-      isShowing: false
-    }
+      isShowing: false,
+    };
   },
   computed: {
-    isShowingClasses () {
+    isShowingClasses() {
       if (this.isShowing) {
         return {
-          'floating-button--show': true
-        }
+          "floating-button--show": true,
+        };
       }
-      return {}
-    }
+      return {};
+    },
   },
-  created () {
-    this.getIconColors()
+  created() {
+    this.getIconColors();
 
     setInterval(() => {
-      this.getIconColors()
-    }, 130)
+      this.getIconColors();
+    }, 130);
   },
-  mounted () {
-    this.floatingButton = document.getElementById('floating-button')
+  mounted() {
+    this.floatingButton = document.getElementById("floating-button");
     window.onscroll = () => {
-      this.scrollFunction(this.floatingButton)
-    }
+      this.scrollFunction(this.floatingButton);
+    };
   },
   methods: {
-    getIconColors () {
-      const theme = this.$store.state.theme
-      const themes = this.$store.state.themes
+    getIconColors() {
+      const theme = "default";
+      const themes = [
+        { value: "default", text: "Default", iconColor: "#33bebc" },
+        { value: "crazy", text: "Crazy", iconColor: "#33bebc" },
+        { value: "dark", text: "Dark", iconColor: "#cc925c" },
+      ];
       themes.map((e) => {
         if (e.value === theme) {
-          this.colorIcons = e.iconColor
+          this.colorIcons = e.iconColor;
         }
-        return 0
-      })
+        return 0;
+      });
     },
-    scrollFunction () {
+    scrollFunction() {
       document.body.scrollTop > 20 || document.documentElement.scrollTop > 20
         ? (this.isShowing = true)
-        : (this.isShowing = false)
+        : (this.isShowing = false);
     },
-    topFunction () {
+    topFunction() {
       window.scrollTo({
         top: 0,
         left: 0,
-        behavior: 'smooth'
-      })
-    }
-  }
-}
+        behavior: "smooth",
+      });
+    },
+  },
+};
 </script>
 
 <style scoped>

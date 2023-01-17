@@ -19,7 +19,7 @@
     </div>
     <base-card class="mt-8 p-4">
       <h2 class="text-base sm:text-2xl font-bold">
-        {{ $t('formTitle') }}
+        {{ $t("formTitle") }}
       </h2>
       <app-alert
         v-if="message.active"
@@ -60,7 +60,7 @@
             name="message"
           />
           <base-button class="mt-3 self-start" :loading="loading">
-            {{ $t('button.send') }}
+            {{ $t("button.send") }}
           </base-button>
         </div>
       </form>
@@ -69,115 +69,119 @@
 </template>
 
 <script>
-import SocialIconsBase from '../static/icons/SocialIconsBase.vue'
+import SocialIconsBase from "../static/icons/SocialIconsBase.vue";
 
 export default {
-  name: 'SectionContacts',
+  name: "SectionContacts",
   components: { SocialIconsBase },
-  data () {
+  data() {
     return {
-      colorIcons: '',
+      colorIcons: "",
       socialLinks: [
         {
-          link: 'https://www.linkedin.com/in/jose-garcia-888941180/',
-          icon: 'mdiLinkedin',
-          alt: 'Linkedin icon'
+          link: "https://www.linkedin.com/in/jose-garcia-888941180/",
+          icon: "mdiLinkedin",
+          alt: "Linkedin icon",
         },
         {
-          link: 'https://stackoverflow.com/users/10824037/jogarcia',
-          icon: 'mdiStackOverflow',
-          alt: 'Stack Overflow icon'
+          link: "https://stackoverflow.com/users/10824037/jogarcia",
+          icon: "mdiStackOverflow",
+          alt: "Stack Overflow icon",
         },
         {
-          link: 'https://github.com/Tauromachian',
-          icon: 'mdiGithub',
-          alt: 'Github icon'
+          link: "https://github.com/Tauromachian",
+          icon: "mdiGithub",
+          alt: "Github icon",
         },
         {
-          link: 'https://t.me/BetanKore',
-          icon: 'telegram',
-          alt: 'Telegram icon'
+          link: "https://t.me/BetanKore",
+          icon: "telegram",
+          alt: "Telegram icon",
         },
         {
-          link: 'https://www.reddit.com/user/BetanKore',
-          icon: 'mdiReddit',
-          alt: 'Reddit icon'
-        }
+          link: "https://www.reddit.com/user/BetanKore",
+          icon: "mdiReddit",
+          alt: "Reddit icon",
+        },
       ],
       form: {
-        name: '',
-        address: '',
-        subject: 'Work for me',
-        body: ''
+        name: "",
+        address: "",
+        subject: "Work for me",
+        body: "",
       },
-      message: { success: true, text: '', active: false },
-      loading: false
-    }
+      message: { success: true, text: "", active: false },
+      loading: false,
+    };
   },
-  created () {
-    this.getIconColors()
+  created() {
+    this.getIconColors();
 
     setInterval(() => {
-      this.getIconColors()
-    }, 400)
+      this.getIconColors();
+    }, 400);
   },
   methods: {
-    getIconColors () {
-      const theme = this.$store.state.theme
-      const themes = this.$store.state.themes
+    getIconColors() {
+      const theme = "default";
+      const themes = [
+        { value: "default", text: "Default", iconColor: "#33bebc" },
+        { value: "crazy", text: "Crazy", iconColor: "#33bebc" },
+        { value: "dark", text: "Dark", iconColor: "#cc925c" },
+      ];
       themes.map((e) => {
         if (e.value === theme) {
-          this.colorIcons = e.iconColor
+          this.colorIcons = e.iconColor;
         }
-        return 0
-      })
+        return 0;
+      });
     },
-    async submitForm () {
-      this.loading = true
-      const emailServiceToken = process.env.NUXT_ENV_EMAIL_SERVICE_TOKEN
-      const recipientEmail = process.env.NUXT_ENV_RECIPIENT
+    async submitForm() {
+      this.loading = true;
+      const emailServiceToken = process.env.NUXT_ENV_EMAIL_SERVICE_TOKEN;
+      const recipientEmail = process.env.NUXT_ENV_RECIPIENT;
       const body = {
         ...this.form,
         token: emailServiceToken,
-        recipient: recipientEmail
-      }
-      let response
+        recipient: recipientEmail,
+      };
+      let response;
       try {
         response = await fetch(
-          'https://jts-email-service.herokuapp.com/api/email-service',
+          "https://jts-email-service.herokuapp.com/api/email-service",
           {
-            method: 'POST',
+            method: "POST",
             body: JSON.stringify(body),
             headers: {
-              'Content-Type': 'application/json'
-            }
+              "Content-Type": "application/json",
+            },
           }
-        )
+        );
       } catch (error) {
-        this.displayErrorMessage()
-        return
+        this.displayErrorMessage();
+        return;
       }
       if (response.error) {
-        this.displayErrorMessage()
-        return
+        this.displayErrorMessage();
+        return;
       }
-      this.displaySuccessMessage()
-      this.loading = false
+      this.displaySuccessMessage();
+      this.loading = false;
     },
-    displaySuccessMessage () {
-      this.message.success = true
-      this.message.text = 'Success! email sent correctly'
-      this.message.active = true
-      this.loading = false
+    displaySuccessMessage() {
+      this.message.success = true;
+      this.message.text = "Success! email sent correctly";
+      this.message.active = true;
+      this.loading = false;
     },
-    displayErrorMessage () {
-      this.message.success = false
-      this.message.text = 'Error there was a problem sending the email'
-      this.message.active = true
-      this.loading = false
-    }
-  }
-}
+    displayErrorMessage() {
+      this.message.success = false;
+      this.message.text = "Error there was a problem sending the email";
+      this.message.active = true;
+      this.loading = false;
+    },
+  },
+};
 </script>
 
 <style></style>

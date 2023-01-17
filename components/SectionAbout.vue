@@ -3,16 +3,16 @@
     <div class="justify-center flex-wrap mt-4">
       <div>
         <h2 class="mb-5 text-3xl text-5xl self-start text-left">
-          {{ $t('about') }}
+          {{ $t("about") }}
         </h2>
         <p class="p-width">
-          {{ $t('aboutText1') }}
+          {{ $t("aboutText1") }}
         </p>
         <p class="p-width mt-4">
-          {{ $t('aboutText2') }}
+          {{ $t("aboutText2") }}
         </p>
         <p class="p-width mt-4">
-          {{ $t('aboutText3') }}
+          {{ $t("aboutText3") }}
         </p>
       </div>
       <div class="flex jose-img" style="">
@@ -21,7 +21,7 @@
           src="/images/640/picture-man-min 1x1.jpg"
           :alt="$t('myPictureAlt')"
           style="box-shadow: 3px 3px 12px black"
-        >
+        />
       </div>
     </div>
     <div class="flex flex-col justify-center sm:flex-row mt-32">
@@ -34,7 +34,7 @@
             :color="colorIcons"
           >
             <p class="md:text-center md:mx-3">
-              {{ $t('intuitiveText') }}
+              {{ $t("intuitiveText") }}
             </p>
           </card-feature>
         </base-card>
@@ -46,7 +46,7 @@
             :color="colorIcons"
           >
             <p class="md:text-center md:mx-3">
-              {{ $t('fastText') }}
+              {{ $t("fastText") }}
             </p>
           </card-feature>
         </base-card>
@@ -60,7 +60,7 @@
             :color="colorIcons"
           >
             <p class="md:text-center md:mx-3">
-              {{ $t('responsiveText') }}
+              {{ $t("responsiveText") }}
             </p>
           </card-feature>
         </base-card>
@@ -72,7 +72,7 @@
             :color="colorIcons"
           >
             <p class="md:text-center md:mx-3">
-              {{ $t('reactiveText') }}
+              {{ $t("reactiveText") }}
             </p>
           </card-feature>
         </base-card>
@@ -83,32 +83,36 @@
 
 <script>
 export default {
-  name: 'SectionAbout',
-  data () {
+  name: "SectionAbout",
+  data() {
     return {
-      colorIcons: ''
-    }
+      colorIcons: "",
+    };
   },
-  created () {
-    this.getIconColors()
+  created() {
+    this.getIconColors();
 
     setInterval(() => {
-      this.getIconColors()
-    }, 400)
+      this.getIconColors();
+    }, 400);
   },
   methods: {
-    getIconColors () {
-      const theme = this.$store.state.theme
-      const themes = this.$store.state.themes
+    getIconColors() {
+      const theme = "default";
+      const themes = [
+        { value: "default", text: "Default", iconColor: "#33bebc" },
+        { value: "crazy", text: "Crazy", iconColor: "#33bebc" },
+        { value: "dark", text: "Dark", iconColor: "#cc925c" },
+      ];
       themes.map((e) => {
         if (e.value === theme) {
-          this.colorIcons = e.iconColor
+          this.colorIcons = e.iconColor;
         }
-        return 0
-      })
-    }
-  }
-}
+        return 0;
+      });
+    },
+  },
+};
 </script>
 
 <style scoped>

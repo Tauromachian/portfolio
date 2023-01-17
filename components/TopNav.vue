@@ -2,9 +2,7 @@
   <nav class="flex bg-primary">
     <div class="container flex justify-center text-2xl ml-14 z-50">
       <div class="flex items-center">
-        <h4 class="text-3xl">
-          José García
-        </h4>
+        <h4 class="text-3xl">José García</h4>
       </div>
 
       <ul class="flex items-center text-xl mx-auto">
@@ -20,12 +18,22 @@
       </ul>
       <div>
         <base-button class="navbar__link" icon @click="changeLocal">
-          <img src="icons/translate.svg" width="25px" height="25px" alt="Translate icon">
+          <img
+            src="icons/translate.svg"
+            width="25px"
+            height="25px"
+            alt="Translate icon"
+          />
         </base-button>
         <base-menu bottom="initial" top="3rem">
           <template #activator="{ on }">
             <base-button class="navbar__link" icon v-on="on">
-              <img src="icons/invert-colors.svg" width="25px" height="25px" alt="Color themes selector icon">
+              <img
+                src="icons/invert-colors.svg"
+                width="25px"
+                height="25px"
+                alt="Color themes selector icon"
+              />
             </base-button>
           </template>
           <theme-selector v-model="theme" :themes="themes" />
@@ -36,42 +44,50 @@
 </template>
 
 <script>
-import { mapState, mapMutations } from 'vuex'
-
-import BaseButton from './BaseButton'
+import BaseButton from "./BaseButton";
 
 export default {
-  name: 'TopNav',
+  name: "TopNav",
   components: {
-    BaseButton
+    BaseButton,
   },
-  data () {
+  props: {
+    links: {
+      type: Array,
+      default: () => [],
+    },
+    themes: {
+      type: Array,
+      default: () => [],
+    },
+  },
+  data() {
     return {
       isHidden: false,
-      theme: 'default'
-    }
+      theme: "default",
+    };
   },
-  computed: {
-    ...mapState(['links', 'themes'])
-  },
+
   watch: {
-    theme (val) {
-      this.setTheme(val)
-    }
+    theme(val) {
+      this.setTheme(val);
+    },
   },
   methods: {
-    ...mapMutations(['setTheme']),
-    changeLocal () {
-      this.$i18n.locale === 'en'
-        ? this.$i18n.setLocale('es')
-        : this.$i18n.setLocale('en')
+    changeLocal() {
+      this.$i18n.locale === "en"
+        ? this.$i18n.setLocale("es")
+        : this.$i18n.setLocale("en");
     },
-    scrollToPosition (postitionId) {
-      const elmnt = document.getElementById(postitionId.split('#').pop())
-      elmnt.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-}
+    scrollToPosition(postitionId) {
+      const elmnt = document.getElementById(postitionId.split("#").pop());
+      elmnt.scrollIntoView({ behavior: "smooth" });
+    },
+    setTheme(val) {
+      this.$emit("change:theme", val);
+    },
+  },
+};
 </script>
 
 <style scoped>

@@ -2,16 +2,16 @@
   <section id="home" class="flex flex-col lg:flex-row mb-32 p-3 relative">
     <div class="flex flex-col h-full justify-center hero__text md:mr-5 xl:mr-0">
       <h1 class="text-6xl xl:text-7xl 2xl:text-8xl">
-        {{ $t('hero.title') }}
+        {{ $t("hero.title") }}
       </h1>
       <p class="mt-10 text-xl">
         <strong>
-          {{ $t('hero.description1') }}
+          {{ $t("hero.description1") }}
         </strong>
       </p>
       <p class="text-xl">
         <strong>
-          {{ $t('hero.description2') }}
+          {{ $t("hero.description2") }}
         </strong>
       </p>
       <div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row">
@@ -28,9 +28,9 @@
               alt="Eye icon"
               width="30px"
               height="30px"
-            >
+            />
             <span class="mx-2" />
-            {{ $t('hero.button1') }}
+            {{ $t("hero.button1") }}
           </base-button>
         </a>
         <a>
@@ -49,7 +49,7 @@
               :color="colorIcons"
             />
             <span class="mx-2" />
-            {{ $t('hero.button2') }}
+            {{ $t("hero.button2") }}
           </base-button>
         </a>
       </div>
@@ -63,11 +63,11 @@
             sizes="(min-width: 347px)"
             type="image/avif"
             srcset="avif/1280/code.avif 1280w, avif/640/code.avif 640w"
-          >
+          />
           <source
             type="image/webp"
             srcset="webp/1280/code.webp 1280w, webp/640/code.webp 640w"
-          >
+          />
           <div class="perspective">
             <img
               class="w-full h-auto rotation-effect"
@@ -75,7 +75,7 @@
               height="1004"
               alt="Code for the sake of showing some of my skills."
               srcset="images/1280/code.png 1280w, images/640/code.png 640w"
-            >
+            />
           </div>
         </picture>
       </div>
@@ -92,43 +92,47 @@
 </template>
 
 <script>
-import SocialIconsBase from '../static/icons/SocialIconsBase.vue'
+import SocialIconsBase from "../static/icons/SocialIconsBase.vue";
 
 export default {
-  name: 'SectionHero',
+  name: "SectionHero",
   components: { SocialIconsBase },
-  data () {
+  data() {
     return {
-      colorIcons: '',
+      colorIcons: "",
       isHidden: true,
-      theme: 'default'
-    }
+      theme: "default",
+    };
   },
-  created () {
-    this.getIconColors()
+  created() {
+    this.getIconColors();
 
     setInterval(() => {
-      this.getIconColors()
-    }, 130)
+      this.getIconColors();
+    }, 130);
   },
   methods: {
-    scrollToPosition (postitionId) {
-      const elmnt = document.getElementById(postitionId.split('#').pop())
-      elmnt.scrollIntoView({ behavior: 'smooth' })
+    scrollToPosition(postitionId) {
+      const elmnt = document.getElementById(postitionId.split("#").pop());
+      elmnt.scrollIntoView({ behavior: "smooth" });
     },
 
-    getIconColors () {
-      const theme = this.$store.state.theme
-      const themes = this.$store.state.themes
+    getIconColors() {
+      const theme = "default";
+      const themes = [
+        { value: "default", text: "Default", iconColor: "#33bebc" },
+        { value: "crazy", text: "Crazy", iconColor: "#33bebc" },
+        { value: "dark", text: "Dark", iconColor: "#cc925c" },
+      ];
       themes.map((e) => {
         if (e.value === theme) {
-          this.colorIcons = e.iconColor
+          this.colorIcons = e.iconColor;
         }
-        return 0
-      })
-    }
-  }
-}
+        return 0;
+      });
+    },
+  },
+};
 </script>
 
 <style scoped>

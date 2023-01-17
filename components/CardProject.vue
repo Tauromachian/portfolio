@@ -5,12 +5,12 @@
         sizes="(min-width: 347px)"
         type="image/avif"
         :srcset="`avif/original/${src}.avif 1900w, avif/1280/${src}.avif 1280w, avif/640/${src}.avif 640w`"
-      >
+      />
       <source
         sizes="(min-width: 347px)"
         type="image/webp"
         :srcset="`webp/original/${src}.webp 1900w, webp/1280/${src}.webp 1280w, webp/640/${src}.webp 640w`"
-      >
+      />
       <img
         class="w-full h-auto"
         decoding="async"
@@ -19,7 +19,7 @@
         height="1004"
         alt="Code for the sake of showing some of my skills."
         :srcset="`images/original/${src}.jpg 1900w, images/1280/${src}.jpg 1280w, images/640/${src}.jpg 640w`"
-      >
+      />
     </picture>
     <card-text class="flex flex-col px-5 mt-3">
       <h2 class="font-bold">
@@ -37,7 +37,7 @@
             heigth="25px"
             width="25px"
           />
-          <p>{{ $t('visit') }}</p>
+          <p>{{ $t("visit") }}</p>
         </a>
       </div>
     </card-text>
@@ -45,60 +45,64 @@
 </template>
 
 <script>
-import SocialIconsBase from '../static/icons/SocialIconsBase.vue'
+import SocialIconsBase from "../static/icons/SocialIconsBase.vue";
 
 export default {
-  name: 'CardProject',
+  name: "CardProject",
   components: { SocialIconsBase },
   props: {
     src: {
       type: String,
-      default: ''
+      default: "",
     },
     title: {
       type: String,
-      default: ''
+      default: "",
     },
     description: {
       type: String,
-      default: ''
+      default: "",
     },
     siteUrl: {
       type: String,
-      default: ''
+      default: "",
     },
     alt: {
       type: String,
-      default: ''
-    }
+      default: "",
+    },
   },
-  data () {
+  data() {
     return {
-      colorIcons: ''
-    }
+      colorIcons: "",
+    };
   },
 
-  mounted () {
-    this.getIconColors()
+  mounted() {
+    this.getIconColors();
 
     setInterval(() => {
-      this.getIconColors()
-    }, 130)
+      this.getIconColors();
+    }, 130);
   },
 
   methods: {
-    getIconColors () {
-      const theme = this.$store.state.theme
-      const themes = this.$store.state.themes
+    getIconColors() {
+      const theme = "default";
+      const themes = [
+        { value: "default", text: "Default", iconColor: "#33bebc" },
+        { value: "crazy", text: "Crazy", iconColor: "#33bebc" },
+        { value: "dark", text: "Dark", iconColor: "#cc925c" },
+      ];
       themes.map((e) => {
         if (e.value === theme) {
-          this.colorIcons = e.iconColor
+          this.colorIcons = e.iconColor;
         }
-        return 0
-      })
-    }
-  }
-}
+        return 0;
+      });
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

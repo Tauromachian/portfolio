@@ -18,7 +18,7 @@
 
           <div class="flex flex-col">
             <h2>Frontend</h2>
-            <p>{{ $t('frontendDescription') }}</p>
+            <p>{{ $t("frontendDescription") }}</p>
             <chip-river :values="frontendTechnologies" class="mt-2" />
           </div>
         </card-text>
@@ -35,7 +35,7 @@
           </div>
           <div class="flex flex-col">
             <h2>Backend</h2>
-            <p>{{ $t('backendDescription') }}</p>
+            <p>{{ $t("backendDescription") }}</p>
             <chip-river :values="backendTechnologies" class="mt-2" />
           </div>
         </card-text>
@@ -51,8 +51,8 @@
             />
           </div>
           <div class="flex flex-col">
-            <h2>{{ $t('database') }}</h2>
-            <p>{{ $t('databaseDescription') }}</p>
+            <h2>{{ $t("database") }}</h2>
+            <p>{{ $t("databaseDescription") }}</p>
             <chip-river :values="databaseTechnologies" class="mt-2" />
           </div>
         </card-text>
@@ -68,8 +68,8 @@
             />
           </div>
           <div class="flex flex-col">
-            <h2>{{ $t('language') }}</h2>
-            <p>{{ $t('languagesDescription') }}</p>
+            <h2>{{ $t("language") }}</h2>
+            <p>{{ $t("languagesDescription") }}</p>
             <chip-river :values="languages" class="mt-2" />
           </div>
         </card-text>
@@ -79,57 +79,61 @@
 </template>
 
 <script>
-import SocialIconsBase from '../static/icons/SocialIconsBase.vue'
+import SocialIconsBase from "../static/icons/SocialIconsBase.vue";
 
 export default {
-  name: 'SectionSkills',
+  name: "SectionSkills",
   components: { SocialIconsBase },
-  data () {
+  data() {
     return {
-      colorIcons: '',
+      colorIcons: "",
       frontendTechnologies: [
-        'HTML5',
-        'CSS3',
-        'SCSS',
-        'Tailwind CSS',
-        'Bootstrap',
-        'Vuetify',
-        'Javascript',
-        'Vue.js',
-        'Angular',
-        'Nuxt.js'
+        "HTML5",
+        "CSS3",
+        "SCSS",
+        "Tailwind CSS",
+        "Bootstrap",
+        "Vuetify",
+        "Javascript",
+        "Vue.js",
+        "Angular",
+        "Nuxt.js",
       ],
       backendTechnologies: [
-        'Javascript',
-        'PHP',
-        'Node.js',
-        'Express.js',
-        'Laravel'
+        "Javascript",
+        "PHP",
+        "Node.js",
+        "Express.js",
+        "Laravel",
       ],
-      databaseTechnologies: ['MariaDB', 'MySQL', 'PostgreSQL', 'MongoDB'],
-      languages: ['English', 'Español']
-    }
+      databaseTechnologies: ["MariaDB", "MySQL", "PostgreSQL", "MongoDB"],
+      languages: ["English", "Español"],
+    };
   },
-  created () {
-    this.getIconColors()
+  created() {
+    this.getIconColors();
 
     setInterval(() => {
-      this.getIconColors()
-    }, 400)
+      this.getIconColors();
+    }, 400);
   },
   methods: {
-    getIconColors () {
-      const theme = this.$store.state.theme
-      const themes = this.$store.state.themes
+    getIconColors() {
+      const theme = "default";
+      const themes = [
+        { value: "default", text: "Default", iconColor: "#33bebc" },
+        { value: "crazy", text: "Crazy", iconColor: "#33bebc" },
+        { value: "dark", text: "Dark", iconColor: "#cc925c" },
+      ];
       themes.map((e) => {
         if (e.value === theme) {
-          this.colorIcons = e.iconColor
+          this.colorIcons = e.iconColor;
         }
-        return 0
-      })
-    }
-  }
-}
+        return 0;
+      });
+    },
+  },
+};
 </script>
 
 <style></style>
