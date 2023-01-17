@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     head: {
-      title: "portfolio",
+      title: "Jose Garcia | portfolio",
 
       meta: [
         { name: "author", content: "jogarcia" },
