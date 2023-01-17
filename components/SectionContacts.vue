@@ -69,8 +69,6 @@
 </template>
 
 <script>
-import SocialIconsBase from "../static/icons/SocialIconsBase.vue";
-
 export default {
   name: "SectionContacts",
   components: { SocialIconsBase },

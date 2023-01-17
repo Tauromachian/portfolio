@@ -79,8 +79,6 @@
 </template>
 
 <script>
-import SocialIconsBase from "../static/icons/SocialIconsBase.vue";
-
 export default {
   name: "SectionSkills",
   components: { SocialIconsBase },
