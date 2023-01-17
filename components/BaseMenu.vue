@@ -17,61 +17,60 @@
 </template>
 <script>
 export default {
-  name: 'BaseMenu',
+  name: "BaseMenu",
   props: {
     text: {
       type: String,
-      default: 'Options'
+      default: "Options",
     },
     top: {
       type: [String, Number],
-      default: 'initial'
+      default: "initial",
     },
     bottom: {
       type: [String, Number],
-      default: 'initial'
+      default: "initial",
     },
     left: {
       type: [String, Number],
-      default: 'initial'
+      default: "initial",
     },
     right: {
       type: [String, Number],
-      default: 'initial'
-    }
-
+      default: "initial",
+    },
   },
-  data () {
+  data() {
     return {
       isDropdownActive: false,
-      display: 'none',
-      on: this.$listeners
-    }
+      display: "none",
+      on: this.$attrs,
+    };
   },
-  mounted () {
+  mounted() {
     this.on = {
-      click: this.showDropdown
-    }
-    window.addEventListener('click', this.checkTarget)
+      click: this.showDropdown,
+    };
+    window.addEventListener("click", this.checkTarget);
   },
-  destroyed () {
-    window.removeEventListener('click', this.checkTarget)
+  destroyed() {
+    window.removeEventListener("click", this.checkTarget);
   },
   methods: {
-    showDropdown (event) {
-      event.stopPropagation()
-      this.isDropdownActive = !this.isDropdownActive
+    showDropdown(event) {
+      event.stopPropagation();
+      this.isDropdownActive = !this.isDropdownActive;
     },
-    checkTarget (event) {
-      if (!event.target.matches('.menu')) {
-        this.hideDropdown()
+    checkTarget(event) {
+      if (!event.target.matches(".menu")) {
+        this.hideDropdown();
       }
     },
-    hideDropdown () {
-      this.isDropdownActive = false
-    }
-  }
-}
+    hideDropdown() {
+      this.isDropdownActive = false;
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

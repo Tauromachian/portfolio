@@ -3,10 +3,12 @@
     class="button rounded-lg bg-primary no-outline py-2 px-5 hover:bg-green-300"
     :class="buttonClasses"
     v-bind="$attrs"
-    v-on="$listeners"
   >
     <div v-if="loading" class="flex justify-center items-center">
-      <div class="spinner-border animate-spin inline-block w-6 h-6 border-4 border-top-primary rounded-full" role="status" />
+      <div
+        class="spinner-border animate-spin inline-block w-6 h-6 border-4 border-top-primary rounded-full"
+        role="status"
+      />
       <span v-if="loadingText" class="ml-2">{{ loadingText }}</span>
       <span v-else class="ml-2">Loading...</span>
     </div>
@@ -18,58 +20,58 @@
 
 <script>
 export default {
-  name: 'BaseButton',
+  name: "BaseButton",
   props: {
     text: {
       type: String,
-      default: ''
+      default: "",
     },
     value: {
       type: Boolean,
-      default: false
+      default: false,
     },
     isActivable: {
       type: Boolean,
-      default: true
+      default: true,
     },
     icon: {
       type: Boolean,
-      default: false
+      default: false,
     },
     loading: {
       type: Boolean,
-      default: false
+      default: false,
     },
     loadingText: {
       type: String,
-      default: ''
+      default: "",
     },
     isCallToAction: {
       type: Boolean,
-      default: false
+      default: false,
     },
     outline: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   computed: {
-    buttonClasses () {
-      const classes = {}
+    buttonClasses() {
+      const classes = {};
       if (this.icon) {
-        classes.padding = 0
-        classes['icon-button'] = true
+        classes.padding = 0;
+        classes["icon-button"] = true;
       }
       if (this.isCallToAction) {
-        classes['call-to-action'] = true
+        classes["call-to-action"] = true;
       }
       if (this.outline) {
-        classes.outline = true
+        classes.outline = true;
       }
-      return classes
-    }
-  }
-}
+      return classes;
+    },
+  },
+};
 </script>
 
 <style scoped>
