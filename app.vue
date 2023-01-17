@@ -4,9 +4,9 @@
       <base-gradient v-if="isSmallScreen" degrees="180deg" :height="6" />
       <div v-if="isSmallScreen" class="top-gradient" />
       <top-nav
-        @change:theme="theme = val"
         v-if="!isSmallScreen"
         class="invisible sm:visible top-0 left-0 right-0"
+        @change:theme="theme = val"
       />
     </header>
     <div class="container mx-auto">
@@ -23,10 +23,10 @@
       <section-repositories />
     </div>
     <bottom-nav
-      @change:theme="theme = val"
       :links="links"
       :themes="themes"
       class="sm:invisible fixed bottom-0 left-0 right-0 z-50"
+      @change:theme="theme = val"
     />
     <div class="mt-20 pt-10 sm:mt-0 content" />
     <vue-back-to-top v-if="!isSmallScreen" />
@@ -64,7 +64,7 @@ export default {
     window.addEventListener("resize", this.setWidth);
     this.setWidth();
   },
-  destroyed() {
+  unmounted() {
     window.removeEventListener("resize", this.setWidth);
   },
   methods: {
