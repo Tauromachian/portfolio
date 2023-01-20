@@ -16,7 +16,7 @@
         </p>
       </div>
       <div class="flex jose-img" style="">
-        <picture>
+        <picture class="w-80 h-80">
           <source
             sizes="(min-width: 347px)"
             type="image/avif"
