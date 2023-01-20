@@ -1,5 +1,7 @@
 <template>
   <button
+    type="button"
+    role="button"
     class="button rounded-lg bg-primary no-outline py-2 px-5 hover:bg-green-300"
     :class="buttonClasses"
     v-bind="$attrs"
