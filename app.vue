@@ -13,17 +13,15 @@
       />
     </header>
     <div class="container mx-auto">
-      <section-hero />
+      <section-hero id="home" />
 
-      <section-about />
+      <section-about id="about" />
 
-      <section-skills />
+      <section-skills id="skills" />
 
-      <section-projects />
+      <section-contacts id="social-networks" />
 
-      <section-contacts />
-
-      <section-repositories />
+      <section-repositories id="repositories" />
     </div>
     <bottom-nav
       :links="links"

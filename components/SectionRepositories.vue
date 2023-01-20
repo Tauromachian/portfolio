@@ -1,7 +1,6 @@
 <template>
   <base-section
     v-if="repositories && repositories.length"
-    id="repositories"
     class="items-center justify-center"
     :title="$t('repositories')"
     title-alignment="self-center"

@@ -1,5 +1,5 @@
 <template>
-  <base-section id="about">
+  <base-section>
     <div class="justify-center flex-wrap mt-4">
       <div>
         <h2 class="mb-5 text-3xl text-5xl self-start text-left">

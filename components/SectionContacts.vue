@@ -1,6 +1,5 @@
 <template>
   <base-section
-    id="social-networks"
     class="items-center justify-center"
     :title="$t('contacts')"
     title-alignment="self-center"

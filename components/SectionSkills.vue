@@ -1,9 +1,5 @@
 <template>
-  <base-section
-    id="skills"
-    class="items-center justify-center"
-    :title="$t('skills')"
-  >
+  <base-section class="items-center justify-center" :title="$t('skills')">
     <div class="flex flex-col">
       <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
         <card-text class="flex" no-padding>
