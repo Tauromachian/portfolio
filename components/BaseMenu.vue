@@ -53,7 +53,7 @@ export default {
     };
     window.addEventListener("click", this.checkTarget);
   },
-  destroyed() {
+  unmounted() {
     window.removeEventListener("click", this.checkTarget);
   },
   methods: {
