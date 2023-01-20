@@ -19,6 +19,8 @@
 
       <section-skills id="skills" />
 
+      <section-projects id="projects"></section-projects>
+
       <section-contacts id="social-networks" />
 
       <section-repositories id="repositories" />
@@ -50,6 +52,7 @@ export default {
         { link: "#home", text: "home" },
         { link: "#about", text: "about" },
         { link: "#skills", text: "skills" },
+        { link: "#projects", text: "projects.title" },
         { link: "#social-networks", text: "contacts" },
         { link: "#repositories", text: "repositories" },
       ],
