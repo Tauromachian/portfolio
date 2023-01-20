@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Jose Garcia | portfolio",
+      htmlAttrs: {
+        lang: "en",
+      },
 
       meta: [
         { name: "author", content: "jogarcia" },
