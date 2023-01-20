@@ -2,7 +2,8 @@
   <a class="mt-1 px-2">
     <span class="link">
       <span class="link-content">
-        <img src="icons/link.svg" width="25px" height="25px" alt="Link icon">
+        <SocialIconsBase icon="mdiLink"></SocialIconsBase>
+        <img src="icons/link.svg" width="25px" height="25px" alt="Link icon" />
         <span>
           {{ text }}
         </span>
@@ -13,23 +14,20 @@
 </template>
 
 <script>
-
 export default {
-  name: 'BaseLink',
-  components: {
-
-  },
+  name: "BaseLink",
+  components: {},
   props: {
     icon: {
       type: Boolean,
-      default: false
+      default: false,
     },
     text: {
       type: String,
-      default: 'lorem ipsum'
-    }
-  }
-}
+      default: "lorem ipsum",
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
