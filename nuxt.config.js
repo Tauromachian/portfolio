@@ -36,6 +36,7 @@ export default defineNuxtConfig({
           content: "https://nuxt-portfolio-jogarcia.netlify.app/",
         },
         { hid: "og:image", property: "og:image", content: "/portfolio.png" },
+        { property: "og:image:alt", content: "Image of the portfolio" },
         { property: "og:image:size", content: "300" },
         { property: "og:locale", content: "en_US" },
         { property: "og:locale:alternate", content: "es_ES" },
