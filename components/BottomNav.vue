@@ -81,6 +81,6 @@ app-links li {
 }
 
 .links--hidden {
-  bottom: -250px;
+  bottom: -300px;
 }
 </style>
