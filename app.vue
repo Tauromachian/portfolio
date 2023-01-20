@@ -51,7 +51,7 @@ export default {
       links: [
         { link: "#home", text: "home" },
         { link: "#about", text: "about" },
-        { link: "#portfolio", text: "portfolio" },
+        { link: "#portfolio", text: "skills" },
         { link: "#social-networks", text: "contacts" },
         { link: "#repositories", text: "repositories" },
       ],
