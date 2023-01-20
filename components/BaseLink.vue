@@ -3,7 +3,6 @@
     <span class="link">
       <span class="link-content">
         <SocialIconsBase icon="mdiLink"></SocialIconsBase>
-        <img src="icons/link.svg" width="25px" height="25px" alt="Link icon" />
         <span>
           {{ text }}
         </span>
