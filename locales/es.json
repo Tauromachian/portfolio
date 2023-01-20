@@ -26,6 +26,7 @@
   "repositories": "Repositorios",
   "formTitle": "Tiene una pregunta o quiere trabajar en equipo?",
   "testing": "Testing",
+
   "projects": {
     "title": "Proyectos",
     "description": {
@@ -49,6 +50,7 @@
   "backendDescription": "Lo que el usuario no ve. El cerebro del proyecto.",
   "database": "Bases de datos",
   "databaseDescription": "La forma en la que los datos se guardan.",
+  "testingDescription": "Me aseguro de que todo funciona como debería.",
   "language": "Lenguajes",
   "languagesDescription": "Los idiomas en los que te puedes comunicar conmigo"
 

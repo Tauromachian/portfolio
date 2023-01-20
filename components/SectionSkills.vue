@@ -69,7 +69,7 @@
           </div>
           <div class="flex flex-col">
             <h2>{{ $t("testing") }}</h2>
-            <p>{{ $t("databaseDescription") }}</p>
+            <p>{{ $t("testingDescription") }}</p>
             <chip-river :values="testing" class="mt-2" />
           </div>
         </card-text>
