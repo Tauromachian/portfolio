@@ -34,7 +34,7 @@
             "
           />
           <img
-            class="w-full h-auto rounded-full"
+            class="w-full h-auto rounded-full mt-5 lg:mt-0"
             decoding="async"
             loading="lazy"
             width="1256"
