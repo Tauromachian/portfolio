@@ -109,6 +109,7 @@ export default {
         "Bootstrap",
         "Vuetify",
         "Javascript",
+        "Typescript",
         "Vue.js",
         "Angular",
         "Nuxt.js",
