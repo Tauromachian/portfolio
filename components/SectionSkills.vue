@@ -2,7 +2,7 @@
   <base-section
     id="portfolio"
     class="items-center justify-center"
-    :title="$t('portfolio')"
+    :title="$t('skills')"
   >
     <div class="flex flex-col">
       <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
