@@ -34,7 +34,7 @@
             "
           />
           <img
-            class="w-full h-auto"
+            class="w-full h-auto rounded-full"
             decoding="async"
             loading="lazy"
             width="1256"
