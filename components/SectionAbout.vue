@@ -15,7 +15,7 @@
           {{ $t("aboutText3") }}
         </p>
       </div>
-      <div class="flex jose-img" style="">
+      <div class="flex justify-center jose-img md:ml-20" style="">
         <picture class="w-80 h-80">
           <source
             sizes="(min-width: 347px)"
@@ -148,10 +148,7 @@ export default {
   justify-content: center;
 }
 .jose-img {
-  display: flex;
-  justify-content: center;
   min-width: 320px;
   max-width: 700px;
-  width: 50%;
 }
 </style>
