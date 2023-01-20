@@ -12,7 +12,7 @@
         @change:theme="setTheme"
       />
     </header>
-    <div class="container mx-auto">
+    <main class="container mx-auto">
       <section-hero id="home" />
 
       <section-about id="about" />
@@ -22,7 +22,7 @@
       <section-contacts id="social-networks" />
 
       <section-repositories id="repositories" />
-    </div>
+    </main>
     <bottom-nav
       :links="links"
       :themes="themes"
