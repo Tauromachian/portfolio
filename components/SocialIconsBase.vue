@@ -32,6 +32,7 @@ import {
   mdiMenu,
   mdiCheck,
   mdiAlert,
+  mdiBug,
 } from "@mdi/js";
 export default {
   props: {
@@ -73,6 +74,7 @@ export default {
         mdiMenu,
         mdiCheck,
         mdiAlert,
+        mdiBug,
       },
     };
   },
