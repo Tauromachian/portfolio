@@ -15,42 +15,38 @@
         </strong>
       </p>
       <div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row">
-        <a>
-          <base-button
-            class="mt-12 relative w-full md:w-unset"
-            is-call-to-action
-            @click="scrollToPosition('portfolio')"
-          >
-            <div class="w-full h-full" />
-            <SocialIconsBase
-              class="absolute left-5 top-5"
-              height="30px"
-              width="30px"
-              icon="mdiEye"
-            />
-            <span class="mx-2" />
+        <base-button
+          class="mt-12 w-full md:w-unset relative"
+          is-call-to-action
+          @click="scrollToPosition('skills')"
+        >
+          <SocialIconsBase
+            class="absolute left-5 top-5"
+            height="30px"
+            width="30px"
+            icon="mdiEye"
+          />
+          <span>
             {{ $t("hero.button1") }}
-          </base-button>
-        </a>
-        <a>
-          <base-button
-            class="mt-2 sm:mt-12 lg:mt-2 xl:mt-12 sm:ml-2 lg:ml-0 xl:ml-2 relative w-full md:w-unset"
-            is-call-to-action
-            outline
-            @click="scrollToPosition('social-networks')"
-          >
-            <div class="w-full h-full" />
-            <SocialIconsBase
-              class="absolute left-5 top-5"
-              height="30px"
-              width="30px"
-              icon="mdiEmail"
-              :color="colorIcons"
-            />
-            <span class="mx-2" />
+          </span>
+        </base-button>
+        <base-button
+          class="mt-2 sm:mt-12 lg:mt-2 xl:mt-12 sm:ml-2 lg:ml-0 xl:ml-2 w-full md:w-unset relative"
+          is-call-to-action
+          outline
+          @click="scrollToPosition('social-networks')"
+        >
+          <SocialIconsBase
+            class="absolute left-5 top-5"
+            height="30px"
+            width="30px"
+            icon="mdiEmail"
+            :color="colorIcons"
+          />
+          <span class="left-16 top-4">
             {{ $t("hero.button2") }}
-          </base-button>
-        </a>
+          </span>
+        </base-button>
       </div>
     </div>
     <div
