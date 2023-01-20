@@ -63,6 +63,23 @@
             <SocialIconsBase
               height="100px"
               width="100px"
+              icon="mdiBug"
+              :color="colorIcons"
+            />
+          </div>
+          <div class="flex flex-col">
+            <h2>{{ $t("testing") }}</h2>
+            <p>{{ $t("databaseDescription") }}</p>
+            <chip-river :values="testing" class="mt-2" />
+          </div>
+        </card-text>
+      </base-card>
+      <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
+        <card-text class="flex" no-padding>
+          <div style="display: flex">
+            <SocialIconsBase
+              height="100px"
+              width="100px"
               icon="mdiTranslate"
               :color="colorIcons"
             />
@@ -104,6 +121,7 @@ export default {
         "Laravel",
       ],
       databaseTechnologies: ["MariaDB", "MySQL", "PostgreSQL", "MongoDB"],
+      testing: ["Mocha", "Chai", "Jest"],
       languages: ["English", "Español"],
     };
   },
