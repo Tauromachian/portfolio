@@ -1,6 +1,6 @@
 <template>
   <base-section>
-    <div class="justify-center flex-wrap mt-4">
+    <div class="flex justify-center flex-wrap mt-4">
       <div>
         <h2 class="mb-5 text-3xl text-5xl self-start text-left">
           {{ $t("about") }}
@@ -141,14 +141,6 @@ export default {
 
 <style scoped>
 .p-width {
-  max-width: 700px;
-}
-.justify-center {
-  display: flex;
-  justify-content: center;
-}
-.jose-img {
-  min-width: 320px;
   max-width: 700px;
 }
 </style>
