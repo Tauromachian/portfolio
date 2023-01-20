@@ -1,6 +1,6 @@
 <template>
   <base-section
-    id="portfolio"
+    id="skills"
     class="items-center justify-center"
     :title="$t('skills')"
   >
