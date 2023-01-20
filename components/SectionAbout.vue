@@ -27,23 +27,24 @@
           />
           <source
             type="image/webp"
+            sizes="(min-width: 347px)"
             srcset="
               /webp/1280/picture-man-min.webp 1280w,
               /webp/640/picture-man-min.webp   640w
             "
           />
-          <div class="perspective">
-            <img
-              class="w-full h-auto rotation-effect"
-              width="1256"
-              height="1004"
-              alt="Code for the sake of showing some of my skills."
-              srcset="
-                /images/1280/picture-man-min.jpg 1280w,
-                /images/640/picture-man-min.jpg   640w
-              "
-            />
-          </div>
+          <img
+            class="w-full h-auto"
+            decoding="async"
+            loading="lazy"
+            width="1256"
+            height="1004"
+            alt="An image of the owner of this portfolio"
+            srcset="
+              /images/1280/picture-man-min.jpg 1280w,
+              /images/640/picture-man-min.jpg   640w
+            "
+          />
         </picture>
       </div>
     </div>
