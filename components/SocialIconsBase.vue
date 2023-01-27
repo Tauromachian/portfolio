@@ -43,11 +43,11 @@ export default {
     },
     height: {
       type: String,
-      default: "",
+      default: "30px",
     },
     width: {
       type: String,
-      default: "",
+      default: "30px",
     },
   },
   data() {
