@@ -20,18 +20,28 @@
       </div>
     </div>
     <div class="buttons flex justify-center bg-primary px-3 text-2xl">
-      <base-button class="navbar__link" icon @click="changeLocale($i18n)">
+      <base-button
+        title="Translate"
+        class="navbar__link"
+        icon
+        @click="changeLocale($i18n)"
+      >
         <SocialIconsBase icon="mdiTranslate"></SocialIconsBase>
       </base-button>
       <base-menu bottom="3rem">
         <template #activator="{ on }">
-          <base-button class="navbar__link" icon v-on="on">
+          <base-button title="Theme change" class="navbar__link" icon v-on="on">
             <SocialIconsBase icon="mdiInvertColors"></SocialIconsBase>
           </base-button>
         </template>
         <theme-selector :value="theme" :themes="themes" @input="setTheme" />
       </base-menu>
-      <base-button class="navbar__link" icon @click="isHidden = !isHidden">
+      <base-button
+        title="Menu"
+        class="navbar__link"
+        icon
+        @click="isHidden = !isHidden"
+      >
         <SocialIconsBase icon="mdiMenu"></SocialIconsBase>
       </base-button>
     </div>
