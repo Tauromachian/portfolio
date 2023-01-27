@@ -26,6 +26,7 @@
       <section-repositories id="repositories" />
     </main>
     <bottom-nav
+      v-if="isSmallScreen"
       :links="links"
       :themes="themes"
       class="sm:invisible fixed bottom-0 left-0 right-0 z-50"
