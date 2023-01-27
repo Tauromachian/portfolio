@@ -8,6 +8,7 @@
       <a
         v-for="(link, index) in socialLinks"
         :key="link + index"
+        :title="link.alt"
         :href="link.link"
         class="social-link"
       >
