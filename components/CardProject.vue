@@ -29,7 +29,7 @@
         {{ description }}
       </p>
       <div>
-        <a :href="siteUrl" class="flex">
+        <a :href="siteUrl" class="flex" :title="alt">
           <SocialIconsBase
             class="mr-1"
             icon="mdiLink"

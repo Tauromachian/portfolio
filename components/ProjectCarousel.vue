@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import { VueperSlides, VueperSlide } from 'vueperslides'
+import { VueperSlides, VueperSlide } from "vueperslides";
 export default {
   components: { VueperSlides, VueperSlide },
   data: () => ({
@@ -35,70 +35,70 @@ export default {
       4000: {
         visibleSlides: 3,
         slideMultiple: 3,
-        touchable: false
+        touchable: false,
       },
       1100: {
         visibleSlides: 2,
         slideMultiple: 2,
-        touchable: false
+        touchable: false,
       },
       690: {
         visibleSlides: 2,
         slideMultiple: 2,
-        arrows: false
+        arrows: false,
       },
       600: {
-        arrows: false
-      }
-    }
+        arrows: false,
+      },
+    },
   }),
   computed: {
-    projects () {
+    projects() {
       return [
         {
-          src: 'queues',
-          title: 'Waiting room',
-          description: this.$t('projects.description.queues'),
-          link: 'https://myqueues.herokuapp.com/',
-          alt: 'Queues app picture'
+          src: "queues",
+          title: "Waiting room",
+          description: this.$t("projects.description.queues"),
+          link: "https://myqueues.herokuapp.com/",
+          alt: "Queues app picture",
         },
         {
-          src: 'johnson-turbine-support-website',
-          title: 'Johnson Turbine Support',
-          description: this.$t('projects.description.johnson-turbine'),
-          link: 'https://www.johnsonturbine.com/',
-          alt: 'Jhonson Turbine company\'s portfolio site.'
+          src: "johnson-turbine-support-website",
+          title: "Johnson Turbine Support",
+          description: this.$t("projects.description.johnson-turbine"),
+          link: "https://www.johnsonturbine.com/",
+          alt: "Jhonson Turbine company's portfolio site.",
         },
         {
-          src: 'sancho',
-          title: 'Sancho Restaurant',
-          description: this.$t('projects.description.sanchoRestaurant'),
-          link: 'https://sancho-restaurant.herokuapp.com/',
-          alt: 'Site of hispanic food restaurant. Shancho Restaurant.'
+          src: "sancho",
+          title: "Sancho Restaurant",
+          description: this.$t("projects.description.sanchoRestaurant"),
+          link: "https://sancho-restaurant.herokuapp.com/",
+          alt: "Site of hispanic food restaurant. Shancho Restaurant.",
         },
         {
-          src: 'zaru',
-          title: 'Zaru Arquitectura',
-          description: this.$t('projects.description.zaruArquitectura'),
-          link: 'https://zaruarquitectura.onrender.com/',
-          alt: 'Site of architectural displays.'
+          src: "zaru",
+          title: "Zaru Arquitectura",
+          description: this.$t("projects.description.zaruArquitectura"),
+          link: "https://zaruarquitectura.onrender.com/",
+          alt: "Site of architectural displays.",
         },
         {
-          src: 'kanpeki',
-          title: 'Kanpeki',
-          description: this.$t('projects.description.kanpeki'),
-          link: 'https://kanpeki-sa.herokuapp.com/',
-          alt: 'Site of all asian culture fanatics'
+          src: "kanpeki",
+          title: "Kanpeki",
+          description: this.$t("projects.description.kanpeki"),
+          link: "https://kanpeki-sa.herokuapp.com/",
+          alt: "Site of all asian culture fanatics",
         },
         {
-          src: 'flowers-site',
-          title: 'Flowers',
-          description: this.$t('projects.description.flowers'),
-          link: 'https://kanpeki-sa.herokuapp.com/',
-          alt: 'Simple template of a possible flower store.'
-        }
-      ]
-    }
-  }
-}
+          src: "flowers-site",
+          title: "Flowers",
+          description: this.$t("projects.description.flowers"),
+          link: "https://kanpeki-sa.herokuapp.com/",
+          alt: "Simple template of a possible flower store.",
+        },
+      ];
+    },
+  },
+};
 </script>
