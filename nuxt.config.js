@@ -57,7 +57,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["nuxt-purgecss", "@nuxtjs/tailwindcss"],
 
   css: ["~/assets/scss/main.scss"],
 });
