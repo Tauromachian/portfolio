@@ -1,3 +1,6 @@
+import en from "./locales/en";
+import es from "./locales/es";
+
 export default defineNuxtConfig({
   ssr: false,
   app: {
@@ -57,7 +60,22 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["nuxt-purgecss", "@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "nuxt-purgecss", "@nuxtjs/i18n"],
+
+  i18n: {
+    defaultLocale: "en",
+    lazy: true,
+    langDir: "./locales",
+    locales: [
+      { code: "en", file: "en.js" },
+      { code: "es", file: "es.js" },
+    ],
+    vueI18n: {
+      legacy: false,
+      locale: "en",
+      messages: { es, en },
+    },
+  },
 
   css: ["~/assets/scss/main.scss"],
 });
