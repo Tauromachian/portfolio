@@ -77,5 +77,11 @@ export default defineNuxtConfig({
     },
   },
 
+  runtimeConfig: {
+    public: {
+      githubToken: process.env.NUXT_GITHUB_TOKEN,
+    },
+  },
+
   css: ["~/assets/scss/main.scss"],
 });
