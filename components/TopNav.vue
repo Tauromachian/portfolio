@@ -17,12 +17,22 @@
         </li>
       </ul>
       <div>
-        <base-button class="navbar__link" icon @click="changeLocale($i18n)">
+        <base-button
+          title="Translate"
+          class="navbar__link"
+          icon
+          @click="changeLocale($i18n)"
+        >
           <SocialIconsBase icon="mdiTranslate" />
         </base-button>
         <base-menu bottom="initial" top="3rem">
           <template #activator="{ on }">
-            <base-button class="navbar__link" icon v-on="on">
+            <base-button
+              title="Theme changer"
+              class="navbar__link"
+              icon
+              v-on="on"
+            >
               <SocialIconsBase icon="mdiInvertColors" />
             </base-button>
           </template>
