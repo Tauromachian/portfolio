@@ -13,7 +13,7 @@
   "dependencies": {
     "@mdi/js": "^7.0.96",
     "axios": "^0.21.1",
-    "nuxt": "^3.0.0",
+    "nuxt": "^3.1.1",
     "vueperslides": "^3.5.1"
   },
   "devDependencies": {
