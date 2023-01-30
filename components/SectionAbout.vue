@@ -1,7 +1,7 @@
 <template>
   <base-section>
     <div class="flex justify-center flex-wrap mt-4">
-      <div>
+      <div class="flex flex-col justify-center">
         <h2 class="mb-5 text-3xl text-5xl self-start text-left">
           {{ $t("about") }}
         </h2>
@@ -16,7 +16,7 @@
         </p>
       </div>
       <div class="flex justify-center jose-img md:ml-20" style="">
-        <picture class="w-80 h-80">
+        <picture class="w-80 h-fit">
           <source
             sizes="(min-width: 347px)"
             type="image/avif"
@@ -48,7 +48,7 @@
         </picture>
       </div>
     </div>
-    <div class="flex flex-col justify-center sm:flex-row mt-40 md:mt-32">
+    <div class="flex flex-col justify-center sm:flex-row mt-40 md:mt-24">
       <div class="flex flex-col md:flex-row">
         <base-card transparent class="w-full md:mr-1 py-4">
           <card-feature
