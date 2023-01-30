@@ -25,7 +25,7 @@
       <h2 class="font-bold">
         {{ title }}
       </h2>
-      <p class="h-32 overflow-hidden">
+      <p>
         {{ description }}
       </p>
       <div>
