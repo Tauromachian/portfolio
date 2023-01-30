@@ -48,7 +48,7 @@
         </picture>
       </div>
     </div>
-    <div class="flex flex-col justify-center sm:flex-row mt-40 md:mt-24">
+    <div class="flex flex-col justify-center sm:flex-row mt-40 md:mt-16">
       <div class="flex flex-col md:flex-row">
         <base-card transparent class="w-full md:mr-1 py-4">
           <card-feature
