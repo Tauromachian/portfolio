@@ -28,18 +28,16 @@
       <p>
         {{ description }}
       </p>
-      <div>
-        <a :href="siteUrl" class="flex" :title="alt">
-          <SocialIconsBase
-            class="mr-1"
-            icon="mdiLink"
-            :color="colorIcons"
-            heigth="25px"
-            width="25px"
-          />
-          <p>{{ $t("visit") }}</p>
-        </a>
-      </div>
+      <a :href="siteUrl" class="flex" :title="alt">
+        <SocialIconsBase
+          class="mr-1"
+          icon="mdiLink"
+          :color="colorIcons"
+          heigth="25px"
+          width="25px"
+        />
+        <p>{{ $t("visit") }}</p>
+      </a>
     </card-text>
   </base-card>
 </template>
