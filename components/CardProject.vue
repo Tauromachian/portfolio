@@ -12,7 +12,7 @@
         :srcset="`webp/original/${src}.webp 1900w, webp/1280/${src}.webp 1280w, webp/640/${src}.webp 640w`"
       />
       <img
-        class="w-full h-auto"
+        class="w-full h-auto rounded-t-lg"
         decoding="async"
         loading="lazy"
         width="1256"
