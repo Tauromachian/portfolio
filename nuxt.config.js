@@ -60,12 +60,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "nuxt-purgecss",
-    "@nuxtjs/i18n",
-    "nuxt-delay-hydration",
-  ],
+  modules: ["@nuxtjs/tailwindcss", "nuxt-purgecss", "@nuxtjs/i18n"],
 
   i18n: {
     defaultLocale: "en",
