@@ -58,7 +58,10 @@ export default {
   },
   methods: {
     async loadRepositories() {
-      const token = this.$config.NUXT_ENV_GITHUB_TOKEN;
+      const runtimeConfig = useRuntimeConfig();
+
+      const token = runtimeConfig.githubToken;
+
       if (!token) {
         return;
       }
