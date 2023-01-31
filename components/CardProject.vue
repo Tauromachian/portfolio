@@ -33,7 +33,7 @@
           class="mr-1"
           icon="mdiLink"
           :color="colorIcons"
-          heigth="25px"
+          height="25px"
           width="25px"
         />
         <p>{{ $t("visit") }}</p>
