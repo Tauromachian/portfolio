@@ -1,11 +1,14 @@
 <template>
-  <button
+  <component
+    :is="downloadLink ? 'a' : 'button'"
+    :href="downloadLink"
     type="button"
     role="button"
     :title="text"
     class="button rounded-lg bg-primary no-outline py-2 px-5 hover:bg-green-300"
     :class="buttonClasses"
     v-bind="$attrs"
+    :download="!!downloadLink"
   >
     <div v-if="loading" class="flex justify-center items-center">
       <div
@@ -18,7 +21,7 @@
     <slot v-else>
       {{ text }}
     </slot>
-  </button>
+  </component>
 </template>
 
 <script>
@@ -56,6 +59,10 @@ export default {
     outline: {
       type: Boolean,
       default: false,
+    },
+    downloadLink: {
+      type: String,
+      default: "",
     },
   },
   computed: {
