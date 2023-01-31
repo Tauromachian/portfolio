@@ -17,7 +17,7 @@
       <div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row">
         <base-button
           download-link="/cv.pdf"
-          class="mt-12 w-full md:w-unset relative"
+          class="mt-12 w-full md:w-unset relative text-center"
           is-call-to-action
         >
           <SocialIconsBase
