@@ -43,7 +43,7 @@
             icon="mdiEmail"
             :color="colorIcons"
           />
-          <span class="left-16 top-4">
+          <span>
             {{ $t("hero.button2") }}
           </span>
         </base-button>
