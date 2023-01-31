@@ -4,7 +4,7 @@
     :title="$t('contacts')"
     title-alignment="self-center"
   >
-    <div class="flex text-7xl md:text-8xl">
+    <div class="flex flex-wrap justify-center text-7xl md:text-8xl">
       <a
         v-for="(link, index) in socialLinks"
         :key="link + index"
