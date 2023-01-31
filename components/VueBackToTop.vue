@@ -1,7 +1,7 @@
 <template>
   <button
     title="Go to top"
-    class="rounded-lg lol floating-button"
+    class="rounded-lg floating-button"
     :class="isShowingClasses"
     @click="topFunction"
   >
