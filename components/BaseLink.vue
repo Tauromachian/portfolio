@@ -2,7 +2,12 @@
   <a class="mt-1 px-2">
     <span class="link">
       <span class="link-content">
-        <SocialIconsBase icon="mdiLink"></SocialIconsBase>
+        <SocialIconsBase
+          height="25px"
+          width="25px"
+          icon="mdiLink"
+          class="mr-1"
+        ></SocialIconsBase>
         <span>
           {{ text }}
         </span>
