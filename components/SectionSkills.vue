@@ -109,6 +109,7 @@ export default {
         "Vue.js",
         "Angular",
         "Nuxt.js",
+        "Antdv",
       ],
       backendTechnologies: [
         "Javascript",
