@@ -3,7 +3,7 @@ export default {
     title: "Creando ideas",
     description1: "Soy un desarrollador web/fullstacker",
     description2: "Te construiré un sitio web y lucirá genial",
-    button1: "Ver habilidades",
+    button1: "Descargar CV",
     button2: "Contáctame",
   },
   home: "Inicio",

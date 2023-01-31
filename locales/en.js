@@ -3,7 +3,7 @@ export default {
     title: "Making ideas happen",
     description1: "I am a a web developer/fullstacker",
     description2: " I will build your site and make it look awesome",
-    button1: "Check skills",
+    button1: "Download CV",
     button2: "Contact me",
   },
   home: "Home",
