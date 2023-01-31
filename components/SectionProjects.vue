@@ -1,12 +1,9 @@
 <template>
-  <base-section
-    class="flex flex-col items-center justify-center"
-    :title="$t('projects.title')"
-  >
+  <base-section :title="$t('projects.title')">
     <div class="md:columns-3 gap-4 w-100">
       <card-project
         v-for="(project, index) in projects"
-        :key="project.src + index"
+        :key="`project-card-${index}`"
         class="flex-1 w-full inline-block w-full mb-4"
         :title="project.title"
         :description="project.description"
