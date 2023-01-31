@@ -16,9 +16,9 @@
       </p>
       <div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row">
         <base-button
+          download-link="/cv.pdf"
           class="mt-12 w-full md:w-unset relative"
           is-call-to-action
-          @click="scrollToPosition('skills')"
         >
           <SocialIconsBase
             class="absolute left-5 top-5"
