@@ -1,16 +1,20 @@
 <template>
   <base-section :title="$t('projects.title')">
     <div class="md:columns-3 gap-4 w-100">
-      <card-project
+      <div
         v-for="(project, index) in projects"
         :key="`project-card-${index}`"
-        class="w-full w-full mb-4"
-        :title="project.title"
-        :description="project.description"
-        :site-url="project.link"
-        :src="project.src"
-        :alt="project.alt"
-      />
+        class="inline-block"
+      >
+        <card-project
+          class="w-full w-full mb-4"
+          :title="project.title"
+          :description="project.description"
+          :site-url="project.link"
+          :src="project.src"
+          :alt="project.alt"
+        />
+      </div>
     </div>
   </base-section>
 </template>
