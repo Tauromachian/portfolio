@@ -52,28 +52,24 @@
     <div
       class="flex flex-col mt-10 md:mt-0 h-full justify-center hero__code lg:max-w-lg xl:max-w-max"
     >
-      <div>
-        <picture>
-          <source
-            sizes="(min-width: 347px)"
-            type="image/avif"
-            srcset="/avif/1280/code.avif 1280w, /avif/640/code.avif 640w"
-          />
-          <source
-            type="image/webp"
-            srcset="/webp/1280/code.webp 1280w, /webp/640/code.webp 640w"
-          />
-          <div class="perspective">
-            <img
-              class="w-full h-auto rotation-effect"
-              width="1256"
-              height="1004"
-              alt="Code for the sake of showing some of my skills."
-              srcset="/images/1280/code.png 1280w, /images/640/code.png 640w"
-            />
-          </div>
-        </picture>
-      </div>
+      <picture class="picture">
+        <source
+          sizes="(min-width: 347px)"
+          type="image/avif"
+          srcset="/avif/1280/code.avif 1280w, /avif/640/code.avif 640w"
+        />
+        <source
+          type="image/webp"
+          srcset="/webp/1280/code.webp 1280w, /webp/640/code.webp 640w"
+        />
+        <img
+          class="w-full h-auto image"
+          width="1256"
+          height="1004"
+          alt="Code for the sake of showing some of my skills."
+          srcset="/images/1280/code.png 1280w, /images/640/code.png 640w"
+        />
+      </picture>
     </div>
 
     <SocialIconsBase
@@ -127,7 +123,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 @media screen and (min-width: 1024px) {
   section {
     height: calc(100vh - 64px);
@@ -161,19 +157,18 @@ export default {
   left: 0;
   font-size: 4rem;
 }
-.perspective {
-  perspective: 1000px;
-  -webkit-perspective: 1000px;
-  -moz-perspective: 1000px;
-}
-.rotation-effect {
+
+.picture {
   transform-style: preserve-3d;
   margin-top: 20px;
-  box-shadow: 20px 20px 30px black;
-  transform: rotateY(-30deg);
-  -webkit-transform: rotateY(-30deg);
-  -moz-transform: rotateY(-30deg);
+  perspective: 1000px;
+
+  .image {
+    transform: rotateY(-30deg);
+    box-shadow: 20px 20px 30px black;
+  }
 }
+
 @keyframes up-and-down {
   0% {
     transform: translateY(0);
