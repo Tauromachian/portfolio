@@ -46,6 +46,8 @@ export default {
         "Diseño de diferentes viviendas y decoraciones exteriores e interiores a la medida.",
       flowers:
         "Vende flores en sus macetas para que los clientes puedan cuidarlas. Haz del mundo un lugar hermoso.",
+      succubus:
+        "Proyecto especializado en la divulgación de información sobre el BDSM.",
     },
   },
   form: {

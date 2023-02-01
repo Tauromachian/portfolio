@@ -44,6 +44,7 @@ export default {
         "Design of different homes and custom exterior and interior decorations.",
       flowers:
         "Sell flowers in their flowerpots so the clients can take care of them. Make the world a beautiful place.",
+      succubus: "Proyect specialized in information divulgation about BDSM.",
     },
   },
   form: {
