@@ -36,6 +36,13 @@ export default {
           alt: "Jhonson Turbine company's portfolio site.",
         },
         {
+          src: "succubus",
+          title: "Succubus",
+          description: this.$t("projects.description.succubus"),
+          link: "https://www.succubus-bdsm.com/",
+          alt: "Succubus site",
+        },
+        {
           src: "sancho",
           title: "Sancho Restaurant",
           description: this.$t("projects.description.sanchoRestaurant"),
