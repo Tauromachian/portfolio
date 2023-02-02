@@ -60,13 +60,13 @@ export default {
           link: "https://zaruarquitectura.onrender.com/",
           alt: "Site of architectural displays.",
         },
-        {
-          src: "kanpeki",
-          title: "Kanpeki",
-          description: this.$t("projects.description.kanpeki"),
-          link: "https://kanpeki-sa.herokuapp.com/",
-          alt: "Site of all asian culture fanatics",
-        },
+        // {
+        //   src: "kanpeki",
+        //   title: "Kanpeki",
+        //   description: this.$t("projects.description.kanpeki"),
+        //   link: "https://kanpeki-sa.herokuapp.com/",
+        //   alt: "Site of all asian culture fanatics",
+        // },
         {
           src: "flowers-site",
           title: "Flowers",
