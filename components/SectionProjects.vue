@@ -71,7 +71,7 @@ export default {
           src: "flowers-site",
           title: "Flowers",
           description: this.$t("projects.description.flowers"),
-          link: "https://kanpeki-sa.herokuapp.com/",
+          link: "https://master--superb-beignet-7b06bd.netlify.app/",
           alt: "Simple template of a possible flower store.",
         },
       ];
