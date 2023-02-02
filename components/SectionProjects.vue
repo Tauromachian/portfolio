@@ -50,7 +50,7 @@ export default {
           src: "sancho",
           title: "Sancho Restaurant",
           description: this.$t("projects.description.sanchoRestaurant"),
-          link: "https://sancho-restaurant.herokuapp.com/",
+          link: "https://sancho-restaurant.onrender.com",
           alt: "Site of hispanic food restaurant. Shancho Restaurant.",
         },
         {
