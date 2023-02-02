@@ -29,7 +29,7 @@ export default {
           src: "queues",
           title: "Waiting room",
           description: this.$t("projects.description.queues"),
-          link: "https://myqueues.herokuapp.com/",
+          link: "https://waiting-room.onrender.com/home",
           alt: "Queues app picture",
         },
         {
