@@ -24,7 +24,7 @@
             class="absolute left-5 top-5"
             height="30px"
             width="30px"
-            icon="mdiEye"
+            icon="mdiDownload"
           />
           <span>
             {{ $t("hero.button1") }}
