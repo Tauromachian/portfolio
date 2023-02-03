@@ -81,7 +81,7 @@ export default {
       colorIcons: "",
       socialLinks: [
         {
-          link: "https://www.linkedin.com/in/jose-garcia-888941180/",
+          link: "https://www.linkedin.com/in/dev-jose-garcia",
           icon: "mdiLinkedin",
           alt: "Linkedin icon",
         },
