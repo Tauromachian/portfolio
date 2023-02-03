@@ -54,7 +54,7 @@ export default defineNuxtConfig({
         { rel: "dns-prefetch", href: "https://fonts.googleapis.com/" },
         {
           rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=Lato&family=Patua+One&display=swap",
+          href: "https://fonts.googleapis.com/css2?family=Pridi&family=Righteous&display=swap",
         },
       ],
     },
