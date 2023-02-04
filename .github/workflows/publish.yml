@@ -5,10 +5,6 @@ on:
     branches:
       - master
 
-runs:
-  using: "node16"
-  main: "main.js"
-
 jobs:
   build:
     runs-on: ubuntu-latest
