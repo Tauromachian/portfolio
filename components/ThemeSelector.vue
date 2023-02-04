@@ -24,6 +24,7 @@ export default {
       default: () => [],
     },
   },
+  emits: ["input", "click"],
   computed: {
     activeThemes() {
       return this.themes.map((theme) => {
