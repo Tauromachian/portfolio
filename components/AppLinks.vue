@@ -12,24 +12,24 @@
 
 <script>
 export default {
-  name: 'AppLinks',
+  name: "AppLinks",
   props: {
     horizontal: {
       type: [Boolean, String],
-      default: false
-    }
+      default: false,
+    },
   },
-  data () {
+  data() {
     return {
       links: [
-        { route: '#', text: 'Sobre mi' },
-        { route: '#', text: 'Portafolio' },
-        { route: '#', text: 'Redes sociales' },
-        { route: '#', text: 'Repositorios' }
-      ]
-    }
-  }
-}
+        { route: "#", text: "Sobre mi" },
+        { route: "#", text: "Portafolio" },
+        { route: "#", text: "Redes sociales" },
+        { route: "#", text: "Repositorios" },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>

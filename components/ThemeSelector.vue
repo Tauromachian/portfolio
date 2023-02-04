@@ -17,37 +17,37 @@ export default {
   props: {
     value: {
       type: String,
-      default: 'default'
+      default: "default",
     },
     themes: {
       type: Array,
-      default: () => []
-    }
+      default: () => [],
+    },
   },
   computed: {
-    activeThemes () {
+    activeThemes() {
       return this.themes.map((theme) => {
-        const internalTheme = Object.assign({}, theme)
-        internalTheme.active = (theme.value === this.selectedTheme)
-        return internalTheme
-      })
+        const internalTheme = Object.assign({}, theme);
+        internalTheme.active = theme.value === this.selectedTheme;
+        return internalTheme;
+      });
     },
     selectedTheme: {
-      get () {
-        return this.value
+      get() {
+        return this.value;
       },
-      set (val) {
-        this.$emit('input', val)
-      }
-    }
+      set(val) {
+        this.$emit("input", val);
+      },
+    },
   },
   methods: {
-    setTheme (themeValue) {
-      this.selectedTheme = themeValue
-      this.$emit('click', themeValue)
-    }
-  }
-}
+    setTheme(themeValue) {
+      this.selectedTheme = themeValue;
+      this.$emit("click", themeValue);
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>
