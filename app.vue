@@ -7,7 +7,7 @@
         v-if="!isSmallScreen"
         :links="links"
         :themes="themes"
-        class="invisible sm:visible top-0 left-0 right-0"
+        class="top-0 left-0 right-0"
         :theme="theme"
         @change:theme="setTheme"
       />
@@ -29,7 +29,7 @@
       v-if="isSmallScreen"
       :links="links"
       :themes="themes"
-      class="sm:invisible fixed bottom-0 left-0 right-0 z-50"
+      class="fixed bottom-0 left-0 right-0 z-50"
       :theme="theme"
       @change:theme="setTheme"
     />
@@ -61,7 +61,7 @@ export default {
   },
   computed: {
     isSmallScreen() {
-      return this.width < 769;
+      return this.width < 835;
     },
   },
   mounted() {
