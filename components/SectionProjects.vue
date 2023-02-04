@@ -1,6 +1,6 @@
 <template>
   <base-section :title="$t('projects.title')">
-    <div class="md:columns-3 gap-4 w-100">
+    <div class="sm:columns-2 md:columns-3 gap-4 w-100">
       <div
         v-for="(project, index) in projects"
         :key="`project-card-${index}`"
