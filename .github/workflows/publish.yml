@@ -5,6 +5,9 @@ on:
     branches:
       - master
 
+env:
+  NUXT_GITHUB_TOKEN: ${{ secrets.NUXT_GITHUB_TOKEN }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,8 +22,6 @@ jobs:
 
       - name: Build
         run: npm run generate # The build command of your project
-        env:
-          NUXT_GITHUB_TOKEN: ${{ secrets.NUXT_GITHUB_TOKEN }}
 
       - name: Push
         uses: s0/git-publish-subdir-action@develop
