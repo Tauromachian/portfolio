@@ -66,15 +66,7 @@ export default {
 
       let repositories;
       try {
-        const response = await fetch(
-          "https://api.github.com/users/tauromachian/repos",
-          {
-            method: "GET",
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          }
-        );
+        const response = await fetch("https://github-repo-lister.onrender.com");
         repositories = await response.json();
       } catch (error) {
         repositories = [];
