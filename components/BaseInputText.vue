@@ -4,7 +4,7 @@
     <input
       v-bind="$attrs"
       v-model="text"
-      class="p-1 rounded no-outline input mt-0"
+      class="p-1 rounded no-outline input mt-0 text"
       :type="type"
     />
   </div>
@@ -44,19 +44,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-input {
-  color: var(--text-color-gray-900);
-  outline: none;
-  transition: all 0.1s;
-  --shadow-color: #9ca3af;
-  box-shadow: 6px 6px 0px 1px var(--shadow-color);
-  margin-top: 0;
-}
-
-.input:focus {
-  transform: translate(2px, 2px);
-  box-shadow: 4px 4px 0px 1px var(--shadow-color);
-}
-</style>
