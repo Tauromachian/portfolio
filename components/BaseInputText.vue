@@ -2,60 +2,55 @@
   <div class="flex" :class="{ 'flex-col': col }">
     <label>{{ label }}</label>
     <input
-      v-model="text"
-      class="p-1 rounded no-outline input"
-      :type="type"
-      :placeholder="placeholder"
       v-bind="$attrs"
-    >
+      v-model="text"
+      class="p-1 rounded no-outline input mt-0"
+      :type="type"
+    />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'BaseInputText',
+  name: "BaseInputText",
   props: {
     label: {
       type: String,
-      default: 'input'
-    },
-    placeholder: {
-      type: String,
-      default: ''
+      default: "input",
     },
     type: {
       type: String,
-      default: 'text'
+      default: "text",
     },
     col: {
       type: Boolean,
-      default: true
+      default: true,
     },
-    value: {
+    modelValue: {
       type: String,
-      default: ''
-    }
+      default: "",
+    },
   },
+  emits: ["update:modelValue"],
   computed: {
     text: {
-      get () {
-        return this.value
+      get() {
+        return this.modelValue;
       },
-      set (val) {
-        this.$emit('input', val)
-      }
-    }
-  }
-
-}
+      set(val) {
+        this.$emit("update:modelValue", val);
+      },
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 input {
   color: var(--text-color-gray-900);
-  outline : none;
+  outline: none;
   transition: all 0.1s;
-  --shadow-color: #9ca3af ;
+  --shadow-color: #9ca3af;
   box-shadow: 6px 6px 0px 1px var(--shadow-color);
 }
 

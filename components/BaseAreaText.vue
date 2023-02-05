@@ -6,55 +6,52 @@
       class="p-1 rounded no-outline textarea"
       cols="10"
       rows="4"
-      placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+      placeholder="You message to me here."
     />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'BaseTextArea',
+  name: "BaseTextArea",
   props: {
     label: {
       type: String,
-      default: 'input'
+      default: "input",
     },
     placeholder: {
       type: String,
-      default: ''
-    },
-    type: {
-      type: String,
-      default: 'text'
+      default: "",
     },
     col: {
       type: Boolean,
-      default: true
+      default: true,
     },
-    value: {
+    modelValue: {
       type: String,
-      default: ''
-    }
+      default: "",
+    },
   },
+  emits: ["update:modelValue"],
   computed: {
     text: {
-      get () {
-        return this.value
+      get() {
+        return this.modelValue;
       },
-      set (val) {
-        this.$emit('input', val)
-      }
-    }
-  }
-}
+      set(val) {
+        this.$emit("update:modelValue", val);
+      },
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 .textarea {
   color: var(--text-color-gray-900);
-  outline : none;
+  outline: none;
   transition: all 0.1s;
-  --shadow-color: #9ca3af ;
+  --shadow-color: #9ca3af;
   box-shadow: 6px 6px 0px 1px var(--shadow-color);
 }
 
