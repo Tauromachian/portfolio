@@ -71,8 +71,7 @@ export default {
           {
             method: "GET",
             headers: {
-              authorization: `token ${token}`,
-              "Content-Type": "application/json",
+              Authorization: `Bearer ${token}`,
             },
           }
         );
