@@ -26,12 +26,7 @@
       <h2 class="text-base sm:text-2xl font-bold">
         {{ $t("formTitle") }}
       </h2>
-      <app-alert
-        v-if="message.active"
-        :text="message.text"
-        class="mt-3"
-        :type="message.type"
-      />
+      <app-alert v-if="message.active" :message="message" class="mt-3" />
       <form
         id="form"
         name="contact"
@@ -64,7 +59,11 @@
             class="mt-3"
             name="message"
           />
-          <base-button class="mt-3 self-start" :loading="loading">
+          <base-button
+            class="mt-3 self-start"
+            :loading="loading"
+            @click="submitForm"
+          >
             {{ $t("button.send") }}
           </base-button>
         </div>
@@ -171,14 +170,14 @@ export default {
       this.loading = false;
     },
     displaySuccessMessage() {
-      this.message.success = true;
       this.message.text = "Success! email sent correctly";
+      this.message.type = "success";
       this.message.active = true;
       this.loading = false;
     },
     displayErrorMessage() {
-      this.message.success = false;
       this.message.text = "Error there was a problem sending the email";
+      this.message.type = "error";
       this.message.active = true;
       this.loading = false;
     },
