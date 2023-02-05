@@ -7,6 +7,7 @@
       cols="10"
       rows="4"
       placeholder="You message to me here."
+      v-bind="$attrs"
     />
   </div>
 </template>
