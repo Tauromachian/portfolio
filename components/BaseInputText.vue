@@ -4,7 +4,7 @@
     <input
       v-bind="$attrs"
       v-model="text"
-      class="p-1 rounded no-outline input mt-0 text"
+      class="p-1 rounded no-outline mt-0 text"
       :type="type"
     />
   </div>

@@ -3,7 +3,7 @@
     <label>{{ label }}</label>
     <textarea
       v-model="text"
-      class="p-1 rounded no-outline textarea text"
+      class="p-1 rounded no-outline text"
       cols="10"
       rows="4"
       v-bind="$attrs"
