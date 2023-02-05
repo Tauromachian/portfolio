@@ -44,8 +44,6 @@
 </template>
 
 <script>
-import axios from "axios";
-
 export default {
   name: "SectionRepositories",
   data() {
@@ -68,15 +66,17 @@ export default {
 
       let repositories;
       try {
-        const { data } = await axios.get(
+        const response = await fetch(
           "https://api.github.com/users/tauromachian/repos",
           {
+            method: "GET",
             headers: {
               authorization: `token ${token}`,
+              "Content-Type": "application/json",
             },
           }
         );
-        repositories = data;
+        repositories = await response.json();
       } catch (error) {
         repositories = [];
       }
