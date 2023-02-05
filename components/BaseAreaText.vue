@@ -49,6 +49,7 @@ export default {
   transition: all 0.1s;
   --shadow-color: #9ca3af;
   box-shadow: 6px 6px 0px 1px var(--shadow-color);
+  margin-top: 0;
 }
 
 .textarea:focus {
