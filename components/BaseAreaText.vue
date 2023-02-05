@@ -6,7 +6,6 @@
       class="p-1 rounded no-outline textarea"
       cols="10"
       rows="4"
-      placeholder="You message to me here."
       v-bind="$attrs"
     />
   </div>
@@ -19,10 +18,6 @@ export default {
     label: {
       type: String,
       default: "input",
-    },
-    placeholder: {
-      type: String,
-      default: "",
     },
     col: {
       type: Boolean,
