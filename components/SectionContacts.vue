@@ -55,7 +55,7 @@
             v-model="form.body"
             :label="$t('form.message')"
             required
-            placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            placeholder="Write your message to me here"
             class="mt-3"
             name="message"
           />
