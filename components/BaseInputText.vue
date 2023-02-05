@@ -5,7 +5,6 @@
       v-bind="$attrs"
       v-model="text"
       class="p-1 rounded no-outline mt-0 text"
-      :type="type"
     />
   </div>
 </template>
@@ -17,10 +16,6 @@ export default {
     label: {
       type: String,
       default: "input",
-    },
-    type: {
-      type: String,
-      default: "text",
     },
     col: {
       type: Boolean,
