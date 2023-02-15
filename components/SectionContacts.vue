@@ -43,7 +43,7 @@
             name="name"
           />
           <base-input-text
-            v-model="form.address"
+            v-model="form.from"
             :label="$t('form.email')"
             class="mt-3"
             type="email"
@@ -106,8 +106,8 @@ export default {
         },
       ],
       form: {
+        from: "",
         name: "",
-        address: "",
         subject: "Work for me",
         body: "",
       },
@@ -138,26 +138,24 @@ export default {
       });
     },
     async submitForm() {
+      const runtimeConfig = useRuntimeConfig();
+
       this.loading = true;
-      const emailServiceToken = this.$config.NUXT_ENV_EMAIL_SERVICE_TOKEN;
-      const recipientEmail = this.$config.NUXT_ENV_RECIPIENT;
+
       const body = {
         ...this.form,
-        token: emailServiceToken,
-        recipient: recipientEmail,
+        text: `${this.form.name}\n${this.form.body}`,
+        to: runtimeConfig.targetEmail,
       };
       let response;
       try {
-        response = await fetch(
-          "https://jts-email-service.herokuapp.com/api/email-service",
-          {
-            method: "POST",
-            body: JSON.stringify(body),
-            headers: {
-              "Content-Type": "application/json",
-            },
-          }
-        );
+        response = await fetch("https://localhost:3000", {
+          method: "POST",
+          body: JSON.stringify(body),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
       } catch (error) {
         this.displayErrorMessage();
         return;
