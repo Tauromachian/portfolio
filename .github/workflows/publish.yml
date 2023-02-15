@@ -7,6 +7,8 @@ on:
 
 env:
   NUXT_GITHUB_TOKEN: ${{ secrets.NUXT_GITHUB_TOKEN }}
+  NUXT_TARGET_EMAIL: ${{ secrets.NUXT_TARGET_EMAIL }}
+  NUXT_SERVICE_MAILER_URL: ${{ secrets.NUXT_SERVICE_MAILER_URL }}
 
 jobs:
   build:
