@@ -149,7 +149,7 @@ export default {
       };
       let response;
       try {
-        response = await fetch("https://localhost:3000", {
+        response = await fetch(`${runtimeConfig.mailerUrl}contact-me`, {
           method: "POST",
           body: JSON.stringify(body),
           headers: {
