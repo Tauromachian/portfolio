@@ -56,14 +56,6 @@ export default {
   },
   methods: {
     async loadRepositories() {
-      const runtimeConfig = useRuntimeConfig();
-
-      const token = runtimeConfig.githubToken;
-
-      if (!token) {
-        return;
-      }
-
       let repositories;
       try {
         const response = await fetch("https://github-repo-lister.onrender.com");
