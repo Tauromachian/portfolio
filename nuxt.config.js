@@ -39,7 +39,7 @@ export default defineNuxtConfig({
         { property: "og:type", content: "website" },
         {
           property: "og:url",
-          content: "https://nuxt-portfolio-jogarcia.netlify.app/",
+          content: "https://www.jose-garcia.net",
         },
         { hid: "og:image", property: "og:image", content: "/portfolio.png" },
         { property: "og:image:alt", content: "Image of the portfolio" },
