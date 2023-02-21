@@ -79,7 +79,6 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      githubToken: process.env.NUXT_GITHUB_TOKEN,
       targetEmail: process.env.NUXT_TARGET_EMAIL,
       mailerUrl: process.env.NUXT_SERVICE_MAILER_URL,
     },
