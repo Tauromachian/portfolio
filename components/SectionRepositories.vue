@@ -56,9 +56,15 @@ export default {
   },
   methods: {
     async loadRepositories() {
+      const { reposListerUrl } = useRuntimeConfig();
+
+      if (!reposListerUrl) {
+        return;
+      }
+
       let repositories;
       try {
-        const response = await fetch("https://github-repo-lister.onrender.com");
+        const response = await fetch(reposListerUrl);
         repositories = await response.json();
       } catch (error) {
         repositories = [];
