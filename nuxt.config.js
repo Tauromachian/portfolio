@@ -81,6 +81,7 @@ export default defineNuxtConfig({
     public: {
       targetEmail: process.env.NUXT_TARGET_EMAIL,
       mailerUrl: process.env.NUXT_SERVICE_MAILER_URL,
+      reposListerUrl: process.env.NUXT_REPOS_LISTER_URL,
     },
   },
 
