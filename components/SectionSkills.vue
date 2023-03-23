@@ -7,10 +7,11 @@
         class="bg-secondary mx-4 mt-4 md:mt-8"
       >
         <card-text class="flex" no-padding>
-          <div style="display: flex">
+          <div>
             <SocialIconsBase
               height="100px"
               width="100px"
+              class="w-20 md:w-32"
               :icon="skill.icon"
               :color="colorIcons"
             />
