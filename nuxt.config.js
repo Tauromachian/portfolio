@@ -41,7 +41,7 @@ export default defineNuxtConfig({
           property: "og:url",
           content: "https://www.jose-garcia.net",
         },
-        { hid: "og:image", property: "og:image", content: "/portfolio.png" },
+        { hid: "og:image", property: "og:image", content: "/website-logo.png" },
         { property: "og:image:alt", content: "Image of the portfolio" },
         { property: "og:image:size", content: "300" },
         { property: "og:locale", content: "en_US" },
@@ -49,7 +49,7 @@ export default defineNuxtConfig({
         { property: "og:copyright", content: "Portfolio jogarcia" },
       ],
       link: [
-        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        { rel: "icon", type: "image/x-icon", href: "/website-logo.png" },
         { rel: "preconnect", href: "https://fonts.googleapis.com/" },
         { rel: "dns-prefetch", href: "https://fonts.googleapis.com/" },
         {
