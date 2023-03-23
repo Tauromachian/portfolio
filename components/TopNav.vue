@@ -2,7 +2,8 @@
   <nav class="flex bg-primary">
     <div class="container flex justify-center text-2xl ml-14 z-50">
       <div class="flex items-center">
-        <h4 class="text-3xl">José García</h4>
+        <img class="w-20 h-full" src="/website-logo.png" />
+        <h4 class="text-3xl ml-5">José García</h4>
       </div>
 
       <ul class="flex items-center text-xl mx-auto">
