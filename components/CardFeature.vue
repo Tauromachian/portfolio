@@ -1,7 +1,9 @@
 <template>
   <div class="flex md:flex-col items-center">
-    <SocialIconsBase :icon="icon" width="95px" height="95px" :color="color" />
-    <div class="flex flex-col md:items-center">
+    <div>
+      <SocialIconsBase :icon="icon" width="85px" height="85px" :color="color" />
+    </div>
+    <div class="flex flex-col md:items-center ml-5 md:ml-0">
       <h3 class="font-bold">
         {{ title }}
       </h3>
