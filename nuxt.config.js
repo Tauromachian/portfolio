@@ -16,7 +16,7 @@ export default defineNuxtConfig({
           hid: "description",
           name: "description",
           content:
-            "This is a portfolio website. Where I talk a little about my skills and web presence. If you are looking for developers take a look.",
+            "Hello there! My name is Jose Garcia. I am a fullstack developer. Design, databases, frontend, backend and SEO is what I do. Take a look at my portfolio.",
         },
         {
           name: "keywords",
@@ -28,7 +28,7 @@ export default defineNuxtConfig({
         {
           property: "og:description",
           content:
-            "This is a portfolio website. Where I talk a little about my skills and web presence. If you are looking for developers take a look.",
+            "Hello there! My name is Jose Garcia. I am a fullstack developer. Design, databases, frontend, backend and SEO is what I do. Take a look at my portfolio.",
         },
         {
           property: "og:keywords",
