@@ -17,7 +17,7 @@
           </a>
         </li>
       </ul>
-      <div>
+      <div class="flex items-center">
         <base-button
           title="Translate"
           class="navbar__link"
