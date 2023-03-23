@@ -10,11 +10,10 @@ export default {
   visit: "Visit",
   about: "About",
   aboutText1:
-    "Hello there! My name is José García. I am a fullstack web developer. I enjoy making ideas happen on the web by using current development technologies. I build clean, well-designed and user-friendly (with SEO in mind) sites and apps.",
+    "Hello there! My name is José García. I am a fullstack developer. Design, databases, frontend, backend, SEO and multilanguage is what I do. I am a rounded dev with experience and dessire to prove myself in the field.",
   aboutText2:
-    "I have been working in the field for over 3 years now, helping small businesses grow and thrive by designing custom websites that help them to communicate better with their customers and increase revenue through better visibility on search engines such as Google, Bing and Yahoo!",
-  aboutText3:
-    "My clients range from one person micro businesses to large companies like Dt4o . Let's discuss your needs and goals so I can provide a plan that will get you the results you want.",
+    "I have been working in the field for over 3 years now. Helping small businesses grow and thrive. I have also worked for bigger companies providing my skills.",
+  aboutText3: "Let's discuss your needs, I'll start building right away.",
   myPictureAlt: "My personal picture",
   intuitive: "Intuitive",
   intuitiveText: "User experience focused web sites",

@@ -10,11 +10,11 @@ export default {
   visit: "Visitar",
   about: "Sobre mí",
   aboutText1:
-    "¡Hola! Mi nombre es José García. Soy un desarrollador web de fullstack. Disfruto creando ideas, haciendo que sucedan en la web utilizando tecnologías de desarrollo actuales. Creo aplicaciones  y sitios limpios, bien diseñados y fáciles de usar (con SEO en mente).",
+    "¡Hola! Mi nombre es José García. Soy desarrollador fullstack. Diseño, bases de datos, frontend, backend, SEO y multilenguaje es lo que hago. Soy un desarrollador con experiencia.",
   aboutText2:
-    "He estado trabajando en el campo durante más de 3 años, ayudando a pequeñas empresas a crecer y prosperar mediante el diseño de sitios web personalizados que les ayudan a comunicarse mejor con sus clientes y aumentar los ingresos a través de una mejor visibilidad en motores de búsqueda como Google, Bing y Yahoo!.",
+    "He estado trabajando en el campo durante más de 3 años. Ayudando a las pequeñas empresas a crecer y prosperar. También he trabajado para empresas más grandes proporcionando mis habilidades.",
   aboutText3:
-    "Mis clientes van desde micro empresas unipersonales hasta grandes empresas como Dt4o. Analicemos sus necesidades y objetivos para que pueda brindarle un plan que le proporcione los resultados que desea.",
+    "Vamos a discutir sus necesidades, voy a empezar a construir de inmediato.",
   myPictureAlt: "Mi foto personal",
   intuitive: "Intuitivo",
   intuitiveText: "Sitios web enfocados an la experiencia de usuario.",
