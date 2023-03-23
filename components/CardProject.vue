@@ -25,9 +25,7 @@
       <h2 class="font-bold">
         {{ title }}
       </h2>
-      <p>
-        {{ description }}
-      </p>
+
       <a :href="siteUrl" class="flex mt-3" :title="alt">
         <SocialIconsBase
           class="mr-1"
