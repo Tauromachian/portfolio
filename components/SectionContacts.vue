@@ -23,9 +23,9 @@
       </a>
     </div>
     <base-card class="mt-8 p-4">
-      <h2 class="text-base sm:text-2xl font-bold">
+      <h3 class="text-base sm:text-2xl font-bold">
         {{ $t("formTitle") }}
-      </h2>
+      </h3>
       <app-alert v-if="message.active" :message="message" class="mt-3" />
       <form
         id="form"
