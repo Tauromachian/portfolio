@@ -46,13 +46,7 @@ export default {
           link: "https://www.succubus-bdsm.com/",
           alt: "Succubus site",
         },
-        {
-          src: "sancho",
-          title: "Sancho Restaurant",
-          description: this.$t("projects.description.sanchoRestaurant"),
-          link: "https://sancho-restaurant.onrender.com",
-          alt: "Site of hispanic food restaurant. Shancho Restaurant.",
-        },
+
         {
           src: "zaru",
           title: "Zaru Arquitectura",
