@@ -1,7 +1,7 @@
 <template>
   <base-section class="container">
     <div class="flex justify-center flex-wrap mt-4">
-      <div class="flex flex-col justify-center">
+      <div class="flex flex-col justify-center max-w-xl">
         <h2 class="mb-5 text-3xl text-5xl self-start text-left">
           {{ $t("about") }}
         </h2>
