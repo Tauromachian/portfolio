@@ -1,89 +1,25 @@
 <template>
   <base-section class="items-center justify-center" :title="$t('skills')">
     <div class="flex flex-col">
-      <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
+      <base-card
+        v-for="(skill, index) in skills"
+        :key="`skill-${index}`"
+        class="bg-secondary mx-4 mt-4 md:mt-8"
+      >
         <card-text class="flex" no-padding>
           <div style="display: flex">
             <SocialIconsBase
               height="100px"
               width="100px"
-              icon="mdiCodeTags"
+              :icon="skill.icon"
               :color="colorIcons"
             />
           </div>
 
           <div class="flex flex-col">
-            <h2>Frontend</h2>
-            <p>{{ $t("frontendDescription") }}</p>
-            <chip-river :values="frontendTechnologies" class="mt-2" />
-          </div>
-        </card-text>
-      </base-card>
-      <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
-        <card-text class="flex" no-padding>
-          <div style="display: flex">
-            <SocialIconsBase
-              height="100px"
-              width="100px"
-              icon="mdiServer"
-              :color="colorIcons"
-            />
-          </div>
-          <div class="flex flex-col">
-            <h2>Backend</h2>
-            <p>{{ $t("backendDescription") }}</p>
-            <chip-river :values="backendTechnologies" class="mt-2" />
-          </div>
-        </card-text>
-      </base-card>
-      <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
-        <card-text class="flex" no-padding>
-          <div style="display: flex">
-            <SocialIconsBase
-              height="100px"
-              width="100px"
-              icon="mdiDatabase"
-              :color="colorIcons"
-            />
-          </div>
-          <div class="flex flex-col">
-            <h2>{{ $t("database") }}</h2>
-            <p>{{ $t("databaseDescription") }}</p>
-            <chip-river :values="databaseTechnologies" class="mt-2" />
-          </div>
-        </card-text>
-      </base-card>
-      <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
-        <card-text class="flex" no-padding>
-          <div style="display: flex">
-            <SocialIconsBase
-              height="100px"
-              width="100px"
-              icon="mdiBug"
-              :color="colorIcons"
-            />
-          </div>
-          <div class="flex flex-col">
-            <h2>{{ $t("testing") }}</h2>
-            <p>{{ $t("testingDescription") }}</p>
-            <chip-river :values="testing" class="mt-2" />
-          </div>
-        </card-text>
-      </base-card>
-      <base-card class="bg-secondary mx-4 mt-4 md:mt-8">
-        <card-text class="flex" no-padding>
-          <div style="display: flex">
-            <SocialIconsBase
-              height="100px"
-              width="100px"
-              icon="mdiTranslate"
-              :color="colorIcons"
-            />
-          </div>
-          <div class="flex flex-col">
-            <h2>{{ $t("language") }}</h2>
-            <p>{{ $t("languagesDescription") }}</p>
-            <chip-river :values="languages" class="mt-2" />
+            <h2>{{ skill.name }}</h2>
+            <p>{{ $t(skill.description) }}</p>
+            <chip-river :values="skill.technologies" class="mt-2" />
           </div>
         </card-text>
       </base-card>
@@ -97,30 +33,57 @@ export default {
   data() {
     return {
       colorIcons: "",
-      frontendTechnologies: [
-        "HTML5",
-        "CSS3",
-        "SCSS",
-        "Tailwind CSS",
-        "Bootstrap",
-        "Vuetify",
-        "Javascript",
-        "Typescript",
-        "Vue.js",
-        "Angular",
-        "Nuxt.js",
-        "Antdv",
+      skills: [
+        {
+          name: "Frontend",
+          icon: "mdiCodeTags",
+          description: "frontendDescription",
+          technologies: [
+            "HTML5",
+            "CSS3",
+            "SCSS",
+            "Tailwind CSS",
+            "Bootstrap",
+            "Vuetify",
+            "Javascript",
+            "Typescript",
+            "Vue.js",
+            "Angular",
+            "Nuxt.js",
+            "Antdv",
+          ],
+        },
+        {
+          name: "Backend",
+          icon: "mdiServer",
+          description: "backendDescription",
+          technologies: [
+            "Javascript",
+            "PHP",
+            "Node.js",
+            "Express.js",
+            "Laravel",
+          ],
+        },
+        {
+          name: "Database",
+          icon: "mdiDatabase",
+          description: "databaseDescription",
+          technologies: ["MariaDB", "MySQL", "PostgreSQL", "MongoDB"],
+        },
+        {
+          name: "Testing",
+          icon: "mdiBug",
+          description: "testingDescription",
+          technologies: ["Mocha", "Chai", "Jest"],
+        },
+        {
+          name: "Languages",
+          icon: "mdiTranslate",
+          description: "languagesDescription",
+          technologies: ["English", "Español"],
+        },
       ],
-      backendTechnologies: [
-        "Javascript",
-        "PHP",
-        "Node.js",
-        "Express.js",
-        "Laravel",
-      ],
-      databaseTechnologies: ["MariaDB", "MySQL", "PostgreSQL", "MongoDB"],
-      testing: ["Mocha", "Chai", "Jest"],
-      languages: ["English", "Español"],
     };
   },
   created() {
