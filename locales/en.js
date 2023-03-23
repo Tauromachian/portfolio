@@ -30,21 +30,6 @@ export default {
   testing: "Testing",
   projects: {
     title: "Projects",
-    description: {
-      queues:
-        "This project is about taking tickets for virtual queues. It aims to eliminate physical queues.",
-      "johnson-turbine":
-        "For over 25 years, Johnson Turbines Support have supported the GG4/FT4 market with an extensive inventory, knowledgeable customer service, and fast and reliable shipping.",
-      kanpeki:
-        "Project from Santiago de Cuba that covers Asian and Western pop culture (includes Japanese, Korean, Chinese pop and traditional culture, etc.; in addition to video games, comics, literature in general, cinephilia and world-class music).",
-      sanchoRestaurant:
-        "Sancho Restaurant, delicious cuisine specialties created with ingenuity and passion, inspired by the fantastic flavors of Spain.",
-      zaruArquitectura:
-        "Design of different homes and custom exterior and interior decorations.",
-      flowers:
-        "Sell flowers in their flowerpots so the clients can take care of them. Make the world a beautiful place.",
-      succubus: "Proyect specialized in information divulgation about BDSM.",
-    },
   },
   form: {
     name: "Name",

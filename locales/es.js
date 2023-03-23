@@ -33,22 +33,6 @@ export default {
 
   projects: {
     title: "Proyectos",
-    description: {
-      queues:
-        "Este proyecto permite tomar tickets para participar en una sala de espera. El objetivo es eliminar colas físicas",
-      "johnson-turbine":
-        "Por más de 25 años, Johnson Turbines Support ha dado soporte al mercado de GG4/FT4 con un mercado extensivo, servicio al consumidor eficiente y envíos rapidos y seguros.",
-      kanpeki:
-        "Proyecto Santiaguero que abarca la cultura pop asiática y occidental (se incluyen la cultura pop y tradicional japonesa, coreana, china,etc; además de  los videojuegos, comics, literatura en general, la cinefilia y la música de corte mundial)",
-      sanchoRestaurant:
-        "Sancho Restaurant, especialidades de la deliciosa cocina creada con el ingenio y la pasión, inspirados en los fantásticos sabores de España. ",
-      zaruArquitectura:
-        "Diseño de diferentes viviendas y decoraciones exteriores e interiores a la medida.",
-      flowers:
-        "Vende flores en sus macetas para que los clientes puedan cuidarlas. Haz del mundo un lugar hermoso.",
-      succubus:
-        "Proyecto especializado en la divulgación de información sobre el BDSM.",
-    },
   },
   form: {
     name: "Nombre",

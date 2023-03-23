@@ -28,21 +28,18 @@ export default {
         {
           src: "queues",
           title: "Waiting room",
-          description: this.$t("projects.description.queues"),
           link: "https://waiting-room.onrender.com/home",
           alt: "Queues app picture",
         },
         {
           src: "johnson-turbine-support-website",
           title: "Johnson Turbine Support",
-          description: this.$t("projects.description.johnson-turbine"),
           link: "https://www.johnsonturbine.com/",
           alt: "Jhonson Turbine company's portfolio site.",
         },
         {
           src: "succubus",
           title: "Succubus",
-          description: this.$t("projects.description.succubus"),
           link: "https://www.succubus-bdsm.com/",
           alt: "Succubus site",
         },
@@ -50,21 +47,18 @@ export default {
         {
           src: "zaru",
           title: "Zaru Arquitectura",
-          description: this.$t("projects.description.zaruArquitectura"),
           link: "https://zaruarquitectura.onrender.com/",
           alt: "Site of architectural displays.",
         },
         {
           src: "kanpeki",
           title: "Kanpeki",
-          description: this.$t("projects.description.kanpeki"),
           link: "https://kanpeki-6usg.onrender.com",
           alt: "Site of all asian culture fanatics",
         },
         {
           src: "flowers-site",
           title: "Flowers",
-          description: this.$t("projects.description.flowers"),
           link: "https://master--superb-beignet-7b06bd.netlify.app/",
           alt: "Simple template of a possible flower store.",
         },
