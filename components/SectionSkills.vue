@@ -17,7 +17,7 @@
           </div>
 
           <div class="flex flex-col">
-            <h2>{{ skill.name }}</h2>
+            <h3>{{ skill.name }}</h3>
             <p>{{ $t(skill.description) }}</p>
             <chip-river :values="skill.technologies" class="mt-2" />
           </div>
