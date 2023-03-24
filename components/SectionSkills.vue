@@ -13,7 +13,6 @@
               width="100px"
               class="w-20 md:w-32 color-primary"
               :icon="skill.icon"
-              :color="colorIcons"
             />
           </div>
 

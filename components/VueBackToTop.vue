@@ -5,13 +5,7 @@
     :class="isShowingClasses"
     @click="topFunction"
   >
-    <SocialIconsBase
-      class="ml-2"
-      icon="arrow-up"
-      width="28px"
-      height="30px"
-      :color="colorIcons"
-    />
+    <SocialIconsBase class="ml-2" icon="arrow-up" width="28px" height="30px" />
   </button>
 </template>
 

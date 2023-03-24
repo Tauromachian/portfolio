@@ -18,7 +18,6 @@
             height="80px"
             width="80px"
             :icon="link.icon"
-            :color="colorIcons"
           />
         </div>
       </a>

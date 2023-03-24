@@ -34,7 +34,6 @@
         <SocialIconsBase
           class="mr-1 color-primary"
           icon="mdiOpenInNew"
-          :color="colorIcons"
           height="30px"
           width="30px"
         />

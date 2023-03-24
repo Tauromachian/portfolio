@@ -65,7 +65,6 @@
       width="60px"
       height="60px"
       icon="arrow-down"
-      :color="colorIcons"
     />
   </section>
 </template>

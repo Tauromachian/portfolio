@@ -55,7 +55,6 @@
             :title="$t('intuitive')"
             icon="mdiLightbulb"
             alt="Intuitive icon"
-            :color="colorIcons"
           >
             <p class="md:text-center md:mx-3">
               {{ $t("intuitiveText") }}
@@ -67,7 +66,6 @@
             :title="$t('fast')"
             icon="mdiRocketLaunch"
             alt="Fast icon"
-            :color="colorIcons"
           >
             <p class="md:text-center md:mx-3">
               {{ $t("fastText") }}
@@ -81,7 +79,6 @@
             :title="$t('responsive')"
             icon="mdiResponsive"
             alt="Responsive icon"
-            :color="colorIcons"
           >
             <p class="md:text-center md:mx-3">
               {{ $t("responsiveText") }}
@@ -93,7 +90,6 @@
             :title="$t('reactive')"
             icon="mdiAlphaRCircle"
             alt="Reactive icon"
-            :color="colorIcons"
           >
             <p class="md:text-center md:mx-3">
               {{ $t("reactiveText") }}
