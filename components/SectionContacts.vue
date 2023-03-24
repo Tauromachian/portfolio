@@ -60,7 +60,7 @@
             name="message"
           />
           <base-button
-            class="mt-3 self-end"
+            class="mt-5 self-end"
             :loading="loading"
             prepend-icon="mdiEmailArrowRight"
             @click="submitForm"
