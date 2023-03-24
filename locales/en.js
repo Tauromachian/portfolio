@@ -46,5 +46,5 @@ export default {
   databaseDescription: "The way you save data.",
   testingDescription: "Make sure everything works as it should.",
   language: "Languages",
-  languagesDescription: "The languages in which you can communicate with me",
+  languagesDescription: "The languages in which you can communicate with me.",
 };

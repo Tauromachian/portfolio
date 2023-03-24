@@ -48,5 +48,5 @@ export default {
   databaseDescription: "La forma en la que los datos se guardan.",
   testingDescription: "Me aseguro de que todo funciona como debería.",
   language: "Lenguajes",
-  languagesDescription: "Los idiomas en los que te puedes comunicar conmigo",
+  languagesDescription: "Los idiomas en los que te puedes comunicar conmigo.",
 };
