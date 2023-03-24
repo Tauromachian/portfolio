@@ -17,14 +17,14 @@
       <div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row">
         <base-button-call-to-action
           download-link="/cv.pdf"
-          class="mt-12 relative text-center"
+          class="mt-12 text-center"
           prepend-icon="mdiDownload"
           size="x-large"
         >
           {{ $t("hero.button1") }}
         </base-button-call-to-action>
         <base-button-call-to-action
-          class="mt-2 sm:mt-12 lg:mt-2 xl:mt-12 sm:ml-2 lg:ml-0 xl:ml-2 relative"
+          class="mt-2 sm:mt-12 lg:mt-2 xl:mt-12 sm:ml-2 lg:ml-0 xl:ml-2"
           is-call-to-action
           outline
           prepend-icon="mdiEmail"
