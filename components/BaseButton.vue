@@ -5,7 +5,7 @@
     type="button"
     role="button"
     :title="text"
-    class="transition rounded-lg bg-primary outline-none py-2 px-5 hover:bg-green-300 grid button"
+    class="transition rounded-lg bg-primary outline-none hover:bg-green-300 inline-grid button h-9 w-16"
     :class="{ ...buttonClasses, ...outlineClasses }"
     v-bind="$attrs"
     :download="!!downloadLink"
@@ -71,6 +71,14 @@ export default {
     prependIcon: {
       type: String,
       default: "",
+    },
+    size: {
+      type: String,
+      default: "",
+      validator(value) {
+        if (value === "") return true;
+        return ["regular", "x-large"].includes(value);
+      },
     },
   },
   computed: {
