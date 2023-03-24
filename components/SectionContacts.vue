@@ -62,6 +62,7 @@
           <base-button
             class="mt-3 self-end"
             :loading="loading"
+            prepend-icon="mdiEmailArrowRight"
             @click="submitForm"
           >
             {{ $t("button.send") }}
