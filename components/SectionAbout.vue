@@ -5,13 +5,13 @@
         <h2 class="mb-5 text-3xl text-5xl self-start text-left">
           {{ $t("about") }}
         </h2>
-        <p class="p-width">
+        <p>
           {{ $t("aboutText1") }}
         </p>
-        <p class="p-width mt-4">
+        <p class="mt-4">
           {{ $t("aboutText2") }}
         </p>
-        <p class="p-width mt-4">
+        <p class="mt-4">
           {{ $t("aboutText3") }}
         </p>
       </div>
@@ -134,9 +134,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.p-width {
-  max-width: 700px;
-}
-</style>
