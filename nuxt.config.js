@@ -49,7 +49,7 @@ export default defineNuxtConfig({
         { property: "og:copyright", content: "Portfolio jogarcia" },
       ],
       link: [
-        { rel: "icon", type: "image/x-icon", href: "/website-logo.png" },
+        { rel: "icon", type: "image/x-icon", href: "website-logo-min.png" },
         { rel: "preconnect", href: "https://fonts.googleapis.com/" },
         { rel: "dns-prefetch", href: "https://fonts.googleapis.com/" },
         {
