@@ -5,8 +5,8 @@
     type="button"
     role="button"
     :title="text"
-    class="button rounded-lg bg-primary no-outline py-2 px-5 hover:bg-green-300"
-    :class="buttonClasses"
+    class="transition rounded-lg bg-primary outline-none py-2 px-5 hover:bg-green-300 button"
+    :class="{ ...buttonClasses, ...outlineClasses }"
     v-bind="$attrs"
     :download="!!downloadLink"
   >
@@ -80,15 +80,19 @@ export default {
       }
       return classes;
     },
+    outlineClasses() {
+      if (this.outline) {
+        return {
+          outline: true,
+        };
+      }
+      return {};
+    },
   },
 };
 </script>
 
 <style scoped>
-.no-outline {
-  outline: none;
-}
-
 .icon-button {
   background-color: transparent !important;
   border-radius: 50%;
@@ -96,10 +100,6 @@ export default {
   width: 2.3em;
   padding: 0.5em;
   margin: 0.2em;
-}
-
-.button {
-  transition: all 0.2s;
 }
 
 .button:hover {
