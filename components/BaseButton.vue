@@ -88,12 +88,11 @@ export default {
         classes.padding = 0;
         classes["icon-button"] = true;
       }
-      if (this.isCallToAction) {
-        classes["call-to-action"] = true;
-      }
+
       if (this.outline) {
         classes.outline = true;
       }
+
       return classes;
     },
     outlineClasses() {
