@@ -33,6 +33,7 @@ import {
   mdiAlert,
   mdiBug,
   mdiDownload,
+  mdiOpenInNew,
 } from "@mdi/js";
 export default {
   props: {
@@ -75,6 +76,7 @@ export default {
         mdiAlert,
         mdiBug,
         mdiDownload,
+        mdiOpenInNew,
       },
     };
   },
