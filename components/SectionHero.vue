@@ -14,7 +14,9 @@
           {{ $t("hero.description2") }}
         </strong>
       </p>
-      <div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row">
+      <div
+        class="flex flex-col sm:flex-row lg:flex-col xl:flex-row max-w-sm sm:max-w-none"
+      >
         <base-button-call-to-action
           download-link="/cv.pdf"
           class="mt-12 text-center"
