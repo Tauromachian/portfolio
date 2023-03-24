@@ -121,7 +121,6 @@ export default {
 .button {
   grid-template-areas: "prepend content";
   grid-template-columns: max-content auto;
-  align-items: center;
 }
 
 .base-button__prepend {
