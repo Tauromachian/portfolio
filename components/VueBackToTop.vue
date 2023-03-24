@@ -29,13 +29,7 @@ export default {
       return {};
     },
   },
-  created() {
-    this.getIconColors();
 
-    setInterval(() => {
-      this.getIconColors();
-    }, 130);
-  },
   mounted() {
     this.floatingButton = document.getElementById("floating-button");
     window.onscroll = () => {
@@ -43,20 +37,6 @@ export default {
     };
   },
   methods: {
-    getIconColors() {
-      const theme = "default";
-      const themes = [
-        { value: "default", text: "Default", iconColor: "#33bebc" },
-        { value: "crazy", text: "Crazy", iconColor: "#33bebc" },
-        { value: "dark", text: "Dark", iconColor: "#cc925c" },
-      ];
-      themes.map((e) => {
-        if (e.value === theme) {
-          this.colorIcons = e.iconColor;
-        }
-        return 0;
-      });
-    },
     scrollFunction() {
       document.body.scrollTop > 20 || document.documentElement.scrollTop > 20
         ? (this.isShowing = true)

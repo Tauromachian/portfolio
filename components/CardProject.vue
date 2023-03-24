@@ -74,30 +74,7 @@ export default {
     };
   },
 
-  mounted() {
-    this.getIconColors();
-
-    setInterval(() => {
-      this.getIconColors();
-    }, 130);
-  },
-
   methods: {
-    getIconColors() {
-      const theme = "default";
-      const themes = [
-        { value: "default", text: "Default", iconColor: "#33bebc" },
-        { value: "crazy", text: "Crazy", iconColor: "#33bebc" },
-        { value: "dark", text: "Dark", iconColor: "#cc925c" },
-      ];
-      themes.map((e) => {
-        if (e.value === theme) {
-          this.colorIcons = e.iconColor;
-        }
-        return 0;
-      });
-    },
-
     openLinkInNewTab(siteUrl) {
       window.open(siteUrl);
     },

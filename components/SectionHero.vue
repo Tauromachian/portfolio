@@ -79,32 +79,11 @@ export default {
       theme: "default",
     };
   },
-  created() {
-    this.getIconColors();
 
-    setInterval(() => {
-      this.getIconColors();
-    }, 130);
-  },
   methods: {
     scrollToPosition(postitionId) {
       const elmnt = document.getElementById(postitionId.split("#").pop());
       elmnt.scrollIntoView({ behavior: "smooth" });
-    },
-
-    getIconColors() {
-      const theme = "default";
-      const themes = [
-        { value: "default", text: "Default", iconColor: "#33bebc" },
-        { value: "crazy", text: "Crazy", iconColor: "#33bebc" },
-        { value: "dark", text: "Dark", iconColor: "#cc925c" },
-      ];
-      themes.map((e) => {
-        if (e.value === theme) {
-          this.colorIcons = e.iconColor;
-        }
-        return 0;
-      });
     },
   },
 };
