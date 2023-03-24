@@ -29,7 +29,7 @@
       <a :href="siteUrl" class="flex mt-3 ml-auto" :title="alt">
         <SocialIconsBase
           class="mr-1"
-          icon="mdiLink"
+          icon="mdiOpenInNew"
           :color="colorIcons"
           height="30px"
           width="30px"
