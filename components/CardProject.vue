@@ -26,7 +26,11 @@
         {{ title }}
       </h2>
 
-      <a :href="siteUrl" class="flex mt-3 ml-auto" :title="alt">
+      <a
+        class="flex mt-3 ml-auto cursor-pointer"
+        :title="alt"
+        @click.prevent="openLinkInNewTab(siteUrl)"
+      >
         <SocialIconsBase
           class="mr-1"
           icon="mdiOpenInNew"
@@ -93,6 +97,10 @@ export default {
         }
         return 0;
       });
+    },
+
+    openLinkInNewTab(siteUrl) {
+      window.open(siteUrl);
     },
   },
 };
