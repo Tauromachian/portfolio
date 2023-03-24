@@ -15,27 +15,24 @@
         </strong>
       </p>
       <div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row">
-        <base-button
+        <base-button-call-to-action
           download-link="/cv.pdf"
           class="mt-12 w-full md:w-unset relative text-center"
-          is-call-to-action
           prepend-icon="mdiDownload"
+          size="x-large"
         >
-          <span>
-            {{ $t("hero.button1") }}
-          </span>
-        </base-button>
-        <base-button
+          {{ $t("hero.button1") }}
+        </base-button-call-to-action>
+        <base-button-call-to-action
           class="mt-2 sm:mt-12 lg:mt-2 xl:mt-12 sm:ml-2 lg:ml-0 xl:ml-2 w-full md:w-unset relative"
           is-call-to-action
           outline
           prepend-icon="mdiEmail"
+          size="x-large"
           @click="scrollToPosition('social-networks')"
         >
-          <span>
-            {{ $t("hero.button2") }}
-          </span>
-        </base-button>
+          {{ $t("hero.button2") }}
+        </base-button-call-to-action>
       </div>
     </div>
     <div
