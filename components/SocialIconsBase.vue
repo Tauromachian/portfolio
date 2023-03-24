@@ -34,6 +34,7 @@ import {
   mdiBug,
   mdiDownload,
   mdiOpenInNew,
+  mdiEmailArrowRight,
 } from "@mdi/js";
 export default {
   props: {
@@ -77,6 +78,7 @@ export default {
         mdiBug,
         mdiDownload,
         mdiOpenInNew,
+        mdiEmailArrowRight,
       },
     };
   },
