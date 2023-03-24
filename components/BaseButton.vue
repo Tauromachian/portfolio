@@ -27,9 +27,7 @@
     />
 
     <span class="base-button__content">
-      <slot>
-        {{ text }}
-      </slot>
+      <slot> </slot>
     </span>
   </component>
 </template>
@@ -38,10 +36,6 @@
 export default {
   name: "BaseButton",
   props: {
-    text: {
-      type: String,
-      default: "",
-    },
     value: {
       type: Boolean,
       default: false,
