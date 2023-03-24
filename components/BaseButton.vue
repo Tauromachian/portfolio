@@ -11,10 +11,7 @@
     :download="!!downloadLink"
   >
     <div v-if="loading" class="flex justify-center items-center">
-      <div
-        class="spinner-border animate-spin inline-block w-6 h-6 border-4 border-top-primary rounded-full"
-        role="status"
-      />
+      <app-loader></app-loader>
       <span v-if="loadingText" class="ml-2">{{ loadingText }}</span>
       <span v-else class="ml-2">Loading...</span>
     </div>
