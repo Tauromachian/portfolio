@@ -75,7 +75,7 @@
           </card-feature>
         </base-card>
       </div>
-      <div class="flex flex-col md:flex-row md:mt-2">
+      <div class="flex flex-col md:flex-row">
         <base-card transparent class="w-full md:mr-1 py-4">
           <card-feature
             :title="$t('responsive')"
