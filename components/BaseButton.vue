@@ -96,7 +96,7 @@ export default {
       return classes;
     },
     sizeClasses() {
-      if (this.size === "x-large") return { "h-16": true, "px-5": true };
+      if (this.size === "x-large") return { "h-16": true, "px-7": true };
 
       return { "h-9": true, "px-4": true };
     },
