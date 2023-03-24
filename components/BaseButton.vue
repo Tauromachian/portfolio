@@ -5,19 +5,32 @@
     type="button"
     role="button"
     :title="text"
-    class="transition rounded-lg bg-primary outline-none py-2 px-5 hover:bg-green-300 button"
+    class="transition rounded-lg bg-primary outline-none py-2 px-5 hover:bg-green-300 grid button"
     :class="{ ...buttonClasses, ...outlineClasses }"
     v-bind="$attrs"
     :download="!!downloadLink"
   >
-    <div v-if="loading" class="flex justify-center items-center">
+    <span v-if="loading" class="flex justify-center items-center">
       <app-loader></app-loader>
       <span v-if="loadingText" class="ml-2">{{ loadingText }}</span>
       <span v-else class="ml-2">Loading...</span>
-    </div>
-    <slot v-else>
-      {{ text }}
-    </slot>
+    </span>
+
+    <social-icons-base
+      v-if="prependIcon"
+      class="base-button__prepend"
+      height="30px"
+      width="30px"
+      :icon="prependIcon"
+      :color="colorIcons"
+      :class="prependIcon"
+    />
+
+    <span class="base-button__content">
+      <slot>
+        {{ text }}
+      </slot>
+    </span>
   </component>
 </template>
 
@@ -61,6 +74,10 @@ export default {
       type: String,
       default: "",
     },
+    prependIcon: {
+      type: String,
+      default: "",
+    },
   },
   computed: {
     buttonClasses() {
@@ -99,6 +116,18 @@ export default {
   margin: 0.2em;
 }
 
+.button {
+  grid-template-areas: "prepend content";
+  grid-template-columns: max-content auto;
+  align-items: center;
+}
+
+.base-button__prepend {
+  grid-area: prepend;
+}
+.base-button__content {
+  grid-area: content;
+}
 .button:hover {
   background-color: var(--color-secondary) !important;
 }
