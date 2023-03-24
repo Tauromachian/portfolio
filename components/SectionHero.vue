@@ -141,7 +141,7 @@ export default {
 .scroll-icon {
   animation: up-and-down 1s infinite ease-out;
   position: absolute;
-  bottom: 0;
+  bottom: 0.4em;
   left: 0;
   font-size: 4rem;
 }
