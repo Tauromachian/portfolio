@@ -6,7 +6,7 @@
     role="button"
     :title="text"
     class="transition rounded-lg bg-primary outline-none hover:bg-green-300 px-5 inline-grid items-center button"
-    :class="{ ...buttonClasses, ...outlineClasses }"
+    :class="{ ...buttonClasses, ...outlineClasses, ...sizeClasses }"
     v-bind="$attrs"
     :download="!!downloadLink"
   >
