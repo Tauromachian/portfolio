@@ -23,8 +23,8 @@ export default defineNuxtConfig({
           content:
             "portfolio, jogarcia, web, web development, developer, development, backend, frontend, database",
         },
-        { property: "og:title", content: "Portfolio" },
-        { property: "og:site_name", content: "Portfolio" },
+        { property: "og:title", content: "Jose | Web developer" },
+        { property: "og:site_name", content: "Jose | Portfolio" },
         {
           property: "og:description",
           content:
