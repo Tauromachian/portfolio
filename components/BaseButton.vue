@@ -74,7 +74,7 @@ export default {
     },
     size: {
       type: String,
-      default: "",
+      default: "regular",
       validator(value) {
         if (value === "") return true;
         return ["regular", "x-large"].includes(value);
