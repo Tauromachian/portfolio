@@ -26,7 +26,7 @@
         {{ title }}
       </h2>
 
-      <a :href="siteUrl" class="flex mt-3" :title="alt">
+      <a :href="siteUrl" class="flex mt-3 ml-auto" :title="alt">
         <SocialIconsBase
           class="mr-1"
           icon="mdiLink"
