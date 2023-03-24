@@ -18,7 +18,7 @@
 
     <social-icons-base
       v-if="prependIcon"
-      class="base-button__prepend"
+      class="mr-2 base-button__prepend"
       height="30px"
       width="30px"
       :icon="prependIcon"
