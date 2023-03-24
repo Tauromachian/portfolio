@@ -137,12 +137,6 @@ export default {
   border-top-color: var(--color-primary) !important;
 }
 
-.call-to-action {
-  font-size: 1.6rem;
-  padding: 0.6em 1.6em;
-  font-weight: bold;
-}
-
 .outline {
   border: 1px solid;
   background-color: transparent !important;
