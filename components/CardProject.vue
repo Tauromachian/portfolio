@@ -32,7 +32,7 @@
         @click.prevent="openLinkInNewTab(siteUrl)"
       >
         <SocialIconsBase
-          class="mr-1"
+          class="mr-1 color-primary"
           icon="mdiOpenInNew"
           :color="colorIcons"
           height="30px"

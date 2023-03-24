@@ -14,6 +14,7 @@
       >
         <div style="height: 80px; width: 80px">
           <SocialIconsBase
+            class="color-primary"
             height="80px"
             width="80px"
             :icon="link.icon"
