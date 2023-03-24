@@ -19,13 +19,8 @@
           download-link="/cv.pdf"
           class="mt-12 w-full md:w-unset relative text-center"
           is-call-to-action
+          prepend-icon="mdiDownload"
         >
-          <SocialIconsBase
-            class="absolute left-5 top-5"
-            height="30px"
-            width="30px"
-            icon="mdiDownload"
-          />
           <span>
             {{ $t("hero.button1") }}
           </span>
@@ -34,15 +29,9 @@
           class="mt-2 sm:mt-12 lg:mt-2 xl:mt-12 sm:ml-2 lg:ml-0 xl:ml-2 w-full md:w-unset relative"
           is-call-to-action
           outline
+          prepend-icon="mdiEmail"
           @click="scrollToPosition('social-networks')"
         >
-          <SocialIconsBase
-            class="absolute left-5 top-5"
-            height="30px"
-            width="30px"
-            icon="mdiEmail"
-            :color="colorIcons"
-          />
           <span>
             {{ $t("hero.button2") }}
           </span>
