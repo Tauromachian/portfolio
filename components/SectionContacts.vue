@@ -60,7 +60,7 @@
             name="message"
           />
           <base-button
-            class="mt-3 self-start"
+            class="mt-3 self-end"
             :loading="loading"
             @click="submitForm"
           >
