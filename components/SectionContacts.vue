@@ -10,7 +10,7 @@
         :key="link + index"
         :title="link.alt"
         :href="link.link"
-        class="social-link"
+        class="transition scale-110"
       >
         <div style="height: 80px; width: 80px">
           <SocialIconsBase
