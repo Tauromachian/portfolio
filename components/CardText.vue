@@ -1,5 +1,5 @@
 <template>
-  <div class="py-3 px-4" :class="{ 'no-padding': noPadding }">
+  <div class="p-3" :class="{ 'no-padding': noPadding }">
     <slot />
   </div>
 </template>
