@@ -4,7 +4,7 @@
       <div class="flex items-center">
         <img
           class="w-16 h-full"
-          src="/website-logo-min.png"
+          src="/logo-extra-compressed.png"
           alt="Logo of the portfolio"
         />
         <h4 class="text-3xl ml-5">José García</h4>
