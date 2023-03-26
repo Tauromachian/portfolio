@@ -1,6 +1,6 @@
 <template>
   <nav class="flex bg-primary">
-    <div class="container flex justify-center text-2xl ml-14 z-50">
+    <div class="container flex justify-center text-2xl ml-14 z-50 px-3">
       <div class="flex items-center">
         <img class="w-16 h-full" src="/website-logo-min.png" />
         <h4 class="text-3xl ml-5">José García</h4>
