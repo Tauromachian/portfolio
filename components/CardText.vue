@@ -1,23 +1,5 @@
 <template>
-  <div class="p-3" :class="{ 'no-padding': noPadding }">
+  <div class="p-3">
     <slot />
   </div>
 </template>
-
-<script>
-export default {
-  name: "CardText",
-  props: {
-    noPadding: {
-      type: Boolean,
-      default: false,
-    },
-  },
-};
-</script>
-
-<style lang="scss" scoped>
-.no-padding {
-  padding: 0 !important;
-}
-</style>
