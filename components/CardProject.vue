@@ -21,7 +21,7 @@
         :srcset="`images/original/${src}.jpg 1900w, images/1280/${src}.jpg 1280w, images/640/${src}.jpg 640w`"
       />
     </picture>
-    <card-text class="flex flex-col px-4">
+    <card-text class="flex flex-col">
       <h3 class="font-bold">
         {{ title }}
       </h3>
