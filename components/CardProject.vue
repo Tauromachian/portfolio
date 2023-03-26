@@ -29,7 +29,8 @@
       <a
         class="flex mt-3 ml-auto cursor-pointer"
         :title="alt"
-        @click.prevent="openLinkInNewTab(siteUrl)"
+        :href="siteUrl"
+        target="_blank"
       >
         <SocialIconsBase
           class="mr-1 color-primary"
@@ -72,12 +73,6 @@ export default {
     return {
       colorIcons: "",
     };
-  },
-
-  methods: {
-    openLinkInNewTab(siteUrl) {
-      window.open(siteUrl);
-    },
   },
 };
 </script>
