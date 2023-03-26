@@ -22,9 +22,9 @@
       />
     </picture>
     <card-text class="flex flex-col px-4">
-      <h2 class="font-bold">
+      <h3 class="font-bold">
         {{ title }}
-      </h2>
+      </h3>
 
       <a
         class="flex mt-3 ml-auto cursor-pointer"
