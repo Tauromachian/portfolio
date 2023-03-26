@@ -41,7 +41,11 @@ export default defineNuxtConfig({
           property: "og:url",
           content: "https://www.jose-garcia.net",
         },
-        { hid: "og:image", property: "og:image", content: "/website-logo.png" },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "website-logo-min.png",
+        },
         { property: "og:image:alt", content: "Image of the portfolio" },
         { property: "og:image:size", content: "300" },
         { property: "og:locale", content: "en_US" },
