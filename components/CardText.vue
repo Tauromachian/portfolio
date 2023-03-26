@@ -1,19 +1,19 @@
 <template>
-  <div class="py-3 px-2" :class="{ 'no-padding': noPadding }">
+  <div class="py-3 px-4" :class="{ 'no-padding': noPadding }">
     <slot />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'CardText',
+  name: "CardText",
   props: {
     noPadding: {
       type: Boolean,
-      default: false
-    }
-  }
-}
+      default: false,
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
