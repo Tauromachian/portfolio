@@ -26,7 +26,11 @@ jobs:
         run: npm run generate # The build command of your project
 
       - name: Push
-        uses: s0/git-publish-subdir-action@develop
+        run: |
+          git checkout -b build # Create and switch to a new branch
+          git add dist/ # Add the assets to the Git index
+          git commit -m "Build: ({sha}) {msg}" # Commit the changes with a custom commit message
+          git push origin build # Push the changes to the "build" branch on GitHub
         env:
           REPO: self
           BRANCH: build # The branch name where you want to push the assets
