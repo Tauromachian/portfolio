@@ -839,7 +839,7 @@
     eslint-plugin-vue "^9.7.0"
     local-pkg "^0.4.2"
 
-"@nuxtjs/i18n@^8.0.0-beta.9":
+"@nuxtjs/i18n@^8.0.0-beta.11":
   version "8.0.0-beta.11"
   resolved "https://registry.yarnpkg.com/@nuxtjs/i18n/-/i18n-8.0.0-beta.11.tgz#3c7f83517c5d4b04046f9d34cf77ec17471e4881"
   integrity sha512-002P0yR7uJbcMrnz8YG+ELMFWP5IgdrF6es8LOIEgteF+YjBXLWrEEAW+2hlBtB87RdO4mQPtxJFhdtYJ0yMZQ==
