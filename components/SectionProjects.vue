@@ -27,8 +27,8 @@ export default {
       return [
         {
           src: "queues",
-          title: "Waiting room",
-          link: "https://waiting-room.onrender.com/home",
+          title: "MonarchStarter",
+          link: "https://monarchstarter.jose-garcia.net/",
           alt: "Queues app picture",
         },
         {
@@ -52,8 +52,8 @@ export default {
         },
         {
           src: "kanpeki",
-          title: "Kanpeki",
-          link: "https://kanpeki-6usg.onrender.com",
+          title: "Admin dashboard",
+          link: "https://monarchstarter.jose-garcia.net/dashboard",
           alt: "Site of all asian culture fanatics",
         },
         {
