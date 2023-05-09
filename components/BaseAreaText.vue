@@ -1,12 +1,12 @@
 <template>
-  <div class="flex" :class="{ 'flex-col': col }">
+  <div class="flex flex-col">
     <label>{{ label }}</label>
     <textarea
       v-model="text"
       class="p-1 rounded no-outline text"
       cols="10"
       rows="4"
-      v-bind="$attrs"
+      v-bind="attrs"
     />
   </div>
 </template>
@@ -19,10 +19,7 @@ export default {
       type: String,
       default: "input",
     },
-    col: {
-      type: Boolean,
-      default: true,
-    },
+
     modelValue: {
       type: String,
       default: "",
@@ -30,6 +27,9 @@ export default {
   },
   emits: ["update:modelValue"],
   computed: {
+    attrs() {
+      return { ...this.$attrs, class: "" };
+    },
     text: {
       get() {
         return this.modelValue;

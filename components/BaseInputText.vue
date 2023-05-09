@@ -1,8 +1,8 @@
 <template>
-  <div class="flex">
+  <div class="flex flex-col">
     <label>{{ label }}</label>
     <input
-      v-bind="$attrs"
+      v-bind="attrs"
       v-model="text"
       class="p-1 rounded no-outline mt-0 text"
     />
@@ -25,6 +25,10 @@ export default {
   },
   emits: ["update:modelValue"],
   computed: {
+    attrs() {
+      return { ...this.$attrs, class: "" };
+    },
+
     text: {
       get() {
         return this.modelValue;
