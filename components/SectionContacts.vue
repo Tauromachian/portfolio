@@ -27,7 +27,7 @@
         {{ $t("formTitle") }}
       </h3>
       <app-alert v-if="message.active" :message="message" class="mt-3" />
-      <form @submit="submitForm">
+      <form @submit.prevent="submitForm">
         <base-input-text
           v-model="form.name"
           :label="$t('form.name')"
@@ -59,7 +59,7 @@
             class="mt-5 ml-auto"
             :loading="loading"
             prepend-icon="mdiEmailArrowRight"
-            @click="submitForm"
+            type="submit"
           >
             {{ $t("button.send") }}
           </base-button>
@@ -115,8 +115,6 @@ export default {
 
   methods: {
     async submitForm() {
-      console.log("asdf");
-
       const runtimeConfig = useRuntimeConfig();
 
       this.loading = true;
