@@ -27,42 +27,43 @@
         {{ $t("formTitle") }}
       </h3>
       <app-alert v-if="message.active" :message="message" class="mt-3" />
-      <form @submit.prevent="submitForm">
-        <div class="flex flex-col">
-          <base-input-text
-            v-model="form.name"
-            :label="$t('form.name')"
-            class="mt-3"
-            required
-            placeholder="John Doe"
-            name="name"
-          />
-          <base-input-text
-            v-model="form.from"
-            :label="$t('form.email')"
-            class="mt-3"
-            type="email"
-            required
-            placeholder="john@mail.com"
-            name="email"
-          />
-          <base-area-text
-            v-model="form.body"
-            :label="$t('form.message')"
-            required
-            placeholder="Write your message to me here"
-            class="mt-3"
-            name="message"
-          />
+      <form @submit="submitForm">
+        <base-input-text
+          v-model="form.name"
+          :label="$t('form.name')"
+          class="mt-3"
+          required
+          placeholder="John Doe"
+          name="name"
+        />
+        <base-input-text
+          v-model="form.from"
+          :label="$t('form.email')"
+          class="mt-3"
+          type="email"
+          required
+          placeholder="john@mail.com"
+          name="email"
+        />
+        <base-area-text
+          v-model="form.body"
+          :label="$t('form.message')"
+          required
+          placeholder="Write your message to me here"
+          class="mt-3"
+          name="message"
+        />
+
+        <span class="flex w-full">
           <base-button
-            class="mt-5 self-end"
+            class="mt-5 ml-auto"
             :loading="loading"
             prepend-icon="mdiEmailArrowRight"
             @click="submitForm"
           >
             {{ $t("button.send") }}
           </base-button>
-        </div>
+        </span>
       </form>
     </base-card>
   </base-section>
@@ -114,6 +115,8 @@ export default {
 
   methods: {
     async submitForm() {
+      console.log("asdf");
+
       const runtimeConfig = useRuntimeConfig();
 
       this.loading = true;
