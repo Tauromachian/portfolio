@@ -26,7 +26,7 @@ export default {
     projects() {
       return [
         {
-          src: "queues",
+          src: "monarch-starter-site",
           title: "MonarchStarter",
           link: "https://monarchstarter.jose-garcia.net/",
           alt: "Queues app picture",
@@ -51,7 +51,7 @@ export default {
           alt: "Site of architectural displays.",
         },
         {
-          src: "kanpeki",
+          src: "monarch-starter-admin-dashboard",
           title: "Admin dashboard",
           link: "https://monarchstarter.jose-garcia.net/dashboard",
           alt: "Site of all asian culture fanatics",
