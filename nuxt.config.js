@@ -1,5 +1,10 @@
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+    },
+  },
   app: {
     head: {
       title: "Jose Garcia | portfolio",
@@ -67,7 +72,6 @@ export default defineNuxtConfig({
 
   i18n: {
     defaultLocale: "en",
-    lazy: true,
     langDir: "locales",
     locales: [
       { code: "en", file: "en.js" },
