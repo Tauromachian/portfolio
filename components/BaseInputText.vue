@@ -1,5 +1,5 @@
 <template>
-  <div class="flex" :class="{ 'flex-col': col }">
+  <div class="flex">
     <label>{{ label }}</label>
     <input
       v-bind="$attrs"
@@ -17,10 +17,7 @@ export default {
       type: String,
       default: "input",
     },
-    col: {
-      type: Boolean,
-      default: true,
-    },
+
     modelValue: {
       type: String,
       default: "",
