@@ -1,6 +1,3 @@
-import en from "./locales/en";
-import es from "./locales/es";
-
 export default defineNuxtConfig({
   ssr: false,
   app: {
@@ -74,11 +71,6 @@ export default defineNuxtConfig({
       { code: "en", file: "en.js" },
       { code: "es", file: "es.js" },
     ],
-    vueI18n: {
-      legacy: false,
-      locale: "en",
-      messages: { es, en },
-    },
   },
 
   runtimeConfig: {
