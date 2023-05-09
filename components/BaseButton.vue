@@ -4,12 +4,15 @@
     :href="downloadLink"
     type="button"
     role="button"
-    class="transition rounded-lg bg-primary outline-none hover:bg-green-300 px-5 inline-grid items-center button"
+    class="transition rounded-lg bg-primary outline-none hover:bg-green-300 px-5 inline-grid items-center relative button"
     :class="{ ...buttonClasses, ...outlineClasses, ...sizeClasses }"
     v-bind="$attrs"
     :download="!!downloadLink"
   >
-    <span v-if="loading" class="flex justify-center items-center">
+    <span
+      v-if="loading"
+      class="flex justify-center rounded-lg items-center absolute top-0 bottom-0 right-0 left-0 w-full h-full base-button__loading-content"
+    >
       <app-loader></app-loader>
       <span v-if="loadingText" class="ml-2">{{ loadingText }}</span>
       <span v-else class="ml-2">Loading...</span>
@@ -142,5 +145,9 @@ export default {
 .outline {
   border: 1px solid;
   background-color: transparent !important;
+}
+
+.base-button__loading-content {
+  background-color: var(--color-primary) !important;
 }
 </style>
