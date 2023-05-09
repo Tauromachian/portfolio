@@ -52,7 +52,9 @@ export default defineNuxtConfig({
       link: [
         { rel: "icon", type: "image/x-icon", href: "website-logo-min.png" },
         { rel: "preconnect", href: "https://fonts.googleapis.com/" },
+        { rel: "preconnect", href: "https://fonts.gstatic.com/" },
         { rel: "dns-prefetch", href: "https://fonts.googleapis.com/" },
+        { rel: "dns-prefetch", href: "https://fonts.gstatic.com/" },
         {
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/css2?family=Pridi&family=Righteous&display=swap&subset=latin-e",
