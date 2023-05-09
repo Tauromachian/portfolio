@@ -1,10 +1,8 @@
 import en from "./locales/en";
 import es from "./locales/es";
 
-export default {
-  vueI18n: {
-    legacy: false,
-    locale: "en",
-    messages: { es, en },
-  },
-};
+export default defineI18nConfig(() => ({
+  legacy: false,
+  locale: "en",
+  messages: { es, en },
+}));
