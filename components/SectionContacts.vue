@@ -27,12 +27,7 @@
         {{ $t("formTitle") }}
       </h3>
       <app-alert v-if="message.active" :message="message" class="mt-3" />
-      <form
-        id="form"
-        name="contact"
-        data-netlify="true"
-        @submit.prevent="submitForm"
-      >
+      <form @submit.prevent="submitForm">
         <div class="flex flex-col">
           <base-input-text
             v-model="form.name"
