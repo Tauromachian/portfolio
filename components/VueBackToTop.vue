@@ -1,7 +1,7 @@
 <template>
   <button
     title="Go to top"
-    class="rounded-lg floating-button"
+    class="rounded-lg fixed z-50 outline-none border-2 bg-transparent transition-all transition-500 text-2xl floating-button"
     :class="isShowingClasses"
     @click="topFunction"
   >
@@ -56,19 +56,12 @@ export default {
 <style scoped>
 .floating-button {
   display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  outline: none; /* Remove outline */
-  background-color: transparent;
   border-color: var(--color-primary);
   color: var(--color-primary);
-  border-width: 2px;
   width: 2em;
   height: 2em;
-  font-size: 1.5rem; /* Increase font size */
-  transition: all 0.5s;
 }
 
 .floating-button--show {

@@ -6,10 +6,6 @@
 
 <script>
 export default {
-  name: 'ListWrapper'
-}
+  name: "ListWrapper",
+};
 </script>
-
-<style lang="scss" scoped>
-
-</style>

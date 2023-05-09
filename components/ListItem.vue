@@ -1,6 +1,6 @@
 <template>
   <div
-    class="py-2 px-4 app-list-item"
+    class="py-2 px-4 cursor-pointer transition-colors duration-200 app-list-item"
     :class="{ 'bg-gray-200': active }"
     @click="click"
   >
@@ -10,25 +10,24 @@
 
 <script>
 export default {
-  name: 'ListItem',
+  name: "ListItem",
   props: {
     active: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
+  emits: ["click"],
   methods: {
-    click () {
-      this.$emit('click')
-    }
-  }
-}
+    click() {
+      this.$emit("click");
+    },
+  },
+};
 </script>
 
 <style scoped>
 .app-list-item {
-  cursor: pointer;
-  transition: all 0.2s;
   color: var(--text-color-gray-900);
 }
 

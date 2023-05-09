@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="chip rounded-3xl py-1 px-3 text-xs"
-    @click="$emit('click')"
-  >
+  <div class="rounded-3xl py-1 px-3 text-xs chip">
     <slot>
       {{ text }}
     </slot>
@@ -11,14 +8,13 @@
 
 <script>
 export default {
-  name: 'BaseButton',
   props: {
     text: {
       type: String,
-      default: ''
-    }
-  }
-}
+      default: "",
+    },
+  },
+};
 </script>
 
 <style scoped>

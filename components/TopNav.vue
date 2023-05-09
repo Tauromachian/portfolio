@@ -14,7 +14,7 @@
         <li
           v-for="link in links"
           :key="link.link + link.text"
-          class="px-3 navbar__link"
+          class="px-3 relative mx-0 transition-colors transition-200 navbar__link"
         >
           <a :href="link.link" @click.prevent="scrollToPosition(link.link)">
             {{ $t(link.text) }}
@@ -24,7 +24,7 @@
       <div class="flex items-center">
         <base-button
           title="Translate"
-          class="navbar__link"
+          class="relative mx-0 transition-colors transition-200 navbar__link"
           icon
           @click="changeLocale($i18n)"
         >
@@ -34,7 +34,7 @@
           <template #activator="{ on }">
             <base-button
               title="Theme changer"
-              class="navbar__link"
+              class="relative mx-0 transition-colors transition-200 navbar__link"
               icon
               v-on="on"
             >
@@ -74,16 +74,6 @@ const setTheme = (val) => {
 <style scoped>
 .navbar__link {
   color: var(--text-color-primary);
-  transition: all 0.2s;
-  position: relative;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.navbar__link > img {
-  position: absolute;
-  top: 15px;
-  left: 14.5px;
 }
 
 .navbar__link:hover {

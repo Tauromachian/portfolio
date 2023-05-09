@@ -57,10 +57,7 @@ export default {
       type: String,
       default: "",
     },
-    isCallToAction: {
-      type: Boolean,
-      default: false,
-    },
+
     outline: {
       type: Boolean,
       default: false,

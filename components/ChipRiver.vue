@@ -3,7 +3,6 @@
     <base-chip
       v-for="(value, index) in values"
       :key="value + index"
-      v-model="activeChips[index]"
       :text="value"
       class="mr-1 mb-1"
       :is-activable="false"
@@ -13,18 +12,12 @@
 
 <script>
 export default {
-  name: 'ChipRiver',
+  name: "ChipRiver",
   props: {
-
     values: {
       type: [Array, Object],
-      default: () => []
-    }
+      default: () => [],
+    },
   },
-  data () {
-    return {
-      activeChips: []
-    }
-  }
-}
+};
 </script>
