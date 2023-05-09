@@ -11,6 +11,7 @@
     "lint": "npm run lint:js"
   },
   "dependencies": {
+    "@jogarcia/mgrid": "^0.1.0",
     "@mdi/js": "^7.0.96",
     "nuxt": "^3.4.3"
   },
