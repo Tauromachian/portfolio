@@ -39,9 +39,7 @@
         </base-button-call-to-action>
       </div>
     </div>
-    <div class="mt-10 md:mt-0 md:basis-1/2">
-      <z-dog :key="zdogKey"></z-dog>
-    </div>
+    <z-dog class="mt-10 md:mt-0 md:basis-1/2" :key="zdogKey"></z-dog>
 
     <SocialIconsBase
       class="absolute invisible xl:visible ml-2 scroll-icon"

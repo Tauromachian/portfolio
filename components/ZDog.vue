@@ -1,5 +1,7 @@
 <template>
-  <canvas ref="zdog" :key="key"></canvas>
+  <div ref="zdogContainer" class="flex">
+    <canvas ref="zdog" :key="key" class="my-auto"></canvas>
+  </div>
 </template>
 
 <script setup>
@@ -8,6 +10,7 @@ import { onMounted, ref } from "vue";
 import Zdog from "zdog";
 
 const zdog = ref("zdog");
+const zdogContainer = ref("zdogContainer");
 const key = ref(0);
 
 let illoElem;
@@ -20,7 +23,10 @@ onMounted(() => {
 const zdogRender = () => {
   illoElem = zdog.value;
   let illoSize = 64;
-  let minWindowSize = Math.min(window.innerWidth, window.innerHeight);
+  let minWindowSize = Math.min(
+    zdogContainer.value.offsetWidth,
+    window.innerHeight
+  );
   let zoom = Math.floor(minWindowSize / illoSize);
   illoElem.setAttribute("width", illoSize * zoom);
   illoElem.setAttribute("height", illoSize * zoom);
