@@ -4,9 +4,9 @@
       <base-card
         v-for="(skill, index) in skills"
         :key="`skill-${index}`"
-        class="bg-secondary mx-4 mt-4 md:mt-8"
+        class="bg-secondary md:mx-4 mt-4 md:mt-8"
       >
-        <card-text class="flex" no-padding>
+        <card-text class="flex p-0 md:p-3" no-padding>
           <div>
             <SocialIconsBase
               height="100px"
