@@ -22,8 +22,6 @@
       <section-projects id="projects"></section-projects>
 
       <section-contacts id="social-networks" />
-
-      <section-repositories id="repositories" />
     </main>
     <bottom-nav
       v-if="isSmallScreen"
