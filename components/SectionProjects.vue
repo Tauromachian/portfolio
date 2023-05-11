@@ -7,7 +7,7 @@
         class="inline-block"
       >
         <card-project
-          class="w-full w-full mb-4"
+          class="w-full mb-4"
           :title="project.title"
           :description="project.description"
           :site-url="project.link"
