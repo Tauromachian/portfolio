@@ -1,6 +1,6 @@
 <template>
   <div ref="zdogContainer" class="flex">
-    <canvas ref="zdog" :key="key" class="my-auto"></canvas>
+    <canvas ref="zdog" :key="key" class="my-auto cursor-pointer"></canvas>
   </div>
 </template>
 
