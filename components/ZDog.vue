@@ -45,14 +45,12 @@ const zdogRender = () => {
 
   // colors
   let green = "#33bebc";
-  // let gold = '#EA0';
   let orange = "#cc925c";
-  let magenta = "#C25";
-  // let navy = '#249';
+  let magenta = "#D972FF";
   let beige = "#111827";
-  let blue = "#483d8b";
+  let lightGreen = "#8CFFDA";
 
-  let colorWheel = [beige, magenta, orange, blue, green];
+  let colorWheel = [beige, magenta, orange, lightGreen, green];
 
   // ----- model ----- //
 
