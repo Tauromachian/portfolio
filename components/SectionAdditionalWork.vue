@@ -1,13 +1,13 @@
 <template>
   <base-section :title="$t('additionalWork.title')">
-    <div class="sm:columns-2 md:columns-3 gap-4 w-100">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <div
         v-for="(project, index) in projects"
         :key="`project-card-${index}`"
-        class="inline-block"
+        class="col-span-1"
       >
         <card-project
-          class="w-full w-full mb-4"
+          class="w-full"
           :title="project.title"
           :description="project.description"
           :site-url="project.link"
@@ -21,7 +21,6 @@
 
 <script>
 export default {
-  name: "SectionProjects",
   computed: {
     projects() {
       return [
