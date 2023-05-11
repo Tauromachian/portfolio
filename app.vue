@@ -21,6 +21,8 @@
 
       <section-projects id="projects"></section-projects>
 
+      <section-additional-work id="additional-work"></section-additional-work>
+
       <section-contacts id="social-networks" />
     </main>
     <bottom-nav
@@ -52,8 +54,8 @@ export default {
         { link: "#about", text: "about" },
         { link: "#skills", text: "skills" },
         { link: "#projects", text: "projects.title" },
+        { link: "#additional-work", text: "additional-work" },
         { link: "#social-networks", text: "contacts" },
-        { link: "#repositories", text: "repositories" },
       ],
     };
   },

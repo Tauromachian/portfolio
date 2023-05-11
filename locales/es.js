@@ -34,6 +34,11 @@ export default {
   projects: {
     title: "Proyectos",
   },
+
+  additionalWork: {
+    title: "Trabajo adicional",
+  },
+
   form: {
     name: "Nombre",
     email: "Correo",
