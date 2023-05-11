@@ -6,6 +6,9 @@ export default {
   "projects": {
     
   },
+  "additionalWork": {
+    
+  },
   "form": {
     
   },
@@ -18,6 +21,9 @@ export default {
     
   },
   "projects": {
+    
+  },
+  "additionalWork": {
     
   },
   "form": {
