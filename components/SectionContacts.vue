@@ -4,7 +4,7 @@
     :title="$t('contacts')"
     title-alignment="self-center"
   >
-    <div class="flex flex-wrap justify-center text-7xl md:text-8xl">
+    <div class="flex flex-wrap gap-4 justify-center text-7xl md:text-8xl">
       <a
         v-for="(link, index) in socialLinks"
         :key="link + index"
@@ -80,16 +80,6 @@ export default {
           link: "https://www.linkedin.com/in/dev-jose-garcia",
           icon: "mdiLinkedin",
           alt: "Linkedin icon",
-        },
-        {
-          link: "https://stackoverflow.com/users/10824037/jogarcia",
-          icon: "mdiStackOverflow",
-          alt: "Stack Overflow icon",
-        },
-        {
-          link: "https://github.com/Tauromachian",
-          icon: "mdiGithub",
-          alt: "Github icon",
         },
         {
           link: "https://t.me/BetanKore",
