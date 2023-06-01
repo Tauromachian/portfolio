@@ -54,7 +54,7 @@ export default {
         { link: "#about", text: "about" },
         { link: "#skills", text: "skills" },
         { link: "#projects", text: "projects.title" },
-        { link: "#additional-work", text: "additional-work" },
+        { link: "#additional-work", text: "additionalWork.title" },
         { link: "#social-networks", text: "contacts" },
       ],
     };
