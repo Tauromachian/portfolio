@@ -568,10 +568,10 @@
   resolved "https://registry.yarnpkg.com/@ioredis/commands/-/commands-1.2.0.tgz#6d61b3097470af1fdbbe622795b8921d42018e11"
   integrity sha512-Sx1pU8EM64o2BrqNpEO1CNLtKQwyhuXuqyfH7oGKCk+1a33d2r5saW8zNwm3j6BTExtjrv2BxTgzzkMwts6vGg==
 
-"@jogarcia/mgrid@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@jogarcia/mgrid/-/mgrid-0.1.1.tgz#5656989fee918aaf4f63b7cebf92a8f13491a030"
-  integrity sha512-YGpySdyt/8oik3ITmeBq72bHPVVp4vup5F4rIlRM5TMyg6Nrm7yVJ5tVylinVcLDe+mKe+uXxTiELeipr9F7VA==
+"@jogarcia/mgrid@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@jogarcia/mgrid/-/mgrid-0.1.2.tgz#205b58b8df81363c20df9ce35058312184ff5b6a"
+  integrity sha512-uh0oyUry0/kP2gI0fcL9ctF2qOjupVaqg7hRb/oTIhGRUP8qO0mcp5VmJL84t/bpxUIk12n28oDM/c3KvQbV+Q==
 
 "@jridgewell/gen-mapping@^0.3.0", "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.3"
