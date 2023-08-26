@@ -1,13 +1,15 @@
 <template>
   <div class="flex flex-col">
-    <label>{{ label }}</label>
+    <label :for="label">{{ label }}</label>
     <textarea
+      :id="label"
       v-model="text"
       class="p-1 rounded no-outline text"
       cols="10"
       rows="4"
       v-bind="attrs"
-    />
+    >
+    </textarea>
   </div>
 </template>
 

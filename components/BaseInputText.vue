@@ -1,7 +1,8 @@
 <template>
   <div class="flex flex-col">
-    <label>{{ label }}</label>
+    <label :for="label">{{ label }}</label>
     <input
+      :id="label"
       v-bind="attrs"
       v-model="text"
       class="p-1 rounded outline-none mt-0 text"
