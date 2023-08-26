@@ -69,11 +69,6 @@ export default {
       default: "",
     },
   },
-  data() {
-    return {
-      colorIcons: "",
-    };
-  },
 };
 </script>
 
