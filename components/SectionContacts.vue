@@ -33,7 +33,6 @@
           :label="$t('form.name')"
           class="mt-3"
           required
-          placeholder="John Doe"
           name="name"
         />
         <base-input-text
@@ -42,14 +41,12 @@
           class="mt-3"
           type="email"
           required
-          placeholder="john@mail.com"
           name="email"
         />
         <base-area-text
           v-model="form.body"
           :label="$t('form.message')"
           required
-          placeholder="Write your message to me here"
           class="mt-3"
           name="message"
         />
