@@ -1,11 +1,16 @@
 <template>
   <button
     title="Go to top"
-    class="rounded-lg fixed z-50 outline-none border-2 bg-transparent transition-all transition-500 text-2xl floating-button"
+    class="hidden rounded-lg w-12 h-12 fixed z-50 outline-none border-2 bg-transparent transition-all transition-500 text-2xl bottom-7 right-7 shake-horizontal floating-button"
     :class="isShowingClasses"
     @click="topFunction"
   >
-    <SocialIconsBase class="ml-2" icon="arrow-up" width="28px" height="30px" />
+    <SocialIconsBase
+      class="ml-2 z-70"
+      icon="arrow-up"
+      width="28px"
+      height="30px"
+    />
   </button>
 </template>
 
@@ -55,13 +60,8 @@ export default {
 
 <style scoped>
 .floating-button {
-  display: none; /* Hidden by default */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
   border-color: var(--color-primary);
   color: var(--color-primary);
-  width: 2em;
-  height: 2em;
 }
 
 .floating-button--show {
