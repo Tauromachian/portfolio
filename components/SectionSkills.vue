@@ -43,7 +43,6 @@ const skills = [
       "Javascript",
       "Typescript",
       "Vue.js",
-      "Angular",
       "Nuxt.js",
       "Antdv",
     ],
