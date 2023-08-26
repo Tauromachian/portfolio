@@ -69,18 +69,66 @@ export default {
   animation: roll 1s;
 }
 
-.floating-button > img {
-  left: 7px;
-  top: 6px;
-  z-index: 100;
+.shake-horizontal {
+  -webkit-animation: shake-horizontal 0.6s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: shake-horizontal 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
-@keyframes roll {
-  0% {
-    transform: rotate(0);
-  }
+@-webkit-keyframes shake-horizontal {
+  0%,
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  80% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  90% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
   }
 }
 </style>
