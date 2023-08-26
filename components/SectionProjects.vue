@@ -19,53 +19,46 @@
   </base-section>
 </template>
 
-<script>
-export default {
-  name: "SectionProjects",
-  computed: {
-    projects() {
-      return [
-        {
-          src: "monarch-starter-site",
-          title: "MonarchStarter",
-          link: "https://monarchstarter.jose-garcia.net/",
-          alt: "Queues app picture",
-        },
-        {
-          src: "johnson-turbine-support-website",
-          title: "Johnson Turbine Support",
-          link: "https://www.johnsonturbine.com/",
-          alt: "Jhonson Turbine company's portfolio site.",
-        },
-        {
-          src: "succubus",
-          title: "Succubus",
-          link: "https://www.succubus-bdsm.com/",
-          alt: "Succubus site",
-        },
-
-        {
-          src: "zaru",
-          title: "Zaru Arquitectura",
-          link: "https://zaruarquitectura.onrender.com/",
-          alt: "Site of architectural displays.",
-        },
-        {
-          src: "monarch-starter-admin-dashboard",
-          title: "Admin dashboard",
-          link: "https://monarchstarter.jose-garcia.net/dashboard",
-          alt: "Site of all asian culture fanatics",
-        },
-        {
-          src: "flowers-site",
-          title: "Flowers",
-          link: "https://master--superb-beignet-7b06bd.netlify.app/",
-          alt: "Simple template of a possible flower store.",
-        },
-      ];
-    },
+<script setup>
+const projects = [
+  {
+    src: "monarch-starter-site",
+    title: "MonarchStarter",
+    link: "https://monarchstarter.jose-garcia.net/",
+    alt: "Queues app picture",
   },
-};
+  {
+    src: "johnson-turbine-support-website",
+    title: "Johnson Turbine Support",
+    link: "https://www.johnsonturbine.com/",
+    alt: "Jhonson Turbine company's portfolio site.",
+  },
+  {
+    src: "succubus",
+    title: "Succubus",
+    link: "https://www.succubus-bdsm.com/",
+    alt: "Succubus site",
+  },
+
+  {
+    src: "zaru",
+    title: "Zaru Arquitectura",
+    link: "https://zaruarquitectura.onrender.com/",
+    alt: "Site of architectural displays.",
+  },
+  {
+    src: "monarch-starter-admin-dashboard",
+    title: "Admin dashboard",
+    link: "https://monarchstarter.jose-garcia.net/dashboard",
+    alt: "Site of all asian culture fanatics",
+  },
+  {
+    src: "flowers-site",
+    title: "Flowers",
+    link: "https://master--superb-beignet-7b06bd.netlify.app/",
+    alt: "Simple template of a possible flower store.",
+  },
+];
 </script>
 
 <style></style>

@@ -27,66 +27,52 @@
   </base-section>
 </template>
 
-<script>
-export default {
-  name: "SectionSkills",
-  data() {
-    return {
-      colorIcons: "",
-      skills: [
-        {
-          name: "Frontend",
-          icon: "mdiCodeTags",
-          description: "frontendDescription",
-          technologies: [
-            "HTML5",
-            "CSS3",
-            "SCSS",
-            "Tailwind CSS",
-            "Bootstrap",
-            "Vuetify",
-            "Javascript",
-            "Typescript",
-            "Vue.js",
-            "Angular",
-            "Nuxt.js",
-            "Antdv",
-          ],
-        },
-        {
-          name: "Backend",
-          icon: "mdiServer",
-          description: "backendDescription",
-          technologies: [
-            "Javascript",
-            "PHP",
-            "Node.js",
-            "Express.js",
-            "Laravel",
-          ],
-        },
-        {
-          name: "Database",
-          icon: "mdiDatabase",
-          description: "databaseDescription",
-          technologies: ["MariaDB", "MySQL", "PostgreSQL", "MongoDB"],
-        },
-        {
-          name: "Testing",
-          icon: "mdiBug",
-          description: "testingDescription",
-          technologies: ["Mocha", "Chai", "Jest"],
-        },
-        {
-          name: "Languages",
-          icon: "mdiTranslate",
-          description: "languagesDescription",
-          technologies: ["English", "Español"],
-        },
-      ],
-    };
+<script setup>
+const skills = [
+  {
+    name: "Frontend",
+    icon: "mdiCodeTags",
+    description: "frontendDescription",
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "Tailwind CSS",
+      "Bootstrap",
+      "Vuetify",
+      "Javascript",
+      "Typescript",
+      "Vue.js",
+      "Angular",
+      "Nuxt.js",
+      "Antdv",
+    ],
   },
-};
+  {
+    name: "Backend",
+    icon: "mdiServer",
+    description: "backendDescription",
+    technologies: ["Javascript", "PHP", "Node.js", "Express.js", "Laravel"],
+  },
+  {
+    name: "Database",
+    icon: "mdiDatabase",
+    description: "databaseDescription",
+    technologies: ["MariaDB", "MySQL", "PostgreSQL", "MongoDB"],
+  },
+  {
+    name: "Testing",
+    icon: "mdiBug",
+    description: "testingDescription",
+    technologies: ["Mocha", "Chai", "Jest"],
+  },
+  {
+    name: "Languages",
+    icon: "mdiTranslate",
+    description: "languagesDescription",
+    technologies: ["English", "Español"],
+  },
+];
 </script>
 
 <style></style>

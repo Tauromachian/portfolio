@@ -19,33 +19,27 @@
   </base-section>
 </template>
 
-<script>
-export default {
-  computed: {
-    projects() {
-      return [
-        {
-          src: "stack-overflow-profile",
-          title: "StackOverflow",
-          link: "https://stackoverflow.com/users/10824037/jogarcia",
-          alt: "Profile picture to StackOverflow",
-        },
-        {
-          src: "github-profile",
-          title: "GitHub",
-          link: "https://github.com/Tauromachian",
-          alt: "Profile picture to GitHub",
-        },
-        {
-          src: "medium-profile",
-          title: "Medium",
-          link: "https://medium.com/@jogarcia",
-          alt: "Profile picture to Medium",
-        },
-      ];
-    },
+<script setup>
+const projects = [
+  {
+    src: "stack-overflow-profile",
+    title: "StackOverflow",
+    link: "https://stackoverflow.com/users/10824037/jogarcia",
+    alt: "Profile picture to StackOverflow",
   },
-};
+  {
+    src: "github-profile",
+    title: "GitHub",
+    link: "https://github.com/Tauromachian",
+    alt: "Profile picture to GitHub",
+  },
+  {
+    src: "medium-profile",
+    title: "Medium",
+    link: "https://medium.com/@jogarcia",
+    alt: "Profile picture to Medium",
+  },
+];
 </script>
 
 <style></style>
