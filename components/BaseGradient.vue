@@ -1,32 +1,17 @@
 <template>
-  <div
-    class="gradient"
-    :style="{
-      height: `${height}em`,
-      background: `linear-gradient(${degrees}, var(--color-primary) 0%, var(--color-primary) 20%, var(--bg-color-primary) 100%)`
-    }"
-  />
+  <div class="gradient"></div>
 </template>
-
-<script>
-export default {
-  name: 'BaseGradient',
-  props: {
-    degrees: {
-      type: String,
-      default: '180deg'
-    },
-    height: {
-      type: Number,
-      default: 9
-    }
-  }
-}
-</script>
 
 <style lang="scss" scoped>
 .gradient {
   content: "";
   margin-bottom: -4em;
+  height: 9em;
+  background: linear-gradient(
+    180deg,
+    var(--color-primary) 0%,
+    var(--color-primary) 20%,
+    var(--bg-color-primary) 100%
+  );
 }
 </style>
