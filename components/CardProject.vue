@@ -23,7 +23,7 @@
           loading="lazy"
           width="1256"
           height="1004"
-          alt="Code for the sake of showing some of my skills."
+          :alt="alt"
           :srcset="`images/original/${src}.jpg 1900w, images/1280/${src}.jpg 1280w, images/640/${src}.jpg 640w`"
         />
       </picture>
