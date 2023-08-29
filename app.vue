@@ -23,17 +23,18 @@
     <section-additional-work id="additional-work"></section-additional-work>
 
     <section-contacts id="social-networks" />
+
+    <bottom-nav
+      v-if="isSmallScreen"
+      :links="links"
+      :themes="themes"
+      class="fixed bottom-0 left-0 right-0 z-50"
+      :theme="theme"
+      @change:theme="setTheme"
+    />
+    <div class="mt-20 pt-10 sm:mt-0 content" />
+    <vue-back-to-top v-if="!isSmallScreen" />
   </main>
-  <bottom-nav
-    v-if="isSmallScreen"
-    :links="links"
-    :themes="themes"
-    class="fixed bottom-0 left-0 right-0 z-50"
-    :theme="theme"
-    @change:theme="setTheme"
-  />
-  <div class="mt-20 pt-10 sm:mt-0 content" />
-  <vue-back-to-top v-if="!isSmallScreen" />
 </template>
 
 <script>
