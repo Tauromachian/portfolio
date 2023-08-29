@@ -1,41 +1,39 @@
 <template>
-  <div>
-    <header>
-      <base-gradient v-if="isSmallScreen" degrees="180deg" :height="6" />
-      <div v-if="isSmallScreen" class="top-gradient" />
-      <top-nav
-        v-if="!isSmallScreen"
-        :links="links"
-        :themes="themes"
-        class="top-0 left-0 right-0"
-        :theme="theme"
-        @change:theme="setTheme"
-      />
-    </header>
-    <main class="container mx-auto">
-      <section-hero id="home" />
-
-      <section-about id="about" />
-
-      <section-skills id="skills" />
-
-      <section-projects id="projects"></section-projects>
-
-      <section-additional-work id="additional-work"></section-additional-work>
-
-      <section-contacts id="social-networks" />
-    </main>
-    <bottom-nav
-      v-if="isSmallScreen"
+  <header>
+    <base-gradient v-if="isSmallScreen" degrees="180deg" :height="6" />
+    <div v-if="isSmallScreen" class="top-gradient" />
+    <top-nav
+      v-if="!isSmallScreen"
       :links="links"
       :themes="themes"
-      class="fixed bottom-0 left-0 right-0 z-50"
+      class="top-0 left-0 right-0"
       :theme="theme"
       @change:theme="setTheme"
     />
-    <div class="mt-20 pt-10 sm:mt-0 content" />
-    <vue-back-to-top v-if="!isSmallScreen" />
-  </div>
+  </header>
+  <main class="container mx-auto">
+    <section-hero id="home" />
+
+    <section-about id="about" />
+
+    <section-skills id="skills" />
+
+    <section-projects id="projects"></section-projects>
+
+    <section-additional-work id="additional-work"></section-additional-work>
+
+    <section-contacts id="social-networks" />
+  </main>
+  <bottom-nav
+    v-if="isSmallScreen"
+    :links="links"
+    :themes="themes"
+    class="fixed bottom-0 left-0 right-0 z-50"
+    :theme="theme"
+    @change:theme="setTheme"
+  />
+  <div class="mt-20 pt-10 sm:mt-0 content" />
+  <vue-back-to-top v-if="!isSmallScreen" />
 </template>
 
 <script>
