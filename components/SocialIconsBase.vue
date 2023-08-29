@@ -35,10 +35,7 @@ import {
 export default {
   props: {
     icon: { type: String, default: "" },
-    color: {
-      type: String,
-      default: "",
-    },
+
     height: {
       type: String,
       default: "30px",
