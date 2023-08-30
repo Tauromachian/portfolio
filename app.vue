@@ -1,7 +1,6 @@
 <template>
   <header>
     <base-gradient v-if="isSmallScreen" degrees="180deg" :height="6" />
-    <div v-if="isSmallScreen" class="top-gradient" />
     <top-nav
       v-if="!isSmallScreen"
       :links="links"
