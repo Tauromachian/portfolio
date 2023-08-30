@@ -64,7 +64,6 @@ export default {
   },
   mounted() {
     this.setTheme(localStorage.getItem("theme") ?? "default");
-    this.loadTheme();
     window.addEventListener("resize", this.setWidth);
     this.setWidth();
   },
@@ -72,13 +71,6 @@ export default {
     window.removeEventListener("resize", this.setWidth);
   },
   methods: {
-    loadTheme() {
-      if (this.theme === "default") {
-        document.documentElement.removeAttribute("theme");
-      } else {
-        document.documentElement.setAttribute("theme", "crazy");
-      }
-    },
     setWidth() {
       this.width = window.innerWidth;
     },
@@ -88,11 +80,8 @@ export default {
       }
       this.theme = theme;
 
-      if (document.documentElement.hasAttribute("theme")) {
-        document.documentElement.removeAttribute("theme");
-      }
       document.documentElement.setAttribute("theme", theme);
-      // localStorage.setItem('theme', theme)
+      localStorage.setItem("theme", theme);
     },
   },
 };
