@@ -62,7 +62,7 @@ export default defineNuxtConfig({
         { rel: "dns-prefetch", href: "https://fonts.gstatic.com/" },
         {
           rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=Pridi&family=Righteous&display=swap&subset=latin-e",
+          href: "https://fonts.googleapis.com/css2?family=Pridi&family=Righteous&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZáéíóúabcdefghijklmnopqrstuvwxyz0123456789./',",
         },
       ],
     },
